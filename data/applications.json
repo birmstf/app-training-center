@@ -10,7 +10,7 @@
     {
       "id": "word",
       "name": "Microsoft Word",
-      "icon": "<img src=\"/images/word.png\" alt=\"Word Icon\" class=\"app-icon\" width=\"45px\" />",
+      "icon": "<img src=\"images/word.png\" alt=\"Word Icon\" class=\"app-icon\" width=\"45px\" />",
       "color": "#2c5aa0",
       "gradient": "linear-gradient(135deg, #2c5aa0, #1e3a5f)",
       "description": "Kelime işlemci ve belge hazırlama uygulaması",
@@ -88,7 +88,7 @@
     {
       "id": "excel",
       "name": "Microsoft Excel", 
-      "icon": "<img src=\"/images/excel.png\" alt=\"Excel Icon\" class=\"app-icon\" width=\"45px\" />",
+      "icon": "<img src=\"images/excel.png\" alt=\"Excel Icon\" class=\"app-icon\" width=\"45px\" />",
       "color": "#217346",
       "gradient": "linear-gradient(135deg, #217346, #0e4f1f)",
       "description": "Elektronik tablo ve veri analizi uygulaması",
@@ -167,7 +167,7 @@
     {
       "id": "powerpoint",
       "name": "Microsoft PowerPoint",
-      "icon": "<img src=\"/images/powerpoint.png\" alt=\"PowerPoint Icon\" class=\"app-icon\" width=\"45px\" />",
+      "icon": "<img src=\"images/powerpoint.png\" alt=\"PowerPoint Icon\" class=\"app-icon\" width=\"45px\" />",
       "color": "#d24726", 
       "gradient": "linear-gradient(135deg, #d24726, #a73513)",
       "description": "Sunum ve slayt hazırlama uygulaması",
@@ -246,7 +246,7 @@
     {
       "id": "outlook",
       "name": "Microsoft Outlook",
-           "icon": "<img src=\"/images/outlook.png\" alt=\"Outlook Icon\" class=\"app-icon\" width=\"45px\" />",
+           "icon": "<img src=\"images/outlook.png\" alt=\"Outlook Icon\" class=\"app-icon\" width=\"45px\" />",
       "color": "#0078d4",
       "gradient": "linear-gradient(135deg, #0078d4, #005a9e)",
       "description": "E-posta ve takvim yönetimi uygulaması",
@@ -325,7 +325,7 @@
     {
       "id": "photoshop",
       "name": "Adobe Photoshop",
-      "icon": "<img src=\"/images/photoshop.png\" alt=\"Photoshop Icon\" class=\"app-icon\" width=\"45px\" />",
+      "icon": "<img src=\"images/photoshop.png\" alt=\"Photoshop Icon\" class=\"app-icon\" width=\"45px\" />",
       "color": "#31A8FF",
       "gradient": "linear-gradient(135deg, #31A8FF, #001E36)",
       "description": "Profesyonel görüntü düzenleme ve dijital sanat uygulaması",
