@@ -1,0 +1,457 @@
+{
+  "id": "outlook-kisiler",
+  "title": "Microsoft Outlook - Kişiler Yönetimi",
+  "description": "İletişim bilgilerini kaydetme, düzenleme ve organize etme.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "1.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "kisiler-giris",
+      "title": "👥 Kişiler'e Giriş",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook Kişiler, dijital adres defterinizdir. İletişim bilgilerini merkezi bir yerde toplayın.",
+        
+        "accessing": {
+          "methods": [
+            {"method": "Ctrl + 3", "description": "Klavye kısayolu"},
+            {"method": "Sol alt köşe kişiler ikonu", "description": "Gezinti bölmesi"},
+            {"method": "Görünüm → Kişilere Git", "description": "Menüden"}
+          ]
+        },
+        
+        "what_you_can_store": [
+          "Ad, soyad, unvan",
+          "E-posta adresleri (birden fazla)",
+          "Telefon numaraları (iş, ev, mobil)",
+          "Adresler (iş, ev)",
+          "Şirket bilgileri",
+          "Doğum günü, yıldönümü",
+          "Web sitesi, sosyal medya",
+          "Notlar ve özel alanlar",
+          "Fotoğraf"
+        ],
+        
+        "views": {
+          "people": "Kişiler - Kart görünümü",
+          "business_card": "Kartvizit - Profesyonel görünüm",
+          "card": "Kart - Kompakt liste",
+          "phone": "Telefon - Telefon numaraları odaklı",
+          "list": "Liste - Tablo görünümü"
+        }
+      }
+    },
+    
+    {
+      "id": "kisi-ekleme",
+      "title": "➕ Kişi Ekleme",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yeni kişi kayıtları oluşturma yöntemleri.",
+        
+        "creating_contact": {
+          "name": "Yeni Kişi Oluşturma",
+          "shortcut": "Ctrl + N (Kişiler görünümünde)",
+          "path": "Giriş → Yeni Kişi",
+          
+          "essential_fields": [
+            {
+              "field": "Tam Ad",
+              "parts": ["Unvan", "Ad", "İkinci Ad", "Soyad", "Sonek"],
+              "button": "Tam Ad butonu ile detaylı giriş",
+              "example": "Bay Ahmet Can Yılmaz"
+            },
+            {
+              "field": "E-posta",
+              "multiple": "E-posta 1, 2, 3",
+              "types": "İş, Ev, Diğer",
+              "primary": "Varsayılan e-posta işaretleyin"
+            },
+            {
+              "field": "Telefon",
+              "types": [
+                "İş Telefonu",
+                "Ev Telefonu",
+                "Cep Telefonu",
+                "İş Faks'ı",
+                "Çağrı Cihazı"
+              ],
+              "format": "Otomatik formatlama"
+            },
+            {
+              "field": "Adres",
+              "types": ["İş", "Ev", "Diğer"],
+              "components": ["Sokak", "Şehir", "İlçe/Eyalet", "Posta Kodu", "Ülke/Bölge"]
+            },
+            {
+              "field": "Şirket",
+              "related": ["Şirket adı", "İş Unvanı", "Departman", "Ofis"]
+            }
+          ],
+          
+          "additional_info": {
+            "web": "Web sayfası adresi",
+            "im": "Anlık mesaj adresi",
+            "birthday": "Doğum günü (Takvime eklenebilir)",
+            "notes": "Notlar - Serbest metin alanı",
+            "picture": "Fotoğraf ekle"
+          },
+          
+          "save": "Kaydet ve Kapat"
+        },
+        
+        "quick_add_methods": {
+          "from_email": {
+            "name": "E-postadan Kişi Ekleme",
+            "method": "E-posta üzerinde gönderende sağ tık → Outlook Kişilerine Ekle",
+            "quick": "✓ En hızlı yöntem",
+            "fills": "Ad ve e-posta otomatik dolu"
+          },
+          
+          "from_signature": {
+            "name": "İmzadan Bilgi Çekme",
+            "description": "İmza içindeki iletişim bilgileri otomatik algılanır",
+            "smart": "Akıllı özellik"
+          },
+          
+          "import": {
+            "name": "Toplu İçe Aktarma",
+            "path": "Dosya → Aç ve Dışa Aktar → İçe/Dışa Aktar",
+            "formats": [".csv", ".xlsx", "Outlook veri dosyası (.pst)", "vCard (.vcf)"],
+            "use": "Eski sistemden geçiş, yedek geri yükleme"
+          },
+          
+          "business_card": {
+            "name": "Elektronik Kartvizit",
+            "format": "vCard (.vcf)",
+            "receive": "E-posta eki olarak gelirse çift tıkla",
+            "send": "Kişi → İlet → Outlook Kişisi Olarak İlet"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "kisi-yonetimi",
+      "title": "🛠️ Kişi Yönetimi",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Mevcut kişileri düzenleme, organize etme ve kullanma.",
+        
+        "editing": {
+          "open": "Kişiye çift tıkla",
+          "quick_edit": "Kart görünümünde alanlara direkt tıkla",
+          "save": "Otomatik kaydedilir"
+        },
+        
+        "contact_groups": {
+          "name": "Kişi Grupları (Dağıtım Listeleri)",
+          "description": "Birden fazla kişiyi tek isim altında topla",
+          "path": "Giriş → Yeni Kişi Grubu",
+          "shortcut": "Ctrl + Shift + L",
+          
+          "creating": {
+            "steps": [
+              "1. Gruba isim verin",
+              "2. Üye Ekle → Adres Defterinden veya Yeni E-posta İletişimi",
+              "3. Kişileri seçin",
+              "4. Kaydet ve Kapat"
+            ]
+          },
+          
+          "using": {
+            "send_email": "Grup adını Kime alanına yazın",
+            "expands": "Tüm grup üyeleri e-posta alır",
+            "examples": [
+              "Proje Ekibi",
+              "Yönetim Kurulu",
+              "Aile",
+              "Haftalık Rapor Alıcıları"
+            ]
+          },
+          
+          "updating": {
+            "add_members": "Grubu aç → Üye Ekle",
+            "remove_members": "Üyeyi seç → Üyeyi Kaldır",
+            "note": "Orijinal kişi kaydı etkilenmez"
+          }
+        },
+        
+        "categories": {
+          "name": "Kategoriler",
+          "description": "Kişileri renkli etiketlerle sınıflandır",
+          "apply": "Kişi seç → Kategorize Et",
+          "examples": [
+            "🔴 VIP Müşteriler",
+            "🟢 Ekip Üyeleri",
+            "🔵 Tedarikçiler",
+            "🟡 Aile/Arkadaş",
+            "🟣 Konferans Bağlantıları"
+          ],
+          "filter": "Kategoriye göre filtreleme",
+          "group": "Kategoriye göre gruplama"
+        },
+        
+        "flags": {
+          "name": "Bayraklar",
+          "description": "Takip için kişileri işaretle",
+          "use": [
+            "Geri arama gerekiyor",
+            "Bilgi güncelleme gerekli",
+            "Doğum günü yaklaşıyor"
+          ],
+          "reminder": "Hatırlatıcı ayarlanabilir"
+        },
+        
+        "duplicate_contacts": {
+          "name": "Yinelenen Kişiler",
+          "problem": "Aynı kişi birden fazla kayıt",
+          "detection": "Outlook otomatik algılar",
+          "merge": {
+            "path": "Birleştirilecek kişileri seç → Sağ tık → Birleştir",
+            "action": "Bilgiler tek kayıtta birleşir",
+            "manual": "Hangisini tutacağınızı seçin"
+          }
+        },
+        
+        "sharing_contacts": {
+          "name": "Kişileri Paylaşma",
+          "methods": [
+            {
+              "method": "Elektronik Kartvizit",
+              "format": "vCard (.vcf)",
+              "action": "Kişi → İlet → Outlook Kişisi Olarak"
+            },
+            {
+              "method": "Klasör Paylaşımı",
+              "description": "Tüm kişiler klasörünü paylaş",
+              "path": "Kişiler klasörüne sağ tık → Özellikler → İzinler",
+              "use": "Ekip içi ortak kişi listesi"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "kisi-kullanimi",
+      "title": "💼 Kişileri Kullanma",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Kişi bilgilerinden nasıl faydalanılır.",
+        
+        "communication": {
+          "title": "İletişim Başlatma",
+          "actions": [
+            {
+              "action": "E-posta Gönder",
+              "method": "Kişiye sağ tık → E-posta Gönder",
+              "shortcut": "Ctrl + N",
+              "auto_fill": "Kime alanı otomatik dolu"
+            },
+            {
+              "action": "Toplantı Planlama",
+              "method": "Kişiye sağ tık → Toplantı İste",
+              "fills": "Kişi katılımcı olarak eklenir"
+            },
+            {
+              "action": "Arama Yap",
+              "method": "Telefon numarasına tıkla",
+              "requirement": "Skype/Teams entegrasyonu",
+              "voip": "VoIP arama"
+            },
+            {
+              "action": "Harita Görüntüle",
+              "method": "Adrese tıkla",
+              "opens": "Bing Haritalar veya varsayılan harita uygulaması"
+            }
+          ]
+        },
+        
+        "autocomplete": {
+          "name": "Otomatik Tamamlama",
+          "description": "E-posta yazarken isim önerileri",
+          "source": "Kişiler + Önbellek",
+          "works": "Yazmaya başlayın, listeden seçin",
+          "cache": {
+            "name": "Otomatik Tamamlama Listesi",
+            "stores": "Son e-posta gönderdiğiniz adresler",
+            "not_contact": "Kişilerde olmasa da önerilir",
+            "clear": "Dosya → Seçenekler → Posta → Otomatik Tamamlama Listesini Boşalt"
+          }
+        },
+        
+        "people_pane": {
+          "name": "Kişi Bölmesi",
+          "location": "E-posta okuma bölmesinin altı",
+          "shows": [
+            "Kişi ile e-posta geçmişi",
+            "Ekleri",
+            "Toplantılar",
+            "Sosyal medya güncellemeleri (ayarlanmışsa)"
+          ],
+          "benefit": "Bağlam ve ilişki geçmişi"
+        },
+        
+        "birthday_reminders": {
+          "name": "Doğum Günü Hatırlatıcıları",
+          "setup": "Kişi kaydına doğum günü ekleyin",
+          "calendar": "Takvimde otomatik yinelenen etkinlik",
+          "reminder": "Önceden hatırlatıcı alın",
+          "tip": "Sosyal medyadan da senkronize edilebilir"
+        },
+        
+        "linked_contacts": {
+          "name": "Bağlantılı Kişiler",
+          "description": "Aynı kişinin farklı kaynaklardaki profilleri",
+          "sources": [
+            "Outlook Kişileri",
+            "Exchange Global Adres Listesi",
+            "LinkedIn",
+            "Facebook"
+          ],
+          "auto_link": "Outlook otomatik bağlar",
+          "unified_view": "Tek görünümde tüm bilgiler"
+        }
+      }
+    },
+    
+    {
+      "id": "gelismis-ozellikler",
+      "title": "🚀 Gelişmiş Özellikler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Kişiler modülünün güçlü özellikleri.",
+        
+        "custom_fields": {
+          "name": "Özel Alanlar",
+          "description": "İhtiyacınıza özel bilgi alanları",
+          "path": "Kişi aç → Tüm Alanları Göster",
+          "examples": [
+            "Müşteri ID",
+            "Hesap Numarası",
+            "Tercih Edilen İletişim Zamanı",
+            "Son Görüşme Tarihi",
+            "Hobi/İlgi Alanları"
+          ],
+          "types": ["Metin", "Sayı", "Tarih", "Evet/Hayır"]
+        },
+        
+        "mail_merge": {
+          "name": "Adres Mektup Birleştirme",
+          "description": "Toplu kişiselleştirilmiş e-posta/mektup",
+          "path": "Word → Postalar → Adres Mektup Birleştirmeyi Başlat",
+          "source": "Outlook Kişileri veri kaynağı olarak",
+          "use": [
+            "Toplu davetiyeler",
+            "Kişiselleştirilmiş mektuplar",
+            "Etiket yazdırma",
+            "Sertifikalar"
+          ]
+        },
+        
+        "export_backup": {
+          "name": "Dışa Aktarma ve Yedekleme",
+          "path": "Dosya → Aç ve Dışa Aktar → İçe/Dışa Aktar",
+          "formats": [
+            {
+              "format": "CSV",
+              "use": "Excel'de düzenleme, başka sistemlere aktarma",
+              "universal": "Evrensel format"
+            },
+            {
+              "format": "Outlook Veri Dosyası (.pst)",
+              "use": "Tam yedek, başka Outlook'a taşıma",
+              "complete": "Tüm bilgiler korunur"
+            },
+            {
+              "format": "vCard (.vcf)",
+              "use": "Tek kişi paylaşımı",
+              "standard": "Sektör standardı"
+            }
+          ],
+          "schedule": "Düzenli yedekleme yapın (aylık)"
+        },
+        
+        "outlook_social_connector": {
+          "name": "Outlook Sosyal Bağlayıcı",
+          "description": "Sosyal medya entegrasyonu",
+          "supports": ["LinkedIn", "Facebook"],
+          "shows": [
+            "Profil fotoğrafı",
+            "İş durumu güncellemeleri",
+            "Paylaşımlar",
+            "Ortak bağlantılar"
+          ],
+          "setup": "Dosya → Seçenekler → Kişiler → Hesapları bağla"
+        },
+        
+        "global_address_list": {
+          "name": "Global Adres Listesi (GAL)",
+          "description": "Kurumsal dizin (Exchange)",
+          "contains": "Tüm çalışanlar, gruplar, kaynaklar",
+          "access": "E-posta yazarken otomatik arama",
+          "read_only": "Düzenleyemezsiniz",
+          "benefit": "Güncel kurumsal rehber"
+        }
+      }
+    }
+  ],
+  
+  "best_practices": [
+    {
+      "practice": "Tutarlı Veri Girişi",
+      "description": "Standart format kullanın",
+      "examples": [
+        "Telefon: (555) 123-4567 formatı",
+        "Şirket isimleri: Tam ve doğru yazım"
+      ]
+    },
+    {
+      "practice": "Notlar Kullanın",
+      "description": "İlk görüşme, tercihler, önemli detaylar",
+      "benefit": "Bağlam ve kişiselleştirme"
+    },
+    {
+      "practice": "Fotoğraf Ekleyin",
+      "description": "Kişileri tanımayı kolaylaştırır",
+      "tip": "Profesyonel toplantılarda yardımcı"
+    },
+    {
+      "practice": "Düzenli Temizlik",
+      "description": "Eski/kullanılmayan kişileri silin",
+      "schedule": "Yılda 1-2 kez gözden geçirin"
+    },
+    {
+      "practice": "Yedekleme",
+      "description": "Kişileri düzenli olarak yedekleyin",
+      "frequency": "Aylık .pst veya CSV dışa aktarma"
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Kişiler = Dijital adres defteri",
+      "Kişi Grupları = Toplu e-posta kolaylığı",
+      "Kategoriler = Organizasyon",
+      "E-postadan kişi ekleme = Hızlı kayıt",
+      "Yedekleme = Veri güvenliği"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Kişilere git", "keys": "Ctrl + 3"},
+    {"action": "Yeni kişi", "keys": "Ctrl + N"},
+    {"action": "Yeni kişi grubu", "keys": "Ctrl + Shift + L"},
+    {"action": "Kişi ara", "keys": "Ctrl + E"},
+    {"action": "Kategorize et", "keys": "Ctrl + F2"},
+    {"action": "E-posta gönder (seçili kişiye)", "keys": "Ctrl + N"}
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "system_info": {
+    "version": "2.0.0",
+    "last_updated": "2024-12-14",
+    "language": "tr",
+    "description": "Web Tabanlı Uygulama Eğitim Sistemi"
+  },
+  
+  "applications": [
+    {
+      "id": "word",
+      "name": "Microsoft Word",
+      "icon": "<img src=\"/images/word.png\" alt=\"Word Icon\" class=\"app-icon\" width=\"45px\" />",
+      "color": "#2c5aa0",
+      "gradient": "linear-gradient(135deg, #2c5aa0, #1e3a5f)",
+      "description": "Kelime işlemci ve belge hazırlama uygulaması",
+      "version": "Microsoft 365 / 2024",
+      "difficulty": "Başlangıç - İleri",
+      "estimated_time": "12 saat",
+      "total_lessons": 89,
+      "menus": [
+        {
+          "id": "dosya",
+          "name": "Dosya",
+          "icon": "📁",
+          "description": "Dosya işlemleri, kaydetme, açma, yazdırma",
+          "lesson_count": 8
+        },
+        {
+          "id": "giris", 
+          "name": "Giriş",
+          "icon": "🏠",
+          "description": "Ana menü, pano, yazı tipi, paragraf ayarları",
+          "lesson_count": 15
+        },
+        {
+          "id": "ekle",
+          "name": "Ekle", 
+          "icon": "➕",
+          "description": "Tablo, resim, grafik, bağlantı ekleme",
+          "lesson_count": 18
+        },
+        {
+          "id": "tasarim",
+          "name": "Tasarım",
+          "icon": "🎨", 
+          "description": "Tema, renk, filigran, sayfa düzeni",
+          "lesson_count": 12
+        },
+        {
+          "id": "duzen",
+          "name": "Düzen",
+          "icon": "📐",
+          "description": "Sayfa kurulumu, kenar boşlukları, sütunlar",
+          "lesson_count": 10
+        },
+        {
+          "id": "basvurular",
+          "name": "Başvurular",
+          "icon": "📚",
+          "description": "İçindekiler, dipnot, kaynak, alıntı",
+          "lesson_count": 8
+        },
+        {
+          "id": "postalar",
+          "name": "Postalar",
+          "icon": "✉️",
+          "description": "Mail merge, toplu gönderim, etiket",
+          "lesson_count": 6
+        },
+        {
+          "id": "gozden-gecir",
+          "name": "Gözden Geçir",
+          "icon": "📝",
+          "description": "Yazım denetimi, değişiklik izleme, yorum",
+          "lesson_count": 12
+        }
+      ],
+      "popular_topics": [
+        "Mail Merge",
+        "Tablo Oluşturma", 
+        "Belge Biçimlendirme",
+        "İçindekiler Tablosu"
+      ],
+      "microsoft_support": "https://support.microsoft.com/tr-tr/word"
+    },
+    
+    {
+      "id": "excel",
+      "name": "Microsoft Excel", 
+      "icon": "<img src=\"/images/excel.png\" alt=\"Excel Icon\" class=\"app-icon\" width=\"45px\" />",
+      "color": "#217346",
+      "gradient": "linear-gradient(135deg, #217346, #0e4f1f)",
+      "description": "Elektronik tablo ve veri analizi uygulaması",
+      "version": "Microsoft 365 / 2024",
+      "difficulty": "Başlangıç - Uzman",
+      "estimated_time": "18 saat",
+      "total_lessons": 124,
+      "menus": [
+        {
+          "id": "dosya",
+          "name": "Dosya",
+          "icon": "📁",
+          "description": "Çalışma kitabı işlemleri, şablonlar",
+          "lesson_count": 6
+        },
+        {
+          "id": "giris",
+          "name": "Giriş", 
+          "icon": "🏠",
+          "description": "Hücre biçimlendirme, sayı formatları",
+          "lesson_count": 12
+        },
+        {
+          "id": "ekle",
+          "name": "Ekle",
+          "icon": "➕", 
+          "description": "Grafik, pivot tablo, fonksiyon ekleme",
+          "lesson_count": 16
+        },
+        {
+          "id": "formul",
+          "name": "Formüller",
+          "icon": "🧮",
+          "description": "Fonksiyonlar, formül yazma, hesaplamalar",
+          "lesson_count": 24
+        },
+        {
+          "id": "veri",
+          "name": "Veri",
+          "icon": "📈",
+          "description": "Veri analizi, filtreleme, sıralama",
+          "lesson_count": 20
+        },
+        {
+          "id": "gozden-gecir",
+          "name": "Gözden Geçir",
+          "icon": "📝",
+          "description": "Hata denetimi, koruma, paylaşım",
+          "lesson_count": 8
+        },
+        {
+          "id": "gorunum",
+          "name": "Görünüm",
+          "icon": "👁️",
+          "description": "Zoom, sayfa düzeni, pencere yönetimi",
+          "lesson_count": 6
+        },
+        {
+          "id": "gelistirici",
+          "name": "Geliştirici",
+          "icon": "⚙️", 
+          "description": "Makro, VBA, form kontrolleri",
+          "lesson_count": 32
+        }
+      ],
+      "popular_topics": [
+        "VLOOKUP Fonksiyonu",
+        "Pivot Tablo",
+        "Grafik Oluşturma",
+        "Makro Yazma",
+        "Koşullu Biçimlendirme"
+      ],
+      "microsoft_support": "https://support.microsoft.com/tr-tr/excel"
+    },
+    
+    {
+      "id": "powerpoint",
+      "name": "Microsoft PowerPoint",
+      "icon": "<img src=\"/images/powerpoint.png\" alt=\"PowerPoint Icon\" class=\"app-icon\" width=\"45px\" />",
+      "color": "#d24726", 
+      "gradient": "linear-gradient(135deg, #d24726, #a73513)",
+      "description": "Sunum ve slayt hazırlama uygulaması",
+      "version": "Microsoft 365 / 2024",
+      "difficulty": "Başlangıç - İleri",
+      "estimated_time": "8 saat",
+      "total_lessons": 67,
+      "menus": [
+        {
+          "id": "dosya",
+          "name": "Dosya",
+          "icon": "📁",
+          "description": "Sunum şablonları, kaydetme, dışa aktarma",
+          "lesson_count": 5
+        },
+        {
+          "id": "giris",
+          "name": "Giriş",
+          "icon": "🏠",
+          "description": "Slayt düzeni, yazı tipi, paragraf",
+          "lesson_count": 10
+        },
+        {
+          "id": "ekle", 
+          "name": "Ekle",
+          "icon": "➕",
+          "description": "Resim, video, ses, grafik ekleme",
+          "lesson_count": 14
+        },
+        {
+          "id": "tasarim",
+          "name": "Tasarım",
+          "icon": "🎨",
+          "description": "Tema, renk şeması, slide master",
+          "lesson_count": 8
+        },
+        {
+          "id": "gecisler",
+          "name": "Geçişler", 
+          "icon": "🔄",
+          "description": "Slayt geçiş efektleri ve zamanlaması",
+          "lesson_count": 6
+        },
+        {
+          "id": "animasyonlar",
+          "name": "Animasyonlar",
+          "icon": "✨",
+          "description": "Nesne animasyonları, hareket yolları", 
+          "lesson_count": 12
+        },
+        {
+          "id": "slayt-gosterisi",
+          "name": "Slayt Gösterisi",
+          "icon": "▶️",
+          "description": "Sunum ayarları, sunucu araçları",
+          "lesson_count": 7
+        },
+        {
+          "id": "gozden-gecir",
+          "name": "Gözden Geçir",
+          "icon": "📝", 
+          "description": "Yazım denetimi, yorum, koruma",
+          "lesson_count": 5
+        }
+      ],
+      "popular_topics": [
+        "Slayt Geçişleri",
+        "Animasyon Efektleri",
+        "Master Slide",
+        "Video Ekleme",
+        "İnteraktif Sunumlar"
+      ],
+      "microsoft_support": "https://support.microsoft.com/tr-tr/powerpoint"
+    }
+	,
+    {
+      "id": "outlook",
+      "name": "Microsoft Outlook",
+           "icon": "<img src=\"/images/outlook.png\" alt=\"Outlook Icon\" class=\"app-icon\" width=\"45px\" />",
+      "color": "#0078d4",
+      "gradient": "linear-gradient(135deg, #0078d4, #005a9e)",
+      "description": "E-posta ve takvim yönetimi uygulaması",
+      "version": "Microsoft 365 / 2024", 
+      "difficulty": "Başlangıç - İleri",
+      "estimated_time": "6 saat",
+      "total_lessons": 45,
+      "menus": [
+        {
+          "id": "dosya",
+          "name": "Dosya",
+          "icon": "📁",
+          "description": "Hesap ayarları, dışa/içe aktarma",
+          "lesson_count": 4
+        },
+        {
+          "id": "giris",
+          "name": "Giriş", 
+          "icon": "🏠",
+          "description": "E-posta oluşturma, biçimlendirme",
+          "lesson_count": 8
+        },
+        {
+          "id": "gonder-al",
+          "name": "Gönder/Al",
+          "icon": "📨",
+          "description": "E-posta gönderme, alma, senkronizasyon",
+          "lesson_count": 6
+        },
+        {
+          "id": "klasor",
+          "name": "Klasör",
+          "icon": "📂",
+          "description": "Klasör oluşturma, düzenleme, kurallar",
+          "lesson_count": 5
+        },
+        {
+          "id": "gorunum",
+          "name": "Görünüm",
+          "icon": "👁️",
+          "description": "Görünüm ayarları, düzen, filtreler",
+          "lesson_count": 4
+        },
+        {
+          "id": "takvim",
+          "name": "Takvim",
+          "icon": "📅",
+          "description": "Randevu, toplantı, takvim yönetimi", 
+          "lesson_count": 10
+        },
+        {
+          "id": "kisi",
+          "name": "Kişiler",
+          "icon": "👥",
+          "description": "Adres defteri, kişi kartları, gruplar",
+          "lesson_count": 5
+        },
+        {
+          "id": "gorevler",
+          "name": "Görevler", 
+          "icon": "✅",
+          "description": "Görev oluşturma, atama, takip",
+          "lesson_count": 3
+        }
+      ],
+      "popular_topics": [
+        "E-posta Kuralları",
+        "Takvim Paylaşımı", 
+        "İmza Oluşturma",
+        "Otomatik Yanıt",
+        "Toplantı Düzenleme"
+      ],
+      "microsoft_support": "https://support.microsoft.com/tr-tr/outlook"
+    },
+
+    {
+      "id": "photoshop",
+      "name": "Adobe Photoshop",
+      "icon": "<img src=\"/images/photoshop.png\" alt=\"Photoshop Icon\" class=\"app-icon\" width=\"45px\" />",
+      "color": "#31A8FF",
+      "gradient": "linear-gradient(135deg, #31A8FF, #001E36)",
+      "description": "Profesyonel görüntü düzenleme ve dijital sanat uygulaması",
+      "version": "Adobe Photoshop 2024",
+      "difficulty": "Başlangıç - Uzman",
+      "estimated_time": "20 saat",
+      "total_lessons": 95,
+      "menus": [
+        {
+          "id": "giris",
+          "name": "Giriş",
+          "icon": "🏠",
+          "description": "Arayüz, temel kavramlar, dosya işlemleri",
+          "lesson_count": 12
+        },
+        {
+          "id": "secim-araclari",
+          "name": "Seçim Araçları",
+          "icon": "🔲",
+          "description": "Seçim yapma, maskeleme teknikleri",
+          "lesson_count": 15
+        },
+        {
+          "id": "katmanlar",
+          "name": "Katmanlar",
+          "icon": "📚",
+          "description": "Layer yönetimi, blend modes, maskeler",
+          "lesson_count": 18
+        },
+        {
+          "id": "renk-duzeltme",
+          "name": "Renk ve Düzeltme",
+          "icon": "🎨",
+          "description": "Renk ayarları, ton düzeltme, adjustment layers",
+          "lesson_count": 16
+        },
+        {
+          "id": "retuslar",
+          "name": "Rötuş ve Onarım",
+          "icon": "✨",
+          "description": "Kusur giderme, cilt rötuşu, obje kaldırma",
+          "lesson_count": 14
+        },
+        {
+          "id": "metin-sekiller",
+          "name": "Metin ve Şekiller",
+          "icon": "📝",
+          "description": "Tipografi, vektör şekiller, path araçları",
+          "lesson_count": 10
+        },
+        {
+          "id": "filtreler-efektler",
+          "name": "Filtreler ve Efektler",
+          "icon": "🌟",
+          "description": "Blur, sharpen, stylize ve yaratıcı filtreler",
+          "lesson_count": 12
+        },
+        {
+          "id": "yapay-zeka",
+          "name": "Yapay Zeka Özellikleri",
+          "icon": "🤖",
+          "description": "Generative Fill, Neural Filters, AI araçları",
+          "lesson_count": 8
+        }
+      ],
+      "popular_topics": [
+        "Generative Fill",
+        "Katman Maskeleri",
+        "Portre Rötuşu",
+        "Color Grading",
+        "Smart Objects"
+      ],
+      "microsoft_support": "https://helpx.adobe.com/tr/photoshop"
+    }
+  ],
+
+  "global_settings": {
+    "default_theme": "light",
+    "supported_languages": ["tr", "en"],
+    "enable_progress_tracking": true,
+    "enable_notifications": true,
+    "auto_save_progress": true,
+    "session_timeout": 1800,
+    "max_concurrent_users": 1000
+  },
+
+  "feature_flags": {
+    "beta_features": false,
+    "ai_assistant": false, 
+    "collaborative_mode": false,
+    "offline_mode": true,
+    "video_tutorials": true,
+    "interactive_simulations": true
+  },
+
+  "statistics": {
+    "total_applications": 5,
+    "total_menus": 40,
+    "total_lessons": 420,
+    "estimated_total_time": "64 hours",
+    "difficulty_levels": ["Başlangıç", "Orta", "İleri", "Uzman"],
+    "content_types": ["Teorik", "Pratik", "Simülasyon", "Video", "İnteraktif"]
+  }
+}

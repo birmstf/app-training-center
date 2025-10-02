@@ -1,0 +1,1116 @@
+{
+  "id": "photoshop-giris",
+  "title": "Adobe Photoshop 2024 - Giriş",
+  "description": "Photoshop'a giriş, arayüz tanıtımı ve temel kavramlar. Görüntü düzenlemenin temelleri.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "3 saat",
+  "version": "Adobe Photoshop 2024",
+  
+  "sections": [
+    {
+      "id": "photoshop-nedir",
+      "title": "🎨 Photoshop Nedir?",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Adobe Photoshop, dünyada en çok kullanılan profesyonel raster grafik düzenleme yazılımıdır. Fotoğraf düzenleme, dijital sanat, web tasarım ve daha fazlası için sektör standardıdır.",
+        
+        "what_is_photoshop": {
+          "definition": "Piksel (raster) tabanlı görüntü düzenleme ve dijital resim oluşturma yazılımı",
+          "industry_standard": "Profesyoneller için referans program",
+          "capabilities": "Fotoğraf düzenleme, dijital boyama, grafik tasarım, 3D düzenleme"
+        },
+        
+        "use_cases": [
+          {
+            "area": "Fotoğraf Düzenleme",
+            "tasks": [
+              "Renk düzeltme ve iyileştirme",
+              "Rötuş ve kusur giderme",
+              "Birleştirme ve kompozisyon",
+              "HDR ve panorama oluşturma"
+            ]
+          },
+          {
+            "area": "Dijital Sanat",
+            "tasks": [
+              "Dijital resim ve illüstrasyon",
+              "Konsept sanatı",
+              "Matte painting",
+              "Tekstür oluşturma"
+            ]
+          },
+          {
+            "area": "Grafik Tasarım",
+            "tasks": [
+              "Poster ve afiş tasarımı",
+              "Sosyal medya görselleri",
+              "Web grafikleri",
+              "Mockup hazırlama"
+            ]
+          },
+          {
+            "area": "UI/UX Tasarım",
+            "tasks": [
+              "Arayüz tasarımı",
+              "İkon oluşturma",
+              "Prototipleme",
+              "Mobil uygulama tasarımı"
+            ]
+          }
+        ],
+        
+        "raster_vs_vector": {
+          "raster": {
+            "name": "Raster (Piksel Tabanlı)",
+            "description": "Photoshop'un çalıştığı format",
+            "structure": "Küçük renkli karelerden (piksel) oluşur",
+            "pros": [
+              "Fotoğrafik detay",
+              "Karmaşık renk geçişleri",
+              "Gerçekçi efektler"
+            ],
+            "cons": [
+              "Büyütülünce kalite kaybı",
+              "Büyük dosya boyutları"
+            ],
+            "formats": "JPEG, PNG, TIFF, PSD"
+          },
+          "vector": {
+            "name": "Vektör (Yol Tabanlı)",
+            "description": "Illustrator'un alanı",
+            "structure": "Matematiksel yollardan oluşur",
+            "pros": [
+              "Sonsuz ölçeklenebilirlik",
+              "Küçük dosya boyutu",
+              "Net kenarlar"
+            ],
+            "cons": [
+              "Fotoğrafik detay yok",
+              "Basit renkler"
+            ],
+            "formats": "AI, EPS, SVG"
+          },
+          "note": "Photoshop bazı vektör araçları da içerir (Şekiller, Metin)"
+        },
+        
+        "versions": {
+          "photoshop_2024": {
+            "release": "2023 sonları",
+            "highlights": [
+              "Geliştirilmiş Generative Fill",
+              "Generative Expand",
+              "AI destekli seçim araçları",
+              "Neural Filters güncellemeleri",
+              "Performans iyileştirmeleri"
+            ]
+          },
+          "creative_cloud": {
+            "subscription": "Aylık abonelik modeli",
+            "benefits": [
+              "Sürekli güncellemeler",
+              "Bulut depolama",
+              "Adobe Fonts erişimi",
+              "Mobil uygulamalar",
+              "Portfolio siteleri"
+            ]
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "arayuz-tanitimi",
+      "title": "🖥️ Arayüz Tanıtımı",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Photoshop'un karmaşık görünen ama mantıklı düzenlenmiş arayüzünü tanıyın.",
+        
+        "main_components": {
+          "menu_bar": {
+            "name": "Menü Çubuğu",
+            "location": "En üst",
+            "menus": [
+              "File (Dosya) - Açma, kaydetme, dışa aktarma",
+              "Edit (Düzen) - Geri al, dönüştür, tercihler",
+              "Image (Görüntü) - Boyut, mod, ayarlamalar",
+              "Layer (Katman) - Katman işlemleri",
+              "Type (Yazı) - Metin işlemleri",
+              "Select (Seçim) - Seçim araçları",
+              "Filter (Filtre) - Efektler",
+              "View (Görünüm) - Ekran ayarları",
+              "Window (Pencere) - Panel görünürlüğü",
+              "Help (Yardım) - Öğreticiler"
+            ]
+          },
+          
+          "options_bar": {
+            "name": "Seçenekler Çubuğu (Options Bar)",
+            "location": "Menü çubuğunun altında",
+            "description": "Seçili aracın ayarlarını gösterir",
+            "dynamic": "Her araç için farklı seçenekler",
+            "important": "✓ Sürekli kontrol edin!"
+          },
+          
+          "tools_panel": {
+            "name": "Araçlar Paneli (Tools Panel)",
+            "location": "Sol taraf",
+            "shortcut": "Tab tuşu ile göster/gizle",
+            
+            "tool_categories": [
+              {
+                "category": "Seçim Araçları",
+                "tools": ["Move", "Marquee", "Lasso", "Magic Wand", "Quick Selection"],
+                "icon": "🔲"
+              },
+              {
+                "category": "Kırpma ve Dilim",
+                "tools": ["Crop", "Slice"],
+                "icon": "✂️"
+              },
+              {
+                "category": "Rötuş Araçları",
+                "tools": ["Spot Healing", "Clone Stamp", "Eraser"],
+                "icon": "✨"
+              },
+              {
+                "category": "Boyama Araçları",
+                "tools": ["Brush", "Pencil", "Gradient", "Paint Bucket"],
+                "icon": "🖌️"
+              },
+              {
+                "category": "Metin ve Şekil",
+                "tools": ["Type", "Pen", "Shape"],
+                "icon": "📝"
+              },
+              {
+                "category": "Navigasyon",
+                "tools": ["Hand", "Zoom", "Rotate View"],
+                "icon": "🔍"
+              }
+            ],
+            
+            "hidden_tools": {
+              "indicator": "Küçük ok işareti = Alt araçlar var",
+              "access": "Araç ikonuna uzun basın veya sağ tıklayın",
+              "shortcut": "Shift + Harf tuşu = Aynı gruptaki araçlar arası geçiş"
+            }
+          },
+          
+          "canvas": {
+            "name": "Tuval (Canvas)",
+            "location": "Merkez, ana çalışma alanı",
+            "description": "Görüntünüzü düzenlediğiniz yer",
+            "tabs": "Birden fazla belge açıksa sekme şeklinde",
+            "background": "Gri satranç tahtası = Şeffaf alanları gösterir"
+          },
+          
+          "panels": {
+            "name": "Paneller",
+            "location": "Genelde sağ taraf",
+            "description": "Belirli işlevleri kontrol eden pencereler",
+            
+            "essential_panels": [
+              {
+                "panel": "Layers (Katmanlar)",
+                "shortcut": "F7",
+                "description": "Katman yönetimi",
+                "importance": "✓✓✓ En önemli panel"
+              },
+              {
+                "panel": "Properties (Özellikler)",
+                "description": "Seçili öğenin ayarları",
+                "context": "Bağlama duyarlı"
+              },
+              {
+                "panel": "Adjustments (Ayarlamalar)",
+                "description": "Renk ve ton ayarları",
+                "non_destructive": "Yıkıcı olmayan düzenleme"
+              },
+              {
+                "panel": "History (Geçmiş)",
+                "description": "İşlem geçmişi, geri alma",
+                "states": "Son 50 adım (ayarlanabilir)"
+              },
+              {
+                "panel": "Swatches (Renk Örnekleri)",
+                "description": "Kaydedilmiş renkler"
+              },
+              {
+                "panel": "Brushes (Fırçalar)",
+                "shortcut": "F5",
+                "description": "Fırça ayarları ve ön ayarları"
+              },
+              {
+                "panel": "Channels (Kanallar)",
+                "description": "Renk kanalları (RGB, CMYK)"
+              },
+              {
+                "panel": "Paths (Yollar)",
+                "description": "Vektör yolları"
+              }
+            ],
+            
+            "panel_management": {
+              "open": "Window menüsünden açın",
+              "close": "Panel başlığındaki çift ok veya X",
+              "dock": "Sürükle-bırak ile yan yana yerleştir",
+              "collapse": "Panel adına çift tıkla = Simge haline getir",
+              "workspace": "Kendi çalışma alanınızı kaydedin"
+            }
+          },
+          
+          "status_bar": {
+            "name": "Durum Çubuğu",
+            "location": "En alt",
+            "shows": [
+              "Zoom seviyesi",
+              "Dosya boyutu",
+              "Belge profili",
+              "Boyutlar"
+            ],
+            "click": "Tıklayınca ek bilgiler"
+          }
+        },
+        
+        "customization": {
+          "title": "Arayüzü Özelleştirme",
+          
+          "workspaces": {
+            "name": "Çalışma Alanları (Workspaces)",
+            "description": "Panel düzenlerini kaydetme",
+            "presets": [
+              "Essentials (Default) - Genel kullanım",
+              "Photography - Fotoğraf düzenleme",
+              "Painting - Dijital resim",
+              "Graphic and Web - Tasarım",
+              "3D - 3D çalışma"
+            ],
+            "custom": {
+              "create": "Window → Workspace → New Workspace",
+              "switch": "Sağ üst köşedeki dropdown",
+              "reset": "Varsayılana sıfırlama"
+            }
+          },
+          
+          "color_theme": {
+            "name": "Renk Teması",
+            "path": "Edit → Preferences → Interface",
+            "options": [
+              "Çok Koyu",
+              "Koyu (Varsayılan)",
+              "Orta Gri",
+              "Açık"
+            ],
+            "recommendation": "Koyu tema göz yorulmasını azaltır"
+          },
+          
+          "ui_scaling": {
+            "name": "Arayüz Ölçeklendirme",
+            "path": "Edit → Preferences → Interface → UI Scaling",
+            "use": "Yüksek çözünürlüklü ekranlar için"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "temel-kavramlar",
+      "title": "📚 Temel Kavramlar",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Photoshop'ta çalışırken bilmeniz gereken temel kavramlar.",
+        
+        "resolution": {
+          "name": "Çözünürlük (Resolution)",
+          "definition": "Birim alana düşen piksel sayısı",
+          "unit": "PPI (Pixels Per Inch) veya DPI (Dots Per Inch)",
+          
+          "standards": [
+            {
+              "use": "Web/Ekran",
+              "resolution": "72 PPI",
+              "reason": "Ekranlar düşük çözünürlük",
+              "file_size": "Küçük"
+            },
+            {
+              "use": "Baskı (Standart)",
+              "resolution": "300 PPI",
+              "reason": "Yüksek kaliteli baskı standardı",
+              "file_size": "Büyük"
+            },
+            {
+              "use": "Büyük Format Baskı",
+              "resolution": "150-200 PPI",
+              "reason": "Uzaktan görülür, daha düşük yeterli"
+            }
+          ],
+          
+          "rule": "Baştan doğru çözünürlükte başlayın, sonradan yükseltmek kalitesiz"
+        },
+        
+        "color_modes": {
+          "name": "Renk Modları",
+          "description": "Renklerin nasıl temsil edildiği",
+          
+          "modes": [
+            {
+              "mode": "RGB (Red, Green, Blue)",
+              "description": "Işık tabanlı, ekranlar için",
+              "channels": "3 kanal (Kırmızı, Yeşil, Mavi)",
+              "use": [
+                "Web tasarım",
+                "Dijital fotoğrafçılık",
+                "Ekran gösterimi"
+              ],
+              "default": "✓ Photoshop varsayılanı"
+            },
+            {
+              "mode": "CMYK (Cyan, Magenta, Yellow, Black)",
+              "description": "Mürekkep tabanlı, baskı için",
+              "channels": "4 kanal",
+              "use": [
+                "Profesyonel baskı",
+                "Dergiler, kitaplar",
+                "Kurumsal materyaller"
+              ],
+              "convert": "Baskıdan önce RGB'den dönüştürün"
+            },
+            {
+              "mode": "Grayscale (Gri Tonlama)",
+              "description": "Sadece gri tonları",
+              "channels": "1 kanal",
+              "use": "Siyah-beyaz fotoğraflar"
+            },
+            {
+              "mode": "Bitmap",
+              "description": "Sadece siyah ve beyaz, gri yok",
+              "use": "Çok özel durumlar, lazer kazıma"
+            },
+            {
+              "mode": "Lab Color",
+              "description": "Cihazdan bağımsız, geniş renk gamı",
+              "use": "Renk uzmanları için",
+              "advanced": true
+            }
+          ],
+          
+          "changing_mode": {
+            "path": "Image → Mode",
+            "warning": "⚠️ Mod değiştirme veri kaybına sebep olabilir",
+            "workflow": "RGB'de çalışın, baskı için CMYK'ye dönüştürün"
+          }
+        },
+        
+        "bit_depth": {
+          "name": "Bit Derinliği",
+          "description": "Her pikselde kaç renk bilgisi depolanır",
+          
+          "depths": [
+            {
+              "depth": "8-bit",
+              "colors": "16.7 milyon renk",
+              "use": "Standart, çoğu iş için yeterli",
+              "file_size": "Normal",
+              "recommended": "✓ Genel kullanım"
+            },
+            {
+              "depth": "16-bit",
+              "colors": "281 trilyon renk",
+              "use": "Profesyonel fotoğraf, ağır düzenleme",
+              "file_size": "2x büyük",
+              "quality": "Daha yumuşak geçişler, banding önler"
+            },
+            {
+              "depth": "32-bit (HDR)",
+              "colors": "Sonsuz",
+              "use": "HDR görüntüler, 3D rendering",
+              "file_size": "4x büyük",
+              "advanced": true
+            }
+          ],
+          
+          "when_to_use_16bit": [
+            "RAW dosyalarla çalışma",
+            "Ağır renk düzeltmesi",
+            "Profesyonel baskı",
+            "Arşiv amaçlı"
+          ]
+        },
+        
+        "file_formats": {
+          "name": "Dosya Formatları",
+          
+          "working_formats": [
+            {
+              "format": "PSD (Photoshop Document)",
+              "description": "Photoshop'un kendi formatı",
+              "preserves": "Katmanlar, maskeler, ayarlamalar - Her şey",
+              "use": "Çalışma dosyası",
+              "max_size": "2 GB'a kadar",
+              "recommendation": "✓ Her zaman PSD'de kaydedin"
+            },
+            {
+              "format": "PSB (Photoshop Big)",
+              "description": "Büyük dosyalar için PSD",
+              "max_size": "4 milyon x 4 milyon piksel",
+              "use": "Çok büyük projeler"
+            },
+            {
+              "format": "TIFF",
+              "description": "Kayıpsız, katman desteği var (opsiyonel)",
+              "use": "Baskı, arşiv",
+              "pros": "Yaygın kabul, kayıpsız"
+            }
+          ],
+          
+          "export_formats": [
+            {
+              "format": "JPEG",
+              "description": "Kayıplı sıkıştırma",
+              "pros": "Küçük dosya, evrensel",
+              "cons": "Kalite kaybı, şeffaflık yok",
+              "use": "Web, e-posta, sosyal medya",
+              "quality": "8-12 arası ideal (0-12 skala)"
+            },
+            {
+              "format": "PNG",
+              "description": "Kayıpsız, şeffaflık destekler",
+              "pros": "Kalite, şeffaflık",
+              "cons": "JPEG'den büyük",
+              "use": "Web, logolar, ikonlar",
+              "types": "PNG-8 (256 renk), PNG-24 (milyonlarca renk)"
+            },
+            {
+              "format": "GIF",
+              "description": "256 renk, animasyon",
+              "use": "Basit animasyonlar",
+              "limited": "Çok sınırlı, genelde önerilmez"
+            },
+            {
+              "format": "WebP",
+              "description": "Modern web formatı",
+              "pros": "JPEG'den küçük, PNG kalitesi",
+              "use": "Modern web siteleri",
+              "support": "Yaygınlaşıyor"
+            },
+            {
+              "format": "PDF",
+              "description": "Belge formatı",
+              "use": "Baskı, sunumlar",
+              "versatile": "Katman desteği seçilebilir"
+            }
+          ]
+        },
+        
+        "layers": {
+          "name": "Katmanlar (Layers)",
+          "description": "Photoshop'un kalbi",
+          "analogy": "Üst üste konmuş şeffaf camlar gibi",
+          "benefit": "Yıkıcı olmayan düzenleme, esneklik",
+          "essential": "✓✓✓ Mutlaka öğrenilmeli",
+          "detail": "Ayrı modülde detaylı anlatım"
+        }
+      }
+    },
+    
+    {
+      "id": "ilk-proje",
+      "title": "🚀 İlk Projeniz",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "İlk Photoshop deneyiminizi yaşayın, temel işlemleri öğrenin.",
+        
+        "creating_document": {
+          "name": "Yeni Belge Oluşturma",
+          "shortcut": "Ctrl/Cmd + N",
+          "path": "File → New",
+          
+          "new_document_dialog": {
+            "tabs": [
+              "Recent - Son kullanılanlar",
+              "Photo - Fotoğraf boyutları",
+              "Print - Baskı boyutları",
+              "Art & Illustration - Sanat",
+              "Web - Web boyutları",
+              "Mobile - Mobil cihaz boyutları",
+              "Film & Video"
+            ],
+            
+            "settings": [
+              {
+                "setting": "Width / Height",
+                "description": "Genişlik ve yükseklik",
+                "units": "Piksel, İnç, CM, MM, Puan"
+              },
+              {
+                "setting": "Resolution",
+                "description": "Çözünürlük",
+                "screen": "72 PPI",
+                "print": "300 PPI"
+              },
+              {
+                "setting": "Color Mode",
+                "description": "RGB, CMYK, Grayscale",
+                "default": "RGB"
+              },
+              {
+                "setting": "Background Contents",
+                "options": ["White", "Background Color", "Transparent"],
+                "transparent": "✓ Genelde şeffaf tercih edilir"
+              }
+            ],
+            
+            "presets": "Sık kullandığınız boyutları Preset olarak kaydedin"
+          }
+        },
+        
+        "opening_files": {
+          "name": "Dosya Açma",
+          "methods": [
+            {
+              "method": "File → Open",
+              "shortcut": "Ctrl/Cmd + O",
+              "standard": "✓ Standart yöntem"
+            },
+            {
+              "method": "Sürükle-Bırak",
+              "description": "Dosyayı Photoshop'a sürükleyin",
+              "quick": "Hızlı"
+            },
+            {
+              "method": "Çift Tıklama",
+              "description": "Dosyaya çift tıkla (Photoshop varsayılan ise)",
+              "note": "Photoshop başlatır"
+            },
+            {
+              "method": "File → Open Recent",
+              "description": "Son açılan dosyalar",
+              "quick_access": true
+            }
+          ],
+          
+          "camera_raw": {
+            "name": "Camera RAW",
+            "description": "RAW dosyalar Camera RAW'da açılır",
+            "formats": ".CR2, .NEF, .ARW, .DNG vb.",
+            "powerful": "Güçlü ön işleme"
+          }
+        },
+        
+        "basic_operations": {
+          "title": "Temel İşlemler",
+          
+          "navigation": [
+            {
+              "action": "Zoom In/Out",
+              "methods": [
+                "Ctrl/Cmd + / Ctrl/Cmd -",
+                "Zoom Tool (Z) + Tıkla",
+                "Alt + Fare Tekerleği"
+              ]
+            },
+            {
+              "action": "Fit to Screen",
+              "shortcut": "Ctrl/Cmd + 0",
+              "description": "Tuvali ekrana sığdır"
+            },
+            {
+              "action": "100% Görünüm",
+              "shortcut": "Ctrl/Cmd + 1 (veya çift tık Zoom Tool)",
+              "description": "Gerçek boyut"
+            },
+            {
+              "action": "Pan (Kaydırma)",
+              "shortcut": "Boşluk + Sürükle",
+              "tool": "Hand Tool (H)"
+            },
+            {
+              "action": "Rotate Canvas",
+              "tool": "Rotate View Tool (R)",
+              "temporary": "Boşluk + R"
+            }
+          ],
+          
+          "undo_redo": [
+            {
+              "action": "Undo",
+              "shortcut": "Ctrl/Cmd + Z",
+              "description": "Son işlemi geri al"
+            },
+            {
+              "action": "Redo",
+              "shortcut": "Ctrl/Cmd + Shift + Z",
+              "description": "İleri al"
+            },
+            {
+              "action": "Step Backward",
+              "shortcut": "Ctrl/Cmd + Alt + Z",
+              "description": "Geriye adım adım",
+                              "multiple": "Birden fazla işlem geri alabilirsiniz"
+            },
+            {
+              "action": "Step Forward",
+              "shortcut": "Ctrl/Cmd + Shift + Z",
+              "description": "İleriye adım adım"
+            },
+            {
+              "action": "History Panel",
+              "shortcut": "Alt + Ctrl/Cmd + Z",
+              "description": "Geçmiş panelinde görsel olarak"
+            }
+          ],
+          
+          "saving": [
+            {
+              "action": "Save",
+              "shortcut": "Ctrl/Cmd + S",
+              "description": "Mevcut dosyayı kaydet",
+              "format": "Aynı formatta"
+            },
+            {
+              "action": "Save As",
+              "shortcut": "Ctrl/Cmd + Shift + S",
+              "description": "Farklı kaydet",
+              "use": "Yeni isim, format veya konum"
+            },
+            {
+              "action": "Save a Copy",
+              "description": "Kopya kaydet",
+              "benefit": "Orijinal açık kalır"
+            },
+            {
+              "action": "Export As",
+              "shortcut": "Ctrl/Cmd + Alt + Shift + W",
+              "description": "Web için optimize edilmiş dışa aktarma",
+              "modern": "✓ Modern yöntem"
+            }
+          ]
+        },
+        
+        "first_project_tutorial": {
+          "title": "Uygulamalı: İlk Düzenlemeniz",
+          "project": "Basit Fotoğraf Düzeltme",
+          
+          "steps": [
+            {
+              "step": 1,
+              "action": "Fotoğraf Açın",
+              "instructions": "File → Open → Bir fotoğraf seçin"
+            },
+            {
+              "step": 2,
+              "action": "Kırpma (Crop)",
+              "tool": "Crop Tool (C)",
+              "instructions": [
+                "Araç seçiliyken kenarları sürükleyin",
+                "Enter ile onayla"
+              ],
+              "tip": "Üçte bir kuralını deneyin"
+            },
+            {
+              "step": 3,
+              "action": "Parlaklık/Kontrast Ayarı",
+              "path": "Image → Adjustments → Brightness/Contrast",
+              "adjust": "Kaydırıcıları hareket ettirin",
+              "preview": "Önizlemeyi izleyin"
+            },
+            {
+              "step": 4,
+              "action": "Renk Doygunluğu",
+              "path": "Image → Adjustments → Hue/Saturation",
+              "saturation": "Saturation değerini artırın (+10 ile +20 arası)",
+              "natural": "Abartmayın"
+            },
+            {
+              "step": 5,
+              "action": "Keskinleştirme",
+              "path": "Filter → Sharpen → Unsharp Mask",
+              "settings": "Amount: 80-120%, Radius: 1-1.5",
+              "zoom": "100%'de kontrol edin"
+            },
+            {
+              "step": 6,
+              "action": "Kaydetme",
+              "psd": "Save As → PSD formatında (katmanlı)",
+              "jpeg": "Export As → JPEG (paylaşım için)",
+              "quality": "JPEG kalitesi 10-12 arası"
+            }
+          ],
+          
+          "congratulations": "Tebrikler! İlk Photoshop düzenlemenizi tamamladınız! 🎉"
+        }
+      }
+    },
+    
+    {
+      "id": "klavye-kisayollari",
+      "title": "⌨️ Temel Klavye Kısayolları",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Photoshop'ta hızlı çalışmanın anahtarı klavye kısayollarıdır. İlk 20 kısayolu ezberleyin.",
+        
+        "essential_shortcuts": {
+          "file_operations": [
+            {"action": "Yeni belge", "keys": "Ctrl/Cmd + N"},
+            {"action": "Aç", "keys": "Ctrl/Cmd + O"},
+            {"action": "Kaydet", "keys": "Ctrl/Cmd + S"},
+            {"action": "Farklı kaydet", "keys": "Ctrl/Cmd + Shift + S"},
+            {"action": "Kapat", "keys": "Ctrl/Cmd + W"},
+            {"action": "Tümünü kapat", "keys": "Ctrl/Cmd + Alt + W"}
+          ],
+          
+          "editing": [
+            {"action": "Geri al", "keys": "Ctrl/Cmd + Z"},
+            {"action": "İleri al", "keys": "Ctrl/Cmd + Shift + Z"},
+            {"action": "Adım geri", "keys": "Ctrl/Cmd + Alt + Z"},
+            {"action": "Free Transform", "keys": "Ctrl/Cmd + T"},
+            {"action": "Doldur", "keys": "Shift + F5"},
+            {"action": "Content-Aware Fill", "keys": "Shift + Delete (Seçim yapıldıktan sonra)"}
+          ],
+          
+          "layers": [
+            {"action": "Yeni katman", "keys": "Ctrl/Cmd + Shift + N"},
+            {"action": "Katman çoğalt", "keys": "Ctrl/Cmd + J"},
+            {"action": "Tüm katmanları birleştir", "keys": "Ctrl/Cmd + Shift + E"},
+            {"action": "Katmanları grupla", "keys": "Ctrl/Cmd + G"},
+            {"action": "Grup aç", "keys": "Ctrl/Cmd + Shift + G"}
+          ],
+          
+          "selection": [
+            {"action": "Tümünü seç", "keys": "Ctrl/Cmd + A"},
+            {"action": "Seçimi kaldır", "keys": "Ctrl/Cmd + D"},
+            {"action": "Seçimi yeniden seç", "keys": "Ctrl/Cmd + Shift + D"},
+            {"action": "Seçimi ters çevir", "keys": "Ctrl/Cmd + Shift + I"},
+            {"action": "Feather (Yumuşatma)", "keys": "Alt + Ctrl/Cmd + D"}
+          ],
+          
+          "view": [
+            {"action": "Zoom in", "keys": "Ctrl/Cmd + +"},
+            {"action": "Zoom out", "keys": "Ctrl/Cmd + -"},
+            {"action": "Ekrana sığdır", "keys": "Ctrl/Cmd + 0"},
+            {"action": "100% görünüm", "keys": "Ctrl/Cmd + 1"},
+            {"action": "Tam ekran", "keys": "F"},
+            {"action": "Arayüzü gizle/göster", "keys": "Tab"},
+            {"action": "Cetvelleri göster/gizle", "keys": "Ctrl/Cmd + R"},
+            {"action": "Kılavuzları göster/gizle", "keys": "Ctrl/Cmd + ;"}
+          ],
+          
+          "tools": [
+            {"action": "Move Tool", "keys": "V"},
+            {"action": "Marquee Tools", "keys": "M"},
+            {"action": "Lasso Tools", "keys": "L"},
+            {"action": "Magic Wand", "keys": "W"},
+            {"action": "Crop Tool", "keys": "C"},
+            {"action": "Brush Tool", "keys": "B"},
+            {"action": "Clone Stamp", "keys": "S"},
+            {"action": "Eraser", "keys": "E"},
+            {"action": "Gradient Tool", "keys": "G"},
+            {"action": "Type Tool", "keys": "T"},
+            {"action": "Pen Tool", "keys": "P"},
+            {"action": "Hand Tool", "keys": "H (veya Boşluk tuşu geçici)"},
+            {"action": "Zoom Tool", "keys": "Z"}
+          ],
+          
+          "color": [
+            {"action": "Ön/Arka plan rengi değiştir", "keys": "X"},
+            {"action": "Varsayılan renklere dön (Siyah/Beyaz)", "keys": "D"},
+            {"action": "Renk seçici", "keys": "Alt + Sağ Tık (Brush aktifken)"}
+          ],
+          
+          "brush": [
+            {"action": "Fırça boyutunu küçült", "keys": "[ (Sol köşeli parantez)"},
+            {"action": "Fırça boyutunu büyüt", "keys": "] (Sağ köşeli parantez)"},
+            {"action": "Fırça sertliğini azalt", "keys": "Shift + ["},
+            {"action": "Fırça sertliğini artır", "keys": "Shift + ]"}
+          ]
+        },
+        
+        "modifier_keys": {
+          "title": "Değiştirici Tuşlar",
+          "description": "Araç davranışını değiştiren tuşlar",
+          
+          "modifiers": [
+            {
+              "key": "Shift",
+              "uses": [
+                "Orantılı ölçeklendirme (Transform sırasında)",
+                "45° açı kısıtlaması (çizim sırasında)",
+                "Seçime ekleme",
+                "Aynı gruptaki araçlar arası geçiş"
+              ]
+            },
+            {
+              "key": "Alt/Option",
+              "uses": [
+                "Merkezden dönüştürme",
+                "Seçimden çıkarma",
+                "Kopyala (Move Tool ile sürüklerken)",
+                "Renk örnekleme (Brush aktifken)"
+              ]
+            },
+            {
+              "key": "Ctrl/Cmd",
+              "uses": [
+                "Geçici Move Tool",
+                "Seçim oluşturma (katman küçük resminden)",
+                "Çoklu seçim (Layers panelinde)"
+              ]
+            },
+            {
+              "key": "Boşluk",
+              "uses": [
+                "Geçici Hand Tool (kaydırma)",
+                "Tuval hareket ettirme"
+              ]
+            }
+          ],
+          
+          "combinations": [
+            "Shift + Alt = Merkezden orantılı",
+            "Ctrl/Cmd + Alt + Sürükle = Kopyala ve taşı",
+            "Shift + Alt + Sürükle (Seçim araçları) = Merkezden seçim"
+          ]
+        },
+        
+        "learning_shortcuts": {
+          "title": "Kısayolları Öğrenme Stratejisi",
+          "tips": [
+            "Her gün 3-5 yeni kısayol öğrenin",
+            "Sık kullandığınız işlemleri önce öğrenin",
+            "Menüde kısayol yazıyor, dikkat edin",
+            "Cheat sheet yazdırıp masanıza asın",
+            "Pratik yaparak pekiştirin"
+          ],
+          "goal": "1 ay içinde 50+ kısayol ezberleyin"
+        }
+      }
+    },
+    
+    {
+      "id": "performans-ipuclari",
+      "title": "⚡ Performans ve İpuçları",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Photoshop'u hızlı ve verimli kullanmak için öneriler.",
+        
+        "performance_settings": {
+          "path": "Edit → Preferences → Performance",
+          
+          "memory_usage": {
+            "name": "Bellek Kullanımı",
+            "setting": "Let Photoshop Use",
+            "recommendation": "RAM'in %70-80'i",
+            "example": "16 GB RAM varsa → 11-13 GB Photoshop'a",
+            "restart": "Değişiklik sonrası yeniden başlatın"
+          },
+          
+          "scratch_disks": {
+            "name": "Scratch Disks (Sanal Bellek)",
+            "description": "RAM yetersiz kalınca kullanılan disk alanı",
+            "recommendation": "En hızlı ve en boş disk (tercihen SSD)",
+            "multiple": "Birden fazla disk seçilebilir",
+            "space": "En az 50 GB boş alan"
+          },
+          
+          "history_states": {
+            "name": "History States",
+            "default": "50",
+            "recommendation": "20-50 arası",
+            "trade_off": "Daha az = Daha az bellek kullanımı"
+          },
+          
+          "cache_levels": {
+            "name": "Cache Levels",
+            "description": "Önbellek seviyeleri",
+            "presets": "Büyük dosyalar, orta, küçük dosyalar"
+          },
+          
+          "gpu_acceleration": {
+            "name": "GPU Kullanımı",
+            "enable": "Use Graphics Processor",
+            "benefits": [
+              "Daha hızlı ekran güncellemesi",
+              "Bazı filtreler GPU kullanır",
+              "Fluidly dönme/zoom"
+            ],
+            "requirement": "Uyumlu grafik kartı gerekli"
+          }
+        },
+        
+        "workflow_tips": {
+          "title": "Verimli Çalışma İpuçları",
+          
+          "tips": [
+            {
+              "tip": "Katmanlarla Çalışın",
+              "description": "Her zaman yıkıcı olmayan düzenleme",
+              "benefit": "Geri dönülebilir, esnek"
+            },
+            {
+              "tip": "Smart Objects Kullanın",
+              "description": "Katmanları Smart Object'e dönüştürün",
+              "benefit": "Kayıpsız dönüştürme",
+              "how": "Katmana sağ tık → Convert to Smart Object"
+            },
+            {
+              "tip": "Adjustment Layers",
+              "description": "Ayarlama katmanlarını tercih edin",
+              "vs": "Image → Adjustments yerine Layer → New Adjustment Layer",
+              "benefit": "Yıkıcı değil, düzenlenebilir"
+            },
+            {
+              "tip": "Katmanları İsimlendirin",
+              "description": "Anlamlı isimler verin",
+              "bad": "Layer 1, Layer 2, Layer 3",
+              "good": "Arka Plan, Portré, Metin, Logo"
+            },
+            {
+              "tip": "Gruplar Kullanın",
+              "description": "İlgili katmanları grupla",
+              "shortcut": "Ctrl/Cmd + G",
+              "organize": "Düzenli, temiz Layers paneli"
+            },
+            {
+              "tip": "Dosyayı Düzenli Kaydedin",
+              "frequency": "Her 15-20 dakikada bir",
+              "auto_save": "Preferences → File Handling → Automatically Save Recovery Information"
+            },
+            {
+              "tip": "PSD + Dışa Aktarma",
+              "workflow": "PSD'de çalışın, bitince dışa aktarın",
+              "master": "PSD = Master dosya",
+              "export": "JPEG/PNG = Paylaşım"
+            },
+            {
+              "tip": "Kısayolları Kullanın",
+              "speed": "10x daha hızlı çalışma",
+              "learn": "Her gün birkaç tane öğrenin"
+            }
+          ]
+        },
+        
+        "common_mistakes": {
+          "title": "Yaygın Hatalar",
+          
+          "mistakes": [
+            {
+              "mistake": "Katman Kullanmamak",
+              "problem": "Geri dönülemez düzenleme",
+              "solution": "Her zaman katmanlarla çalışın"
+            },
+            {
+              "mistake": "Çok Düşük Çözünürlük",
+              "problem": "Baskıda kalitesiz çıktı",
+              "solution": "Baştan 300 PPI ile başlayın"
+            },
+            {
+              "mistake": "RGB/CMYK Karışıklığı",
+              "problem": "Renkler baskıda farklı çıkar",
+              "solution": "Baskı için CMYK'de çalışın veya dönüştürün"
+            },
+            {
+              "mistake": "Aşırı Kaydetme Sıkıntısı",
+              "problem": "Çalışmayı JPEG olarak kaydedip tekrar açma",
+              "issue": "Her seferinde kalite kaybı",
+              "solution": "PSD'de çalışın, JPEG son aşama"
+            },
+            {
+              "mistake": "Yedeklememek",
+              "problem": "Dosya bozulması = Her şey kayıp",
+              "solution": "Bulut + Harici disk yedek"
+            },
+            {
+              "mistake": "Fırça Akışını İhmal Etmek",
+              "problem": "Sert, yapay görünüm",
+              "solution": "Flow ve Opacity ayarlarını kullanın"
+            }
+          ]
+        },
+        
+        "resources": {
+          "title": "Öğrenme Kaynakları",
+          
+          "official": [
+            {
+              "resource": "Adobe Tutorials",
+              "url": "helpx.adobe.com/photoshop/tutorials.html",
+              "free": true,
+              "quality": "Yüksek"
+            },
+            {
+              "resource": "Adobe Help Center",
+              "url": "helpx.adobe.com/photoshop",
+              "type": "Dokümantasyon"
+            }
+          ],
+          
+          "youtube_channels": [
+            "Phlearn",
+            "Piximperfect",
+            "PHLEARN",
+            "Adobe Creative Cloud (Türkçe)",
+            "Tutvid"
+          ],
+          
+          "practice": [
+            "Unsplash.com - Ücretsiz yüksek kalite fotoğraflar",
+            "Pexels.com - Ücretsiz stok fotoğraflar",
+            "Adobe Stock - Premium içerik"
+          ],
+          
+          "communities": [
+            "Behance - Portfolio paylaşımı",
+            "Reddit r/photoshop",
+            "Adobe Community Forums",
+            "DeviantArt"
+          ]
+        }
+      }
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Photoshop = Raster grafik düzenleme standardı",
+      "Katmanlar = Yıkıcı olmayan düzenlemenin temeli",
+      "RGB ekran, CMYK baskı için",
+      "300 PPI = Baskı standardı, 72 PPI = Web",
+      "PSD çalışma dosyası, JPEG/PNG dışa aktarma",
+      "Klavye kısayolları = Verimlilik",
+      "Smart Objects ve Adjustment Layers = Profesyonel iş akışı"
+    ]
+  },
+  
+  "next_steps": {
+    "title": "Sıradaki Adımlar",
+    "learn": [
+      "Seçim Araçları - Hassas seçimler yapmak",
+      "Katmanlar - Derinlemesine katman yönetimi",
+      "Renk Düzeltme - Profesyonel renk ayarları",
+      "Rötuş Teknikleri - Kusur giderme",
+      "Metin ve Tipografi - Profesyonel metin işleme"
+    ],
+    "practice": "Her gün en az 30 dakika pratik yapın!"
+  },
+  
+  "shortcuts_summary": [
+    {"action": "Yeni belge", "keys": "Ctrl/Cmd + N"},
+    {"action": "Aç", "keys": "Ctrl/Cmd + O"},
+    {"action": "Kaydet", "keys": "Ctrl/Cmd + S"},
+    {"action": "Geri al", "keys": "Ctrl/Cmd + Z"},
+    {"action": "Free Transform", "keys": "Ctrl/Cmd + T"},
+    {"action": "Yeni katman", "keys": "Ctrl/Cmd + Shift + N"},
+    {"action": "Tümünü seç", "keys": "Ctrl/Cmd + A"},
+    {"action": "Seçimi kaldır", "keys": "Ctrl/Cmd + D"},
+    {"action": "Ekrana sığdır", "keys": "Ctrl/Cmd + 0"},
+    {"action": "100% görünüm", "keys": "Ctrl/Cmd + 1"},
+    {"action": "Kaydırma (geçici)", "keys": "Boşluk + Sürükle"},
+    {"action": "Fırça boyutu", "keys": "[ ] tuşları"}
+  ]
+}

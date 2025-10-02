@@ -1,0 +1,613 @@
+{
+  "id": "outlook-gorevler",
+  "title": "Microsoft Outlook - Görevler ve Yapılacaklar",
+  "description": "Görev yönetimi, yapılacaklar listesi ve proje takibi.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "1.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "gorevler-giris",
+      "title": "✓ Görevler'e Giriş",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook Görevler ile yapılacakları takip edin, önceliklendirin ve tamamlayın.",
+        
+        "accessing": {
+          "methods": [
+            {"method": "Ctrl + 4", "description": "Klavye kısayolu"},
+            {"method": "Sol alt köşe görevler ikonu", "description": "Gezinti bölmesi"},
+            {"method": "Yapılacaklar Çubuğu", "description": "Sağ tarafta her zaman görünür"}
+          ]
+        },
+        
+        "tasks_vs_todo": {
+          "tasks": {
+            "name": "Görevler (Tasks)",
+            "description": "Geleneksel Outlook görev modülü",
+            "location": "Görevler görünümü",
+            "features": "Detaylı görev yönetimi"
+          },
+          "todo": {
+            "name": "Yapılacaklar (To Do)",
+            "description": "Modern Microsoft To Do entegrasyonu",
+            "location": "Yapılacaklar Çubuğu, mobil uygulama",
+            "sync": "Tüm cihazlarda senkronize",
+            "modern": "✓ Önerilen"
+          },
+          "sync": "İkisi de senkronize çalışır"
+        },
+        
+        "views": {
+          "simple_list": "Basit Liste - Sade görünüm",
+          "detailed": "Ayrıntılı - Tüm bilgiler",
+          "active": "Etkin - Tamamlanmamış görevler",
+          "next_7_days": "Sonraki 7 Gün",
+          "overdue": "Süresi Geçmiş",
+          "by_category": "Kategoriye Göre",
+          "assigned": "Atanan - Size atanan görevler"
+        }
+      }
+    },
+    
+    {
+      "id": "gorev-olusturma",
+      "title": "➕ Görev Oluşturma",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yeni görevler oluşturma ve yapılandırma.",
+        
+        "creating_task": {
+          "methods": [
+            {
+              "method": "Yeni Görev Butonu",
+              "path": "Giriş → Yeni Görev",
+              "shortcut": "Ctrl + N (Görevler görünümünde)"
+            },
+            {
+              "method": "Yapılacaklar Çubuğu",
+              "description": "Üstteki metin kutusuna yazın",
+              "quick": "✓ En hızlı",
+              "enter": "Enter ile ekle"
+            },
+            {
+              "method": "E-postayı Görev Yap",
+              "description": "E-postayı sürükle Görevler ikonuna",
+              "benefit": "E-posta içeriği görev açıklamasında"
+            },
+            {
+              "method": "Bayrak Ekleme",
+              "description": "E-postaya bayrak = Otomatik görev",
+              "shortcut": "Insert tuşu"
+            }
+          ]
+        },
+        
+        "task_fields": {
+          "essential": [
+            {
+              "field": "Konu",
+              "description": "Görevin başlığı",
+              "required": true,
+              "tip": "Eylem odaklı: 'Rapor hazırla', 'Ahmet'i ara'"
+            },
+            {
+              "field": "Son Tarih",
+              "description": "Bitiş zamanı",
+              "optional": true,
+              "affects": "Sıralama ve hatırlatıcılar"
+            },
+            {
+              "field": "Başlangıç Tarihi",
+              "description": "Ne zaman başlanacak",
+              "use": "Planlama için"
+            },
+            {
+              "field": "Durum",
+              "options": [
+                "Başlanmadı",
+                "Devam Ediyor",
+                "Tamamlandı",
+                "Erteleniyor",
+                "Bekleniyor"
+              ]
+            },
+            {
+              "field": "Öncelik",
+              "options": [
+                "Düşük ⬇️",
+                "Normal",
+                "Yüksek ❗"
+              ],
+              "default": "Normal"
+            },
+            {
+              "field": "% Tamamlandı",
+              "description": "İlerleme yüzdesi",
+              "slider": "0-100%",
+              "visual": "İlerleme çubuğu"
+            }
+          ],
+          "priorities": {
+            "name": "Öncelik Sıralaması",
+            "importance": [
+              "❗ Yüksek - Acil ve önemli",
+              "➖ Normal - Standart görevler",
+              "⬇️ Düşük - Önemli değil ama yapılmalı"
+            ],
+            "sorting": "Önceliğe göre sıralama yapabilirsiniz",
+            "eisenhower": "Acil-Önemli Matrisi kullanın"
+          }
+        },
+        
+        "recurring_tasks": {
+          "name": "Yinelenen Görevler",
+          "description": "Düzenli tekrar eden işler",
+          "button": "Görev → Yinelenme",
+          
+          "patterns": [
+            "Günlük (Her gün, Her X günde bir)",
+            "Haftalık (Belirli günlerde)",
+            "Aylık (Her ayın X günü)",
+            "Yıllık (Her yıl belirli tarih)"
+          ],
+          
+          "regenerate": {
+            "name": "Tamamlandıktan Sonra Yeniden Oluştur",
+            "description": "Görev tamamlanınca yeni örnek oluşur",
+            "use": "Düzenli bakım işleri",
+            "example": "Her 30 günde araba yıka - Tamamlayınca sonraki 30 gün için yeni görev"
+          },
+          
+          "examples": [
+            "Haftalık rapor (Her Cuma)",
+            "Aylık fatura kontrolü (Her ayın 1'i)",
+            "Üç ayda proje değerlendirme",
+            "Yıllık performans incelemesi"
+          ]
+        },
+        
+        "task_requests": {
+          "name": "Görev Atama",
+          "description": "Başkasına görev atama",
+          "path": "Görev → Görev Ata",
+          "requirement": "Exchange hesabı gerekir",
+          
+          "assigning": {
+            "steps": [
+              "1. Görev oluşturun",
+              "2. Görev Ata butonuna tıklayın",
+              "3. Kime alanına kişi ekleyin",
+              "4. Görev ayrıntılarını doldurun",
+              "5. Gönder"
+            ]
+          },
+          
+          "receiving": {
+            "invitation": "Görev istemi e-posta olarak gelir",
+            "options": [
+              "Kabul Et - Görev listenize eklenir",
+              "Reddet - Geri gönderilir",
+              "Ata - Başkasına devret"
+            ]
+          },
+          
+          "tracking": {
+            "owner": "Görev sahibi ilerlemeyi takip eder",
+            "updates": "Atanan kişi durumu günceller",
+            "reports": "Durum raporları otomatik"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "yapilacaklar-cububu",
+      "title": "📋 Yapılacaklar Çubuğu",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Her zaman görünür, hızlı erişimli görev yönetimi.",
+        
+        "location": {
+          "where": "Outlook ekranının sağ tarafı",
+          "always_visible": "Hangi modülde olursanız olun görünür",
+          "toggle": "Görünüm → Yapılacaklar Çubuğu"
+        },
+        
+        "sections": [
+          {
+            "section": "Tarih Başlığı",
+            "shows": "Bugün, Yarın, Bu Hafta, vb.",
+            "grouping": "Görevler tarihe göre gruplandırılmış"
+          },
+          {
+            "section": "Görev Listesi",
+            "items": [
+              "Bayraklı e-postalar",
+              "Görevler",
+              "Toplantı istekleri (yanıtlanmamış)"
+            ],
+            "checkbox": "Tamamlamak için işaretle"
+          },
+          {
+            "section": "Hızlı Giriş",
+            "input": "Üstteki metin kutusu",
+            "add": "Yaz + Enter = Yeni görev"
+          },
+          {
+            "section": "Mini Takvim",
+            "calendar": "Aylık takvim görünümü",
+            "click": "Tarihe tıkla = O günün görevleri"
+          }
+        ],
+        
+        "features": {
+          "drag_drop": "E-postaları sürükle = Görev yap",
+          "quick_flags": "E-postayı işaretle = Yapılacaklarda görün",
+          "due_dates": "Sürükle farklı tarihe = Son tarih değiş",
+          "categories": "Sağ tık → Kategorize et"
+        },
+        
+        "customization": {
+          "options": "Görünüm → Yapılacaklar Çubuğu → Seçenekler",
+          "settings": [
+            "Hangi klasörlerdeki bayraklı öğeler gösterilsin",
+            "Kaç günlük görevler görünsün",
+            "Tamamlanmış görevleri göster/gizle",
+            "Çubuğun genişliği"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "gorev-stratejileri",
+      "title": "💡 Görev Yönetim Stratejileri",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Etkili görev yönetimi için metodlar ve ipuçları.",
+        
+        "gtd_method": {
+          "name": "Getting Things Done (GTD)",
+          "author": "David Allen",
+          "outlook_implementation": {
+            "capture": {
+              "step": "1. Yakala",
+              "how": "Her şeyi hızlıca Yapılacaklar'a ekle",
+              "outlook": "Hızlı giriş, e-postayı bayrakla"
+            },
+            "clarify": {
+              "step": "2. Açıkla",
+              "how": "Her öğeyi incele, eyleme dönüştür",
+              "outlook": "Görev detaylarını doldur"
+            },
+            "organize": {
+              "step": "3. Organize Et",
+              "how": "Kategorilere ayır, önceliklendir",
+              "outlook": "Klasörler, kategoriler, son tarihler"
+            },
+            "reflect": {
+              "step": "4. Gözden Geçir",
+              "how": "Haftalık inceleme",
+              "outlook": "Görev listesini gözden geçir, güncelle"
+            },
+            "engage": {
+              "step": "5. Harekete Geç",
+              "how": "Bağlama ve enerjiye göre seç",
+              "outlook": "Kategoriler ve önceliklere göre filtrele"
+            }
+          },
+          
+          "outlook_folders": {
+            "inbox": "Gelen Kutusu (Yakalama)",
+            "next_actions": "Sonraki Eylemler",
+            "waiting_for": "Bekleniyor",
+            "someday_maybe": "Belki Bir Gün",
+            "projects": "Projeler (klasörler)"
+          }
+        },
+        
+        "eisenhower_matrix": {
+          "name": "Eisenhower Matrisi",
+          "description": "Acil-Önemli sınıflandırması",
+          
+          "quadrants": [
+            {
+              "quadrant": "Q1: Acil ve Önemli",
+              "action": "Hemen yap",
+              "outlook": "Kırmızı kategori + Yüksek öncelik",
+              "examples": ["Kriz", "Son teslim tarihleri", "Acil sorunlar"]
+            },
+            {
+              "quadrant": "Q2: Önemli ama Acil Değil",
+              "action": "Planla ve yap",
+              "outlook": "Yeşil kategori + Normal öncelik + İleri tarih",
+              "examples": ["Stratejik planlama", "İlişki kurma", "Uzun vadeli projeler"],
+              "focus": "✓ En önemli - Buraya odaklan!"
+            },
+            {
+              "quadrant": "Q3: Acil ama Önemli Değil",
+              "action": "Delege et",
+              "outlook": "Sarı kategori + Görev ata",
+              "examples": ["Bazı toplantılar", "Kesintiler", "Bazı e-postalar"]
+            },
+            {
+              "quadrant": "Q4: Ne Acil Ne Önemli",
+              "action": "Sil veya ertele",
+              "outlook": "Mavi kategori + Düşük öncelik veya sil",
+              "examples": ["Zaman kaybı", "Gereksiz aktiviteler"]
+            }
+          ]
+        },
+        
+        "daily_review": {
+          "name": "Günlük İnceleme",
+          "when": "Her sabah veya gün sonu",
+          "duration": "10-15 dakika",
+          
+          "checklist": [
+            "✓ Yapılacaklar çubuğunu gözden geçir",
+            "✓ Bugünün görevlerini kontrol et",
+            "✓ Öncelikleri güncelle",
+            "✓ Tamamlananları işaretle",
+            "✓ Yeni gelen görevleri organize et",
+            "✓ Yarının planını yap"
+          ]
+        },
+        
+        "weekly_review": {
+          "name": "Haftalık İnceleme",
+          "when": "Cuma öğleden sonra veya Pazar akşamı",
+          "duration": "30-60 dakika",
+          
+          "process": [
+            "1. Tamamlananları arşivle",
+            "2. Süresi geçenleri incele (neden?)",
+            "3. Gelecek haftayı planla",
+            "4. Uzun vadeli projeleri kontrol et",
+            "5. Gereksiz görevleri temizle",
+            "6. Kategorileri güncelle"
+          ]
+        },
+        
+        "best_practices": [
+          {
+            "practice": "2 Dakika Kuralı",
+            "rule": "2 dakikadan kısaysa hemen yap, görev yapma",
+            "benefit": "Liste şişmez, momentum artar"
+          },
+          {
+            "practice": "Bir Görev = Bir Eylem",
+            "description": "Her görev net bir eylem",
+            "good": "'Müşteri raporunu e-postayla gönder'",
+            "bad": "'Proje hakkında düşün'",
+            "tip": "Fiille başla: Yaz, Ara, Gönder, İncele"
+          },
+          {
+            "practice": "Sınırlı Sayıda Günlük Görev",
+            "guideline": "Günde 3-5 ana görev",
+            "reality": "Gün içinde kesintiler olacak",
+            "tip": "Gerçekçi olun"
+          },
+          {
+            "practice": "Bağlam Kullanın",
+            "description": "Görevleri yapılacağı yere göre grupla",
+            "categories": ["@Ofis", "@Ev", "@Telefon", "@Bilgisayar", "@Alışveriş"],
+            "benefit": "Toplu işlem, verimlilik"
+          },
+          {
+            "practice": "E-postayı Görev Yapmayın",
+            "problem": "Bayraklı e-postalar karışıklık yaratır",
+            "solution": "E-postayı oku, görev oluştur, arşivle",
+            "clear": "Gelen kutusu yapılacak listesi değildir"
+          }
+        ],
+        
+        "common_mistakes": [
+          {
+            "mistake": "Çok Fazla Görev",
+            "problem": "Listeniz yönetilemez büyüklükte",
+            "solution": "Seçici olun, gerçekten önemli olanları ekleyin"
+          },
+          {
+            "mistake": "Belirsiz Görevler",
+            "problem": "'Proje X ile ilgilen' ne anlama geliyor?",
+            "solution": "Spesifik, eyleme dönüştürülebilir görevler"
+          },
+          {
+            "mistake": "Son Tarih Vermemek",
+            "problem": "Görevler süresiz askıda kalır",
+            "solution": "Her göreve gerçekçi son tarih"
+          },
+          {
+            "mistake": "Hiç Tamamlamadan Yeni Eklemek",
+            "problem": "Liste sadece büyür, moral bozulur",
+            "solution": "Düzenli tamamlama, başarı hissi"
+          },
+          {
+            "mistake": "Gözden Geçirmemek",
+            "problem": "Liste güncel değil, güvenilmez",
+            "solution": "Günlük ve haftalık inceleme rutini"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "integration": {
+    "title": "Outlook Entegrasyonu",
+    "features": [
+      {
+        "feature": "E-posta ile Entegrasyon",
+        "description": "Bayrak = Görev, sürükle = görev oluştur"
+      },
+      {
+        "feature": "Takvim ile Entegrasyon",
+        "description": "Görevleri takvimde blok olarak göster",
+        "planning": "Görevlere zaman ayırma"
+      },
+      {
+        "feature": "Kişiler ile Entegrasyon",
+        "description": "Kişilere görev atama"
+      },
+      {
+        "feature": "Microsoft To Do",
+        "description": "Tüm cihazlarda senkronizasyon",
+        "mobile": "Mobil uygulamada görev yönetimi"
+      }
+    ]
+  },
+  
+  "summary": {
+    "key_points": [
+      "Görevler = Yapılacakları organize etme",
+      "Yapılacaklar Çubuğu = Her zaman erişilebilir",
+      "Kategoriler ve öncelikler = Organizasyon",
+      "GTD ve Eisenhower = Etkili metodlar",
+      "Günlük/haftalık inceleme = Sistem canlı tutma"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Görevlere git", "keys": "Ctrl + 4"},
+    {"action": "Yeni görev", "keys": "Ctrl + N"},
+    {"action": "Tamamlandı işaretle", "keys": "Insert"},
+    {"action": "Bayrak ekle (e-postada)", "keys": "Insert"},
+    {"action": "Kategorize et", "keys": "Ctrl + F2"},
+    {"action": "Görevi sil", "keys": "Delete"}
+  ]
+}"additional": [
+            {
+              "field": "Kategoriler",
+              "description": "Renkli etiketler",
+              "examples": ["İş", "Kişisel", "Proje A"]
+            },
+            {
+              "field": "Hatırlatıcı",
+              "description": "Bildirim zamanı",
+              "sound": "Ses ile uyarı"
+            },
+            {
+              "field": "Sahip",
+              "description": "Görevin sahibi",
+              "default": "Kendiniz"
+            },
+            {
+              "field": "Notlar/Açıklama",
+              "description": "Detaylı bilgi",
+              "formatting": "Zengin metin"
+            },
+            {
+              "field": "Ekler",
+              "description": "İlgili dosyalar",
+              "attach": "Dosya ekleyebilirsiniz"
+            }
+          ]
+        },
+        
+        "quick_task_entry": {
+          "name": "Hızlı Görev Girişi",
+          "location": "Yapılacaklar Çubuğu üst kısmı",
+          "usage": [
+            "Görev adını yazın",
+            "Enter ile ekle",
+            "Varsayılan ayarlarla oluşturulur"
+          ],
+          "detail_later": "Sonra açıp detaylandırabilirsiniz",
+          "benefit": "Hızlı yakalama, sonra organize et"
+        }
+      }
+    },
+    
+    {
+      "id": "gorev-yonetimi",
+      "title": "🛠️ Görev Yönetimi",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görevleri düzenleme, organize etme ve tamamlama.",
+        
+        "editing_tasks": {
+          "open": "Göreve çift tıkla",
+          "quick_edit": "Yapılacaklar çubuğunda alanlara tıkla",
+          "fields": "Tüm alanları güncelleyebilirsiniz",
+          "save": "Kaydet ve Kapat"
+        },
+        
+        "completing_tasks": {
+          "checkbox": "Görevin yanındaki kutuyu işaretle",
+          "shortcut": "Insert tuşu (seçili görevde)",
+          "mark_complete": "Sağ tık → Tamamlandı Olarak İşaretle",
+          "effect": [
+            "Üstü çizilir",
+            "Listeden çıkar (görünüme göre)",
+            "% Tamamlandı = 100",
+            "Durum = Tamamlandı"
+          ],
+          "undo": "Tekrar işaretle = Tamamlanmadı"
+        },
+        
+        "task_status": {
+          "name": "Durum Güncelleme",
+          "tracking": [
+            {
+              "status": "Başlanmadı",
+              "description": "Henüz başlamadınız",
+              "percent": "0%"
+            },
+            {
+              "status": "Devam Ediyor",
+              "description": "Üzerinde çalışıyorsunuz",
+              "percent": "1-99%"
+            },
+            {
+              "status": "Tamamlandı",
+              "description": "İş bitti",
+              "percent": "100%"
+            },
+            {
+              "status": "Erteleniyor",
+              "description": "Geçici olarak durdu",
+              "use": "Engel var"
+            },
+            {
+              "status": "Bekleniyor",
+              "description": "Başkasının işini bekliyor",
+              "use": "Bağımlılık var"
+            }
+          ],
+          "update": "Düzenli olarak durumu güncelleyin"
+        },
+        
+        "organizing_tasks": {
+          "categories": {
+            "name": "Kategoriler",
+            "use": "Görevleri temaya göre grupla",
+            "examples": [
+              "🔴 Acil",
+              "🟢 İş",
+              "🔵 Kişisel",
+              "🟡 Proje X",
+              "🟣 Uzun vadeli"
+            ]
+          },
+          
+          "folders": {
+            "name": "Görev Klasörleri",
+            "create": "Sağ tık → Yeni Klasör",
+            "structure": [
+              "📁 Görevler",
+              "  └─ 📁 İş Görevleri",
+              "  └─ 📁 Ev Görevleri",
+              "  └─ 📁 Proje A",
+              "  └─ 📁 Proje B"
+            ],
+            "move": "Sürükle-bırak ile taşı"
+          },
+          
+          

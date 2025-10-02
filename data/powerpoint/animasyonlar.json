@@ -1,0 +1,598 @@
+{
+  "id": "powerpoint-animasyonlar",
+  "title": "Microsoft PowerPoint - Animasyonlar Menüsü",
+  "description": "Slayt içindeki nesnelere hareket ve efekt ekleme. Metinleri, resimleri, şekilleri canlandırın.",
+  "difficulty": "Orta",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "animasyon-temelleri",
+      "title": "🎬 Animasyon Temelleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Animasyonlar, slayt içindeki öğelere hareket ve efekt kazandırır. Geçişlerden farkı: Geçişler slaytlar arasında, animasyonlar slayt içindedir.",
+        
+        "difference": {
+          "transitions": "Slayt A → Slayt B geçişi",
+          "animations": "Slayt içindeki öğelerin hareketi"
+        },
+        
+        "animation_types": [
+          {
+            "type": "Giriş (Entrance)",
+            "icon": "⭐ Yeşil yıldız",
+            "description": "Nesne slayta girişi",
+            "when": "Nesne görünür hale gelir",
+            "examples": ["Belirme", "Uçuş", "Bölme", "Döndürme giriş"]
+          },
+          {
+            "type": "Vurgu (Emphasis)",
+            "icon": "⚡ Sarı şimşek",
+            "description": "Nesne zaten görünür, dikkat çekmek için",
+            "when": "Dikkati belirli bir öğeye çekmek",
+            "examples": ["Nabız", "Renk darbesi", "Büyütme/Küçültme", "Dönme"]
+          },
+          {
+            "type": "Çıkış (Exit)",
+            "icon": "🔴 Kırmızı kapı",
+            "description": "Nesne slayttan çıkar",
+            "when": "Nesneyi gizlemek",
+            "examples": ["Kayboluş", "Uçarak çıkış", "Yok olma"]
+          },
+          {
+            "type": "Hareket Yolu (Motion Path)",
+            "icon": "🛤️ Yol işareti",
+            "description": "Nesne belirlenen yolda hareket eder",
+            "when": "Özel hareketler gerektiğinde",
+            "examples": ["Düz çizgi", "Ark", "Spiral", "Özel yol çizme"]
+          }
+        ],
+        
+        "applying_animation": {
+          "steps": [
+            "1. Animasyon eklemek istediğiniz nesneyi seçin",
+            "2. Animasyonlar sekmesine gidin",
+            "3. Animasyon galerisinden bir efekt seçin",
+            "4. Önizleme otomatik oynar"
+          ],
+          "shortcut": "Nesne seçili → Animasyon sekmesi → Efekt",
+          "preview": "Animasyonlar → Önizleme (veya efekte tekrar tıklayın)"
+        }
+      }
+    },
+    
+    {
+      "id": "animasyon-galerisi",
+      "title": "🎨 Animasyon Galerisi",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "PowerPoint'te 100'den fazla hazır animasyon efekti vardır. En çok kullanılanlar:",
+        
+        "popular_entrance": [
+          {
+            "name": "Belirme (Appear)",
+            "description": "Anında görünür, animasyon yok",
+            "use": "Basit, hızlı görünüm",
+            "speed": "Anında"
+          },
+          {
+            "name": "Geç (Fade)",
+            "description": "Yavaşça belirginleşir",
+            "use": "Yumuşak, profesyonel giriş",
+            "recommended": "✓ En yaygın"
+          },
+          {
+            "name": "Uçuş (Fly In)",
+            "description": "Belirtilen yönden içeri uçar",
+            "variants": "8 yön: sol, sağ, üst, alt, köşeler",
+            "use": "Dikkat çekici giriş"
+          },
+          {
+            "name": "Bölme (Split)",
+            "description": "Ortadan ikiye bölünerek açılır",
+            "variants": "Yatay, Dikey",
+            "use": "Dramatik açılış"
+          },
+          {
+            "name": "Sil (Wipe)",
+            "description": "Bir yönden silgi gibi açılır",
+            "variants": "4 yön",
+            "smooth": true
+          },
+          {
+            "name": "Şekil (Shape)",
+            "description": "Daire, elmas gibi şekillerden açılır",
+            "variants": "Daire, Artı, Elmas",
+            "creative": true
+          },
+          {
+            "name": "Tekerlek (Wheel)",
+            "description": "Saat yönünde dönerek açılır",
+            "spokes": "1-8 sözcük",
+            "eye_catching": true
+          },
+          {
+            "name": "Yakınlaştırma (Zoom)",
+            "description": "Küçükten büyüyerek görünür",
+            "use": "Vurgulamak için"
+          }
+        ],
+        
+        "popular_emphasis": [
+          {
+            "name": "Nabız (Pulse)",
+            "description": "Büyüyüp küçülür",
+            "repeat": "Tekrarlanabilir",
+            "use": "Dikkat çekmek"
+          },
+          {
+            "name": "Renk Darbesi (Color Pulse)",
+            "description": "Renk değişimi",
+            "effect": "Geçici renk vurgusu"
+          },
+          {
+            "name": "Büyütme/Küçültme (Grow/Shrink)",
+            "description": "Boyut değişimi",
+            "use": "Önem vurgusu"
+          },
+          {
+            "name": "Dönme (Spin)",
+            "description": "Kendi etrafında döner",
+            "fun": true
+          },
+          {
+            "name": "Sallanma (Teeter)",
+            "description": "Sağa-sola sallanır",
+            "playful": true
+          }
+        ],
+        
+        "popular_exit": [
+          {
+            "name": "Kayboluş (Fade)",
+            "description": "Yavaşça kaybolur",
+            "use": "Yumuşak çıkış",
+            "recommended": "✓"
+          },
+          {
+            "name": "Uçarak Çıkış (Fly Out)",
+            "description": "Belirtilen yöne uçar",
+            "variants": "8 yön"
+          },
+          {
+            "name": "Yok Olma (Disappear)",
+            "description": "Anında kaybolur",
+            "instant": true
+          }
+        ],
+        
+        "motion_paths": [
+          {
+            "name": "Çizgiler",
+            "options": ["Sağ", "Sol", "Yukarı", "Aşağı"]
+          },
+          {
+            "name": "Arklar",
+            "options": ["Sağa Doğru", "Sola Doğru", "Yukarı", "Aşağı"]
+          },
+          {
+            "name": "Dönüşler",
+            "options": ["Şekiller", "Döngüler", "Spiral"]
+          },
+          {
+            "name": "Özel Yol",
+            "description": "Fareyle serbest çizim",
+            "path": "Animasyonlar → Daha Fazla → Özel Yol"
+          }
+        ],
+        
+        "more_animations": {
+          "button": "Daha Fazla Giriş/Vurgu/Çıkış Efektleri",
+          "count": "100+ animasyon",
+          "preview": "Her efekti tıklayınca önizleme görürsünüz"
+        }
+      }
+    },
+    
+    {
+      "id": "animasyon-ayarlari",
+      "title": "⚙️ Animasyon Ayarları",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Her animasyonu özelleştirerek tam istediğiniz gibi yapın.",
+        
+        "effect_options": {
+          "button": "Animasyonlar → Efekt Seçenekleri",
+          "access": "Animasyon Bölmesi'nden ok → Efekt Seçenekleri",
+          
+          "common_settings": [
+            {
+              "setting": "Yön",
+              "description": "Animasyonun geldiği/gittiği yön",
+              "examples": "Soldan, Sağdan, Üstten, Alttan",
+              "note": "Her efektte farklı seçenekler"
+            },
+            {
+              "setting": "Ses",
+              "description": "Animasyon sırasında ses çalma",
+              "options": ["Ses Yok", "Alkış", "Kamera", "Davul", "Diğer..."],
+              "professional_tip": "İş sunumlarında kullanmayın"
+            },
+            {
+              "setting": "Animasyondan Sonra",
+              "description": "Animasyon tamamlandıktan sonra ne olsun",
+              "options": [
+                "Değiştirme",
+                "Sonraki fare tıklamasında gizle",
+                "Sonraki animasyondan sonra gizle",
+                "Renk değiştir"
+              ],
+              "use_case": "Ardışık bilgi gösterimi"
+            }
+          ]
+        },
+        
+        "timing": {
+          "name": "Zamanlama",
+          "settings": [
+            {
+              "setting": "Başlangıç",
+              "options": [
+                {
+                  "option": "Tıklamada",
+                  "description": "Fare tıklaması veya ok tuşuyla başlar",
+                  "default": true,
+                  "control": "Sunucu kontrolünde"
+                },
+                {
+                  "option": "Öncekiyle Birlikte",
+                  "description": "Önceki animasyonla aynı anda başlar",
+                  "use": "Eş zamanlı hareketler",
+                  "example": "Metin + Resim birlikte"
+                },
+                {
+                  "option": "Öncekinden Sonra",
+                  "description": "Önceki animasyon bitince otomatik başlar",
+                  "use": "Ardışık animasyonlar",
+                  "benefit": "Tıklama gerektirmez"
+                }
+              ]
+            },
+            {
+              "setting": "Süre",
+              "description": "Animasyonun tamamlanma süresi",
+              "range": "0.1 - 59 saniye",
+              "default": "0.5 saniye (Çok Hızlı - Orta arası)",
+              "presets": [
+                "Çok Hızlı (0.5 sn)",
+                "Hızlı (1 sn)",
+                "Orta (2 sn)",
+                "Yavaş (3 sn)",
+                "Çok Yavaş (5 sn)"
+              ]
+            },
+            {
+              "setting": "Gecikme",
+              "description": "Animasyon tetiklenmeden önce bekleme süresi",
+              "range": "0 - 59 saniye",
+              "use": "Zamanlama ince ayarı",
+              "example": "2 saniye bekle, sonra başla"
+            }
+          ]
+        },
+        
+        "reorder": {
+          "name": "Animasyon Sırasını Değiştirme",
+          "description": "Animasyonların oynatılma sırası",
+          "methods": [
+            {
+              "method": "Animasyon Bölmesi",
+              "how": "Sürükle-bırak ile sıra değiştir",
+              "easiest": true
+            },
+            {
+              "method": "Öne/Arkaya Taşı",
+              "buttons": ["Öne Taşı", "Arkaya Taşı"],
+              "location": "Animasyonlar sekmesi → Zamanlama grubu"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "animasyon-bolmesi",
+      "title": "📋 Animasyon Bölmesi",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Slayttaki tüm animasyonları tek yerden görüp yönetin.",
+        
+        "opening": {
+          "path": "Animasyonlar → Animasyon Bölmesi",
+          "location": "Ekranın sağ tarafında açılır"
+        },
+        
+        "features": [
+          {
+            "feature": "Animasyon Listesi",
+            "description": "Tüm animasyonlar sırayla gösterilir",
+            "icons": {
+              "entrance": "⭐ Yeşil yıldız",
+              "emphasis": "⚡ Sarı yıldız",
+              "exit": "🔴 Kırmızı yıldız",
+              "motion": "🛤️ Yol"
+            },
+            "info": "Her satırda: İkon + Nesne adı + Zamanlama çubukları"
+          },
+          {
+            "feature": "Zamanlama Çubukları",
+            "description": "Animasyonların zamanlaması görsel olarak",
+            "colors": {
+              "orange": "Tıklamada başlar",
+              "green": "Otomatik başlar (Öncekinden Sonra)",
+              "red": "Diğeriyle birlikte"
+            }
+          },
+          {
+            "feature": "Sağ Tık Menüsü",
+            "options": [
+              "Efekt Seçenekleri",
+              "Zamanlama",
+              "Kaldır",
+              "Kopyala/Yapıştır",
+              "Başlangıç (Tıklamada/Birlikte/Sonra)"
+            ]
+          },
+          {
+            "feature": "Tümünü Oynat",
+            "description": "Tüm animasyonları sırayla oynatır",
+            "button": "Bölmenin üstündeki Oynat butonu"
+          },
+          {
+            "feature": "Sürükle-Bırak",
+            "description": "Animasyon sırasını değiştirmek için",
+            "how": "Animasyonu tutup yukarı/aşağı sürükle"
+          }
+        ],
+        
+        "tips": [
+          "Numaralar animasyon sırasını gösterir",
+          "Çift tık ile Efekt Seçenekleri açılır",
+          "Ctrl+D ile animasyonu kopyalayabilirsiniz",
+          "Delete tuşu ile seçili animasyonu silin"
+        ]
+      }
+    },
+    
+    {
+      "id": "ileri-teknikler",
+      "title": "🚀 İleri Teknikler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Profesyonel animasyonlar için ileri seviye teknikler.",
+        
+        "text_animation": {
+          "name": "Metin Animasyonu",
+          "description": "Metin kutularını kelime kelime, harf harf veya paragraf paragraf canlandırma",
+          
+          "settings": {
+            "path": "Animasyon seç → Efekt Seçenekleri → Metin Animasyonu sekmesi",
+            "options": [
+              {
+                "option": "Tüm Metin Birlikte",
+                "description": "Tüm metin bir anda",
+                "default": true
+              },
+              {
+                "option": "Kelimeye Göre",
+                "description": "Her kelime ayrı ayrı",
+                "delay": "Kelimeler arası gecikme ayarlanabilir (%)",
+                "use": "Vurgulamak için"
+              },
+              {
+                "option": "Harfe Göre",
+                "description": "Her harf tek tek",
+                "delay": "Harfler arası gecikme (%)",
+                "use": "Dramatik efekt, dikkat çekici"
+              },
+              {
+                "option": "Düzey Başına",
+                "description": "Madde işareti seviyelerine göre",
+                "use": "Listeler için ideal",
+                "example": "Ana madde → Alt maddeler"
+              }
+            ]
+          },
+          
+          "reverse_order": {
+            "name": "Ters Sıra",
+            "what": "Animasyonu sondan başa oynat",
+            "use_case": "Alttan üste doğru liste"
+          }
+        },
+        
+        "animation_painter": {
+          "name": "Animasyon Boyama",
+          "description": "Bir nesnenin animasyonunu diğerine kopyala",
+          "how": [
+            "1. Animasyonlu nesneyi seçin",
+            "2. Animasyonlar → Animasyon Boyama",
+            "3. Kopyalamak istediğiniz nesneye tıklayın"
+          ],
+          "benefit": "Hızlı ve tutarlı animasyon",
+          "tip": "ESC tuşu ile çık"
+        },
+        
+        "triggers": {
+          "name": "Tetikleyiciler",
+          "description": "Animasyonu belirli bir nesneye tıklayınca başlat",
+          "path": "Animasyon Bölmesi → Animasyon seç → Tetikle → Tıklayınca",
+          
+          "use_cases": [
+            {
+              "scenario": "İnteraktif Quiz",
+              "example": "Butona tıklayınca cevap görünsün"
+            },
+            {
+              "scenario": "Açıklama Baloncukları",
+              "example": "Resme tıklayınca açıklama çıksın"
+            },
+            {
+              "scenario": "Menü Navigasyonu",
+              "example": "Menü öğesine tıklayınca içerik değişsin"
+            }
+          ],
+          
+          "tip": "Etkileşimli e-öğrenme modülleri için çok kullanışlı"
+        },
+        
+        "combining_animations": {
+          "name": "Animasyonları Birleştirme",
+          "description": "Aynı nesneye birden fazla animasyon",
+          "how": "Nesne seçili → Animasyon Ekle (ilkini silmez)",
+          
+          "examples": [
+            {
+              "combo": "Giriş + Vurgu + Çıkış",
+              "effect": "Gelir → Dikkat çeker → Gider",
+              "use": "Geçici bilgi gösterimi"
+            },
+            {
+              "combo": "Hareket Yolu + Döndürme",
+              "effect": "Hareket ederken döner",
+              "use": "Dinamik objeler"
+            },
+            {
+              "combo": "Büyütme + Renk Darbesi",
+              "effect": "Büyürken renk değişir",
+              "use": "Güçlü vurgulama"
+            }
+          ],
+          
+          "order_matters": "Animasyonların sırası önemli!"
+        },
+        
+        "chart_animation": {
+          "name": "Grafik Animasyonu",
+          "description": "Grafikleri parça parça gösterme",
+          "options": [
+            "Grafik öğesi olarak (Her çubuk/dilim ayrı)",
+            "Seriye göre (Her veri serisi ayrı)",
+            "Kategoriye göre (Her kategori ayrı)",
+            "Öğe olarak (Grafik bir bütün)"
+          ],
+          "path": "Grafik seç → Animasyon ekle → Efekt Seçenekleri → Grafik Animasyonu",
+          "benefit": "Verileri adım adım açıklama"
+        }
+      }
+    }
+  ],
+  
+  "best_practices": {
+    "title": "Animasyon Kullanımında En İyi Uygulamalar",
+    "rules": [
+      {
+        "rule": "Amacınız Ne?",
+        "description": "Her animasyonun bir amacı olmalı",
+        "valid_reasons": [
+          "Dikkat çekmek",
+          "Bilgiyi adım adım vermek",
+          "Karmaşık içeriği basitleştirmek",
+          "Sürecigöstermek"
+        ],
+        "avoid": "Sadece 'güzel görünsün' diye animasyon eklemeyin"
+      },
+      {
+        "rule": "Az Animasyon > Çok Animasyon",
+        "description": "Her şeyi canlandırmayın",
+        "guideline": "Slayt başına 3-5 animasyon ideal",
+        "reason": "Aşırı animasyon yorar ve dikkati dağıtır"
+      },
+      {
+        "rule": "Tutarlı Hız",
+        "description": "Tüm animasyonlarda benzer süre",
+        "recommendation": "0.5-1 saniye arası",
+        "avoid": "Bazı hızlı, bazı yavaş"
+      },
+      {
+        "rule": "Basit Efektler",
+        "description": "Geç, Belirme, Uçuş gibi basit efektler",
+        "professional": "✓",
+        "avoid": "Aşırı döner, sallanır efektler"
+      },
+      {
+        "rule": "Okunabilirlik Öncelik",
+        "description": "Animasyon metni okunamaz hale getirmemeli",
+        "test": "İzleyici metni rahatça okuyabiliyor mu?"
+      },
+      {
+        "rule": "Ses Dikkatli",
+        "description": "Genelde ses efekti kullanmayın",
+        "exception": "Eğitim veya eğlence sunumları",
+        "never": "Her animasyonda ses olmasın"
+      }
+    ]
+  },
+  
+  "common_scenarios": [
+    {
+      "scenario": "Madde İşaretli Liste",
+      "recommendation": {
+        "animation": "Geç veya Uçuş (Soldan)",
+        "timing": "Öncekinden Sonra",
+        "text": "Düzey Başına",
+        "duration": "0.5 saniye",
+        "benefit": "Dinleyici odaklanır, not alır"
+      }
+    },
+    {
+      "scenario": "Önemli İstatistik Vurgulama",
+      "recommendation": {
+        "animation": "Nabız veya Büyütme",
+        "timing": "Tıklamada",
+        "duration": "1 saniye",
+        "benefit": "Dikkat çeker"
+      }
+    },
+    {
+      "scenario": "Süreç Gösterme",
+      "recommendation": {
+        "animation": "Uçuş + Hareket Yolu",
+        "timing": "Öncekinden Sonra (Ardışık)",
+        "benefit": "Akış görselleşir"
+      }
+    },
+    {
+      "scenario": "Grafik Sunumu",
+      "recommendation": {
+        "animation": "Sil (Soldan)",
+        "chart_animation": "Seriye göre",
+        "timing": "Tıklamada",
+        "benefit": "Veriyi parça parça açıklama"
+      }
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Animasyonlar = Slayt içi hareket",
+      "4 tür: Giriş, Vurgu, Çıkış, Hareket Yolu",
+      "Animasyon Bölmesi ile detaylı kontrol",
+      "Az ve önemli yerlerde kullan",
+      "Tutarlılık ve basitlik profesyonellik kazandırır"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Animasyon önizleme", "keys": "Animasyona tekrar tıkla"},
+    {"action": "Animasyon Bölmesi", "keys": "Alt, A, P"},
+    {"action": "Animasyon ekle", "keys": "Shift + F5 (Gösteriden önce test)"}
+  ]
+}

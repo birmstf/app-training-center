@@ -1,0 +1,1103 @@
+{
+  "id": "photoshop-katmanlar",
+  "title": "Adobe Photoshop - Katmanlar (Layers)",
+  "description": "Katman yönetimi, karıştırma modları, maskeler ve yıkıcı olmayan düzenleme teknikleri.",
+  "difficulty": "Orta",
+  "estimated_time": "4 saat",
+  "version": "Adobe Photoshop 2024",
+  
+  "sections": [
+    {
+      "id": "katman-temelleri",
+      "title": "📚 Katman Temelleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Katmanlar, Photoshop'un en önemli özelliğidir. Yıkıcı olmayan düzenlemenin temelidir.",
+        
+        "what_are_layers": {
+          "definition": "Üst üste konmuş şeffaf filmler gibi",
+          "analogy": "Animasyondaki cel katmanları",
+          "independence": "Her katman bağımsız düzenlenebilir",
+          "power": "Sınırsız esneklik, yıkıcı olmayan iş akışı"
+        },
+        
+        "why_layers": {
+          "reasons": [
+            "Yıkıcı olmayan düzenleme - Her şey geri alınabilir",
+            "Organizasyon - Her öğe ayrı katmanda",
+            "Esneklik - Katmanları aç/kapat, sıralamayı değiştir",
+            "Karıştırma - Blend modes ile yaratıcı efektler",
+            "Maskeler - Bölgesel düzenlemeler",
+            "Efektler - Layer styles ile kolayca efekt"
+          ]
+        },
+        
+        "layers_panel": {
+          "name": "Layers Panel",
+          "shortcut": "F7",
+          "location": "Genelde sağ alt köşe",
+          "essential": "✓✓✓ En önemli panel",
+          
+          "anatomy": {
+            "thumbnail": "Katman içeriğinin küçük önizlemesi",
+            "name": "Katman adı (çift tıkla değiştir)",
+            "visibility": "Göz ikonu - Göster/gizle",
+            "lock": "Kilit ikonu - Düzenlemeyi engelle",
+            "blend_mode": "Karıştırma modu dropdown",
+            "opacity": "Opaklık yüzdesi",
+            "fill": "Dolgu yüzdesi (efektler etkilenmez)"
+          }
+        },
+        
+        "layer_types": [
+          {
+            "type": "Background",
+            "icon": "🔒 Kilit ikonu",
+            "description": "Varsayılan alt katman, kilitli",
+            "transparency": "Şeffaflık yok",
+            "convert": "İkona çift tıkla → Normal katmana dönüştür"
+          },
+          {
+            "type": "Normal Layer",
+            "description": "Standart piksel katmanı",
+            "use": "Çizim, boyama, fotoğraf düzenleme"
+          },
+          {
+            "type": "Adjustment Layer",
+            "icon": "⚙️ Yarım daire",
+            "description": "Yıkıcı olmayan renk/ton ayarı",
+            "non_destructive": "✓✓✓ Kesinlikle kullanın"
+          },
+          {
+            "type": "Text Layer",
+            "icon": "T",
+            "description": "Düzenlenebilir metin",
+            "vector": "Vektör tabanlı"
+          },
+          {
+            "type": "Shape Layer",
+            "description": "Vektör şekiller",
+            "scalable": "Kayıpsız ölçeklenebilir"
+          },
+          {
+            "type": "Smart Object",
+            "icon": "📄 Küçük ikon sağ altta",
+            "description": "Koruma altındaki katman",
+            "benefit": "Kayıpsız dönüştürme",
+            "essential": "✓✓ Çok önemli"
+          },
+          {
+            "type": "Group",
+            "icon": "📁 Klasör",
+            "description": "Katmanları organize etme",
+            "shortcut": "Ctrl/Cmd + G"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "katman-islemleri",
+      "title": "🛠️ Katman İşlemleri",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Katmanlar üzerinde temel işlemler ve yönetim.",
+        
+        "creating_layers": {
+          "methods": [
+            {
+              "method": "Yeni Katman",
+              "shortcut": "Ctrl/Cmd + Shift + N",
+              "path": "Layer → New → Layer",
+              "quick": "Layers panelinde + ikonu"
+            },
+            {
+              "method": "Katman Kopyala",
+              "shortcut": "Ctrl/Cmd + J",
+              "description": "Seçili katmanı çoğalt",
+              "with_selection": "Seçim varsa sadece seçili alan kopyalanır",
+              "fast": "✓ En hızlı yöntem"
+            },
+            {
+              "method": "Kes ve Yapıştır",
+              "shortcut": "Ctrl/Cmd + X, sonra Ctrl/Cmd + V",
+              "result": "Yeni katmanda yapıştırır"
+            },
+            {
+              "method": "Via Copy/Cut",
+              "path": "Layer → New → Layer via Copy/Cut",
+              "use": "Seçimi yeni katmana taşı"
+            }
+          ]
+        },
+        
+        "selecting_layers": {
+          "single": "Katmana tıkla",
+          "multiple": "Ctrl/Cmd + Tıkla (birden fazla)",
+          "range": "Shift + Tıkla (aralık)",
+          "all": "Ctrl/Cmd + Alt + A",
+          
+          "auto_select": {
+            "name": "Auto-Select",
+            "location": "Options bar (Move Tool aktifken)",
+            "checked": "Tıkladığınız pikselin katmanı seçilir",
+            "unchecked": "Manuel katman seçimi gerekir",
+            "modifier": "Ctrl/Cmd basılı = Geçici auto-select"
+          }
+        },
+        
+        "organizing_layers": {
+          "renaming": {
+            "method": "İsme çift tıkla",
+            "importance": "✓✓ Mutlaka anlamlı isimler verin",
+            "bad": "Layer 1, Layer 2, Layer 3",
+            "good": "Arka Plan, Kişi, Gölge, Metin, Logo"
+          },
+          
+          "grouping": {
+            "name": "Gruplar (Groups)",
+            "shortcut": "Ctrl/Cmd + G",
+            "description": "İlgili katmanları klasörle",
+            "collapse": "Ok işareti → Aç/kapat",
+            "benefits": [
+              "Düzenli panel",
+              "Toplu işlem (grup üzerinde)",
+              "Kolayca göster/gizle",
+              "Blend mode ve opacity gruba uygulanabilir"
+            ],
+            "nesting": "Alt gruplar oluşturabilirsiniz"
+          },
+          
+          "color_coding": {
+            "name": "Renk Kodlama",
+            "method": "Katmana sağ tık → Color",
+            "colors": "8 renk seçeneği",
+            "use": "Kategorilere ayırma",
+            "example": "Kırmızı = Düzeltilecek, Yeşil = Tamamlandı"
+          },
+          
+          "locking": {
+            "name": "Kilitleme",
+            "types": [
+              "Lock Transparent Pixels - Sadece dolu piksellere boya",
+              "Lock Image Pixels - Boyamayı engelle",
+              "Lock Position - Hareket ettirmeyi engelle",
+              "Lock All - Tüm düzenlemeleri engelle"
+            ]
+          }
+        },
+        
+        "layer_operations": {
+          "duplicate": {
+            "shortcut": "Ctrl/Cmd + J",
+            "or": "Katmanı sürükle + butonuna",
+            "use": "Yedek almak, deneme yapmak"
+          },
+          
+          "delete": {
+            "shortcut": "Delete tuşu",
+            "or": "Katmanı çöp kutusuna sürükle",
+            "warning": "Background katmanı silinemez"
+          },
+          
+          "merge": {
+            "name": "Birleştirme",
+            "operations": [
+              {
+                "action": "Merge Down",
+                "shortcut": "Ctrl/Cmd + E",
+                "description": "Alttaki katmanla birleştir"
+              },
+              {
+                "action": "Merge Visible",
+                "shortcut": "Ctrl/Cmd + Shift + E",
+                "description": "Görünür tüm katmanları birleştir"
+              },
+              {
+                "action": "Flatten Image",
+                "description": "Tüm katmanları tek katmana indir",
+                "warning": "⚠️ Yıkıcı işlem - Yedek alın!",
+                "use": "Final export öncesi"
+              },
+              {
+                "action": "Stamp Visible",
+                "shortcut": "Ctrl/Cmd + Alt + Shift + E",
+                "description": "Görünürleri yeni katmanda birleştir",
+                "non_destructive": "✓ Orijinaller korunur",
+                "recommended": "✓✓ En iyi yöntem"
+              }
+            ]
+          },
+          
+          "reordering": {
+            "drag_drop": "Sürükle-bırak ile sıralamayı değiştir",
+            "shortcuts": [
+              "Ctrl/Cmd + ] = Bir üst katmana",
+              "Ctrl/Cmd + [ = Bir alt katmana",
+              "Ctrl/Cmd + Shift + ] = En üste",
+              "Ctrl/Cmd + Shift + [ = En alta (Background üstü)"
+            ]
+          },
+          
+          "alignment": {
+            "name": "Hizalama ve Dağıtma",
+            "requirement": "2+ katman seçili",
+            "path": "Layer → Align",
+            "options": [
+              "Align Top/Bottom/Left/Right/Center",
+              "Distribute Horizontally/Vertically"
+            ],
+            "toolbar": "Move Tool aktifken Options bar'da",
+            "use": "Öğeleri düzenli yerleştirme"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "blend-modes",
+      "title": "🎨 Karıştırma Modları (Blend Modes)",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Katmanların birbirleriyle nasıl etkileşeceğini belirleyen güçlü özellik.",
+        
+        "what_are_blend_modes": {
+          "definition": "Üst katmanın alt katmanla nasıl karışacağı",
+          "location": "Layers panelinde dropdown (varsayılan: Normal)",
+          "total": "27 farklı mod",
+          "power": "İnanılmaz yaratıcı efektler"
+        },
+        
+        "categories": [
+          {
+            "category": "Normal Modes",
+            "modes": [
+              {
+                "mode": "Normal",
+                "description": "Standart, karışım yok",
+                "use": "Varsayılan"
+              },
+              {
+                "mode": "Dissolve",
+                "description": "Rastgele piksel deseni",
+                "use": "Özel efektler"
+              }
+            ]
+          },
+          
+          {
+            "category": "Darken Modes (Koyulaştırma)",
+            "description": "Koyu pikseller görünür, açıklar kaybolur",
+            "modes": [
+              {
+                "mode": "Darken",
+                "description": "Her pikselden daha koyusunu seçer",
+                "use": "Genel koyulaştırma"
+              },
+              {
+                "mode": "Multiply",
+                "description": "Renkleri çarpar, her zaman koyulaştırır",
+                "use": "Gölge ekleme, koyulaştırma",
+                "popular": "✓✓ Çok kullanılır",
+                "example": "Beyaz görünmez olur"
+              },
+              {
+                "mode": "Color Burn",
+                "description": "Kontrast artırarak koyulaştırır",
+                "intense": "Çok güçlü",
+                "use": "Dramatik efektler"
+              },
+              {
+                "mode": "Linear Burn",
+                "description": "Parlaklığı azaltarak koyulaştırır"
+              },
+              {
+                "mode": "Darker Color",
+                "description": "Tamamen koyu renk"
+              }
+            ]
+          },
+          
+          {
+            "category": "Lighten Modes (Aydınlatma)",
+            "description": "Açık pikseller görünür, koyular kaybolur",
+            "modes": [
+              {
+                "mode": "Lighten",
+                "description": "Her pikselden daha açığını seçer"
+              },
+              {
+                "mode": "Screen",
+                "description": "Renkleri tersine çarpar, aydınlatır",
+                "use": "Işık efektleri, lens flare",
+                "popular": "✓✓ Çok kullanılır",
+                "example": "Siyah görünmez olur"
+              },
+              {
+                "mode": "Color Dodge",
+                "description": "Kontrast azaltarak aydınlatır",
+                "intense": "Çok parlak",
+                "use": "Parlama efektleri"
+              },
+              {
+                "mode": "Linear Dodge (Add)",
+                "description": "Değerleri toplar",
+                "brightest": "En parlak"
+              },
+              {
+                "mode": "Lighter Color",
+                "description": "Tamamen açık renk"
+              }
+            ]
+          },
+          
+          {
+            "category": "Contrast Modes (Kontrast)",
+            "description": "Hem koyulaştırır hem aydınlatır",
+            "modes": [
+              {
+                "mode": "Overlay",
+                "description": "Multiply + Screen kombinasyonu",
+                "use": "Doku ekleme, renk efektleri",
+                "popular": "✓✓✓ En popüler",
+                "preserves": "Orta tonları korur"
+              },
+              {
+                "mode": "Soft Light",
+                "description": "Yumuşak ışık, hafif kontrast",
+                "use": "İnce renk düzeltme",
+                "gentle": "Overlay'den yumuşak",
+                "popular": "✓✓ Çok kullanılır"
+              },
+              {
+                "mode": "Hard Light",
+                "description": "Sert ışık, güçlü kontrast",
+                "intense": "Overlay'den güçlü"
+              },
+              {
+                "mode": "Vivid Light",
+                "description": "Color Dodge + Burn"
+              },
+              {
+                "mode": "Linear Light",
+                "description": "Linear Dodge + Burn"
+              },
+              {
+                "mode": "Pin Light",
+                "description": "Lighten + Darken"
+              },
+              {
+                "mode": "Hard Mix",
+                "description": "Posterize efekti"
+              }
+            ]
+          },
+          
+          {
+            "category": "Comparative Modes (Karşılaştırmalı)",
+            "modes": [
+              {
+                "mode": "Difference",
+                "description": "Renk farklarını gösterir",
+                "use": "Katman hizalama kontrolü",
+                "technical": "Aynı piksel = Siyah"
+              },
+              {
+                "mode": "Exclusion",
+                "description": "Difference'a benzer, daha yumuşak"
+              },
+              {
+                "mode": "Subtract",
+                "description": "Renkleri çıkarır"
+              },
+              {
+                "mode": "Divide",
+                "description": "Renkleri böler, aydınlatır"
+              }
+            ]
+          },
+          
+          {
+            "category": "Color Modes (Renk)",
+            "description": "Renk ve ton bilgisini ayrıştırır",
+            "modes": [
+              {
+                "mode": "Hue",
+                "description": "Sadece renk tonu",
+                "use": "Renk değiştirme",
+                "preserves": "Parlaklık ve doygunluk korunur"
+              },
+              {
+                "mode": "Saturation",
+                "description": "Sadece doygunluk",
+                "use": "Renk canlılığı ayarı"
+              },
+              {
+                "mode": "Color",
+                "description": "Renk + Doygunluk",
+                "use": "Renklendirme, boyama",
+                "popular": "✓✓ Sık kullanılır",
+                "preserves": "Parlaklık korunur"
+              },
+              {
+                "mode": "Luminosity",
+                "description": "Sadece parlaklık",
+                "use": "Ton düzeltme",
+                "preserves": "Renk korunur"
+              }
+            ]
+          }
+        ],
+        
+        "practical_uses": [
+          {
+            "use": "Gölge Ekleme",
+            "mode": "Multiply",
+            "workflow": "Gri fırça ile boya → Multiply → Opacity azalt"
+          },
+          {
+            "use": "Işık Efekti",
+            "mode": "Screen",
+            "workflow": "Beyaz/sarı fırça → Screen"
+          },
+          {
+            "use": "Doku Ekleme",
+            "mode": "Overlay veya Soft Light",
+            "workflow": "Doku görseli → Overlay → Opacity ayarla"
+          },
+          {
+            "use": "Renklendirme (Siyah-Beyaz'a)",
+            "mode": "Color",
+            "workflow": "Renkli katman → Color mode"
+          },
+          {
+            "use": "Renk Düzeltme",
+            "mode": "Soft Light",
+            "workflow": "Düzeltme katmanı → Soft Light"
+          }
+        ],
+        
+        "tips": [
+          "Blend mode değiştirmek için Shift + / Shift -",
+          "Opacity ile kombine kullanın (ince ayar)",
+          "Deneme yapın! Her mod farklı sonuç verir",
+          "Fill vs Opacity: Fill layer style'ları etkilemez"
+        ]
+      }
+    },
+    
+    {
+      "id": "layer-masks",
+      "title": "🎭 Katman Maskeleri (Layer Masks)",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yıkıcı olmayan düzenlemenin kalbi. Sil tuşu yerine maskeleme!",
+        
+        "what_are_masks": {
+          "definition": "Katmanın hangi kısımlarının görüneceğini kontrol eder",
+          "non_destructive": "✓✓✓ Pikseller silinmez, gizlenir",
+          "reversible": "Tamamen geri alınabilir",
+          "grayscale": "Siyah-beyaz gradient ile çalışır",
+          
+          "rules": [
+            "Siyah = Gizler (0% görünür)",
+            "Beyaz = Gösterir (100% görünür)",
+            "Gri = Kısmen gösterir (opaklık)",
+            "Gradient = Yumuşak geçiş"
+          ]
+        },
+        
+        "creating_masks": {
+          "methods": [
+            {
+              "method": "Add Layer Mask Butonu",
+              "location": "Layers panelinde alt kısım",
+              "icon": "Dikdörtgen içinde daire",
+              "default": "Beyaz maske (tümü görünür)"
+            },
+            {
+              "method": "Seçimle Maske",
+              "workflow": [
+                "1. Seçim yap",
+                "2. Layer Mask butonu",
+                "3. Seçili alan görünür, dışı gizli"
+              ],
+              "alt": "Alt + Layer Mask = Tersi (seçim gizli)"
+            },
+            {
+              "method": "Menüden",
+              "path": "Layer → Layer Mask → Reveal All/Hide All"
+            }
+          ]
+        },
+        
+        "editing_masks": {
+          "select_mask": "Maske küçük resmine tıkla (beyaz çerçeve görünür)",
+          "paint": "Fırça ile boya (Siyah gizler, Beyaz gösterir)",
+          "gradient": "Gradient Tool ile yumuşak geçiş",
+          
+          "tools": [
+            "Brush Tool (B) - En çok kullanılan",
+            "Gradient Tool (G) - Yumuşak geçişler",
+            "Selection Tools - Geometrik maskeler",
+            "Eraser (Maskelerde fırça gibi çalışır)"
+          ],
+          
+          "shortcuts": [
+            "D = Varsayılan renkler (Siyah/Beyaz)",
+            "X = Ön/Arka plan rengini değiştir",
+            "[ ] = Fırça boyutu",
+            "0-9 = Fırça opaklığı (3 = %30)"
+          ]
+        },
+        
+        "mask_operations": {
+          "view_mask": {
+            "name": "Maskeyi Görüntüleme",
+            "shortcut": "Alt + Maske küçük resmine tıkla",
+            "shows": "Sadece maske (siyah-beyaz)",
+            "benefit": "Net görüş"
+          },
+          
+          "disable_mask": {
+            "name": "Maskeyi Devre Dışı Bırak",
+            "shortcut": "Shift + Maske küçük resmine tıkla",
+            "shows": "Kırmızı X işareti",
+            "use": "Önce/sonra karşılaştırma"
+          },
+          
+          "delete_mask": {
+            "name": "Maskeyi Sil",
+            "method": "Maskeyi çöp kutusuna sürükle",
+            "options": ["Delete - Maskeyi sil", "Apply - Maskeyi uygula (kalıcı)"]
+          },
+          
+          "link_unlink": {
+            "name": "Katman ve Maskeyi Bağla/Ayır",
+            "icon": "Zincir ikonu (katman ve maske arasında)",
+            "linked": "Katman hareket ettirilince maske de gelir",
+            "unlinked": "Katman ve maske bağımsız hareket eder",
+            "use": "Doku yerleştirme"
+          },
+          
+          "refine_mask": {
+            "name": "Maskeyi İyileştir",
+            "path": "Select and Mask workspace",
+            "use": "Saç, kürk gibi detaylar"
+          }
+        },
+        
+        "mask_adjustments": {
+          "density": {
+            "name": "Density (Yoğunluk)",
+            "description": "Maskenin genel gücü",
+            "range": "0-100%",
+            "use": "Maskeyi zayıflatma/güçlendirme"
+          },
+          
+          "feather": {
+            "name": "Feather (Yumuşatma)",
+            "description": "Maske kenarlarını yumuşat",
+            "range": "0-250 px",
+            "use": "Sert kenarları yumuşatma"
+          },
+          
+          "properties_panel": {
+            "access": "Maskeyi seç → Properties paneli",
+            "adjustments": [
+              "Density slider",
+              "Feather slider",
+              "Refine butonu (Select and Mask)",
+              "Color Range (renk bazlı maske)",
+              "Invert (maskeyi ters çevir)"
+            ]
+          }
+        },
+        
+        "advanced_techniques": [
+          {
+            "technique": "Gradient Mask",
+            "use": "Yumuşak karışım, vinyetleme",
+            "workflow": [
+              "1. Layer Mask ekle",
+              "2. Gradient Tool seç (G)",
+              "3. Siyah-beyaz gradient sürükle",
+              "4. Yumuşak geçiş oluşur"
+            ],
+            "example": "Gökyüzü karıştırma"
+          },
+          {
+            "technique": "Luminosity Mask",
+            "use": "Parlaklık bazlı seçim",
+            "workflow": [
+              "1. Ctrl/Cmd + Katman küçük resimine tıkla (luminance seçimi)",
+              "2. Layer Mask ekle",
+              "3. Parlak alanlar seçilir"
+            ],
+            "advanced": "Çok güçlü, profesyonel teknik"
+          },
+          {
+            "technique": "Double Processing",
+            "use": "Farklı düzenlemeler farklı alanlarda",
+            "workflow": [
+              "1. Katmanı çoğalt (Ctrl/Cmd + J)",
+              "2. Her katmana farklı düzenleme",
+              "3. Üst katmana maske",
+              "4. İstediğiniz alanları göster"
+            ],
+            "example": "Gökyüzü koyu, ön plan parlak"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "smart-objects",
+      "title": "🧠 Smart Objects",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Katmanları koruma altına alarak kayıpsız düzenleme yapmanızı sağlar.",
+        
+        "what_are_smart_objects": {
+          "definition": "İçeriği korunan, kayıpsız düzenlenebilir katman",
+          "icon": "📄 Küçük ikon sağ altta (küçük resimde)",
+          "benefit": "Sınırsız dönüştürme, orijinal kalite korunur",
+          "essential": "✓✓✓ Profesyonel iş akışının olmazsa olmazı"
+        },
+        
+        "benefits": [
+          "Kayıpsız dönüştürme (Scale, Rotate, Warp)",
+          "Orijinal içerik korunur",
+          "Smart Filters (yıkıcı olmayan filtreler)",
+          "Tek düzenleme, çoklu kullanım",
+          "Vektör ve RAW koruması"
+        ],
+        
+        "creating_smart_objects": {
+          "methods": [
+            {
+              "method": "Convert to Smart Object",
+              "path": "Katmana sağ tık → Convert to Smart Object",
+              "shortcut": "Ctrl/Cmd + [ katman seçiliyken sağ tık ]",
+              "recommended": "✓ En yaygın yöntem"
+            },
+            {
+              "method": "Dosya Olarak Yerleştir",
+              "path": "File → Place Embedded/Linked",
+              "use": "Harici dosyaları getirme",
+              "auto": "Otomatik Smart Object olur"
+            },
+            {
+              "method": "Kopyala-Yapıştır",
+              "from": "Illustrator'dan kopyala → Photoshop'a yapıştır",
+              "option": "Smart Object olarak yapıştır seçeneği"
+            }
+          ]
+        },
+        
+        "embedded_vs_linked": {
+          "embedded": {
+            "name": "Embedded (Gömülü)",
+            "description": "İçerik PSD dosyasının içinde",
+            "pros": "Taşınabilir, her şey tek dosyada",
+            "cons": "Dosya boyutu büyür",
+            "default": "Varsayılan"
+          },
+          
+          "linked": {
+            "name": "Linked (Bağlantılı)",
+            "description": "Harici dosyaya bağlantı",
+            "pros": "Küçük dosya boyutu, merkezi güncelleme",
+            "cons": "Harici dosya gerekli",
+            "use": "Çoklu kullanım, ekip çalışması",
+            "icon": "🔗 Zincir ikonu"
+          }
+        },
+        
+        "editing_smart_objects": {
+          "open": "Küçük resme çift tıkla",
+          "opens": "Ayrı pencerede (.psb dosyası)",
+          "edit": "İçeriği düzenleyin",
+          "save": "Ctrl/Cmd + S ile kaydet",
+          "auto_update": "Ana belgede otomatik güncellenir",
+          
+          "tip": "Harici uygulamada da düzenleyebilirsiniz (AI dosyası gibi)"
+        },
+        
+        "smart_filters": {
+          "name": "Smart Filters",
+          "description": "Yıkıcı olmayan filtre uygulama",
+          "requirement": "Katman Smart Object olmalı",
+          
+          "how_to_use": [
+            "1. Katmanı Smart Object'e dönüştür",
+            "2. Filter menüsünden filtre uygula",
+            "3. Filtre Smart Filter olarak eklenir",
+            "4. İstediğiniz zaman değiştirilebilir veya silinebilir"
+          ],
+          
+          "features": [
+            "Yıkıcı değil - Her zaman değiştirilebilir",
+            "Filtre maskesi - Bölgesel uygulama",
+            "Blend mode - Filtreyi karıştırma",
+            "Opacity - Filtre gücü",
+            "Göster/gizle - Aç/kapat",
+            "Yeniden düzenle - Ayarları değiştir"
+          ],
+          
+          "workflow": [
+            "1. Smart Object oluştur",
+            "2. Filter → Blur → Gaussian Blur (örnek)",
+            "3. Filtre Smart Filters olarak görünür",
+            "4. Filtre adına çift tıkla = Ayarları değiştir",
+            "5. Filtre maskesi = Bölgesel kontrol"
+          ]
+        },
+        
+        "operations": [
+          {
+            "operation": "Duplicate Smart Object",
+            "method": "Ctrl/Cmd + J",
+            "linked": "Aynı içeriğe bağlı - Biri düzenlenince hepsi değişir",
+            "use": "Aynı içerik, farklı efektler"
+          },
+          {
+            "operation": "New Smart Object via Copy",
+            "method": "Sağ tık → New Smart Object via Copy",
+            "independent": "Bağımsız kopya",
+            "use": "Farklı içerikler"
+          },
+          {
+            "operation": "Replace Contents",
+            "method": "Sağ tık → Replace Contents",
+            "use": "İçeriği başka dosya ile değiştir",
+            "preserves": "Tüm dönüştürmeler ve efektler korunur",
+            "powerful": "✓✓ Çok güçlü"
+          },
+          {
+            "operation": "Export Contents",
+            "method": "Sağ tık → Export Contents",
+            "use": "İçeriği ayrı dosya olarak kaydet"
+          },
+          {
+            "operation": "Rasterize",
+            "method": "Sağ tık → Rasterize Layer",
+            "warning": "⚠️ Smart Object özelliklerini kaybeder",
+            "when": "Son aşamada, gerekirse"
+          }
+        ],
+        
+        "use_cases": [
+          "Logo yerleştirme - Kayıpsız ölçeklendirme",
+          "Çoklu kullanım - Tek düzenleme, her yerde güncelleme",
+          "Filtre denemeleri - Yıkıcı olmadan test",
+          "RAW dosya koruması - Camera RAW ayarları",
+          "Vektör grafik - AI/EPS dosyaları",
+          "Mockup şablonları - Replace Contents ile"
+        ],
+        
+        "best_practices": [
+          "Logo/grafikleri hep Smart Object olarak yerleştirin",
+          "Ölçeklendirme öncesi Smart Object'e dönüştürün",
+          "Filtre uygulamadan önce Smart Object yapın",
+          "Harici dosyalar için Linked kullanın"
+        ]
+      }
+    },
+    
+    {
+      "id": "layer-styles",
+      "title": "✨ Layer Styles (Katman Stilleri)",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Tek tıkla gölge, parlama, doku gibi efektler ekleyin.",
+        
+        "what_are_layer_styles": {
+          "definition": "Katmanlara uygulanan yıkıcı olmayan efektler",
+          "icon": "fx",
+          "non_destructive": "✓ İstediğiniz zaman değiştirin veya silin",
+          "path": "Layer → Layer Style veya fx butonuna tıkla"
+        },
+        
+        "available_styles": [
+          {
+            "style": "Drop Shadow (Gölge)",
+            "description": "Altına gölge düşürme",
+            "use": "Derinlik, ayrım",
+            "settings": [
+              "Blend Mode - Gölge karıştırma",
+              "Opacity - Gölge şeffaflığı",
+              "Angle - Işık açısı",
+              "Distance - Uzaklık",
+              "Spread - Yayılma",
+              "Size - Bulanıklık"
+            ],
+            "popular": "✓✓✓ En çok kullanılan"
+          },
+          {
+            "style": "Inner Shadow",
+            "description": "İçe gölge",
+            "use": "İçe gömülü görünüm"
+          },
+          {
+            "style": "Outer Glow",
+            "description": "Dışa doğru parlama",
+            "use": "Neon efekti, vurgu",
+            "settings": [
+              "Blend Mode",
+              "Opacity",
+              "Color/Gradient",
+              "Size - Parlama boyutu"
+            ]
+          },
+          {
+            "style": "Inner Glow",
+            "description": "İçe doğru parlama",
+            "use": "İç ışıma"
+          },
+          {
+            "style": "Bevel and Emboss",
+            "description": "3D kabartma efekti",
+            "use": "Buton, logo, 3D görünüm",
+            "types": [
+              "Outer Bevel",
+              "Inner Bevel",
+              "Emboss",
+              "Pillow Emboss",
+              "Stroke Emboss"
+            ],
+            "complex": "En karmaşık style"
+          },
+          {
+            "style": "Satin",
+            "description": "İpeksi doku",
+            "use": "Özel yüzeyler"
+          },
+          {
+            "style": "Color Overlay",
+            "description": "Renk kaplaması",
+            "use": "Hızlı renk değişimi",
+            "blend_mode": "Karıştırma modu seçilebilir"
+          },
+          {
+            "style": "Gradient Overlay",
+            "description": "Gradient kaplaması",
+            "use": "Metalik efekt, gökkuşağı",
+            "customizable": "Kendi gradient'inizi oluşturun"
+          },
+          {
+            "style": "Pattern Overlay",
+            "description": "Desen kaplaması",
+            "use": "Doku ekleme",
+            "patterns": "Kendi desenlerinizi kullanabilirsiniz"
+          },
+          {
+            "style": "Stroke",
+            "description": "Çerçeve/kontur",
+            "use": "Kenar çizgisi",
+            "fill_types": ["Color", "Gradient", "Pattern"],
+            "position": ["Outside", "Inside", "Center"]
+          }
+        ],
+        
+        "applying_styles": {
+          "methods": [
+            {
+              "method": "fx Butonu",
+              "location": "Layers panelinde alt kısım",
+              "click": "Tıkla → İstediğiniz style'ı seç"
+            },
+            {
+              "method": "Layer Menüsü",
+              "path": "Layer → Layer Style"
+            },
+            {
+              "method": "Çift Tıklama",
+              "where": "Katman küçük resmine (boş alana) çift tıkla",
+              "quick": "✓ En hızlı"
+            }
+          ]
+        },
+        
+        "layer_style_dialog": {
+          "name": "Layer Style Dialog Box",
+          "left_panel": "Stiller listesi (checkbox ile aç/kapat)",
+          "right_panel": "Seçili stil ayarları",
+          "preview": "Gerçek zamanlı önizleme",
+          "multiple": "Birden fazla stil aynı anda uygulanabilir"
+        },
+        
+        "managing_styles": {
+          "copy_paste": {
+            "name": "Copy/Paste Layer Style",
+            "copy": "Katmana sağ tık → Copy Layer Style",
+            "paste": "Hedef katmana sağ tık → Paste Layer Style",
+            "use": "Aynı efekti başka katmanlara"
+          },
+          
+          "show_hide": {
+            "name": "Göster/Gizle",
+            "method": "Göz ikonuna tıkla (fx yanında)",
+            "use": "Önce/sonra karşılaştırma"
+          },
+          
+          "edit": {
+            "name": "Düzenleme",
+            "method": "fx ikonuna veya stil adına çift tıkla",
+            "anytime": "İstediğiniz zaman değiştirin"
+          },
+          
+          "clear": {
+            "name": "Silme",
+            "method": "Sağ tık → Clear Layer Style",
+            "or": "fx'i çöp kutusuna sürükle"
+          },
+          
+          "create_layer": {
+            "name": "Create Layer",
+            "path": "Sağ tık → Create Layer",
+            "converts": "Her stili ayrı katmana dönüştürür",
+            "use": "İleri düzey düzenleme için"
+          }
+        },
+        
+        "saving_styles": {
+          "name": "Stilleri Kaydetme",
+          "presets": "Styles panelinden (Window → Styles)",
+          "save": [
+            "1. İstediğiniz stili oluşturun",
+            "2. Styles panelinde New Style",
+            "3. İsim verin, kaydedin"
+          ],
+          "use": "Tekrar tekrar kullanım",
+          "library": "Stil kütüphanesi oluşturun"
+        },
+        
+        "global_light": {
+          "name": "Global Light",
+          "description": "Tüm gölge/parlamaların ışık açısı",
+          "setting": "Use Global Light checkbox",
+          "benefit": "Tutarlı ışık yönü",
+          "angle": "Tek yerden tüm katmanları değiştir"
+        },
+        
+        "tips": [
+          "Az çoktur - Aşırı efekt amatörce görünür",
+          "Drop Shadow en yararlı ve doğal",
+          "Global Light açık tutun (tutarlılık)",
+          "Opacity ile ince ayar yapın",
+          "Smart Object üzerinde de çalışır"
+        ]
+      }
+    }
+  ],
+  
+  "best_practices": [
+    {
+      "practice": "Katmanları İsimlendirin",
+      "importance": "✓✓✓ Zorunlu",
+      "bad": "Layer 1, Layer 2, Layer Copy 3",
+      "good": "Arka Plan, Kişi Siluet, Gölge, Logo, Başlık Metni",
+      "benefit": "Hızlı bulma, profesyonel iş akışı"
+    },
+    {
+      "practice": "Gruplar Kullanın",
+      "description": "İlgili katmanları grupla",
+      "example": "Grup: Header → (Logo, Metin, Arka Plan)",
+      "shortcut": "Ctrl/Cmd + G",
+      "collapse": "Düzenli, temiz Layers paneli"
+    },
+    {
+      "practice": "Smart Objects Tercih Edin",
+      "when": "Ölçeklendirme, dönüştürme yapacaksanız",
+      "benefit": "Kalite kaybı yok",
+      "rule": "Logo, grafik, harici dosyalar → Smart Object"
+    },
+    {
+      "practice": "Layer Mask > Eraser",
+      "never": "Asla Eraser Tool kullanmayın",
+      "always": "Her zaman Layer Mask kullanın",
+      "reason": "Yıkıcı olmayan, geri alınabilir"
+    },
+    {
+      "practice": "Adjustment Layers",
+      "description": "Image → Adjustments yerine Adjustment Layer",
+      "benefit": "Yıkıcı olmayan renk düzeltme",
+      "flexible": "İstediğiniz zaman değiştirin"
+    },
+    {
+      "practice": "Blend Modes'u Deneyin",
+      "tip": "Shift + / Shift - ile hızlıca gez",
+      "creative": "Sınırsız yaratıcı olasılıklar",
+      "experiment": "Deneme yapmaktan korkmayın"
+    },
+    {
+      "practice": "Stamp Visible",
+      "shortcut": "Ctrl/Cmd + Alt + Shift + E",
+      "description": "Görünür katmanları yeni katmanda birleştir",
+      "use": "Filtre/düzenleme için geçici birleştirme",
+      "preserves": "Orijinal katmanlar korunur"
+    }
+  ],
+  
+  "common_mistakes": [
+    {
+      "mistake": "Katman İsimlendirmemek",
+      "problem": "Layer 1, Layer 2, Layer 3... Hangi hangisi?",
+      "solution": "Her katmana anlamlı isim verin"
+    },
+    {
+      "mistake": "Flatten Image Çok Erken",
+      "problem": "Tüm esneklik kaybedilir",
+      "solution": "Son export öncesine kadar katmanları koruyun"
+    },
+    {
+      "mistake": "Eraser Kullanımı",
+      "problem": "Kalıcı silme, geri alınamaz",
+      "solution": "Layer Mask kullanın"
+    },
+    {
+      "mistake": "Smart Object Kullanmamak",
+      "problem": "Ölçeklendirmede kalite kaybı",
+      "solution": "Dönüştürme öncesi Smart Object'e çevirin"
+    },
+    {
+      "mistake": "Çok Fazla Layer Style",
+      "problem": "Amatörce, karışık görünüm",
+      "solution": "Minimal ve ince efektler"
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Katmanlar = Photoshop'un kalbi, yıkıcı olmayan düzenleme",
+      "Smart Objects = Kayıpsız dönüştürme, her projede kullanın",
+      "Layer Masks = Eraser yerine maskeleme, her zaman geri alınabilir",
+      "Blend Modes = 27 farklı karıştırma, sınırsız yaratıcılık",
+      "Layer Styles = Hızlı efektler, yıkıcı olmayan",
+      "Organizasyon = İsimlendirme + Gruplama = Profesyonel iş akışı"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Layers paneli", "keys": "F7"},
+    {"action": "Yeni katman", "keys": "Ctrl/Cmd + Shift + N"},
+    {"action": "Katman kopyala", "keys": "Ctrl/Cmd + J"},
+    {"action": "Grupla", "keys": "Ctrl/Cmd + G"},
+    {"action": "Grup aç", "keys": "Ctrl/Cmd + Shift + G"},
+    {"action": "Merge Down", "keys": "Ctrl/Cmd + E"},
+    {"action": "Stamp Visible", "keys": "Ctrl/Cmd + Alt + Shift + E"},
+    {"action": "Layer Mask ekle", "keys": "Layers panelinde buton"},
+    {"action": "Maskeyi görüntüle", "keys": "Alt + Maske küçük resmine tıkla"},
+    {"action": "Maskeyi devre dışı", "keys": "Shift + Maske küçük resmine tıkla"},
+    {"action": "Layer Style aç", "keys": "Katmana çift tıkla"},
+    {"action": "Katman sıralama", "keys": "Ctrl/Cmd + [ veya ]"},
+    {"action": "Blend mode değiştir", "keys": "Shift + / Shift -"}
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "id": "word-postalar",
+  "title": "Microsoft Word - Postalar Menüsü",
+  "description": "Mail merge (adres mektup birleştirme), toplu e-posta gönderimi, zarflar ve etiketler oluşturma. Kişiselleştirilmiş toplu belge üretimi için güçlü araçlar.",
+  "difficulty": "Orta",
+  "estimated_time": "2.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "mail-merge-temelleri",
+      "title": "📬 Mail Merge (Adres Mektup Birleştirme) Temelleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Mail merge, bir şablon belgeyi veri kaynağındaki bilgilerle birleştirerek her alıcı için kişiselleştirilmiş belgeler oluşturur. Toplu mektup, e-posta, zarf ve etiket hazırlamak için kullanılır.",
+        
+        "components": {
+          "main_document": {
+            "description": "Şablon belge (mektup, e-posta, zarf, etiket)",
+            "content": "Sabit metin + Birleştirme alanları"
+          },
+          "data_source": {
+            "description": "Alıcı bilgilerini içeren veri kaynağı",
+            "formats": [
+              "Excel tablosu",
+              "Access veritabanı",
+              "Outlook kişileri",
+              "Word tablosu",
+              "CSV dosyası"
+            ]
+          },
+          "merged_document": {
+            "description": "Her alıcı için oluşturulan son belge",
+            "output": "Ayrı belgeler veya tek dosyada"
+          }
+        },
+        
+        "process_overview": {
+          "steps": [
+            "1. Belge türünü seçin",
+            "2. Ana belgeyi hazırlayın",
+            "3. Veri kaynağını bağlayın",
+            "4. Birleştirme alanlarını ekleyin",
+            "5. Sonuçları önizleyin",
+            "6. Birleştirmeyi tamamlayın"
+          ],
+          "wizard": "Postalar → Adres Mektup Birleştirmeyi Başlat → Adım Adım Sihirbaz"
+        },
+        
+        "document_types": [
+          {
+            "type": "Mektuplar",
+            "description": "Kişiselleştirilmiş mektuplar",
+            "example": "Fatura bildirimi, davetiye, bilgilendirme"
+          },
+          {
+            "type": "E-posta İletileri",
+            "description": "Toplu e-posta gönderimi",
+            "requirement": "Outlook yapılandırması gerekli"
+          },
+          {
+            "type": "Zarflar",
+            "description": "Alıcı adresi basılı zarflar",
+            "sizes": "DL, C4, C5, C6, özel boyut"
+          },
+          {
+            "type": "Etiketler",
+            "description": "Adres etiketleri, ürün etiketleri",
+            "brands": "Avery, A4/Letter sayfa etiketleri"
+          },
+          {
+            "type": "Dizin",
+            "description": "Katalog veya liste oluşturma",
+            "usage": "Tüm kayıtlar tek belgede"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "veri-kaynagi",
+      "title": "📊 Veri Kaynağı Yönetimi",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Başarılı bir mail merge için düzgün yapılandırılmış veri kaynağı kritiktir.",
+        
+        "creating_data_source": {
+          "excel": {
+            "best_practices": [
+              "İlk satır alan adları (başlıklar) olmalı",
+              "Boşluksuz, kısa alan adları kullanın",
+              "Her sütun tek tip veri içermeli",
+              "Boş satır ve sütun bırakmayın",
+              "Sayfa adını 'Veri' veya 'Liste' yapın"
+            ],
+            "field_names": {
+              "good": ["Ad", "Soyad", "Eposta", "Telefon"],
+              "avoid": ["Müşteri Adı", "E-posta Adresi", "Cep Tel."]
+            }
+          },
+          "new_list": {
+            "menu": "Postalar → Alıcıları Seç → Yeni Liste Yaz",
+            "fields": [
+              "Unvan", "Ad", "Soyad",
+              "Şirket", "Adres", "Şehir",
+              "İl", "Posta Kodu", "Ülke",
+              "Telefon", "E-posta"
+            ],
+            "save": ".mdb formatında kaydedilir"
+          },
+          "outlook_contacts": {
+            "menu": "Postalar → Alıcıları Seç → Outlook Kişilerinden Seç",
+            "requirements": "Outlook profili yapılandırılmış olmalı",
+            "folders": "Farklı kişi klasörleri seçilebilir"
+          }
+        },
+        
+        "connecting_data": {
+          "steps": [
+            "Postalar → Alıcıları Seç → Var Olan Listeyi Kullan",
+            "Dosya türünü seçin",
+            "Veri dosyasını bulun ve seçin",
+            "Tablo veya aralığı onaylayın",
+            "İlk satır başlık içerir kutusunu işaretleyin"
+          ],
+          "data_verification": {
+            "preview": "Postalar → Alıcı Listesini Düzenle",
+            "actions": [
+              "Kayıtları sıralama",
+              "Kayıtları filtreleme",
+              "Belirli kayıtları hariç tutma",
+              "Kopyaları bulma ve kaldırma"
+            ]
+          }
+        },
+        
+        "filtering_sorting": {
+          "filter": {
+            "menu": "Postalar → Alıcı Listesini Düzenle → Filtrele",
+            "operators": ["Eşittir", "Eşit değildir", "Küçüktür", "Büyüktür", "Boş", "Boş değil"],
+            "multiple": "VE/VEYA operatörleri ile birden fazla koşul"
+          },
+          "sort": {
+            "menu": "Postalar → Alıcı Listesini Düzenle → Sırala",
+            "options": ["Artan", "Azalan"],
+            "multiple_fields": "Birincil, ikincil, üçüncül sıralama"
+          },
+          "find_duplicates": {
+            "menu": "Postalar → Alıcı Listesini Düzenle → Kopyaları Bul",
+            "action": "Aynı e-posta veya adrese sahip kayıtları bulur"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "birlestirme-alanlari",
+      "title": "🔗 Birleştirme Alanları",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Birleştirme alanları, veri kaynağından gelen bilgilerin belgeye ekleneceği yerleri belirtir.",
+        
+        "inserting_fields": {
+          "basic_fields": {
+            "menu": "Postalar → Birleştirme Alanı Ekle",
+            "format": "«Alan_Adı»",
+            "steps": [
+              "İmleci alan eklenmesini istediğiniz yere getirin",
+              "Birleştirme Alanı Ekle'den alanı seçin",
+              "Alan «» işaretleri içinde görünür"
+            ]
+          },
+          "address_block": {
+            "menu": "Postalar → Adres Bloğu",
+            "includes": [
+              "Alıcı adı",
+              "Şirket adı",
+              "Posta adresi",
+              "Şehir, il, posta kodu"
+            ],
+            "formatting": "Ülkeye göre format seçimi"
+          },
+          "greeting_line": {
+            "menu": "Postalar → Selamlama Satırı",
+            "formats": [
+              "Sayın Bay/Bayan Soyadı",
+              "Sevgili Ad",
+              "Merhaba Ad Soyad"
+            ],
+            "fallback": "Eksik isimler için yedek selamlama"
+          }
+        },
+        
+        "conditional_fields": {
+          "if_then_else": {
+            "menu": "Postalar → Kurallar → Eğer...O Zaman...Değilse",
+            "syntax": "{ IF Alan = \"Değer\" \"Doğru\" \"Yanlış\" }",
+            "example": "Cinsiyete göre 'Bay/Bayan' kullanımı",
+            "use_cases": [
+              "Farklı selamlamalar",
+              "Koşullu içerik",
+              "Özel mesajlar"
+            ]
+          },
+          "skip_record": {
+            "menu": "Postalar → Kurallar → Kaydı Atla",
+            "usage": "Belirli koşullarda kaydı atlama"
+          },
+          "next_record": {
+            "menu": "Postalar → Kurallar → Sonraki Kayıt",
+            "usage": "Aynı belgede birden fazla kayıt"
+          }
+        },
+        
+        "formatting_fields": {
+          "text_format": {
+            "uppercase": "\\* Upper",
+            "lowercase": "\\* Lower",
+            "title_case": "\\* Caps",
+            "first_capital": "\\* FirstCap"
+          },
+          "number_format": {
+            "currency": "\\# \"₺#,##0.00\"",
+            "percentage": "\\# \"0%\"",
+            "decimal": "\\# \"0.00\""
+          },
+          "date_format": {
+            "long": "\\@ \"d MMMM yyyy\"",
+            "short": "\\@ \"dd/MM/yyyy\"",
+            "custom": "\\@ \"dddd, d MMMM yyyy\""
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "zarflar-etiketler",
+      "title": "✉️ Zarflar ve Etiketler",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word, standart zarf boyutlarında ve etiket yapılarında yazdırma için özel düzenlemeler sunar.",
+        
+        "envelopes": {
+          "single": {
+            "menu": "Postalar → Zarflar",
+            "fields": [
+              "Teslim adresi",
+              "Gönderen adresi"
+            ],
+            "options": {
+              "sizes": ["DL (110x220mm)", "C6 (114x162mm)", "C5 (162x229mm)", "C4 (229x324mm)"],
+              "feed": "Yazıcı besleme yönü",
+              "return_address": "Varsayılan gönderen adresi",
+              "omit_return": "Gönderen adresini yazdırma"
+            }
+          },
+          "mail_merge": {
+            "steps": [
+              "Postalar → Adres Mektup Birleştirmeyi Başlat → Zarflar",
+              "Zarf boyutunu seçin",
+              "Veri kaynağını bağlayın",
+              "Adres bloğu ekleyin",
+              "Gönderen adresi ekleyin",
+              "Birleştirmeyi tamamlayın"
+            ]
+          }
+        },
+        
+        "labels": {
+          "single_label": {
+            "menu": "Postalar → Etiketler",
+            "use": "Aynı etiketin tam sayfa kopyası"
+          },
+          "different_labels": {
+            "steps": [
+              "Postalar → Etiketler → Tam sayfa aynı etiket kutusunu kaldırın",
+              "Her etikete farklı bilgi girin"
+            ]
+          },
+          "mail_merge_labels": {
+            "steps": [
+              "Postalar → Adres Mektup Birleştirmeyi Başlat → Etiketler",
+              "Etiket markası ve ürün numarasını seçin",
+              "Veri kaynağını bağlayın",
+              "İlk etikete alanları yerleştirin",
+              "Etiketleri Güncelleştir ile tüm etiketlere kopyalayın",
+              "Birleştirmeyi tamamlayın"
+            ]
+          },
+          "label_vendors": {
+            "popular": [
+              "Avery (en yaygın)",
+              "3M",
+              "Herma",
+              "Zweckform"
+            ],
+            "custom": "Yeni Etiket ile özel boyut tanımlama"
+          }
+        },
+        
+        "printing_tips": [
+          "Önce normal kağıda test baskı alın",
+          "Etiket sayfasını doğru yöne yerleştirin",
+          "Yazıcı ayarlarında kağıt türünü 'Etiket' seçin",
+          "Tam sayfa yazdırma için kenar boşluklarını kontrol edin",
+          "Lazer yazıcı için lazer etiket kullanın"
+        ]
+      }
+    },
+    
+    {
+      "id": "birlestirme-tamamlama",
+      "title": "✅ Birleştirmeyi Tamamlama",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Birleştirme işleminin son aşaması, önizleme ve çıktı üretmedir.",
+        
+        "preview": {
+          "navigation": "Postalar → Sonuçları Önizle",
+          "controls": [
+            "İlk kayıt",
+            "Önceki kayıt",
+            "Kayıt numarası girişi",
+            "Sonraki kayıt",
+            "Son kayıt"
+          ],
+          "check": [
+            "Alan değerlerinin doğruluğu",
+            "Boş alanlar",
+            "Biçimlendirme sorunları",
+            "Sayfa düzeni"
+          ]
+        },
+        
+        "finish_options": {
+          "edit_individual": {
+            "menu": "Postalar → Son İşlem ve Birleştirme → Tek Tek Belgeleri Düzenle",
+            "result": "Her kayıt için ayrı bölüm içeren yeni belge",
+            "usage": "Son düzenlemeler için"
+          },
+          "print": {
+            "menu": "Postalar → Son İşlem ve Birleştirme → Belgeleri Yazdır",
+            "options": [
+              "Tümü",
+              "Geçerli kayıt",
+              "Kayıt aralığı"
+            ]
+          },
+          "email": {
+            "menu": "Postalar → Son İşlem ve Birleştirme → E-posta İletileri Gönder",
+            "requirements": [
+              "Outlook yapılandırması",
+              "E-posta adresi alanı",
+              "MAPI uyumlu e-posta istemcisi"
+            ],
+            "settings": {
+              "to": "E-posta adresi alanı",
+              "subject": "Konu satırı",
+              "format": "HTML, Düz metin, Ek"
+            }
+          }
+        },
+        
+        "troubleshooting": [
+          {
+            "problem": "Boş alanlar görünüyor",
+            "solution": "Veri kaynağında eksik bilgileri kontrol edin"
+          },
+          {
+            "problem": "Tarih formatı yanlış",
+            "solution": "Alan koduna tarih formatı ekleyin: \\@ \"dd/MM/yyyy\""
+          },
+          {
+            "problem": "E-posta gönderilmiyor",
+            "solution": "Outlook'un varsayılan e-posta programı olduğundan emin olun"
+          },
+          {
+            "problem": "Türkçe karakterler bozuk",
+            "solution": "Veri kaynağının UTF-8 kodlamasında olduğundan emin olun"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "practice_exercises": [
+    {
+      "title": "Toplu Davetiye Gönderimi",
+      "steps": [
+        "Excel'de davetli listesi oluşturun (Ad, Soyad, E-posta)",
+        "Word'de davetiye şablonu tasarlayın",
+        "Mail merge ile veri kaynağını bağlayın",
+        "Selamlama satırı ve kişi bilgilerini ekleyin",
+        "E-posta olarak gönderin"
+      ]
+    },
+    {
+      "title": "Adres Etiketleri",
+      "steps": [
+        "Müşteri adres listesini hazırlayın",
+        "A4 sayfa 21'li etiket seçin",
+        "Adres bloğu oluşturun",
+        "Etiketleri önizleyin",
+        "Yazdırın veya PDF olarak kaydedin"
+      ]
+    },
+    {
+      "title": "Kişiselleştirilmiş Sertifikalar",
+      "steps": [
+        "Katılımcı listesini oluşturun",
+        "Sertifika şablonu tasarlayın",
+        "Ad, tarih ve başarı alanlarını ekleyin",
+        "Her katılımcı için ayrı PDF oluşturun"
+      ]
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "Alt+Shift+K", "action": "Sonuçları önizle"},
+    {"keys": "Alt+Shift+N", "action": "Birleştirme alanı ekle"},
+    {"keys": "Alt+Shift+M", "action": "Belgeleri yazdır"},
+    {"keys": "Alt+F9", "action": "Alan kodlarını göster/gizle"}
+  ],
+  
+  "resources": {
+    "videos": [
+      "Mail Merge Temelleri",
+      "Excel'den Veri Çekme",
+      "Toplu E-posta Gönderimi"
+    ],
+    "templates": [
+      "Mektup şablonu",
+      "Etiket şablonu",
+      "Sertifika şablonu"
+    ],
+    "microsoft_support": "https://support.microsoft.com/tr-tr/office/word-de-adres-mektup-birleştirme"
+  },
+  
+  "next_menu": {
+    "id": "gozden-gecir",
+    "name": "Gözden Geçir Menüsü",
+    "description": "Yazım denetimi, değişiklikleri izleme, yorumlar ve belge karşılaştırma"
+  }
+}

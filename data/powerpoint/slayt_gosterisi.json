@@ -1,0 +1,540 @@
+{
+  "id": "powerpoint-slayt-gosterisi",
+  "title": "Microsoft PowerPoint - Slayt Gösterisi Menüsü",
+  "description": "Sunumunuzu canlı olarak gösterme, prova etme ve kaydetme araçları.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "2 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "gosteriye-baslama",
+      "title": "▶️ Gösteriye Başlama",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumunuzu farklı modlarda göstermeye başlayın.",
+        
+        "presentation_modes": [
+          {
+            "mode": "Baştan",
+            "description": "Sunumu ilk slayttan başlatır",
+            "shortcut": "F5",
+            "path": "Slayt Gösterisi → Baştan",
+            "use": "Resmi sunumlar, tüm sunum",
+            "fullscreen": true,
+            "default": true
+          },
+          {
+            "mode": "Geçerli Slayttan",
+            "description": "Seçili slayttan başlatır",
+            "shortcut": "Shift + F5",
+            "path": "Slayt Gösterisi → Geçerli Slayttan",
+            "use": "Test, prova, belirli bir bölümden devam",
+            "tip": "En çok kullanılan mod!"
+          },
+          {
+            "mode": "Sunan Görünümü",
+            "description": "İki ekranda sunum (Sunucu + İzleyici ekranı)",
+            "shortcut": "Alt + F5",
+            "features": [
+              "İzleyiciler tam ekran görür",
+              "Sunucu: Notlar, sonraki slayt, zamanlayıcı görür",
+              "Önizleme ve kontrol paneli",
+              "Kalem ve işaretleme araçları"
+            ],
+            "requirements": "Çift monitör veya projektör",
+            "professional": true
+          },
+          {
+            "mode": "Özel Slayt Gösterisi",
+            "description": "Seçili slaytlardan özel sunum oluştur",
+            "path": "Slayt Gösterisi → Özel Slayt Gösterisi → Yeni",
+            "use_case": "Farklı hedef kitleler için aynı dosyadan farklı sunumlar",
+            "example": "50 slaytlık sunumdan müşteri A için 20, müşteri B için 15 slayt seç"
+          },
+          {
+            "mode": "Çevrimiçi Sunum",
+            "description": "İnternet üzerinden canlı sunum yap",
+            "path": "Slayt Gösterisi → Çevrimiçi Sunum",
+            "features": [
+              "Uzaktaki izleyiciler katılabilir",
+              "Link paylaşımı",
+              "Gerçek zamanlı izleme",
+              "Soru-cevap paneli"
+            ],
+            "requirement": "Microsoft 365 hesabı"
+          }
+        ],
+        
+        "during_presentation": {
+          "title": "Sunum Sırasında Kontroller",
+          "basic_navigation": [
+            {
+              "action": "Sonraki slayt",
+              "keys": ["Enter", "Boşluk", "Sağ ok", "Aşağı ok", "Fare tık"],
+              "note": "En yaygın kullanım"
+            },
+            {
+              "action": "Önceki slayt",
+              "keys": ["Backspace", "Sol ok", "Yukarı ok", "Page Up"],
+              "note": "Geri dönme"
+            },
+            {
+              "action": "Belirli slayta git",
+              "keys": "Numara + Enter",
+              "example": "5 + Enter = 5. slayta git",
+              "tip": "Hızlı atlama"
+            },
+            {
+              "action": "Sunumu bitir",
+              "keys": ["Esc", "- (tire)", "Sağ tık → Slayt Gösterisini Sonlandır"]
+            }
+          ],
+          
+          "screen_controls": [
+            {
+              "action": "Ekranı siyah yap",
+              "keys": "B veya . (nokta)",
+              "use": "Dikkati topla, ara ver",
+              "toggle": "Tekrar bas = normale dön"
+            },
+            {
+              "action": "Ekranı beyaz yap",
+              "keys": "W veya , (virgül)",
+              "use": "Işıklı ortam için"
+            },
+            {
+              "action": "Tüm slaytları göster",
+              "keys": "G veya Ctrl + S",
+              "description": "Küçük resimlerde tüm slaytlar",
+              "navigation": "Tıklayarak slayta git"
+            }
+          ],
+          
+          "annotation_tools": {
+            "description": "Sunum sırasında işaretleme araçları",
+            "pen": {
+              "activate": "Ctrl + P",
+              "use": "Ekrana çizim yap",
+              "colors": "Sağ tık → İşaretçi Seçenekleri → Mürekkep Rengi"
+            },
+            "highlighter": {
+              "activate": "Ctrl + I",
+              "use": "Vurgulama",
+              "transparent": "Yarı şeffaf işaretleme"
+            },
+            "laser_pointer": {
+              "activate": "Ctrl + L",
+              "use": "Geçici işaret (kaydetmez)",
+              "visible": "Sadece sunum sırasında"
+            },
+            "eraser": {
+              "activate": "Ctrl + E",
+              "use": "Çizimleri sil",
+              "erase_all": "E tuşu = Tüm mürekkepleri sil"
+            }
+          },
+          
+          "presenter_view_features": {
+            "description": "Sunan Görünümü özellikleri",
+            "timer": "Geçen süre göstergesi",
+            "notes": "Konuşmacı notlarını görüntüle",
+            "next_slide": "Sonraki slayt önizlemesi",
+            "zoom": "Slaytı yakınlaştır",
+            "black_screen": "Ekranı karart butonu",
+            "all_slides": "Tüm slaytları göster"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "ayarla",
+      "title": "⚙️ Ayarla",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Slayt gösterisi ayarlarını özelleştirin.",
+        
+        "show_settings": {
+          "path": "Slayt Gösterisi → Slayt Gösterisini Ayarla",
+          
+          "show_type": {
+            "title": "Gösterim Türü",
+            "options": [
+              {
+                "type": "Sunucu tarafından sunulan (tam ekran)",
+                "description": "Standart sunum modu",
+                "use": "Canlı sunumlar",
+                "default": true
+              },
+              {
+                "type": "Kullanıcı tarafından göz atılan (pencere)",
+                "description": "Pencere içinde çalışır",
+                "use": "Standlarda, kioskta gösterim",
+                "features": ["Pencere kontrolü", "Kaydırma çubuğu"]
+              },
+              {
+                "type": "Kullanıcı tarafından göz atılan (otomatik)",
+                "description": "Otomatik dönen sunum",
+                "use": "Kiosklar, sergi standları",
+                "loop": "Sürekli döngü",
+                "no_control": "Kullanıcı kontrolü yok"
+              }
+            ]
+          },
+          
+          "show_options": {
+            "title": "Gösterim Seçenekleri",
+            "options": [
+              {
+                "option": "Döngü, Esc tuşuna basılıncaya kadar",
+                "description": "Sunumu tekrar tekrar göster",
+                "use": "Standlar, bekleme ekranları"
+              },
+              {
+                "option": "Anlatım olmadan",
+                "description": "Kaydedilmiş sesleri çalma",
+                "use": "Anlatımsız sunum"
+              },
+              {
+                "option": "Animasyon olmadan",
+                "description": "Tüm animasyonları devre dışı bırak",
+                "use": "Hızlı sunum, yazdırma görünümü"
+              },
+              {
+                "option": "Kalem rengi",
+                "description": "Varsayılan kalem rengini seç",
+                "colors": "Kırmızı, Mavi, Yeşil vb."
+              },
+              {
+                "option": "Lazer işaretçisi rengi",
+                "description": "Lazer pointer rengi",
+                "default": "Kırmızı"
+              }
+            ]
+          },
+          
+          "slides_selection": {
+            "title": "Slayt Seçimi",
+            "all": "Tümü - Tüm slaytları göster",
+            "from_to": "Şundan şuna: - Belirli aralık (örn: 5-12)",
+            "custom": "Özel gösterim - Önceden tanımlı set"
+          },
+          
+          "advance_slides": {
+            "title": "Slaytları İlerlet",
+            "manual": {
+              "option": "El ile",
+              "description": "Her slayt için tıklama gerekir",
+              "default": true,
+              "use": "Standart sunumlar"
+            },
+            "automatic": {
+              "option": "Belirtilen zamanlamayı kullanarak",
+              "description": "Otomatik zaman bazlı geçiş",
+              "requirement": "Slayt zamanlamaları kaydedilmiş olmalı",
+              "use": "Otomatik sunumlar, videoya dönüştürme"
+            }
+          },
+          
+          "multiple_monitors": {
+            "title": "Birden Çok Monitör",
+            "description": "Çift ekran ayarları",
+            "options": [
+              "Otomatik",
+              "Monitör 1",
+              "Monitör 2",
+              "Tümü"
+            ],
+            "presenter_view": "Sunan Görünümü'nü kullan seçeneği",
+            "resolution": "Çözünürlük ayarı"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "zamanlama",
+      "title": "⏱️ Zamanlama ve Kayıt",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumunuzu zamanla ve sesli anlatım ekleyin.",
+        
+        "rehearse_timings": {
+          "description": "Prova Zamanlamaları",
+          "path": "Slayt Gösterisi → Prova Zamanlamaları",
+          "how_it_works": [
+            "Sunum başlar",
+            "Zamanlayıcı her slayt için süreyi kaydeder",
+            "Siz konuşurken zamanlayıcı çalışır",
+            "Sonraki slayta geçince yeni zamanlama başlar",
+            "Bitirdiğinizde zamanlamalar kaydedilir"
+          ],
+          
+          "toolbar": {
+            "next": "Sonraki slayt",
+            "pause": "Durakla",
+            "slide_time": "Slayt süresi",
+            "total_time": "Toplam süre",
+            "repeat": "Tekrarla",
+            "close": "Kapat (kaydet/iptal)"
+          },
+          
+          "use_cases": [
+            "Sunumun toplam süresini öğren",
+            "Her slayt için ne kadar zaman ayır",
+            "Otomatik sunumlar için zamanlama",
+            "Video olarak dışa aktarma için"
+          ],
+          
+          "tips": [
+            "Normal hızınızda konuşun",
+            "Prova çok kısa ise gerçek sunumda zaman ekleyin",
+            "Zamanlamaları sonradan düzenleyebilirsiniz"
+          ]
+        },
+        
+        "record_slide_show": {
+          "description": "Slayt Gösterisini Kaydet",
+          "path": "Slayt Gösterisi → Slayt Gösterisini Kaydet",
+          "records": [
+            "Ses anlatımı (mikrofon)",
+            "Video (webcam)",
+            "Slayt zamanlamaları",
+            "Mürekkep ve lazer işaretleri"
+          ],
+          
+          "recording_modes": {
+            "from_beginning": {
+              "description": "Baştan Kaydet",
+              "use": "Tüm sunumu kaydet"
+            },
+            "from_current": {
+              "description": "Geçerli Slayttan Kaydet",
+              "use": "Belli bir bölümü kaydet veya düzelt"
+            }
+          },
+          
+          "recording_toolbar": {
+            "record": "Kayıt başlat/duraklat",
+            "stop": "Kaydı durdur",
+            "replay": "Son kaydı izle",
+            "pen": "Kalem araçları",
+            "eraser": "Silgi",
+            "notes": "Konuşmacı notları"
+          },
+          
+          "after_recording": {
+            "preview": "Kayıtları slayt içinde görürsünüz",
+            "speaker_icon": "Ses ikonu slaytın köşesinde",
+            "video_corner": "Video küçük pencerede",
+            "edit": "Kaydı silip tekrar çekebilirsiniz",
+            "clear": "Slayt Gösterisi → Kayıtları Temizle"
+          },
+          
+          "export": {
+            "description": "Kaydedilmiş sunumu dışa aktar",
+            "formats": [
+              "Video (MP4)",
+              "Paket (CD için)",
+              "PDF"
+            ],
+            "path": "Dosya → Dışa Aktar"
+          }
+        },
+        
+        "clear_recordings": {
+          "description": "Kayıtları Temizle",
+          "options": [
+            "Geçerli slayttaki zamanlama",
+            "Geçerli slayttaki anlatım",
+            "Tüm slaytlardaki zamanlamalar",
+            "Tüm slaytlardaki anlatımlar"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "gizle-goster",
+      "title": "👁️ Gizle ve Göster",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Slaytları gizleyin veya yeniden görünür yapın.",
+        
+        "hide_slide": {
+          "description": "Slaydı Gizle",
+          "path": "Sağ tık → Slaydı Gizle veya Slayt Gösterisi → Slaydı Gizle",
+          "effect": "Slayt küçük resimde soluk görünür",
+          "number": "Slayt numarasının üzeri çizili",
+          "behavior": "Sunum sırasında atlanır",
+          
+          "use_cases": [
+            "Yedek slaytlar",
+            "Farklı kitleler için farklı versiyonlar",
+            "Zamanınız az ise bazı slaytları atla",
+            "Hassas bilgi içeren slaytlar"
+          ],
+          
+          "unhide": "Tekrar aynı butona tıkla = göster",
+          "shortcut": "Slaytı seç + Slayt Gösterisi → Slaydı Gizle"
+        },
+        
+        "during_show": {
+          "description": "Sunum sırasında gizli slaytlara git",
+          "how": "Slayt numarası + Enter",
+          "example": "7 + Enter = Gizli 7. slayta git",
+          "tip": "Yedek slaytlar için kullanışlı"
+        }
+      }
+    },
+    
+    {
+      "id": "oynat",
+      "title": "▶️ Oynat",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Medya oynatma seçenekleri.",
+        
+        "play_narrations": {
+          "description": "Anlatımları Oynat",
+          "toggle": "Açık/Kapalı",
+          "use": "Kaydedilmiş ses anlatımlarını oynat veya sustur"
+        },
+        
+        "use_timings": {
+          "description": "Zamanlamaları Kullan",
+          "toggle": "Açık/Kapalı",
+          "use": "Kaydedilmiş slayt zamanlamalarını uygula veya el ile ilerlet"
+        },
+        
+        "show_media_controls": {
+          "description": "Ortam Denetimlerini Göster",
+          "toggle": "Açık/Kapalı",
+          "controls": "Video/ses oynatma kontrolleri",
+          "features": ["Oynat/Duraklat", "Ses seviyesi", "İleri/Geri sarma"]
+        }
+      }
+    },
+    
+    {
+      "id": "izleyici-araclari",
+      "title": "👥 İzleyici Araçları",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "İzleyici etkileşimi ve geri bildirim.",
+        
+        "subtitle_settings": {
+          "description": "Alt Yazı Ayarları",
+          "path": "Slayt Gösterisi → Alt Yazı Ayarları",
+          "feature": "Canlı konuşma tanıma ve alt yazı",
+          "languages": "50+ dil desteği",
+          "requirements": "İnternet bağlantısı, mikrofon",
+          
+          "benefits": [
+            "İşitme engelliler için erişilebilirlik",
+            "Gürültülü ortamlarda okunabilirlik",
+            "Yabancı dilde sunum desteği",
+            "Kayıt ve altyazı"
+          ],
+          
+          "settings": {
+            "spoken_language": "Konuşma dili",
+            "subtitle_language": "Alt yazı dili (çeviri)",
+            "position": "Alt yazı konumu",
+            "microphone": "Mikrofon seçimi"
+          }
+        },
+        
+        "always_use_subtitles": {
+          "description": "Her Zaman Alt Yazı Kullan",
+          "auto_enable": "Sunumlarda otomatik alt yazı",
+          "toggle": "Açık/Kapalı"
+        },
+        
+        "captions_from_beginning": {
+          "description": "Baştan Alt Yazılar",
+          "start": "İlk slayttan itibaren alt yazı başlat"
+        }
+      }
+    }
+  ],
+  
+  "presentation_tips": [
+    "Sunuma başlamadan önce F5 ile prova yapın",
+    "Sunan Görünümü'nü mutlaka deneyin - profesyonellerin tercihi",
+    "Prova Zamanlamaları ile sürenizi kontrol altına alın",
+    "Yedek slaytları gizleyin ama hazır bulundurun",
+    "Soru-cevap için ekstra slaytlar hazırlayın",
+    "Kalem aracını dikkatli kullanın - abartmayın",
+    "B tuşu ile ekranı karartıp dinleyicilerin dikkatini toplayın",
+    "Özel Slayt Gösterisi ile farklı kitlelere özel sunumlar yapın"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Baştan başlat",
+      "shortcut": "F5"
+    },
+    {
+      "action": "Geçerli slayttan başlat",
+      "shortcut": "Shift + F5"
+    },
+    {
+      "action": "Sunan Görünümü",
+      "shortcut": "Alt + F5"
+    },
+    {
+      "action": "Sunumu bitir",
+      "shortcut": "Esc"
+    },
+    {
+      "action": "Ekranı siyah yap",
+      "shortcut": "B"
+    },
+    {
+      "action": "Ekranı beyaz yap",
+      "shortcut": "W"
+    },
+    {
+      "action": "Tüm slaytları göster",
+      "shortcut": "Ctrl + S"
+    },
+    {
+      "action": "Kalem aracı",
+      "shortcut": "Ctrl + P"
+    },
+    {
+      "action": "Fosforlu kalem",
+      "shortcut": "Ctrl + I"
+    },
+    {
+      "action": "Lazer işaretçi",
+      "shortcut": "Ctrl + L"
+    },
+    {
+      "action": "Mürekkepleri sil",
+      "shortcut": "E"
+    },
+    {
+      "action": "Belirli slayta git",
+      "shortcut": "Numara + Enter"
+    }
+  ],
+  
+  "best_practices": [
+    "Sunumdan önce teknik kontrol yapın",
+    "Yedek sunum kopyası bulundurun",
+    "Projeksiyon ve ses sistemini test edin",
+    "Konuşmacı notlarınızı kısa tutun",
+    "Zamanlamalarınızı gerçekçi ayarlayın",
+    "İzleyicilerle göz teması kurun, ekrana değil",
+    "Acil durumlar için plan B hazırlayın"
+  ]
+}

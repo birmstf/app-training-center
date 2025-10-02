@@ -1,0 +1,412 @@
+{
+  "id": "word-giris",
+  "title": "Microsoft Word - Giriş Menüsü",
+  "description": "Word'ün Giriş menüsü, belge düzenleme için en sık kullanılan araçları içerir. Bu bölümde pano işlemleri, yazı tipi biçimlendirme, paragraf düzenleme, stiller ve düzenleme araçlarını öğreneceksiniz.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "2 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "pano-islemleri",
+      "title": "📋 Pano İşlemleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Pano, Windows'ta kopyalanan veya kesilen verilerin geçici olarak saklandığı alandır. Word'de pano işlemleri, metin ve nesneleri belgeler arasında taşımanın en hızlı yoludur.",
+        
+        "features": [
+          {
+            "name": "Kopyala (Copy)",
+            "shortcut": "Ctrl+C",
+            "description": "Seçili içeriği panoya kopyalar, orijinal içerik yerinde kalır",
+            "icon": "📑",
+            "menu_path": "Giriş → Pano → Kopyala"
+          },
+          {
+            "name": "Kes (Cut)",
+            "shortcut": "Ctrl+X",
+            "description": "Seçili içeriği panoya alır ve orijinal konumdan kaldırır",
+            "icon": "✂️",
+            "menu_path": "Giriş → Pano → Kes"
+          },
+          {
+            "name": "Yapıştır (Paste)",
+            "shortcut": "Ctrl+V",
+            "description": "Panodaki içeriği imleç konumuna yapıştırır",
+            "icon": "📋",
+            "menu_path": "Giriş → Pano → Yapıştır"
+          },
+          {
+            "name": "Özel Yapıştır",
+            "shortcut": "Ctrl+Alt+V",
+            "description": "Yapıştırma seçenekleri sunar (sadece metin, biçimlendirme, vs.)",
+            "icon": "🎯",
+            "menu_path": "Giriş → Pano → Yapıştır → Özel Yapıştır"
+          }
+        ],
+        
+        "advanced_tips": [
+          "Windows+V ile pano geçmişini açarak daha önce kopyaladığınız öğelere erişebilirsiniz",
+          "Format Boyacısı (Ctrl+Shift+C ve Ctrl+Shift+V) ile sadece biçimlendirmeyi kopyalayabilirsiniz",
+          "Office Panosu'nu açarak 24 öğeye kadar saklayabilirsiniz"
+        ],
+        
+        "practice_exercise": {
+          "title": "Pano İşlemleri Alıştırması",
+          "steps": [
+            "Bir paragraf yazın ve tamamını seçin",
+            "Ctrl+C ile kopyalayın",
+            "Belgenin başka bir yerine gidin",
+            "Ctrl+V ile yapıştırın",
+            "Ctrl+Alt+V ile Özel Yapıştır'ı deneyin"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "yazi-tipi",
+      "title": "🔤 Yazı Tipi Biçimlendirme",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yazı tipi biçimlendirme, metninizin görünümünü ve okunabilirliğini kontrol eder. Doğru yazı tipi seçimi, belgenizin profesyonel görünmesini sağlar.",
+        
+        "main_tools": [
+          {
+            "name": "Yazı Tipi Seçimi",
+            "options": ["Calibri", "Times New Roman", "Arial", "Verdana", "Georgia"],
+            "default": "Calibri",
+            "tip": "Profesyonel belgeler için serif (tırnaklı) fontlar, dijital okuma için sans-serif fontlar tercih edilir"
+          },
+          {
+            "name": "Yazı Boyutu",
+            "range": "8pt - 72pt",
+            "common_sizes": {
+              "Başlık 1": "16pt",
+              "Başlık 2": "14pt", 
+              "Normal metin": "11pt",
+              "Dipnot": "9pt"
+            }
+          },
+          {
+            "name": "Biçimlendirme Düğmeleri",
+            "buttons": [
+              {"name": "Kalın", "shortcut": "Ctrl+B", "icon": "B"},
+              {"name": "İtalik", "shortcut": "Ctrl+I", "icon": "I"},
+              {"name": "Altı Çizili", "shortcut": "Ctrl+U", "icon": "U̲"},
+              {"name": "Üstü Çizili", "shortcut": "Alt+Shift+5", "icon": "A̶"},
+              {"name": "Alt Simge", "shortcut": "Ctrl+=", "icon": "X₂"},
+              {"name": "Üst Simge", "shortcut": "Ctrl+Shift+=", "icon": "X²"}
+            ]
+          }
+        ],
+        
+        "color_options": {
+          "text_color": {
+            "description": "Yazı rengini değiştirir",
+            "theme_colors": ["Mavi", "Kırmızı", "Yeşil", "Turuncu", "Mor"],
+            "custom": "RGB veya HEX kod ile özel renk tanımlama"
+          },
+          "highlight_color": {
+            "description": "Metin arka planını vurgular",
+            "colors": ["Sarı", "Yeşil", "Camgöbeği", "Pembe", "Mavi"],
+            "tip": "Önemli bilgileri vurgulamak için kullanın"
+          }
+        },
+        
+        "effects": [
+          "Gölge",
+          "Anahat",
+          "Kabartma",
+          "Oyma",
+          "Küçük harfler",
+          "Tümü büyük harfler"
+        ],
+        
+        "best_practices": [
+          "Bir belgede en fazla 2-3 farklı yazı tipi kullanın",
+          "Başlıklar için sans-serif, metin için serif font kombinasyonu iyi çalışır",
+          "Renk kullanımında tutarlı olun ve kurumsal kimliğe uygun seçimler yapın",
+          "Okunabilirlik için yeterli kontrast sağlayın"
+        ]
+      }
+    },
+    
+    {
+      "id": "paragraf",
+      "title": "📝 Paragraf Düzenleme",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Paragraf biçimlendirme, metnin sayfa üzerindeki düzenini ve akışını kontrol eder. İyi düzenlenmiş paragraflar, belgenin profesyonel görünmesini ve kolay okunmasını sağlar.",
+        
+        "alignment_options": [
+          {
+            "type": "Sola Yasla",
+            "shortcut": "Ctrl+L",
+            "usage": "En yaygın hizalama, normal metin için",
+            "icon": "⬅️"
+          },
+          {
+            "type": "Ortala",
+            "shortcut": "Ctrl+E",
+            "usage": "Başlıklar, kapak sayfaları için",
+            "icon": "↔️"
+          },
+          {
+            "type": "Sağa Yasla",
+            "shortcut": "Ctrl+R",
+            "usage": "Tarih, imza bloğu için",
+            "icon": "➡️"
+          },
+          {
+            "type": "İki Yana Yasla",
+            "shortcut": "Ctrl+J",
+            "usage": "Kitap, dergi gibi profesyonel yayınlar için",
+            "icon": "↔️"
+          }
+        ],
+        
+        "spacing": {
+          "line_spacing": {
+            "options": ["1.0", "1.15", "1.5", "2.0", "2.5", "3.0"],
+            "default": "1.15",
+            "academic": "2.0 (akademik yazılar için)",
+            "tip": "Ctrl+1, Ctrl+2, Ctrl+5 ile hızlıca değiştirebilirsiniz"
+          },
+          "paragraph_spacing": {
+            "before": "0pt - 24pt",
+            "after": "0pt - 24pt",
+            "auto": "Otomatik aralık ayarı",
+            "tip": "Başlıklar için 'önce' aralığı, normal metin için 'sonra' aralığı kullanın"
+          }
+        },
+        
+        "indentation": {
+          "left_indent": "Sol kenardan girinti",
+          "right_indent": "Sağ kenardan girinti",
+          "first_line": "İlk satır girintisi (akademik yazılar için)",
+          "hanging": "Asılı girinti (kaynakça için)",
+          "special_cases": {
+            "quotes": "Uzun alıntılar için iki taraflı girinti",
+            "lists": "Listeler için otomatik girinti"
+          }
+        },
+        
+        "tabs": {
+          "types": ["Sol", "Sağ", "Orta", "Ondalık", "Çubuk"],
+          "setting": "Cetvel üzerinde tıklayarak veya Paragraf diyalog kutusundan",
+          "clear": "Sekme duraklarını temizleme",
+          "leader": "Noktalı veya çizgili kılavuz çizgiler"
+        }
+      }
+    },
+    
+    {
+      "id": "stiller",
+      "title": "🎨 Stiller",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Stiller, biçimlendirme ayarlarının kaydedilmiş kombinasyonlarıdır. Tutarlı biçimlendirme için stil kullanımı, profesyonel belge hazırlamanın anahtarıdır.",
+        
+        "quick_styles": [
+          {
+            "name": "Normal",
+            "description": "Standart paragraf metni",
+            "font": "Calibri 11pt",
+            "spacing": "1.08 satır"
+          },
+          {
+            "name": "Başlık 1",
+            "description": "Ana bölüm başlıkları",
+            "font": "Calibri Light 16pt",
+            "color": "Mavi",
+            "spacing": "12pt önce, 0pt sonra"
+          },
+          {
+            "name": "Başlık 2",
+            "description": "Alt bölüm başlıkları",
+            "font": "Calibri Light 13pt",
+            "color": "Mavi",
+            "spacing": "2pt önce, 0pt sonra"
+          },
+          {
+            "name": "Vurgu",
+            "description": "Önemli metinler",
+            "format": "İtalik",
+            "color": "Vurgu rengi"
+          },
+          {
+            "name": "Alıntı",
+            "description": "Blok alıntılar",
+            "indent": "Sol ve sağ 1.27cm",
+            "font": "İtalik"
+          }
+        ],
+        
+        "style_management": {
+          "modify": "Stil üzerinde sağ tıklayarak değiştirme",
+          "create": "Biçimlendirilmiş metinden yeni stil oluşturma",
+          "update": "Seçimden stili güncelleme",
+          "import": "Başka belgeden stil aktarma",
+          "organize": "Stil bölmesinde düzenleme"
+        },
+        
+        "style_sets": {
+          "description": "Önceden tanımlanmış stil koleksiyonları",
+          "options": [
+            "Temel (Basit)",
+            "Zarif",
+            "Odaklanmış",
+            "Modern",
+            "Profesyonel"
+          ],
+          "custom": "Kendi stil setinizi oluşturma ve kaydetme"
+        },
+        
+        "benefits": [
+          "Tutarlı biçimlendirme sağlar",
+          "Toplu değişiklik yapmayı kolaylaştırır",
+          "İçindekiler tablosu oluşturmayı mümkün kılar",
+          "Belge şablonları oluşturmaya yardımcı olur",
+          "Zaman tasarrufu sağlar"
+        ]
+      }
+    },
+    
+    {
+      "id": "duzenleme",
+      "title": "✏️ Düzenleme Araçları",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Düzenleme araçları, belgenizdeki metni bulma, değiştirme ve seçme işlemlerini hızlandırır.",
+        
+        "find_replace": {
+          "find": {
+            "shortcut": "Ctrl+F",
+            "features": [
+              "Basit metin arama",
+              "Büyük/küçük harf duyarlılığı",
+              "Tam sözcük eşleşmesi",
+              "Joker karakterler (* ve ?)",
+              "Gelişmiş arama seçenekleri"
+            ]
+          },
+          "replace": {
+            "shortcut": "Ctrl+H",
+            "features": [
+              "Metin değiştirme",
+              "Biçim değiştirme",
+              "Stil değiştirme",
+              "Tümünü değiştir",
+              "Seçici değiştirme"
+            ]
+          },
+          "goto": {
+            "shortcut": "Ctrl+G veya F5",
+            "navigate_to": [
+              "Sayfa numarası",
+              "Bölüm",
+              "Satır",
+              "Yer işareti",
+              "Dipnot",
+              "Tablo",
+              "Grafik"
+            ]
+          }
+        },
+        
+        "selection_tools": {
+          "select_all": {
+            "shortcut": "Ctrl+A",
+            "description": "Tüm belgeyi seçer"
+          },
+          "select_objects": {
+            "shortcut": "Ctrl+Shift+F8",
+            "description": "Nesneleri seçme modu"
+          },
+          "selection_pane": {
+            "access": "Giriş → Düzenleme → Seç → Seçim Bölmesi",
+            "use": "Katmanlı nesneleri yönetme"
+          },
+          "advanced_selection": [
+            "Benzer biçimlendirmeyi seç",
+            "Sütun seçimi (Alt+fare)",
+            "Cümle seçimi (Ctrl+tıklama)",
+            "Paragraf seçimi (üç tıklama)"
+          ]
+        },
+        
+        "tips": [
+          "F3 ile Otomatik Metin girişleri oluşturun",
+          "Spike özelliği ile birden fazla kesme işlemi yapın (Ctrl+F3)",
+          "Gezinti bölmesini kullanarak belgede hızlıca dolaşın",
+          "Ctrl+Z (geri al) ve Ctrl+Y (yinele) ile değişiklikleri yönetin"
+        ]
+      }
+    }
+  ],
+  
+  "quiz": {
+    "title": "Giriş Menüsü Bilgi Testi",
+    "questions": [
+      {
+        "question": "Metni biçimini koruyarak yapıştırmak için hangi kısayol kullanılır?",
+        "options": [
+          "Ctrl+V",
+          "Ctrl+Shift+V", 
+          "Ctrl+Alt+V",
+          "Alt+V"
+        ],
+        "correct": 2,
+        "explanation": "Ctrl+Alt+V, Özel Yapıştır diyalog kutusunu açar"
+      },
+      {
+        "question": "İki yana yaslama kısayolu nedir?",
+        "options": [
+          "Ctrl+J",
+          "Ctrl+E",
+          "Ctrl+L",
+          "Ctrl+R"
+        ],
+        "correct": 0,
+        "explanation": "Ctrl+J metni iki yana yaslar"
+      },
+      {
+        "question": "Stil değiştirmenin en hızlı yolu nedir?",
+        "options": [
+          "Format menüsünden",
+          "Sağ tık menüsünden",
+          "Hızlı stiller galerisinden",
+          "Ctrl+Shift+S"
+        ],
+        "correct": 2,
+        "explanation": "Giriş menüsündeki Hızlı Stiller galerisi en hızlı yoldur"
+      }
+    ]
+  },
+  
+  "resources": {
+    "shortcuts_pdf": "word-giris-kisayollar.pdf",
+    "video_tutorials": [
+      "Temel Biçimlendirme",
+      "Stiller ile Çalışma",
+      "Etkili Paragraf Düzenleme"
+    ],
+    "practice_files": [
+      "biçimlendirme-alıştırma.docx",
+      "stil-uygulama.docx"
+    ],
+    "microsoft_docs": "https://support.microsoft.com/tr-tr/office/word-de-giriş-sekmesi"
+  },
+  
+  "next_menu": {
+    "id": "ekle",
+    "name": "Ekle Menüsü",
+    "description": "Tablolar, resimler, grafikler ve diğer nesneleri eklemeyi öğrenin"
+  }
+}

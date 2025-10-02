@@ -1,0 +1,602 @@
+{
+  "id": "excel-gorunum",
+  "title": "Microsoft Excel - Görünüm Menüsü",
+  "description": "Çalışma alanınızı özelleştirin. Görünüm modları, pencere yönetimi, yakınlaştırma ve çalışma kitabı görünümü ayarları.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "1 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "calisma-kitabi-gorunumleri",
+      "title": "👁️ Çalışma Kitabı Görünümleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Farklı görevler için farklı görünüm modları.",
+        
+        "view_modes": [
+          {
+            "name": "Normal Görünüm",
+            "icon": "📄",
+            "description": "Varsayılan çalışma modu",
+            "best_for": "Veri girişi, formül yazma, genel çalışma",
+            "features": [
+              "Sınırsız sayfa",
+              "Sayfa kesimleri gösterilmez",
+              "En hızlı mod"
+            ],
+            "shortcut": "Alt+W, L"
+          },
+          {
+            "name": "Sayfa Düzeni Görünümü",
+            "icon": "📋",
+            "description": "Yazdırma düzenini görme",
+            "best_for": "Yazdırma öncesi düzenleme",
+            "features": [
+              "Sayfa kenarları görünür",
+              "Üstbilgi/Altbilgi düzenlenebilir",
+              "Cetvel görünür",
+              "Gerçek yazdırma görünümü"
+            ],
+            "shortcut": "Alt+W, P",
+            "tip": "Üstbilgi/Altbilgi eklemek için tıklayın"
+          },
+          {
+            "name": "Sayfa Kesimi Önizleme",
+            "icon": "🔵",
+            "description": "Sayfa kesimlerini görme ve düzenleme",
+            "best_for": "Yazdırma alanlarını ayarlama",
+            "features": [
+              "Mavi kesik çizgiler (otomatik kesimler)",
+              "Düz mavi çizgiler (manuel kesimler)",
+              "Sürükle-bırak ile kesim düzenleme",
+              "Sayfa numaraları görünür"
+            ],
+            "shortcut": "Alt+W, I",
+            "how_to_edit": "Mavi çizgileri sürükleyerek kesimleri taşıyın"
+          }
+        ],
+        
+        "switching_views": {
+          "toolbar": "Sağ alt köşedeki görünüm butonları",
+          "ribbon": "Görünüm sekmesi → Çalışma Kitabı Görünümleri",
+          "tip": "Her görünüm farklı amaç için optimize edilmiştir"
+        }
+      }
+    },
+    {
+      "id": "goster-gizle",
+      "title": "👀 Göster/Gizle",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Çalışma alanınızdaki öğeleri gösterin veya gizleyin.",
+        
+        "elements": [
+          {
+            "name": "Cetvel",
+            "description": "Yatay ve dikey ölçü çizgisi",
+            "use": "Nesneleri hizalamak için",
+            "visible_in": "Sayfa Düzeni Görünümü",
+            "shortcut": "Alt+W, R"
+          },
+          {
+            "name": "Kılavuz Çizgileri",
+            "description": "Hücre sınırlarını gösteren çizgiler",
+            "default": "Açık (gri çizgiler)",
+            "toggle": "Görünüm → Kılavuz Çizgileri",
+            "tip": "Temiz görünüm için kapatın",
+            "note": "Yazdırmada görünmez (Sayfa Düzeni ayarından açılabilir)"
+          },
+          {
+            "name": "Başlıklar",
+            "description": "Satır/sütun numaraları (A, B, C... / 1, 2, 3...)",
+            "default": "Açık",
+            "toggle": "Görünüm → Başlıklar",
+            "when_to_hide": "Sunum veya ekran görüntüsü alırken"
+          },
+          {
+            "name": "Formül Çubuğu",
+            "description": "Formülleri gösteren üst çubuk",
+            "default": "Açık",
+            "toggle": "Görünüm → Formül Çubuğu",
+            "shortcut": "Ctrl+Shift+U",
+            "tip": "Gizlerseniz daha fazla çalışma alanı"
+          }
+        ],
+        
+        "show_settings": {
+          "purpose": "Ekran görünümünü özelleştirme",
+          "combinations": [
+            {
+              "scenario": "Maksimum çalışma alanı",
+              "settings": "Formül çubuğu: Kapalı, Başlıklar: Kapalı, Kılavuz: Kapalı"
+            },
+            {
+              "scenario": "Sunum modu",
+              "settings": "Tüm öğeler kapalı, Tam ekran"
+            },
+            {
+              "scenario": "Düzenleme modu",
+              "settings": "Tüm öğeler açık"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "zoom",
+      "title": "🔍 Yakınlaştırma",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görünüm boyutunu ayarlayın.",
+        
+        "zoom_levels": {
+          "presets": [
+            "200% - Çok yakın (küçük metinler için)",
+            "100% - Normal (varsayılan)",
+            "75% - Genel bakış",
+            "50% - Tüm sayfa görünümü",
+            "25% - Çok uzak (yapı görme)"
+          ],
+          "custom": "10% - 400% arası özel değer",
+          "path": "Görünüm → Yakınlaştırma"
+        },
+        
+        "zoom_methods": [
+          {
+            "method": "Kaydırıcı",
+            "location": "Sağ alt köşe",
+            "action": "Sürükleyerek ayarla",
+            "quick": "En hızlı yöntem"
+          },
+          {
+            "method": "Ctrl + Fare Tekerleği",
+            "action": "Ctrl basılı tutup tekerleği çevir",
+            "advantage": "Anında ayarlama"
+          },
+          {
+            "method": "Yakınlaştırma Düğmeleri",
+            "location": "Kaydırıcının yanı",
+            "action": "+ ve - butonları"
+          },
+          {
+            "method": "Yakınlaştırma İletişim Kutusu",
+            "shortcut": "Alt+W, Q",
+            "features": "Özel değer veya seçime göre zoom"
+          }
+        ],
+        
+        "zoom_to_selection": {
+          "description": "Seçili alanı ekrana sığdır",
+          "path": "Görünüm → Yakınlaştırma → Seçime Göre Yakınlaştır",
+          "use_case": "Büyük tabloda belirli bölgeye odaklanma"
+        },
+        
+        "tips": [
+          "Ctrl+0 ile %100'e dön (bazı klavyelerde)",
+          "Fare tekerleği ile zoom en hızlısı",
+          "Her sayfa farklı zoom seviyesinde olabilir",
+          "Yazdırma zoom'dan etkilenmez"
+        ]
+      }
+    },
+    {
+      "id": "pencere",
+      "title": "🪟 Pencere Yönetimi",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Birden fazla pencere ve bölme ile verimli çalışın.",
+        
+        "new_window": {
+          "description": "Aynı dosyayı yeni pencerede aç",
+          "path": "Görünüm → Yeni Pencere",
+          "use_case": "Aynı dosyanın farklı sayfalarını yan yana görme",
+          "note": "İki pencere aynı dosya, biri değişince diğeri de değişir"
+        },
+        
+        "arrange_windows": {
+          "description": "Açık pencereleri düzenle",
+          "path": "Görünüm → Tümünü Düzenle",
+          "options": [
+            {
+              "name": "Döşeli",
+              "layout": "Tüm pencereler eşit boyutlu kutular",
+              "best_for": "3-4 dosya karşılaştırma"
+            },
+            {
+              "name": "Yatay",
+              "layout": "Üst üste yatay şeritler",
+              "best_for": "Geniş tablolar"
+            },
+            {
+              "name": "Dikey",
+              "layout": "Yan yana dikey paneller",
+              "best_for": "2 dosya karşılaştırma"
+            },
+            {
+              "name": "Basamaklı",
+              "layout": "Pencereleri üst üste bindirir",
+              "best_for": "Çok dosya arasında geçiş"
+            }
+          ]
+        },
+        
+        "split_panes": {
+          "description": "Tek pencereyi bölümlere ayırma",
+          "path": "Görünüm → Bölme",
+          "automatic": "Aktif hücrenin üstünde ve solunda böler",
+          "manual": "Kaydırma çubuğunun üstündeki küçük çubuğu sürükle",
+          "use_cases": [
+            "Başlık satırını yukarıda tutup aşağıda kaydırma",
+            "Sol sütunu sabit tutup sağa kaydırma",
+            "Farklı bölümleri aynı anda görme"
+          ],
+          "remove": "Görünüm → Bölmeyi Kaldır",
+          "tip": "Bölme çizgilerini sürükleyerek boyutları ayarlayın"
+        },
+        
+        "freeze_panes": {
+          "description": "Satır/sütunları sabitleme (kaydırmada görünür)",
+          "types": [
+            {
+              "name": "İlk Satırı Dondur",
+              "path": "Görünüm → Pencereleri Dondur → İlk Satırı Dondur",
+              "use": "Başlık satırı her zaman görünsün",
+              "common": "En çok kullanılan"
+            },
+            {
+              "name": "İlk Sütunu Dondur",
+              "path": "Görünüm → Pencereleri Dondur → İlk Sütunu Dondur",
+              "use": "Etiket sütunu sabit kalsın"
+            },
+            {
+              "name": "Pencereleri Dondur",
+              "path": "Aktif hücreyi seç → Görünüm → Pencereleri Dondur",
+              "rule": "Aktif hücrenin üstü ve solu donar",
+              "example": "C3 seçip dondurun = 1-2 satırlar ve A-B sütunlar donar"
+            }
+          ],
+          "remove": "Görünüm → Pencereleri Çöz",
+          "indicator": "Dondurulmuş alan daha koyu çizgilerle ayrılır",
+          "best_practice": "Uzun tablolarda MUTLAKA başlık satırını dondurun"
+        },
+        
+        "side_by_side": {
+          "description": "İki dosyayı yan yana karşılaştırma",
+          "path": "Görünüm → Yan Yana Görüntüle",
+          "features": {
+            "synchronous_scrolling": {
+              "name": "Eşzamanlı Kaydırma",
+              "description": "İki pencere birlikte kayar",
+              "toggle": "Görünüm → Eşzamanlı Kaydırma"
+            },
+            "reset_position": {
+              "name": "Pencere Konumunu Sıfırla",
+              "description": "Pencereleri yeniden yan yana hizalar"
+            }
+          },
+          "use_case": "Bu ay vs geçen ay raporlarını karşılaştırma"
+        }
+      }
+    },
+    {
+      "id": "makrolar",
+      "title": "▶️ Makrolar",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Tekrarlayan işlemleri otomatikleştirin.",
+        
+        "what_is_macro": {
+          "description": "Kaydedilen eylem dizisi, otomatik oynatılır",
+          "example": "Her ay aynı formatlama → Makro kaydet → Tek tıkla uygula",
+          "language": "VBA (Visual Basic for Applications)"
+        },
+        
+        "view_macros": {
+          "path": "Görünüm → Makrolar",
+          "shortcut": "Alt+F8",
+          "actions": [
+            "Çalıştır - Makroyu oynat",
+            "Düzenle - VBA kodunu düzenle",
+            "Sil - Makroyu kaldır",
+            "Seçenekler - Kısayol atama"
+          ]
+        },
+        
+        "recording_macros": {
+          "not_in_view": "Makro kaydetmek için Geliştirici sekmesi gerekir",
+          "enable_developer": [
+            "Dosya → Seçenekler → Şeridi Özelleştir",
+            "Sağ tarafta 'Geliştirici' kutusunu işaretle",
+            "Tamam"
+          ],
+          "record_path": "Geliştirici → Makro Kaydet",
+          "tip": "Makro kaydı klavye kısayollarını da kaydeder"
+        },
+        
+        "macro_security": {
+          "path": "Geliştirici → Makro Güvenliği",
+          "levels": [
+            "Tüm makroları devre dışı bırak (en güvenli)",
+            "Dijital imzalı makrolar dışında tümünü devre dışı bırak",
+            "Bildiririmle tüm makroları devre dışı bırak (önerilen)",
+            "Tüm makroları etkinleştir (tehlikeli)"
+          ],
+          "warning": "Güvenilmeyen kaynaklardan gelen makroları çalıştırmayın"
+        },
+        
+        "simple_examples": [
+          "Otomatik biçimlendirme (font, renk, hizalama)",
+          "Veri temizleme adımları",
+          "Özel yazdırma ayarları",
+          "Rapor oluşturma",
+          "Email gönderme"
+        ]
+      }
+    },
+    {
+      "id": "ozel-gorunumler",
+      "title": "💾 Özel Görünümler",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Farklı görünüm ayarlarını kaydedin ve hızlıca değiştirin.",
+        
+        "custom_views": {
+          "description": "Yazdırma ayarları, gizli satır/sütunlar, filtreler, zoom gibi ayarları kaydet",
+          "path": "Görünüm → Özel Görünümler",
+          "what_is_saved": [
+            "Yazdırma ayarları",
+            "Gizlenmiş satır/sütunlar",
+            "Filtre durumu",
+            "Pencereleri dondur ayarı",
+            "Zoom seviyesi",
+            "Seçili hücre"
+          ],
+          "what_is_not_saved": [
+            "Veri değerleri",
+            "Formüller",
+            "Biçimlendirme"
+          ]
+        },
+        
+        "creating_view": {
+          "steps": [
+            "İstediğiniz görünümü ayarlayın (zoom, filtre, gizli sütunlar vs.)",
+            "Görünüm → Özel Görünümler → Ekle",
+            "Görünüme isim verin",
+            "Tamam"
+          ]
+        },
+        
+        "use_cases": [
+          {
+            "scenario": "Özet Rapor vs Detay Rapor",
+            "view1": "Özet - Bazı sütunlar gizli, küçük zoom",
+            "view2": "Detay - Tüm sütunlar görünür, normal zoom"
+          },
+          {
+            "scenario": "Yazdırma vs Ekran Görünümü",
+            "view1": "Yazdırma - Sayfa düzeni, ölçeklendirilmiş",
+            "view2": "Ekran - Normal görünüm, rahat çalışma"
+          },
+          {
+            "scenario": "Farklı Filtreler",
+            "view1": "Bu Ay - Tarih filtresi aktif",
+            "view2": "Tüm Veriler - Filtre kapalı"
+          }
+        ],
+        
+        "tip": "Paylaşılan dosyalarda Özel Görünümler kullanılamaz"
+      }
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {
+      "keys": "Alt+W, L",
+      "action": "Normal Görünüm"
+    },
+    {
+      "keys": "Alt+W, P",
+      "action": "Sayfa Düzeni Görünümü"
+    },
+    {
+      "keys": "Alt+W, I",
+      "action": "Sayfa Kesimi Önizleme"
+    },
+    {
+      "keys": "Ctrl+Fare Tekerleği",
+      "action": "Yakınlaştır/Uzaklaştır"
+    },
+    {
+      "keys": "Alt+W, F, F",
+      "action": "İlk Satırı Dondur"
+    },
+    {
+      "keys": "Alt+W, F, C",
+      "action": "İlk Sütunu Dondur"
+    },
+    {
+      "keys": "Alt+W, F, R",
+      "action": "Pencereleri Dondur"
+    },
+    {
+      "keys": "Alt+W, S",
+      "action": "Bölme Ekle/Kaldır"
+    },
+    {
+      "keys": "Alt+F8",
+      "action": "Makrolar İletişim Kutusu"
+    },
+    {
+      "keys": "Ctrl+Shift+U",
+      "action": "Formül Çubuğunu Genişlet/Daralt"
+    },
+    {
+      "keys": "Ctrl+F1",
+      "action": "Şeridi Gizle/Göster"
+    }
+  ],
+  
+  "tips_and_tricks": [
+    "Ctrl+Fare Tekerleği ile zoom en hızlı yöntemdir",
+    "Uzun tablolarda başlık satırını mutlaka dondurun",
+    "Bölme yerine Pencereleri Dondur kullanın (daha pratik)",
+    "Özel Görünümler ile farklı rapor formatları kaydedin",
+    "Sayfa Kesimi Önizleme'de kesimleri sürükleyerek düzenleyin",
+    "Yan Yana Görüntüle ile iki dosyayı karşılaştırın",
+    "Tam ekran için: Görünüm → Tam Ekran (Esc ile çık)",
+    "Çok monitör kullanıyorsanız Yeni Pencere ile dosyayı iki ekrana yayın"
+  ],
+  
+  "workflow_examples": [
+    {
+      "task": "Uzun Satış Listesi Analizi",
+      "setup": [
+        "İlk satırı dondur (başlıklar görünsün)",
+        "Zoom %75 (daha fazla satır görmek için)",
+        "Filtre ekle (istediğin verileri bul)",
+        "Özel Görünüm kaydet"
+      ]
+    },
+    {
+      "task": "Dashboard Oluşturma",
+      "setup": [
+        "Kılavuz çizgilerini kapat (temiz görünüm)",
+        "Başlıkları gizle (A, B, C... görünmesin)",
+        "Zoom %100",
+        "Grafikleri düzenle",
+        "Özel Görünüm: 'Dashboard' olarak kaydet"
+      ]
+    },
+    {
+      "task": "İki Dönem Karşılaştırma",
+      "setup": [
+        "İki dosya aç (Bu Ay, Geçen Ay)",
+        "Görünüm → Yan Yana Görüntüle",
+        "Eşzamanlı Kaydırma aç",
+        "Aynı satırları karşılaştır"
+      ]
+    },
+    {
+      "task": "Geniş Tablo ile Çalışma",
+      "setup": [
+        "İlk sütunu dondur (etiketler görünsün)",
+        "Yatay yönde kaydır",
+        "Veya: Bölme ekle (sol ve sağ bölge)",
+        "Zoom ayarla"
+      ]
+    }
+  ],
+  
+  "best_practices": [
+    {
+      "practice": "Her Zaman Başlıkları Dondur",
+      "why": "Aşağı kaydırınca ne sütunu gördüğünü bil",
+      "how": "Görünüm → İlk Satırı Dondur"
+    },
+    {
+      "practice": "Özel Görünümler Kullan",
+      "why": "Farklı kullanım senaryoları için hızlı geçiş",
+      "how": "Yazdırma, Analiz, Sunum görünümleri kaydet"
+    },
+    {
+      "practice": "Zoom Seviyesini Ayarla",
+      "why": "Gözlerinizi yormayın",
+      "how": "Ctrl+Fare tekerleği ile rahat seviye bul"
+    },
+    {
+      "practice": "Gereksiz Öğeleri Gizle",
+      "why": "Dikkati dağıtmaz, temiz görünüm",
+      "how": "Sunum için kılavuz çizgileri ve başlıkları kapat"
+    }
+  ],
+  
+  "common_scenarios": [
+    {
+      "scenario": "Başlık satırı kayboldu",
+      "problem": "Aşağı kaydırınca hangi sütun ne bilmiyorum",
+      "solution": "Görünüm → İlk Satırı Dondur"
+    },
+    {
+      "scenario": "İki dosyayı karşılaştırmalıyım",
+      "problem": "İki Excel dosyası arasında sürekli geçiş yapıyorum",
+      "solution": "Görünüm → Yan Yana Görüntüle + Eşzamanlı Kaydırma"
+    },
+    {
+      "scenario": "Hem başlıkları hem ilk sütunu görmek istiyorum",
+      "problem": "Sağa kaydırınca sol etiketler kayboldu",
+      "solution": "B2'yi seç → Görünüm → Pencereleri Dondur (1. satır ve A sütunu donar)"
+    },
+    {
+      "scenario": "Yazdırma için farklı görünüm lazım",
+      "problem": "Ekranda bazı sütunlar olsun ama yazdırmada olmasın",
+      "solution": "İki Özel Görünüm oluştur: 'Çalışma' ve 'Yazdırma'"
+    },
+    {
+      "scenario": "Tablonun yapısını görmek istiyorum",
+      "problem": "Tablo çok büyük, genel yapıyı göremiyorum",
+      "solution": "Zoom %25-50 arasında küçült, genel bakış al"
+    }
+  ],
+  
+  "advanced_tips": [
+    {
+      "tip": "Çoklu Monitör Kullanımı",
+      "description": "Yeni Pencere ile aynı dosyayı iki monitöre yay",
+      "benefit": "Bir ekranda veri, diğerinde grafik"
+    },
+    {
+      "tip": "Özel Zoom Seviyeleri",
+      "description": "Farklı sayfalar farklı zoom'da olabilir",
+      "use": "Dashboard %100, veri sayfası %75"
+    },
+    {
+      "tip": "Bölme + Dondur Kombine",
+      "description": "Hem bölme hem dondurma birlikte kullanılabilir",
+      "use": "Karmaşık tablolarda maksimum kontrol"
+    },
+    {
+      "tip": "Makro Kısayolları",
+      "description": "Sık kullanılan görünüm değişiklikleri için makro yaz",
+      "example": "Ctrl+Shift+P ile 'Yazdırma Görünümü' aktif olsun"
+    }
+  ],
+  
+  "troubleshooting": [
+    {
+      "problem": "Pencereleri Dondur çalışmıyor",
+      "possible_causes": [
+        "Paylaşılan çalışma kitabı (desteklenmez)",
+        "Sayfa Koruma açık",
+        "Başka bir dondurma zaten aktif"
+      ],
+      "solution": "Önce mevcut dondurmaları çöz, paylaşımı kapat"
+    },
+    {
+      "problem": "Özel Görünümler görünmüyor",
+      "cause": "Paylaşılan çalışma kitabında kullanılamaz",
+      "solution": "Dosya → Paylaş → Çalışma Kitabı Paylaşımını Kaldır"
+    },
+    {
+      "problem": "Zoom çok yavaş",
+      "cause": "Büyük dosya veya çok grafik",
+      "solution": "Grafikleri geçici gizle veya zoom yerine bölme kullan"
+    }
+  ],
+  
+  "resources": {
+    "microsoft_docs": "https://support.microsoft.com/tr-tr/office/excel-görünüm-menüsü",
+    "freeze_panes_guide": "https://support.microsoft.com/tr-tr/office/pencereleri-dondur",
+    "practice_files": [
+      "Görünüm Ayarları Örnekleri.xlsx",
+      "Pencere Yönetimi Alıştırmaları.xlsx"
+    ]
+  }
+}

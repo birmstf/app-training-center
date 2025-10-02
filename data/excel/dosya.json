@@ -1,0 +1,742 @@
+{
+  "id": "excel-dosya",
+  "title": "Microsoft Excel - Dosya Menüsü",
+  "description": "Dosya işlemleri, kaydetme, açma, yazdırma, paylaşma ve Excel ayarları.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "2 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "yeni-ac",
+      "title": "📂 Yeni ve Aç",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yeni çalışma kitabı oluşturma ve mevcut dosyaları açma.",
+        
+        "new_workbook": {
+          "description": "Yeni Çalışma Kitabı",
+          "shortcut": "Ctrl + N",
+          "options": [
+            {
+              "type": "Boş Çalışma Kitabı",
+              "description": "Sıfırdan başla",
+              "default": true,
+              "sheets": "3 boş sayfa"
+            },
+            {
+              "type": "Şablonlar",
+              "description": "Hazır şablonlardan seç",
+              "categories": [
+                "Bütçeler",
+                "Takvimler",
+                "Faturalar",
+                "Planlayıcılar",
+                "Listeler",
+                "Raporlar"
+              ],
+              "search": "Çevrimiçi şablon arama"
+            }
+          ],
+          
+          "recent_templates": "Son kullanılan şablonlar",
+          "pinned_templates": "Sabitlenen şablonlar"
+        },
+        
+        "open": {
+          "description": "Aç",
+          "shortcut": "Ctrl + O",
+          "locations": [
+            {
+              "location": "Son Kullanılanlar",
+              "description": "Son açılan dosyalar",
+              "pin": "Dosyayı sabitle (iğne simgesi)",
+              "quick_access": "Hızlı erişim"
+            },
+            {
+              "location": "OneDrive",
+              "description": "Bulut depolama",
+              "sync": "Otomatik senkronizasyon",
+              "share": "Paylaşım kolaylığı"
+            },
+            {
+              "location": "Bu Bilgisayar",
+              "description": "Yerel dosyalar",
+              "browse": "Gözat ile dosya seç"
+            },
+            {
+              "location": "SharePoint",
+              "description": "Şirket içi paylaşım",
+              "collaborative": "İşbirliği"
+            }
+          ],
+          
+          "open_options": {
+            "read_only": "Salt okunur aç",
+            "open_copy": "Kopyasını aç",
+            "open_repair": "Aç ve Onar",
+            "open_browse": "Tarayıcıda Aç (Web Excel)"
+          }
+        },
+        
+        "import": {
+          "description": "İçe Aktar",
+          "sources": [
+            "Metin dosyası (CSV, TXT)",
+            "Access veritabanı",
+            "Web sayfası",
+            "XML dosyası",
+            "JSON dosyası"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "bilgi",
+      "title": "ℹ️ Bilgi",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dosya özellikleri, izinler ve belge yönetimi.",
+        
+        "properties": {
+          "description": "Özellikler",
+          "metadata": [
+            {
+              "field": "Boyut",
+              "description": "Dosya boyutu"
+            },
+            {
+              "field": "Başlık",
+              "description": "Belge başlığı",
+              "editable": true
+            },
+            {
+              "field": "Etiketler",
+              "description": "Arama için anahtar kelimeler",
+              "editable": true
+            },
+            {
+              "field": "Yorumlar",
+              "description": "Belge açıklaması",
+              "editable": true
+            },
+            {
+              "field": "Şirket",
+              "description": "Şirket adı",
+              "editable": true
+            },
+            {
+              "field": "Yazar",
+              "description": "Oluşturan kişi"
+            },
+            {
+              "field": "Son Değiştiren",
+              "description": "En son düzenleyen"
+            },
+            {
+              "field": "Oluşturulma Tarihi",
+              "description": "İlk oluşturma zamanı"
+            },
+            {
+              "field": "Son Değiştirilme",
+              "description": "Son düzenleme zamanı"
+            }
+          ],
+          
+          "advanced_properties": {
+            "statistics": "İstatistikler (sayfa, kelime, karakter sayısı)",
+            "contents": "İçindekiler",
+            "custom": "Özel özellikler ekle"
+          }
+        },
+        
+        "protect_workbook": {
+          "description": "Çalışma Kitabını Koru",
+          "options": [
+            {
+              "protection": "Yapıyı Koru",
+              "prevents": "Sayfa ekleme/silme/gizleme",
+              "password": "Parola ile koruma",
+              "use": "Sayfa yapısını sabitle"
+            },
+            {
+              "protection": "Pencereyi Koru",
+              "prevents": "Pencere boyutu/konum değişimi",
+              "use": "Görünümü sabitle"
+            }
+          ],
+          
+          "digital_signature": {
+            "description": "Dijital İmza",
+            "use": "Belgenin orijinalliğini garanti et",
+            "certificate": "Dijital sertifika gerekir"
+          },
+          
+          "mark_as_final": {
+            "description": "Son Olarak İşaretle",
+            "effect": "Dosyayı salt okunur yapar",
+            "warning": "Yazma koruması ekler",
+            "reversible": "Geri alınabilir"
+          }
+        },
+        
+        "inspect_document": {
+          "description": "Belgeyi Denetle",
+          "finds": [
+            "Yorumlar ve açıklamalar",
+            "Gizli özellikler ve kişisel bilgiler",
+            "Üstbilgi ve altbilgiler",
+            "Gizli satır/sütunlar",
+            "Gizli sayfalar",
+            "Görünmez içerik"
+          ],
+          "remove": "Otomatik temizleme seçeneği",
+          "use": "Dosya paylaşmadan önce hassas bilgileri temizle"
+        },
+        
+        "manage_workbook": {
+          "description": "Çalışma Kitabını Yönet",
+          "versions": {
+            "auto_save": "Otomatik Kaydetme versiyonları",
+            "recover": "Önceki versiyonları kurtar",
+            "compare": "Versiyonları karşılaştır"
+          },
+          "check_issues": "Sorunları Kontrol Et",
+          "browser_view": "Tarayıcı Görünüm Seçenekleri"
+        }
+      }
+    },
+    
+    {
+      "id": "kaydet",
+      "title": "💾 Kaydet ve Farklı Kaydet",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dosyayı kaydetme ve farklı formatlarda dışa aktarma.",
+        
+        "save": {
+          "description": "Kaydet",
+          "shortcut": "Ctrl + S",
+          "first_time": "İlk kayıtta konum ve ad sor",
+          "updates": "Sonraki kayıtlarda sadece güncelle",
+          "auto_save": {
+            "description": "Otomatik Kaydetme (OneDrive/SharePoint)",
+            "interval": "Birkaç saniyede bir otomatik",
+            "toggle": "Açık/Kapalı",
+            "benefit": "Veri kaybı önlenir"
+          }
+        },
+        
+        "save_as": {
+          "description": "Farklı Kaydet",
+          "shortcut": "F12",
+          "use_cases": [
+            "Yeni dosya adı",
+            "Farklı konum",
+            "Farklı format",
+            "Kopya oluştur"
+          ],
+          
+          "file_formats": [
+            {
+              "format": ".xlsx",
+              "description": "Excel Çalışma Kitabı",
+              "default": true,
+              "features": "Tüm özellikler",
+              "version": "Excel 2007+"
+            },
+            {
+              "format": ".xlsm",
+              "description": "Excel Makro Etkin Çalışma Kitabı",
+              "macros": true,
+              "use": "Makro içeren dosyalar"
+            },
+            {
+              "format": ".xls",
+              "description": "Excel 97-2003 Çalışma Kitabı",
+              "compatibility": "Eski Excel sürümleri",
+              "limited": "Bazı özellikler desteklenmez"
+            },
+            {
+              "format": ".xlsb",
+              "description": "Excel İkili Çalışma Kitabı",
+              "binary": true,
+              "fast": "Daha hızlı açılır",
+              "smaller": "Daha küçük dosya boyutu"
+            },
+            {
+              "format": ".csv",
+              "description": "CSV (Virgülle Ayrılmış Değerler)",
+              "text": "Düz metin",
+              "compatible": "Evrensel uyumluluk",
+              "limited": "Tek sayfa, sadece değerler"
+            },
+            {
+              "format": ".txt",
+              "description": "Metin (Sekme ile Ayrılmış)",
+              "delimiter": "Tab karakteri",
+              "simple": "En basit format"
+            },
+            {
+              "format": ".pdf",
+              "description": "PDF",
+              "read_only": "Salt okunur",
+              "universal": "Evrensel görüntüleme",
+              "preserves": "Görünümü korur"
+            },
+            {
+              "format": ".html",
+              "description": "Web Sayfası",
+              "web": "Tarayıcıda açılır",
+              "interactive": "Etkileşimli"
+            },
+            {
+              "format": ".xml",
+              "description": "XML Verileri",
+              "structured": "Yapılandırılmış veri",
+              "interop": "Sistem entegrasyonu"
+            }
+          ]
+        },
+        
+        "save_location": {
+          "onedrive": {
+            "description": "OneDrive'a Kaydet",
+            "benefits": [
+              "Bulut yedekleme",
+              "Her yerden erişim",
+              "Otomatik senkronizasyon",
+              "Paylaşım kolaylığı",
+              "Versiyon geçmişi"
+            ],
+            "auto_save": "Otomatik kaydetme aktif"
+          },
+          "sharepoint": {
+            "description": "SharePoint'e Kaydet",
+            "team": "Ekip çalışması",
+            "permissions": "Gelişmiş izin kontrolü"
+          },
+          "local": {
+            "description": "Bu Bilgisayara Kaydet",
+            "offline": "İnternet gerektirmez",
+            "manual_backup": "Manuel yedekleme gerekir"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "yazdir",
+      "title": "🖨️ Yazdır",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Çalışma kitabını yazdırma ve önizleme.",
+        
+        "print": {
+          "description": "Yazdır",
+          "shortcut": "Ctrl + P",
+          "preview": "Baskı önizlemesi otomatik açılır",
+          
+          "print_settings": {
+            "printer": {
+              "description": "Yazıcı seçimi",
+              "options": "Fiziksel yazıcı, PDF yazıcı"
+            },
+            "copies": {
+              "description": "Kopya sayısı",
+              "collate": "Harmanlama (sayfa sırası)"
+            },
+            "pages": {
+              "description": "Sayfa aralığı",
+              "options": ["Tümü", "Geçerli Sayfa", "Belirli aralık (1-5,8)"]
+            },
+            "orientation": {
+              "description": "Sayfa yönü",
+              "portrait": "Dikey",
+              "landscape": "Yatay"
+            },
+            "paper_size": {
+              "description": "Kağıt boyutu",
+              "common": ["A4", "Letter", "Legal", "A3"]
+            }
+          },
+          
+          "what_to_print": {
+            "options": [
+              {
+                "option": "Etkin Sayfalar",
+                "description": "Seçili sayfaları yazdır",
+                "default": true
+              },
+              {
+                "option": "Tüm Çalışma Kitabı",
+                "description": "Tüm sayfaları yazdır"
+              },
+              {
+                "option": "Seçim",
+                "description": "Sadece seçili hücreleri yazdır",
+                "use": "Tablonun bir kısmını yazdır"
+              }
+            ]
+          },
+          
+          "scaling": {
+            "description": "Ölçeklendirme",
+            "options": [
+              "Ölçekleme yok",
+              "Sayfaya sığdır (tüm sütunlar 1 sayfada)",
+              "Sayfaya sığdır (tüm satırlar 1 sayfada)",
+              "Tüm sayfayı 1 sayfaya sığdır",
+              "Özel ölçek (%50-%400)"
+            ]
+          },
+          
+          "margins": {
+            "description": "Kenar boşlukları",
+            "presets": ["Normal", "Geniş", "Dar"],
+            "custom": "Özel kenar boşlukları",
+            "center": "Sayfada ortala (yatay/dikey)"
+          },
+          
+          "page_setup": {
+            "description": "Sayfa Düzeni",
+            "header_footer": "Üstbilgi ve Altbilgi",
+            "sheet_options": "Sayfa seçenekleri",
+            "gridlines": "Kılavuz çizgileri yazdır",
+            "headings": "Satır/sütun başlıkları yazdır"
+          }
+        },
+        
+        "print_area": {
+          "description": "Yazdırma Alanı",
+          "path": "Sayfa Düzeni → Yazdırma Alanı → Yazdırma Alanını Ayarla",
+          "use": "Tablonun belirli bir bölümünü yazdır",
+          "multiple": "Birden fazla alan seçilebilir",
+          "clear": "Yazdırma Alanını Temizle"
+        },
+        
+        "print_titles": {
+          "description": "Yazdırma Başlıkları",
+          "repeat_rows": "Her sayfada tekrarlanan satırlar",
+          "repeat_columns": "Her sayfada tekrarlanan sütunlar",
+          "use": "Başlık satırını her sayfada göster"
+        }
+      }
+    },
+    
+    {
+      "id": "paylas-disaaktar",
+      "title": "🔗 Paylaş ve Dışa Aktar",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dosya paylaşma ve farklı formatlarda dışa aktarma.",
+        
+        "share": {
+          "description": "Paylaş",
+          "methods": [
+            {
+              "method": "OneDrive/SharePoint Bağlantısı",
+              "description": "Link paylaşımı",
+              "realtime": "Gerçek zamanlı işbirliği",
+              "permissions": [
+                "Düzenleyebilir",
+                "Yorumlayabilir",
+                "Görüntüleyebilir"
+              ],
+              "link_types": [
+                "Belirli kişiler",
+                "Kuruluştaki herkes",
+                "Bağlantıya sahip herkes"
+              ],
+              "expiry": "Son kullanma tarihi ayarla",
+              "password": "Parola koruması"
+            },
+            {
+              "method": "E-posta Eki",
+              "description": "Dosyayı e-posta ile gönder",
+              "formats": [
+                "Excel çalışma kitabı (.xlsx)",
+                "PDF",
+                "XPS"
+              ],
+              "outlook": "Outlook ile entegre"
+            },
+            {
+              "method": "Kopya Gönder",
+              "description": "OneDrive kopyasını paylaş",
+              "separate": "Bağımsız kopya"
+            }
+          ],
+          
+          "collaboration": {
+            "co_authoring": "Ortak yazma",
+            "simultaneous": "Aynı anda çalışma",
+            "chat": "Dosya içi sohbet",
+            "comments": "Yorumlar ve öneriler",
+            "version_history": "Versiyon geçmişi"
+          }
+        },
+        
+        "export": {
+          "description": "Dışa Aktar",
+          "formats": [
+            {
+              "format": "PDF/XPS Belgesi Oluştur",
+              "description": "PDF veya XPS olarak kaydet",
+              "options": {
+                "optimize": "Standart veya Minimum boyut",
+                "pages": "Tüm sayfa veya seçim",
+                "open_after": "Yayımladıktan sonra aç"
+              },
+              "use": "Evrensel paylaşım, salt okunur"
+            },
+            {
+              "format": "Dosya Türünü Değiştir",
+              "description": "Farklı Excel formatlarında kaydet",
+              "options": [".xlsx", ".xlsm", ".xlsb", ".xls", ".csv"]
+            }
+          ]
+        },
+        
+        "publish": {
+          "description": "Yayımla",
+          "power_bi": {
+            "name": "Power BI'da Yayımla",
+            "description": "Excel verilerini Power BI'a aktar",
+            "dashboards": "İnteraktif panolar oluştur",
+            "refresh": "Otomatik veri yenileme"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "hesap-secenekler",
+      "title": "⚙️ Hesap ve Seçenekler",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Microsoft hesabı ve Excel ayarları.",
+        
+        "account": {
+          "description": "Hesap",
+          "user_info": {
+            "profile": "Kullanıcı profili",
+            "photo": "Profil fotoğrafı",
+            "email": "Hesap e-postası"
+          },
+          "subscription": {
+            "description": "Abonelik bilgileri",
+            "microsoft_365": "Microsoft 365 durumu",
+            "manage": "Aboneliği yönet",
+            "benefits": "Abonelik avantajları"
+          },
+          "connected_services": {
+            "description": "Bağlı hizmetler",
+            "onedrive": "OneDrive",
+            "sharepoint": "SharePoint",
+            "teams": "Microsoft Teams"
+          },
+          "office_background": {
+            "description": "Office Arka Planı",
+            "themes": "Görsel temalar"
+          },
+          "theme": {
+            "description": "Office Teması",
+            "options": ["Renkli", "Koyu Gri", "Siyah", "Beyaz", "Sistem ayarını kullan"]
+          }
+        },
+        
+        "options": {
+          "description": "Seçenekler",
+          "categories": [
+            {
+              "category": "Genel",
+              "settings": [
+                "Kullanıcı arabirimi seçenekleri",
+                "Başlangıç seçenekleri",
+                "Varsayılan yazı tipi",
+                "Son kullanılanlar sayısı"
+              ]
+            },
+            {
+              "category": "Formüller",
+              "settings": [
+                "Hesaplama seçenekleri (Otomatik/Manuel)",
+                "Hata denetimi kuralları",
+                "R1C1 referans stili",
+                "Çalışma kitabı hesaplama"
+              ]
+            },
+            {
+              "category": "Veri",
+              "settings": [
+                "Veri doğrulama",
+                "Filtre seçenekleri",
+                "Otomatik Tamamlama"
+              ]
+            },
+            {
+              "category": "Provaing",
+              "settings": [
+                "Otomatik Düzeltme",
+                "Yazım denetimi seçenekleri",
+                "Özel sözlükler"
+              ]
+            },
+            {
+              "category": "Kaydet",
+              "settings": [
+                "Otomatik kaydetme aralığı",
+                "Varsayılan dosya konumu",
+                "Varsayılan dosya formatı",
+                "Otomatik Kurtarma bilgileri"
+              ]
+            },
+            {
+              "category": "Dil",
+              "settings": [
+                "Düzenleme dilleri",
+                "Görüntüleme dili",
+                "Yardım dili"
+              ]
+            },
+            {
+              "category": "Gelişmiş",
+              "settings": [
+                "Düzenleme seçenekleri",
+                "Kesme, kopyalama, yapıştırma",
+                "Görüntü boyutu ve kalitesi",
+                "Grafik seçenekleri",
+                "Genel seçenekler"
+              ]
+            },
+            {
+              "category": "Şerit ve Araç Çubuğunu Özelleştir",
+              "settings": [
+                "Şerit sekmelerini özelleştir",
+                "Hızlı Erişim Araç Çubuğu",
+                "Klavye kısayolları"
+              ]
+            },
+            {
+              "category": "Eklentiler",
+              "settings": [
+                "COM Eklentileri",
+                "Etkin Olmayan Uygulama Eklentileri",
+                "Eklenti yönetimi"
+              ]
+            },
+            {
+              "category": "Güven Merkezi",
+              "settings": [
+                "Güvenilir konumlar",
+                "Güvenilir yayımcılar",
+                "Makro güvenliği",
+                "Gizlilik seçenekleri",
+                "Mesaj çubuğu"
+              ]
+            }
+          ]
+        },
+        
+        "feedback": {
+          "description": "Geri Bildirim",
+          "send": "Microsoft'a geri bildirim gönder",
+          "suggest": "Özellik öner",
+          "report": "Sorun bildir"
+        }
+      }
+    },
+    
+    {
+      "id": "kapat",
+      "title": "❌ Kapat",
+      "order": 7,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dosyayı kapatma ve Excel'den çıkma.",
+        
+        "close": {
+          "description": "Kapat",
+          "shortcut": "Ctrl + W veya Ctrl + F4",
+          "action": "Geçerli dosyayı kapat",
+          "save_prompt": "Kaydedilmemiş değişiklikler varsa uyarı",
+          "options": ["Kaydet", "Kaydetme", "İptal"]
+        },
+        
+        "close_all": {
+          "description": "Tümünü Kapat",
+          "action": "Açık tüm Excel dosyalarını kapat",
+          "prompt": "Her dosya için kaydetme sorgusu"
+        },
+        
+        "exit": {
+          "description": "Excel'i Kapat",
+          "shortcut": "Alt + F4",
+          "action": "Excel uygulamasını tamamen kapat",
+          "closes": "Tüm açık dosyalar kapatılır"
+        },
+        
+        "auto_recover": {
+          "description": "Otomatik Kurtarma",
+          "info": "Excel beklenmedik kapanırsa",
+          "recovery": "Sonraki açılışta kurtarma dosyaları gösterilir",
+          "location": "Otomatik kurtarma dosya konumu: Seçenekler → Kaydet"
+        }
+      }
+    }
+  ],
+  
+  "tips": [
+    "Ctrl + S ile düzenli aralıklarla kaydedin",
+    "OneDrive kullanarak her yerden erişim sağlayın",
+    "Otomatik Kaydetme'yi aktif edin (OneDrive/SharePoint)",
+    "Dosya paylaşmadan önce Belgeyi Denetle ile hassas bilgileri temizleyin",
+    "PDF formatında paylaşım daha evrenseldir",
+    "Yazdırma öncesinde Baskı Önizleme'yi kontrol edin",
+    "Çalışma Kitabını Koruma ile yapıyı sabitleyin",
+    "Düzenli yedekleme alın"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Yeni çalışma kitabı",
+      "shortcut": "Ctrl + N"
+    },
+    {
+      "action": "Aç",
+      "shortcut": "Ctrl + O"
+    },
+    {
+      "action": "Kaydet",
+      "shortcut": "Ctrl + S"
+    },
+    {
+      "action": "Farklı Kaydet",
+      "shortcut": "F12"
+    },
+    {
+      "action": "Yazdır",
+      "shortcut": "Ctrl + P"
+    },
+    {
+      "action": "Kapat",
+      "shortcut": "Ctrl + W"
+    },
+    {
+      "action": "Excel'i Kapat",
+      "shortcut": "Alt + F4"
+    },
+    {
+      "action": "Bilgi sayfası",
+      "shortcut": "Alt + F, I"
+    }
+  ]
+}

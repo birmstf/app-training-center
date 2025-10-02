@@ -1,0 +1,740 @@
+{
+  "id": "excel-giris",
+  "title": "Microsoft Excel - Giriş Menüsü",
+  "description": "Excel'in temel biçimlendirme ve düzenleme araçları. Hücre formatları, stiller ve temel işlemler.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "pano",
+      "title": "📋 Pano İşlemleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Kopyala, kes, yapıştır ve biçim boyacısı araçları.",
+        
+        "basic_operations": {
+          "copy": {
+            "description": "Kopyala",
+            "shortcut": "Ctrl + C",
+            "action": "Hücre içeriğini panoya kopyalar"
+          },
+          "cut": {
+            "description": "Kes",
+            "shortcut": "Ctrl + X",
+            "action": "Hücreyi keser ve panoya alır"
+          },
+          "paste": {
+            "description": "Yapıştır",
+            "shortcut": "Ctrl + V",
+            "action": "Panodan yapıştırır"
+          }
+        },
+        
+        "paste_special": {
+          "name": "Özel Yapıştır",
+          "shortcut": "Ctrl + Alt + V",
+          "options": [
+            {
+              "option": "Değerler",
+              "description": "Sadece değerleri yapıştır (formül yok)",
+              "use": "Formül yerine sonucu yapıştırmak için"
+            },
+            {
+              "option": "Formüller",
+              "description": "Sadece formülleri yapıştır",
+              "use": "Biçimlendirme olmadan formül"
+            },
+            {
+              "option": "Biçimler",
+              "description": "Sadece biçimlendirmeyi yapıştır",
+              "use": "Değer değişmeden format aktarımı"
+            },
+            {
+              "option": "Değerler ve Sayı Biçimleri",
+              "description": "Değer + format",
+              "use": "En çok kullanılan seçenek"
+            },
+            {
+              "option": "Transpoz",
+              "description": "Satır ↔ Sütun",
+              "use": "Veriyi döndürmek için"
+            }
+          ],
+          "operations": [
+            {
+              "operation": "Ekle",
+              "description": "Kopyalanan değerleri mevcut değerlere ekle"
+            },
+            {
+              "operation": "Çıkar",
+              "description": "Mevcut değerlerden çıkar"
+            },
+            {
+              "operation": "Çarp",
+              "description": "Mevcut değerlerle çarp"
+            },
+            {
+              "operation": "Böl",
+              "description": "Mevcut değerlere böl"
+            }
+          ]
+        },
+        
+        "format_painter": {
+          "name": "Biçim Boyacısı",
+          "shortcut": "Ctrl + Shift + C (kopyala) / Ctrl + Shift + V (yapıştır)",
+          "icon": "Fırça simgesi",
+          "how_to_use": [
+            "Biçimi kopyalanacak hücreyi seç",
+            "Biçim Boyacısı'na tıkla",
+            "Biçimi uygulanacak hücre(lere) tıkla"
+          ],
+          "double_click": "Çift tıkla: Birden fazla yere uygula",
+          "esc": "ESC ile çık"
+        }
+      }
+    },
+    
+    {
+      "id": "yazi-tipi",
+      "title": "🔤 Yazı Tipi",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Metin biçimlendirme araçları.",
+        
+        "font_basics": {
+          "font_family": {
+            "description": "Yazı tipi ailesi",
+            "common": ["Calibri", "Arial", "Times New Roman", "Verdana"],
+            "recommendation": "Calibri (Excel varsayılanı)"
+          },
+          "font_size": {
+            "description": "Yazı boyutu",
+            "range": "8-72 pt",
+            "default": "11 pt",
+            "shortcut_increase": "Ctrl + ]",
+            "shortcut_decrease": "Ctrl + ["
+          }
+        },
+        
+        "font_styles": {
+          "bold": {
+            "description": "Kalın",
+            "shortcut": "Ctrl + B",
+            "icon": "B"
+          },
+          "italic": {
+            "description": "İtalik",
+            "shortcut": "Ctrl + I",
+            "icon": "I"
+          },
+          "underline": {
+            "description": "Altı çizili",
+            "shortcut": "Ctrl + U",
+            "icon": "U",
+            "types": ["Tek çizgi", "Çift çizgi", "Muhasebe altı çizgisi"]
+          },
+          "strikethrough": {
+            "description": "Üstü çizili",
+            "shortcut": "Ctrl + 5",
+            "use": "İptal edilen verileri göstermek için"
+          }
+        },
+        
+        "font_color": {
+          "text_color": {
+            "description": "Metin rengi",
+            "icon": "A (renkli)",
+            "theme_colors": "Tema renkleri",
+            "standard_colors": "Standart renkler",
+            "more_colors": "Daha fazla renk - RGB/HEX seçimi"
+          },
+          "fill_color": {
+            "description": "Dolgu rengi (arka plan)",
+            "icon": "Kova",
+            "no_fill": "Dolgu yok seçeneği",
+            "pattern": "Desen ile dolgu"
+          }
+        },
+        
+        "borders": {
+          "description": "Kenarlıklar",
+          "types": [
+            "Alt kenarlık",
+            "Üst kenarlık",
+            "Sol kenarlık",
+            "Sağ kenarlık",
+            "Dış kenarlık",
+            "Tüm kenarlıklar",
+            "Kenarlık yok"
+          ],
+          "line_style": "Çizgi stili (noktalı, kesikli, kalın)",
+          "line_color": "Çizgi rengi",
+          "shortcut": "Ctrl + Shift + &"
+        }
+      }
+    },
+    
+    {
+      "id": "hizalama",
+      "title": "⬌ Hizalama",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Hücre içeriğini konumlandırma ve yönlendirme.",
+        
+        "horizontal_align": {
+          "description": "Yatay hizalama",
+          "options": [
+            {
+              "type": "Sola hizala",
+              "shortcut": "Ctrl + L (Windows) / Cmd + L (Mac)",
+              "default": "Metin için varsayılan"
+            },
+            {
+              "type": "Ortala",
+              "shortcut": "Ctrl + E",
+              "use": "Başlıklar için"
+            },
+            {
+              "type": "Sağa hizala",
+              "shortcut": "Ctrl + R",
+              "default": "Sayılar için varsayılan"
+            },
+            {
+              "type": "Yasla",
+              "description": "Hücre genişliğine yasla",
+              "use": "Uzun metinler için"
+            }
+          ]
+        },
+        
+        "vertical_align": {
+          "description": "Dikey hizalama",
+          "options": ["Üst", "Ortala", "Alt"],
+          "default": "Alt"
+        },
+        
+        "text_control": {
+          "wrap_text": {
+            "description": "Metni kaydır",
+            "function": "Uzun metni hücre içinde birden fazla satıra böler",
+            "auto_height": "Satır yüksekliği otomatik artar"
+          },
+          "shrink_to_fit": {
+            "description": "Sığdır",
+            "function": "Yazı boyutunu küçülterek hücreye sığdırır",
+            "warning": "Çok küçülürse okunamaz"
+          },
+          "merge_cells": {
+            "description": "Hücreleri birleştir",
+            "options": [
+              {
+                "type": "Birleştir ve Ortala",
+                "common": "En çok kullanılan",
+                "action": "Birleştir + ortala"
+              },
+              {
+                "type": "Hücreleri Birleştir",
+                "action": "Ortala olmadan birleştir"
+              },
+              {
+                "type": "Satırlarda Birleştir",
+                "action": "Her satırı ayrı birleştir"
+              }
+            ],
+            "warning": "Birleştirme sıralamayı bozabilir",
+            "unmerge": "Hücre birleştirmeyi geri al"
+          }
+        },
+        
+        "orientation": {
+          "description": "Metin yönü",
+          "angles": "0° (yatay) ile 90° arasında",
+          "vertical": "Dikey metin",
+          "use": "Dar sütunlarda başlık için"
+        },
+        
+        "indent": {
+          "description": "Girinti",
+          "increase": "Girintiyi artır",
+          "decrease": "Girintiyi azalt",
+          "use": "Alt kategorileri belirtmek için"
+        }
+      }
+    },
+    
+    {
+      "id": "sayi-bicimi",
+      "title": "🔢 Sayı Biçimi",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sayıların görünümünü değiştirme. Değer değişmez, sadece gösterimi değişir.",
+        
+        "number_formats": {
+          "general": {
+            "name": "Genel",
+            "description": "Varsayılan format",
+            "behavior": "Excel otomatik karar verir"
+          },
+          "number": {
+            "name": "Sayı",
+            "decimals": "Ondalık basamak sayısı",
+            "thousands": "Binlik ayırıcı",
+            "negative": "Negatif sayı formatı (kırmızı, parantez)",
+            "example": "1234.56 → 1,234.56"
+          },
+          "currency": {
+            "name": "Para Birimi",
+            "symbol": "₺, $, €, £ vb.",
+            "decimals": "Genelde 2 basamak",
+            "example": "1234.5 → ₺1,234.50"
+          },
+          "accounting": {
+            "name": "Muhasebe",
+            "align": "Para birimi ve sayılar hizalı",
+            "zero": "Sıfır yerine -",
+            "use": "Finansal raporlar"
+          },
+          "date": {
+            "name": "Tarih",
+            "formats": [
+              "14/03/2025",
+              "14 Mart 2025",
+              "14-Mar-25",
+              "Perşembe, 14 Mart 2025"
+            ],
+            "storage": "Excel tarihi sayı olarak saklar"
+          },
+          "time": {
+            "name": "Saat",
+            "formats": [
+              "13:30",
+              "13:30:00",
+              "1:30 PM",
+              "13:30:00 PM"
+            ]
+          },
+          "percentage": {
+            "name": "Yüzde",
+            "shortcut": "Ctrl + Shift + %",
+            "multiply": "Değeri 100 ile çarpar",
+            "example": "0.75 → 75%"
+          },
+          "fraction": {
+            "name": "Kesir",
+            "example": "0.5 → 1/2",
+            "use": "Ölçüler için"
+          },
+          "scientific": {
+            "name": "Bilimsel",
+            "example": "12345 → 1.23E+04",
+            "use": "Çok büyük/küçük sayılar"
+          },
+          "text": {
+            "name": "Metin",
+            "behavior": "Sayıyı metin olarak saklar",
+            "warning": "Formüllerde kullanılamaz",
+            "apostrophe": "' ile başlama"
+          }
+        },
+        
+        "custom_formats": {
+          "description": "Özel sayı biçimi oluşturma",
+          "path": "Hücre Biçimlendir → Sayı → Özel",
+          "syntax": {
+            "structure": "[Pozitif]; [Negatif]; [Sıfır]; [Metin]",
+            "placeholders": {
+              "0": "Basamak (sıfır gösterir)",
+              "#": "Basamak (sıfır gizler)",
+              "?": "Boşluk bırak",
+              "@": "Metin"
+            }
+          },
+          "examples": [
+            {
+              "format": "#,##0",
+              "description": "Binlik ayırıcılı",
+              "result": "1234 → 1,234"
+            },
+            {
+              "format": "#,##0.00",
+              "description": "2 ondalık basamak",
+              "result": "1234.5 → 1,234.50"
+            },
+            {
+              "format": "[Mavi]#,##0;[Kırmızı]-#,##0",
+              "description": "Renkli formatlar",
+              "result": "Pozitif mavi, negatif kırmızı"
+            },
+            {
+              "format": "0.00\"m²\"",
+              "description": "Birim ekleme",
+              "result": "25 → 25.00m²"
+            },
+            {
+              "format": "[>100]\"Yüksek\";[<50]\"Düşük\";\"Orta\"",
+              "description": "Koşullu metin",
+              "result": "Değere göre metin"
+            }
+          ]
+        },
+        
+        "format_shortcuts": {
+          "currency": "Ctrl + Shift + $",
+          "percentage": "Ctrl + Shift + %",
+          "scientific": "Ctrl + Shift + ^",
+          "date": "Ctrl + Shift + #",
+          "time": "Ctrl + Shift + @",
+          "number": "Ctrl + Shift + !"
+        }
+      }
+    },
+    
+    {
+      "id": "stiller",
+      "title": "🎨 Hücre Stilleri",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Önceden tanımlı biçimlendirme stilleri ve koşullu biçimlendirme.",
+        
+        "cell_styles": {
+          "description": "Hazır hücre stilleri",
+          "categories": [
+            {
+              "category": "İyi, Kötü ve Nötr",
+              "use": "Veri durumu göstergesi",
+              "examples": ["Normal", "İyi", "Kötü", "Nötr"]
+            },
+            {
+              "category": "Veri ve Model",
+              "use": "Veri yapısı gösterimi",
+              "examples": ["Girdi", "Çıktı", "Hesaplama", "Kontrol"]
+            },
+            {
+              "category": "Başlıklar",
+              "use": "Başlık ve altbaşlıklar",
+              "examples": ["Başlık 1", "Başlık 2", "Başlık 3", "Başlık 4"]
+            },
+            {
+              "category": "Sayı Biçimi",
+              "use": "Hızlı sayı formatı",
+              "examples": ["Para", "Para [0]", "Yüzde"]
+            }
+          ],
+          "custom_style": "Yeni Hücre Stili oluştur",
+          "modify": "Mevcut stili değiştir"
+        },
+        
+        "conditional_formatting": {
+          "description": "Koşullu biçimlendirme - Hücre değerine göre otomatik biçim",
+          "path": "Giriş → Koşullu Biçimlendirme",
+          
+          "rules": [
+            {
+              "type": "Vurgulama Kuralları",
+              "options": [
+                "Büyüktür...",
+                "Küçüktür...",
+                "Arasında...",
+                "Eşittir...",
+                "Metin İçerir...",
+                "Oluşma Tarihi...",
+                "Yinelenen Değerler"
+              ],
+              "example": "100'den büyük değerleri yeşil yap"
+            },
+            {
+              "type": "Üst/Alt Kurallar",
+              "options": [
+                "İlk 10 Öğe",
+                "İlk %10",
+                "Son 10 Öğe",
+                "Ortalamanın Üstü",
+                "Ortalamanın Altı"
+              ],
+              "dynamic": "Veri değiştikçe güncellenir"
+            },
+            {
+              "type": "Veri Çubukları",
+              "visual": "Hücre içinde çubuk grafik",
+              "use": "Değerleri görsel karşılaştırma",
+              "colors": "Degrade veya tek renk"
+            },
+            {
+              "type": "Renk Ölçekleri",
+              "visual": "Isı haritası",
+              "options": ["2 renk", "3 renk"],
+              "example": "Düşük kırmızı → Orta sarı → Yüksek yeşil"
+            },
+            {
+              "type": "Simge Kümeleri",
+              "visual": "Sembollerle gösterim",
+              "sets": [
+                "Oklar (yukarı, yatay, aşağı)",
+                "Trafik ışıkları (yeşil, sarı, kırmızı)",
+                "Bayraklar",
+                "Yıldızlar",
+                "Onay işaretleri"
+              ],
+              "use": "Durum göstergeleri"
+            }
+          ],
+          
+          "custom_rule": {
+            "name": "Yeni Kural",
+            "formula_based": "Formül kullanarak kurallar",
+            "example": "=VE($B2>100, $C2<50)",
+            "powerful": "En güçlü seçenek"
+          },
+          
+          "manage_rules": {
+            "view": "Tüm kuralları görüntüle",
+            "edit": "Kuralları düzenle",
+            "priority": "Öncelik sırası değiştir",
+            "stop_if_true": "Doğruysa dur seçeneği"
+          }
+        },
+        
+        "format_as_table": {
+          "description": "Tablo olarak biçimlendir",
+          "benefit": "Otomatik filtreleme, sıralama, toplam satırı",
+          "styles": "50+ hazır tablo stili",
+          "banded_rows": "Şeritli satırlar (zebrastripes)",
+          "auto_expand": "Yeni veri girişinde otomatik genişler",
+          "structured_references": "Tablo[@Sütun] formül referansları"
+        }
+      }
+    },
+    
+    {
+      "id": "duzenleme",
+      "title": "✏️ Düzenleme",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Veri ekleme, silme ve düzenleme araçları.",
+        
+        "auto_sum": {
+          "description": "Otomatik Toplam",
+          "shortcut": "Alt + Shift + =",
+          "functions": ["TOPLA", "ORTALAMA", "SAYDIR", "MAKS", "MİN"],
+          "auto_detect": "Otomatik aralık algılar",
+          "quick": "En hızlı toplama yöntemi"
+        },
+        
+        "fill": {
+          "description": "Doldur",
+          "types": [
+            {
+              "type": "Aşağı Doldur",
+              "shortcut": "Ctrl + D",
+              "action": "Üst hücreyi aşağı kopyalar"
+            },
+            {
+              "type": "Sağa Doldur",
+              "shortcut": "Ctrl + R",
+              "action": "Sol hücreyi sağa kopyalar"
+            },
+            {
+              "type": "Yukarı Doldur",
+              "shortcut": "Ctrl + Shift + ↑"
+            },
+            {
+              "type": "Sola Doldur",
+              "shortcut": "Ctrl + Shift + ←"
+            }
+          ],
+          
+          "auto_fill": {
+            "description": "Otomatik Doldurma",
+            "handle": "Sağ alt köşedeki kare",
+            "smart": "Deseni algılar ve devam ettirir",
+            "examples": [
+              "1, 2, 3 → 4, 5, 6...",
+              "Pazartesi, Salı → Çarşamba, Perşembe...",
+              "Ocak, Şubat → Mart, Nisan...",
+              "Q1, Q2 → Q3, Q4"
+            ],
+            "copy_vs_fill": "Ctrl basılı: Kopyala, Normal: Doldur"
+          },
+          
+          "series": {
+            "description": "Dizi",
+            "path": "Giriş → Doldur → Dizi",
+            "types": ["Doğrusal", "Büyüme", "Tarih", "Otomatik Doldur"],
+            "step": "Adım değeri",
+            "stop": "Bitiş değeri"
+          }
+        },
+        
+        "clear": {
+          "description": "Temizle",
+          "options": [
+            {
+              "option": "Tümünü Temizle",
+              "action": "İçerik + Biçim + Yorum",
+              "shortcut": "Delete"
+            },
+            {
+              "option": "Biçimleri Temizle",
+              "action": "Sadece formatı siler, değer kalır"
+            },
+            {
+              "option": "İçeriği Temizle",
+              "action": "Sadece değeri siler, format kalır"
+            },
+            {
+              "option": "Açıklamaları Temizle",
+              "action": "Yorumları siler"
+            },
+            {
+              "option": "Köprüleri Temizle",
+              "action": "Linkleri kaldırır"
+            }
+          ]
+        },
+        
+        "sort_filter": {
+          "sort": {
+            "description": "Sırala",
+            "quick_sort": "A→Z veya Z→A",
+            "custom_sort": "Özel Sırala (birden fazla sütun)",
+            "options": ["Değere göre", "Hücre rengine göre", "Font rengine göre", "Simgeye göre"],
+            "case_sensitive": "Büyük/küçük harf duyarlı"
+          },
+          
+          "filter": {
+            "description": "Filtrele",
+            "shortcut": "Ctrl + Shift + L",
+            "auto_filter": "Başlıklarda dropdown ok",
+            "text_filters": "Metin filtreleri (içerir, başlar, biter)",
+            "number_filters": "Sayı filtreleri (>, <, arasında)",
+            "date_filters": "Tarih filtreleri (bugün, bu hafta, bu ay)",
+            "color_filters": "Renk filtreleri",
+            "top10": "İlk 10 filtresi"
+          },
+          
+          "advanced_filter": {
+            "description": "Gelişmiş Filtre",
+            "criteria_range": "Kriter aralığı ile filtreleme",
+            "copy_to": "Sonuçları başka yere kopyala",
+            "unique_only": "Sadece tekil kayıtlar"
+          }
+        },
+        
+        "find_replace": {
+          "find": {
+            "description": "Bul",
+            "shortcut": "Ctrl + F",
+            "options": ["Büyük/küçük harf eşleştir", "Tüm hücre içeriğini eşleştir"],
+            "wildcards": "* ve ? joker karakterler",
+            "find_all": "Tümünü Bul - Liste halinde gösterir"
+          },
+          
+          "replace": {
+            "description": "Değiştir",
+            "shortcut": "Ctrl + H",
+            "replace_all": "Tümünü Değiştir",
+            "use_case": "Toplu veri düzeltme"
+          },
+          
+          "go_to": {
+            "description": "Git",
+            "shortcut": "Ctrl + G veya F5",
+            "special": "Özel Git",
+            "targets": [
+              "Boş hücreler",
+              "Formüller",
+              "Sabitler",
+              "Yorum",
+              "Koşullu biçimlendirme",
+              "Geçerli bölge",
+              "Son hücre"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  
+  "tips": [
+    "Klavye kısayollarını öğrenin - fare ile çalışmaktan 10x daha hızlı",
+    "Biçim Boyacısı'nı çift tıklayarak birden fazla yere biçim uygulayın",
+    "Özel Yapıştır'ı sık kullanın - formülleri değerlere çevirmek için çok kullanışlı",
+    "Koşullu biçimlendirme ile verileri görselleştirin",
+    "Hücreleri birleştirmek yerine 'Ortala ve Merkezle' kullanın",
+    "Format Painter ile tutarlı görünüm oluşturun",
+    "Otomatik Toplam için Alt + Shift + = kullanın",
+    "Ctrl + 1 ile Hücre Biçimlendir penceresini açın"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Kopyala",
+      "shortcut": "Ctrl + C"
+    },
+    {
+      "action": "Kes",
+      "shortcut": "Ctrl + X"
+    },
+    {
+      "action": "Yapıştır",
+      "shortcut": "Ctrl + V"
+    },
+    {
+      "action": "Özel Yapıştır",
+      "shortcut": "Ctrl + Alt + V"
+    },
+    {
+      "action": "Kalın",
+      "shortcut": "Ctrl + B"
+    },
+    {
+      "action": "İtalik",
+      "shortcut": "Ctrl + I"
+    },
+    {
+      "action": "Altı Çizili",
+      "shortcut": "Ctrl + U"
+    },
+    {
+      "action": "Hücre Biçimlendir",
+      "shortcut": "Ctrl + 1"
+    },
+    {
+      "action": "Otomatik Toplam",
+      "shortcut": "Alt + Shift + ="
+    },
+    {
+      "action": "Aşağı Doldur",
+      "shortcut": "Ctrl + D"
+    },
+    {
+      "action": "Sağa Doldur",
+      "shortcut": "Ctrl + R"
+    },
+    {
+      "action": "Filtre Aç/Kapat",
+      "shortcut": "Ctrl + Shift + L"
+    },
+    {
+      "action": "Bul",
+      "shortcut": "Ctrl + F"
+    },
+    {
+      "action": "Değiştir",
+      "shortcut": "Ctrl + H"
+    },
+    {
+      "action": "Git",
+      "shortcut": "Ctrl + G veya F5"
+    }
+  ]
+}

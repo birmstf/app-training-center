@@ -1,0 +1,894 @@
+{
+  "id": "photoshop-filter",
+  "title": "Adobe Photoshop 2024 - Filter Menü",
+  "description": "Görüntülere efekt ve filtre uygulama. Artistik efektlerden düzeltmelere kadar geniş filtre yelpazesi.",
+  "difficulty": "Orta - İleri",
+  "estimated_time": "4 saat",
+  "version": "Photoshop 2024 (25.0)",
+  
+  "sections": [
+    {
+      "id": "neural-filters",
+      "title": "🧠 Neural Filters",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "AI destekli yeni nesil filtreler. Adobe Sensei teknolojisi ile güçlendirilmiş.",
+        
+        "filters": [
+          {
+            "name": "Skin Smoothing",
+            "description": "Cilt pürüzsüzleştirme",
+            "ai_powered": true,
+            "use": "Portre rötuşları"
+          },
+          {
+            "name": "Style Transfer",
+            "description": "Stil aktarımı",
+            "use": "Bir görselin stilini başka görsele uygula"
+          },
+          {
+            "name": "Smart Portrait",
+            "description": "Akıllı portre düzenleme",
+            "features": ["Yaş değiştirme", "Gülümseme ekleme", "Bakış yönü"]
+          },
+          {
+            "name": "Super Zoom",
+            "description": "AI ile görüntü büyütme",
+            "quality": "Detay kaybı olmadan büyütme"
+          },
+          {
+            "name": "Colorize",
+            "description": "Siyah beyaz fotoğrafları renklendir",
+            "automatic": "AI otomatik renk ekler"
+          }
+        ],
+        
+        "requirements": {
+          "internet": "İlk kullanımda filter indirme gerekir",
+          "cloud": "Bulut işleme kullanılabilir"
+        }
+      }
+    },
+    
+    {
+      "id": "blur-filters",
+      "title": "💨 Blur (Bulanıklaştırma)",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görüntüyü yumuşatma ve bulanıklaştırma filtreleri.",
+        
+        "filters": [
+          {
+            "filter": "Gaussian Blur",
+            "description": "Yumuşak genel bulanıklık",
+            "most_used": true,
+            "slider": "Radius (yarıçap) ayarı"
+          },
+          {
+            "filter": "Motion Blur",
+            "description": "Hareket bulanıklığı",
+            "settings": ["Angle (açı)", "Distance (mesafe)"],
+            "use": "Hız hissi yaratma"
+          },
+          {
+            "filter": "Radial Blur",
+            "description": "Radyal bulanıklık",
+            "types": ["Spin (döndürme)", "Zoom (yakınlaştırma)"],
+            "use": "Dinamik efektler"
+          },
+          {
+            "filter": "Lens Blur",
+            "description": "Objektif bulanıklığı",
+            "depth": "Derinlik haritası kullanabilir",
+            "bokeh": "Bokeh efekti (arka plan bulanıklığı)"
+          },
+          {
+            "filter": "Field Blur",
+            "description": "Alan bulanıklığı",
+            "control": "Birden fazla bulanıklık noktası",
+            "professional": "Profesyonel derinlik efekti"
+          },
+          {
+            "filter": "Iris Blur",
+            "description": "Iris bulanıklığı",
+            "shape": "Oval veya yuvarlak netlik alanı",
+            "use": "Portre efektleri"
+          },
+          {
+            "filter": "Tilt-Shift",
+            "description": "Eğim-kayma bulanıklığı",
+            "effect": "Minyatür model görünümü",
+            "popular": "Şehir manzaralarında popüler"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "sharpen-filters",
+      "title": "⚡ Sharpen (Keskinleştirme)",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görüntü netliğini artırma filtreleri.",
+        
+        "filters": [
+          {
+            "filter": "Unsharp Mask",
+            "description": "Keskinleştirme maskesi",
+            "most_professional": true,
+            "settings": {
+              "amount": "Efekt miktarı (50-150%)",
+              "radius": "Etki alanı (0.5-2 piksel)",
+              "threshold": "Eşik değeri (0-10)"
+            }
+          },
+          {
+            "filter": "Smart Sharpen",
+            "description": "Akıllı keskinleştirme",
+            "advanced": true,
+            "features": ["Gölge/Highlight ayrı ayar", "Gürültü azaltma"],
+            "recommended": "Modern keskinleştirme için öncelik"
+          },
+          {
+            "filter": "Sharpen",
+            "description": "Temel keskinleştirme",
+            "simple": "Ayar yok, hızlı kullanım"
+          },
+          {
+            "filter": "Sharpen More",
+            "description": "Daha fazla keskinleştirme",
+            "stronger": "Sharpen'ın güçlü versiyonu"
+          }
+        ],
+        
+        "tips": [
+          "Keskinleştirmeyi son adım olarak uygulayın",
+          "Aşırı keskinleştirme halo efekti yaratır",
+          "RAW dosyalarda Camera Raw'da keskinleştirin",
+          "Web için 100% zoom'da kontrol edin"
+        ]
+      }
+    },
+    
+    {
+      "id": "artistic-filters",
+      "title": "🎨 Artistic (Artistik)",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görüntüyü sanat eserine dönüştüren filtreler.",
+        
+        "filters": [
+          {
+            "filter": "Oil Paint",
+            "description": "Yağlı boya efekti",
+            "realistic": "Gerçekçi yağlı boya görünümü",
+            "settings": ["Stylization", "Cleanliness", "Scale", "Bristle Detail"]
+          },
+          {
+            "filter": "Poster Edges",
+            "description": "Poster kenarları",
+            "effect": "Renkler azalır, kenarlar belirginleşir",
+            "use": "Grafik tasarım etkisi"
+          },
+          {
+            "filter": "Cutout",
+            "description": "Kesme kağıt efekti",
+            "layers": "Renk katmanları halinde basitleştirir"
+          },
+          {
+            "filter": "Watercolor",
+            "description": "Suluboya efekti",
+            "soft": "Yumuşak geçişler ve akıcı renkler"
+          },
+          {
+            "filter": "Dry Brush",
+            "description": "Kuru fırça",
+            "texture": "Dokulu boya vuruşları"
+          },
+          {
+            "filter": "Colored Pencil",
+            "description": "Renkli kalem",
+            "sketch": "Çizim görünümü"
+          },
+          {
+            "filter": "Palette Knife",
+            "description": "Palet bıçağı",
+            "thick": "Kalın boya dokusu"
+          },
+          {
+            "filter": "Plastic Wrap",
+            "description": "Plastik kaplama",
+            "shiny": "Parlak, nemli görünüm"
+          },
+          {
+            "filter": "Rough Pastels",
+            "description": "Kaba pastel",
+            "chalk": "Tebeşir benzeri"
+          },
+          {
+            "filter": "Sponge",
+            "description": "Sünger efekti",
+            "texture": "Süngerli doku"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "distort-filters",
+      "title": "🌀 Distort (Bozma)",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görüntüyü geometrik olarak deforme eden filtreler.",
+        
+        "filters": [
+          {
+            "filter": "Liquify",
+            "description": "Sıvılaştırma - En güçlü deformasyon aracı",
+            "shortcut": "Shift + Ctrl/Cmd + X",
+            "tools": [
+              "Forward Warp - İleri doğru bükme",
+              "Reconstruct - Geri alma",
+              "Twirl Clockwise - Saat yönünde büküm",
+              "Pucker - İçe çekme",
+              "Bloat - Şişirme",
+              "Push Left - Sola itme",
+              "Freeze/Thaw - Dondur/Çöz"
+            ],
+            "use": "Portre düzeltme, yaratıcı deformasyonlar",
+            "face_aware": "Yüz farkındalığı - otomatik yüz algılama"
+          },
+          {
+            "filter": "Displace",
+            "description": "Yerini değiştirme",
+            "displacement_map": "Harita dosyası ile pikselleri kaydır",
+            "use": "Kumaş, bayrak efektleri"
+          },
+          {
+            "filter": "Pinch",
+            "description": "Çimdikleme",
+            "effect": "Merkeze doğru çekme"
+          },
+          {
+            "filter": "Polar Coordinates",
+            "description": "Kutupsal koordinatlar",
+            "transform": "Dikdörtgen ↔ Dairesel dönüşüm",
+            "use": "Planet efekti"
+          },
+          {
+            "filter": "Ripple",
+            "description": "Dalgalanma",
+            "water": "Su dalgası efekti"
+          },
+          {
+            "filter": "Shear",
+            "description": "Kayma",
+            "vertical": "Dikey bükme"
+          },
+          {
+            "filter": "Spherize",
+            "description": "Küreselleştirme",
+            "3d": "3D top efekti"
+          },
+          {
+            "filter": "Twirl",
+            "description": "Burgu",
+            "spiral": "Spiral döndürme"
+          },
+          {
+            "filter": "Wave",
+            "description": "Dalga",
+            "complex": "Karmaşık dalga desenleri",
+            "randomize": "Rastgele seçeneği"
+          },
+          {
+            "filter": "ZigZag",
+            "description": "Zikzak",
+            "pond": "Gölet dalgası efekti"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "noise-filters",
+      "title": "📺 Noise (Gürültü)",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Gürültü ekleme ve azaltma filtreleri.",
+        
+        "filters": [
+          {
+            "filter": "Add Noise",
+            "description": "Gürültü ekle",
+            "types": ["Uniform (düzgün)", "Gaussian (gauss dağılımı)"],
+            "monochromatic": "Tek renkli gürültü seçeneği",
+            "use": "Film tanesi efekti, doku ekleme"
+          },
+          {
+            "filter": "Reduce Noise",
+            "description": "Gürültüyü azalt",
+            "strength": "Gürültü azaltma gücü",
+            "preserve_details": "Detay koruma",
+            "sharpen": "Keskinlik ayarı",
+            "remove_jpeg": "JPEG artifaktlarını kaldır",
+            "advanced": "Kanal başına ayar"
+          },
+          {
+            "filter": "Despeckle",
+            "description": "Benek giderme",
+            "simple": "Ayar yok, otomatik",
+            "use": "Küçük gürültü tanelerini temizler"
+          },
+          {
+            "filter": "Dust & Scratches",
+            "description": "Toz ve çizik giderme",
+            "radius": "Etki alanı",
+            "threshold": "Duyarlılık",
+            "use": "Eski fotoğraf restorasyonu"
+          },
+          {
+            "filter": "Median",
+            "description": "Medyan filtresi",
+            "averaging": "Komşu piksellerin ortalaması",
+            "use": "Gürültü azaltma"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "render-filters",
+      "title": "🎭 Render",
+      "order": 7,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sıfırdan efekt ve şekiller oluşturan filtreler.",
+        
+        "filters": [
+          {
+            "filter": "Clouds",
+            "description": "Bulutlar",
+            "random": "Rastgele bulut deseni",
+            "colors": "Ön plan ve arka plan renklerini kullanır"
+          },
+          {
+            "filter": "Difference Clouds",
+            "description": "Fark bulutları",
+            "blend": "Mevcut içerikle karıştırır"
+          },
+          {
+            "filter": "Fibers",
+            "description": "Lifler",
+            "texture": "Lif dokusu oluşturur",
+            "variance": "Çeşitlilik",
+            "strength": "Güç ayarı"
+          },
+          {
+            "filter": "Lens Flare",
+            "description": "Lens parlaması",
+            "types": ["50-300mm Zoom", "35mm", "105mm", "Movie Prime"],
+            "position": "Parlama merkezi yerleştirme",
+            "brightness": "Parlaklık ayarı",
+            "use": "Güneş ışığı efekti"
+          },
+          {
+            "filter": "Lighting Effects",
+            "description": "Aydınlatma efektleri",
+            "3d": "3D ışık simülasyonu",
+            "types": ["Spotlight", "Point light", "Infinite light"],
+            "properties": ["Renk", "Yoğunluk", "Pozisyon", "Odak"],
+            "advanced": "Çoklu ışık kaynağı"
+          },
+          {
+            "filter": "Flame",
+            "description": "Alev efekti",
+            "paths": "Path boyunca alev oluşturur",
+            "customizable": "Şekil ve renk ayarı"
+          },
+          {
+            "filter": "Picture Frame",
+            "description": "Resim çerçevesi",
+            "frames": "Hazır çerçeve şablonları"
+          },
+          {
+            "filter": "Tree",
+            "description": "Ağaç oluştur",
+            "3d": "Basit 3D ağaçlar"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "stylize-filters",
+      "title": "✨ Stylize (Stilize)",
+      "order": 8,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görüntüye stilistik efektler uygulayan filtreler.",
+        
+        "filters": [
+          {
+            "filter": "Oil Paint",
+            "description": "Yağlı boya (stylize versiyonu)",
+            "quick": "Hızlı yağlı boya efekti"
+          },
+          {
+            "filter": "Emboss",
+            "description": "Kabartma",
+            "3d_effect": "Kabartma efekti",
+            "angle": "Işık açısı",
+            "height": "Yükseklik",
+            "amount": "Miktar"
+          },
+          {
+            "filter": "Find Edges",
+            "description": "Kenarları bul",
+            "outline": "Sadece kenarları gösterir",
+            "artistic": "Çizim efekti"
+          },
+          {
+            "filter": "Glowing Edges",
+            "description": "Parlayan kenarlar",
+            "neon": "Neon efekti",
+            "dark_background": "Koyu arka plan üzerinde parlayan çizgiler"
+          },
+          {
+            "filter": "Solarize",
+            "description": "Güneşlenme",
+            "photo_effect": "Fotoğrafik güneşlenme efekti",
+            "inverts": "Kısmen renk tersine çevirme"
+          },
+          {
+            "filter": "Tiles",
+            "description": "Karolar",
+            "mosaic": "Karo mozaik efekti"
+          },
+          {
+            "filter": "Trace Contour",
+            "description": "Kontur izleme",
+            "level": "Parlakşık seviyesinde kontur çizer"
+          },
+          {
+            "filter": "Wind",
+            "description": "Rüzgar",
+            "motion": "Rüzgar etkisiyle hareket",
+            "direction": "Sağ veya sol",
+            "method": "Wind, Blast, Stagger"
+          },
+          {
+            "filter": "Diffuse",
+            "description": "Yayılma",
+            "soft": "Yumuşak yayılma efekti"
+          },
+          {
+            "filter": "Extrude",
+            "description": "Dışarı çıkarma",
+            "3d": "3D bloklar veya piramitler"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "pixelate-filters",
+      "title": "🔲 Pixelate (Pikselleştirme)",
+      "order": 9,
+      "content": {
+        "type": "detailed",
+        "introduction": "Piksel tabanlı efektler.",
+        
+        "filters": [
+          {
+            "filter": "Color Halftone",
+            "description": "Renkli yarım ton",
+            "print": "Baskı efekti",
+            "dots": "Noktalar halinde"
+          },
+          {
+            "filter": "Crystallize",
+            "description": "Kristalleştirme",
+            "polygons": "Çokgen şekiller",
+            "cell_size": "Hücre boyutu ayarı"
+          },
+          {
+            "filter": "Facet",
+            "description": "Yüzey",
+            "solid": "Düz renk blokları"
+          },
+          {
+            "filter": "Fragment",
+            "description": "Parçalama",
+            "multiple": "4 kopya ile bulanık efekt"
+          },
+          {
+            "filter": "Mezzotint",
+            "description": "Mezzotint",
+            "patterns": ["Dots", "Lines", "Strokes"],
+            "print_style": "Baskı stili efekti"
+          },
+          {
+            "filter": "Mosaic",
+            "description": "Mozaik",
+            "pixel_blocks": "Kare piksel blokları",
+            "size": "Blok boyutu"
+          },
+          {
+            "filter": "Pointillize",
+            "description": "Puantiyizm",
+            "dots": "Nokta baskı tarzı",
+            "cell_size": "Nokta boyutu",
+            "background": "Arka plan rengi"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "other-filters",
+      "title": "🔧 Other (Diğer)",
+      "order": 10,
+      "content": {
+        "type": "detailed",
+        "introduction": "Çeşitli özel amaçlı filtreler.",
+        
+        "filters": [
+          {
+            "filter": "Custom",
+            "description": "Özel filtre",
+            "matrix": "5x5 konvolüsyon matrisi",
+            "advanced": "İleri seviye kullanıcılar için"
+          },
+          {
+            "filter": "High Pass",
+            "description": "Yüksek geçiş",
+            "edges": "Kenar detaylarını korur",
+            "use": "Keskinleştirme için katman modu ile kullanılır",
+            "frequency_separation": "Frekans ayrımı tekniğinde kullanılır"
+          },
+          {
+            "filter": "Maximum",
+            "description": "Maksimum",
+            "expand": "Açık alanları genişletir",
+            "radius": "Genişleme yarıçapı"
+          },
+          {
+            "filter": "Minimum",
+            "description": "Minimum",
+            "contract": "Koyu alanları genişletir",
+            "opposite": "Maximum'un tersi"
+          },
+          {
+            "filter": "Offset",
+            "description": "Kaydırma",
+            "shift": "Görüntüyü yatay/dikey kaydır",
+            "wrap": "Kenarları sarma",
+            "use": "Pattern oluşturma"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "filter-gallery",
+      "title": "🎨 Filter Gallery",
+      "order": 11,
+      "content": {
+        "type": "detailed",
+        "introduction": "Birçok filtreyi görsel arayüzle önizleyerek uygulayın.",
+        
+        "access": "Filter → Filter Gallery",
+        
+        "features": [
+          "Canlı önizleme",
+          "Birden fazla filtre birlikte uygulanabilir",
+          "Filtre sırası değiştirilebilir",
+          "Her filtreyi ayrı ayrı açıp kapatabilirsiniz",
+          "Ayarları gerçek zamanlı görebilirsiniz"
+        ],
+        
+        "categories": [
+          "Artistic",
+          "Brush Strokes",
+          "Distort",
+          "Sketch",
+          "Stylize",
+          "Texture"
+        ],
+        
+        "workflow": {
+          "step1": "Filter Gallery'yi açın",
+          "step2": "Sol panelden filtre seçin",
+          "step3": "Sağ panelde ayarları yapın",
+          "step4": "Alt panelden yeni filtre katmanı ekleyin",
+          "step5": "Tüm filtrelerin birleşik sonucunu önizleyin"
+        },
+        
+        "tips": [
+          "Filtre sırasını değiştirerek farklı sonuçlar elde edin",
+          "Gizle/Göster simgesini kullanarak filtreleri karşılaştırın",
+          "Birden fazla filtre kombinasyonu yaratıcı efektler verir"
+        ]
+      }
+    },
+    
+    {
+      "id": "smart-filters",
+      "title": "🎯 Smart Filters (Akıllı Filtreler)",
+      "order": 12,
+      "content": {
+        "type": "detailed",
+        "introduction": "Non-destructive (yıkıcı olmayan) filtre uygulama yöntemi.",
+        
+        "what_is": {
+          "description": "Smart Object üzerinde uygulanan düzenlenebilir filtreler",
+          "editable": "Her zaman ayarları değiştirebilirsiniz",
+          "removable": "Filtreyi silebilir veya geçici kapatabilirsiniz",
+          "stackable": "Birden fazla filtre üst üste"
+        },
+        
+        "how_to_use": {
+          "step1": "Katmanı Smart Object'e çevirin (sağ tık → Convert to Smart Object)",
+          "step2": "Herhangi bir filtre uygulayın",
+          "step3": "Filtre, katmanın altında akıllı filtre olarak görünür",
+          "step4": "Çift tıklayarak ayarları düzenleyin"
+        },
+        
+        "benefits": [
+          "Orijinal görüntü korunur",
+          "Filtreyi istediğiniz zaman düzenleyebilirsiniz",
+          "Filtreyi açıp kapatabilirsiniz",
+          "Filtre maskesi kullanabilirsiniz",
+          "Blend mode ve opacity ayarlayabilirsiniz"
+        ],
+        
+        "filter_mask": {
+          "description": "Filtrenin nereye uygulanacağını kontrol edin",
+          "black": "Siyah = Filtre uygulanmaz",
+          "white": "Beyaz = Filtre uygulanır",
+          "gray": "Gri = Kısmi uygulama"
+        },
+        
+        "blend_options": {
+          "double_click": "Filtre adının yanındaki simgeye çift tıklayın",
+          "opacity": "Filtre şeffaflığı",
+          "blend_mode": "Karışım modu (Normal, Multiply, Screen vb.)"
+        }
+      }
+    },
+    
+    {
+      "id": "camera-raw-filter",
+      "title": "📷 Camera Raw Filter",
+      "order": 13,
+      "content": {
+        "type": "detailed",
+        "introduction": "Güçlü RAW işleme motorunu herhangi bir görüntüde kullanın.",
+        
+        "access": {
+          "path": "Filter → Camera Raw Filter",
+          "shortcut": "Shift + Ctrl/Cmd + A",
+          "smart_object": "Smart Object olarak kullanın"
+        },
+        
+        "panels": [
+          {
+            "panel": "Basic",
+            "adjustments": [
+              "Exposure - Pozlama",
+              "Contrast - Kontrast",
+              "Highlights - Açık tonlar",
+              "Shadows - Gölgeler",
+              "Whites - Beyazlar",
+              "Blacks - Siyahlar",
+              "Clarity - Netlik",
+              "Vibrance - Canlılık",
+              "Saturation - Doygunluk"
+            ]
+          },
+          {
+            "panel": "Curve",
+            "description": "Ton eğrisi düzenleme"
+          },
+          {
+            "panel": "Detail",
+            "features": ["Sharpening", "Noise Reduction"]
+          },
+          {
+            "panel": "Color Mixer",
+            "description": "HSL renk düzenlemeleri"
+          },
+          {
+            "panel": "Color Grading",
+            "description": "Shadows, Midtones, Highlights için ayrı renklendirme"
+          },
+          {
+            "panel": "Optics",
+            "corrections": ["Lens distortion", "Chromatic aberration", "Vignetting"]
+          },
+          {
+            "panel": "Geometry",
+            "description": "Perspektif ve crop düzeltmeleri"
+          },
+          {
+            "panel": "Effects",
+            "features": ["Grain", "Dehaze", "Vignette"]
+          }
+        ],
+        
+        "local_adjustments": [
+          {
+            "tool": "Adjustment Brush",
+            "description": "Fırça ile seçici düzenleme",
+            "controls": "Tüm temel ayarlar"
+          },
+          {
+            "tool": "Graduated Filter",
+            "description": "Degradeli filtre",
+            "use": "Gökyüzü karartma vb."
+          },
+          {
+            "tool": "Radial Filter",
+            "description": "Radyal filtre",
+            "shape": "Oval veya yuvarlak alan"
+          }
+        ],
+        
+        "presets": {
+          "description": "Ayarları preset olarak kaydedin",
+          "apply": "Tek tıkla uygulayın",
+          "custom": "Kendi presetlerinizi oluşturun"
+        },
+        
+        "why_use": [
+          "RAW dosya düzenleme gücü",
+          "Non-destructive (Smart Filter olarak)",
+          "Daha iyi renk ve ton kontrolü",
+          "Detaylı gürültü azaltma",
+          "Lens düzeltmeleri",
+          "Kolay preset yönetimi"
+        ]
+      }
+    },
+    
+    {
+      "id": "adaptive-wide-angle",
+      "title": "📐 Adaptive Wide Angle",
+      "order": 14,
+      "content": {
+        "type": "detailed",
+        "introduction": "Geniş açı ve balıkgözü lens bozulmalarını düzeltin.",
+        
+        "access": "Filter → Adaptive Wide Angle",
+        
+        "automatic": {
+          "lens_profiles": "Lens profillerini otomatik algılar",
+          "correction": "EXIF verilerine göre otomatik düzeltme"
+        },
+        
+        "manual_tools": {
+          "constraint_tool": "Düz çizgiler çizin, bozulmaları düzeltir",
+          "polygon_tool": "Alanları seçerek düzeltin"
+        },
+        
+        "use_cases": [
+          "Mimari fotoğraflar",
+          "Panoramalar",
+          "Balıkgözü lens düzeltme",
+          "Eğik çizgileri düzeltme"
+        ]
+      }
+    },
+    
+    {
+      "id": "vanishing-point",
+      "title": "🔷 Vanishing Point",
+      "order": 15,
+      "content": {
+        "type": "detailed",
+        "introduction": "Perspektif düzlemlerinde çalışın.",
+        
+        "access": {
+          "path": "Filter → Vanishing Point",
+          "shortcut": "Alt + Ctrl/Cmd + V"
+        },
+        
+        "workflow": {
+          "step1": "Perspektif düzlemi oluşturun (4 köşe işaretleyin)",
+          "step2": "Düzlemi ayarlayın (mavi = iyi, sarı/kırmızı = sorunlu)",
+          "step3": "Clone, Paint veya Transform araçlarını kullanın",
+          "step4": "İşlemler perspektife göre uygulanır"
+        },
+        
+        "tools": [
+          "Edit Plane - Düzlem düzenleme",
+          "Create Plane - Yeni düzlem",
+          "Marquee - Seçim",
+          "Stamp - Clone",
+          "Brush - Fırça",
+          "Transform - Dönüştür",
+          "Eyedropper - Renk seçici",
+          "Measure - Ölçü"
+        ],
+        
+        "use_cases": [
+          "Duvarlara texture ekleme",
+          "İstenen yere perspektif doğru klonlama",
+          "Mimari düzeltmeler",
+          "Yer değiştirmeler"
+        ]
+      }
+    }
+  ],
+  
+  "filter_best_practices": [
+    {
+      "practice": "Smart Objects kullanın",
+      "reason": "Non-destructive düzenleme imkanı"
+    },
+    {
+      "practice": "Filtre öncesi duplicate layer",
+      "reason": "Orijinali koruyun"
+    },
+    {
+      "practice": "Fade komutu kullanın",
+      "reason": "Filter → Fade (Shift+Ctrl/Cmd+F) ile filtre yoğunluğunu azaltın"
+    },
+    {
+      "practice": "Birden fazla hafif filtre",
+      "reason": "Bir güçlü filtre yerine birkaç hafif filtre daha iyi sonuç verir"
+    },
+    {
+      "practice": "Maskeleme yapın",
+      "reason": "Filtreyi sadece gerekli alanlara uygulayın"
+    },
+    {
+      "practice": "Önizleme kontrol edin",
+      "reason": "%100 zoom'da sonucu kontrol edin"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Son filtreyi tekrarla",
+      "shortcut": "Ctrl/Cmd + F"
+    },
+    {
+      "action": "Son filtreyi ayarlarla tekrarla",
+      "shortcut": "Ctrl/Cmd + Alt + F"
+    },
+    {
+      "action": "Fade (son işlemi soluklaştır)",
+      "shortcut": "Shift + Ctrl/Cmd + F"
+    },
+    {
+      "action": "Camera Raw Filter",
+      "shortcut": "Shift + Ctrl/Cmd + A"
+    },
+    {
+      "action": "Liquify",
+      "shortcut": "Shift + Ctrl/Cmd + X"
+    },
+    {
+      "action": "Vanishing Point",
+      "shortcut": "Alt + Ctrl/Cmd + V"
+    }
+  ],
+  
+  "tips": [
+    "Her filtre her görüntüde iyi çalışmaz - deney yapın",
+    "Filtreleri katman maskesi ile kısmi uygulayın",
+    "Smart Filters blend mode'larını kullanarak yaratıcı efektler elde edin",
+    "Neural Filters için yeterli RAM'iniz olduğundan emin olun",
+    "Yüksek çözünürlüklü görüntülerde filtreler yavaş çalışabilir",
+    "Filter Gallery'de birden fazla filtre kombinasyonu deneyin",
+    "Camera Raw Filter, temel düzenlemeler için en güçlü araçtır"
+  ]
+}

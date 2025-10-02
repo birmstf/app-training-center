@@ -1,0 +1,640 @@
+{
+  "id": "word-tasarim",
+  "title": "Microsoft Word - Tasarım Menüsü",
+  "description": "Belgenize profesyonel bir görünüm kazandırmak için temalar, renkler, yazı tipleri, paragraf aralıkları, efektler ve sayfa arka planı ayarlarını öğrenin.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "2.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "temalar",
+      "title": "🎨 Belge Temaları",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Temalar, belgenizin genel görünümünü tek tıkla değiştirebilen önceden tanımlanmış renk, yazı tipi ve efekt kombinasyonlarıdır.",
+        
+        "theme_gallery": {
+          "description": "Word'de 30+ hazır tema bulunur",
+          "popular_themes": [
+            {
+              "name": "Office",
+              "colors": "Mavi tonları, profesyonel",
+              "fonts": "Calibri (gövde), Calibri Light (başlık)",
+              "usage": "Varsayılan, genel kullanım"
+            },
+            {
+              "name": "Facet",
+              "colors": "Turuncu ve mavi vurgular",
+              "fonts": "Trebuchet MS",
+              "usage": "Modern, dinamik belgeler"
+            },
+            {
+              "name": "Integral",
+              "colors": "Koyu mavi ve turuncu",
+              "fonts": "Tw Cen MT",
+              "usage": "Kurumsal raporlar"
+            },
+            {
+              "name": "Ion",
+              "colors": "Canlı renkler, modern",
+              "fonts": "Century Gothic",
+              "usage": "Yaratıcı projeler"
+            },
+            {
+              "name": "Organic",
+              "colors": "Yeşil tonları",
+              "fonts": "Garamond",
+              "usage": "Çevre, doğa konuları"
+            },
+            {
+              "name": "Retrospect",
+              "colors": "Kahverengi, vintage",
+              "fonts": "Bookman Old Style",
+              "usage": "Tarihsel, klasik belgeler"
+            }
+          ]
+        },
+        
+        "applying_themes": {
+          "steps": [
+            "Tasarım sekmesine tıklayın",
+            "Temalar galerisini açın",
+            "Tema üzerine gelerek önizleme yapın",
+            "Beğendiğiniz temaya tıklayarak uygulayın"
+          ],
+          "tips": [
+            "Tema değişikliği tüm belgeyi etkiler",
+            "Stilleri kullanan metinler otomatik güncellenir",
+            "Özel biçimlendirmeler korunur"
+          ]
+        },
+        
+        "customizing_themes": {
+          "save_current": {
+            "description": "Mevcut temayı özelleştirip kaydetme",
+            "steps": [
+              "Tema özelliklerini değiştirin",
+              "Temalar → Geçerli Temayı Kaydet",
+              "İsim verin ve kaydedin",
+              "Özel temalar galeride görünür"
+            ]
+          },
+          "reset_theme": {
+            "description": "Varsayılan temaya dönüş",
+            "location": "Temalar → Temayı Varsayılana Sıfırla"
+          }
+        },
+        
+        "visual_examples": [
+          {
+            "type": "before_after",
+            "description": "Aynı belgenin farklı temalarla görünümü",
+            "image_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Crect width='295' height='300' fill='%23f0f0f0'/%3E%3Ctext x='147' y='30' text-anchor='middle' font-family='Arial' font-size='14' font-weight='bold'%3EOffice Teması%3C/text%3E%3Crect x='10' y='50' width='275' height='240' fill='white' stroke='%23ddd'/%3E%3Ctext x='20' y='80' font-family='Calibri Light' font-size='20' fill='%232c5aa0'%3EBaşlık%3C/text%3E%3Ctext x='20' y='110' font-family='Calibri' font-size='12'%3EBu örnek metin Office%3C/text%3E%3Ctext x='20' y='130' font-family='Calibri' font-size='12'%3Eteması ile biçimlendirilmiş.%3C/text%3E%3Crect x='305' y='0' width='295' height='300' fill='%23f5f5f5'/%3E%3Ctext x='452' y='30' text-anchor='middle' font-family='Arial' font-size='14' font-weight='bold'%3EIntegral Teması%3C/text%3E%3Crect x='315' y='50' width='275' height='240' fill='white' stroke='%23ddd'/%3E%3Ctext x='325' y='80' font-family='Tw Cen MT' font-size='20' fill='%23d24726'%3EBaşlık%3C/text%3E%3Ctext x='325' y='110' font-family='Tw Cen MT' font-size='12'%3EBu örnek metin Integral%3C/text%3E%3Ctext x='325' y='130' font-family='Tw Cen MT' font-size='12'%3Eteması ile biçimlendirilmiş.%3C/text%3E%3C/svg%3E"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "renkler",
+      "title": "🎨 Renkler",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Renk şemaları, belgenizde kullanılan tüm renkleri uyumlu bir şekilde değiştirmenizi sağlar.",
+        
+        "color_schemes": {
+          "description": "Her renk şeması 12 renk içerir",
+          "color_roles": [
+            "2 koyu renk (metin için)",
+            "2 açık renk (arka plan için)",
+            "6 vurgu rengi",
+            "2 köprü rengi (ziyaret edilmiş/edilmemiş)"
+          ],
+          
+          "preset_schemes": [
+            {
+              "name": "Office",
+              "primary": "#2c5aa0",
+              "accent": "#d24726",
+              "mood": "Profesyonel, güvenilir"
+            },
+            {
+              "name": "Renkli",
+              "primary": "#5B9BD5",
+              "accent": "#70AD47",
+              "mood": "Canlı, enerjik"
+            },
+            {
+              "name": "Gri Tonlar",
+              "primary": "#5A5A5A",
+              "accent": "#A5A5A5",
+              "mood": "Minimalist, ciddi"
+            },
+            {
+              "name": "Mavi-Yeşil",
+              "primary": "#4472C4",
+              "accent": "#70AD47",
+              "mood": "Doğal, sakinleştirici"
+            }
+          ]
+        },
+        
+        "custom_colors": {
+          "create": {
+            "steps": [
+              "Tasarım → Renkler → Renkleri Özelleştir",
+              "Her renk rolü için renk seçin",
+              "Önizleme yapın",
+              "İsim verin ve kaydedin"
+            ]
+          },
+          "best_practices": [
+            "Kontrast oranlarına dikkat edin (okunabilirlik)",
+            "Kurumsal kimlik renklerini kullanın",
+            "Renk körlüğünü göz önünde bulundurun",
+            "Maksimum 3-4 ana renk kullanın"
+          ]
+        },
+        
+        "color_psychology": {
+          "title": "Renklerin Psikolojik Etkileri",
+          "colors": [
+            {
+              "color": "Mavi",
+              "effect": "Güven, profesyonellik, sakinlik",
+              "usage": "Kurumsal belgeler, raporlar"
+            },
+            {
+              "color": "Yeşil",
+              "effect": "Büyüme, doğa, para, sağlık",
+              "usage": "Çevre raporları, finansal belgeler"
+            },
+            {
+              "color": "Kırmızı",
+              "effect": "Enerji, aciliyet, dikkat",
+              "usage": "Uyarılar, önemli notlar"
+            },
+            {
+              "color": "Turuncu",
+              "effect": "Yaratıcılık, dostluk, enerji",
+              "usage": "Pazarlama materyalleri"
+            },
+            {
+              "color": "Mor",
+              "effect": "Lüks, yaratıcılık, bilgelik",
+              "usage": "Yaratıcı projeler, premium içerik"
+            }
+          ]
+        },
+        
+        "visual_example": {
+          "type": "color_palette",
+          "description": "Office renk şeması örneği",
+          "image_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='200'%3E%3Ctext x='300' y='25' text-anchor='middle' font-family='Arial' font-size='16' font-weight='bold'%3EOffice Renk Paleti%3C/text%3E%3Crect x='50' y='50' width='60' height='60' fill='%232c5aa0'/%3E%3Ctext x='80' y='130' text-anchor='middle' font-size='11'%3EAna Renk%3C/text%3E%3Crect x='130' y='50' width='60' height='60' fill='%23d24726'/%3E%3Ctext x='160' y='130' text-anchor='middle' font-size='11'%3EVurgu 1%3C/text%3E%3Crect x='210' y='50' width='60' height='60' fill='%23ffc000'/%3E%3Ctext x='240' y='130' text-anchor='middle' font-size='11'%3EVurgu 2%3C/text%3E%3Crect x='290' y='50' width='60' height='60' fill='%2370ad47'/%3E%3Ctext x='320' y='130' text-anchor='middle' font-size='11'%3EVurgu 3%3C/text%3E%3Crect x='370' y='50' width='60' height='60' fill='%235b9bd5'/%3E%3Ctext x='400' y='130' text-anchor='middle' font-size='11'%3EVurgu 4%3C/text%3E%3Crect x='450' y='50' width='60' height='60' fill='%23ed7d31'/%3E%3Ctext x='480' y='130' text-anchor='middle' font-size='11'%3EVurgu 5%3C/text%3E%3C/svg%3E"
+        }
+      }
+    },
+    
+    {
+      "id": "yazitipi",
+      "title": "🔤 Yazı Tipleri",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yazı tipi şemaları, başlıklar ve gövde metni için uyumlu font kombinasyonları sunar.",
+        
+        "font_schemes": {
+          "structure": {
+            "heading_font": "Başlıklar için kullanılan yazı tipi",
+            "body_font": "Normal metin için kullanılan yazı tipi"
+          },
+          
+          "preset_combinations": [
+            {
+              "name": "Office",
+              "heading": "Calibri Light",
+              "body": "Calibri",
+              "style": "Modern, temiz, okunabilir"
+            },
+            {
+              "name": "Office 2",
+              "heading": "Cambria",
+              "body": "Calibri",
+              "style": "Dengeli, profesyonel"
+            },
+            {
+              "name": "Klasik",
+              "heading": "Cambria",
+              "body": "Times New Roman",
+              "style": "Geleneksel, akademik"
+            },
+            {
+              "name": "Zarif",
+              "heading": "Constantia",
+              "body": "Constantia",
+              "style": "Sofistike, zarif"
+            },
+            {
+              "name": "Modern",
+              "heading": "Segoe UI",
+              "body": "Segoe UI",
+              "style": "Dijital, çağdaş"
+            }
+          ]
+        },
+        
+        "typography_rules": {
+          "serif_vs_sans": [
+            {
+              "type": "Serif (Tırnaklı)",
+              "examples": "Times New Roman, Georgia, Cambria",
+              "usage": "Basılı belgeler, uzun metinler, akademik yazılar",
+              "advantage": "Okuma akışını kolaylaştırır"
+            },
+            {
+              "type": "Sans-serif (Tırnaksız)",
+              "examples": "Arial, Calibri, Segoe UI",
+              "usage": "Dijital belgeler, sunumlar, başlıklar",
+              "advantage": "Ekranda net görünüm"
+            }
+          ],
+          
+          "font_pairing": [
+            "Kontrast oluşturun (serif başlık + sans-serif gövde)",
+            "Aynı font ailesinden farklı ağırlıklar kullanın",
+            "Maksimum 2-3 farklı yazı tipi",
+            "Okunabilirlik her zaman öncelikli"
+          ]
+        },
+        
+        "custom_fonts": {
+          "create": {
+            "steps": [
+              "Tasarım → Yazı Tipleri → Yazı Tiplerini Özelleştir",
+              "Başlık yazı tipini seçin",
+              "Gövde yazı tipini seçin",
+              "Önizleme yapın",
+              "İsim verin ve kaydedin"
+            ]
+          },
+          "web_fonts": {
+            "description": "Cloud fontları kullanma",
+            "advantages": [
+              "Her cihazda aynı görünüm",
+              "Geniş font seçenekleri",
+              "Otomatik güncelleme"
+            ]
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "paragraf-araligi",
+      "title": "📏 Paragraf Aralığı",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Belge düzeyinde paragraf ve satır aralığını ayarlayarak okunabilirliği artırın.",
+        
+        "spacing_presets": [
+          {
+            "name": "Sıkışık",
+            "line_spacing": "1.0",
+            "before": "0 pt",
+            "after": "0 pt",
+            "usage": "Yer tasarrufu gerektiğinde"
+          },
+          {
+            "name": "Dar",
+            "line_spacing": "1.15",
+            "before": "0 pt",
+            "after": "6 pt",
+            "usage": "Kompakt belgeler"
+          },
+          {
+            "name": "Açık",
+            "line_spacing": "1.15",
+            "before": "0 pt",
+            "after": "10 pt",
+            "usage": "Varsayılan, dengeli görünüm"
+          },
+          {
+            "name": "Rahat",
+            "line_spacing": "1.5",
+            "before": "0 pt",
+            "after": "10 pt",
+            "usage": "Kolay okuma, notlar için"
+          },
+          {
+            "name": "Çift",
+            "line_spacing": "2.0",
+            "before": "0 pt",
+            "after": "12 pt",
+            "usage": "Akademik yazılar, düzeltmeler"
+          }
+        ],
+        
+        "custom_spacing": {
+          "access": "Tasarım → Paragraf Aralığı → Özel Paragraf Aralığı",
+          "options": [
+            "Satır aralığı (tek, 1.5, çift, en az, tam)",
+            "Paragraf öncesi boşluk (0-1584 pt)",
+            "Paragraf sonrası boşluk (0-1584 pt)",
+            "Paragraflar arası boşluk ekleme"
+          ]
+        },
+        
+        "best_practices": [
+          "Gövde metni için 1.15-1.5 aralık idealdir",
+          "Başlıklar öncesi daha fazla boşluk bırakın",
+          "Madde işaretli listeler için dar aralık",
+          "Uzun belgeler için daha geniş aralık",
+          "Yazdırma için 1.5 veya çift aralık"
+        ],
+        
+        "visual_comparison": {
+          "type": "spacing_demo",
+          "image_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='250'%3E%3Ctext x='300' y='20' text-anchor='middle' font-family='Arial' font-size='14' font-weight='bold'%3EParagraf Aralığı Karşılaştırması%3C/text%3E%3Cg%3E%3Ctext x='100' y='50' text-anchor='middle' font-size='12' font-weight='bold'%3ESıkışık (1.0)%3C/text%3E%3Ctext x='20' y='70' font-size='11'%3EBu metin sıkışık%3C/text%3E%3Ctext x='20' y='81' font-size='11'%3Earalıkla yazılmıştır.%3C/text%3E%3Ctext x='20' y='92' font-size='11'%3ESatırlar birbirine%3C/text%3E%3Ctext x='20' y='103' font-size='11'%3Eçok yakındır.%3C/text%3E%3C/g%3E%3Cg%3E%3Ctext x='300' y='50' text-anchor='middle' font-size='12' font-weight='bold'%3ENormal (1.15)%3C/text%3E%3Ctext x='220' y='70' font-size='11'%3EBu metin normal%3C/text%3E%3Ctext x='220' y='83' font-size='11'%3Earalıkla yazılmıştır.%3C/text%3E%3Ctext x='220' y='96' font-size='11'%3EDengeli ve%3C/text%3E%3Ctext x='220' y='109' font-size='11'%3Eokunaklıdır.%3C/text%3E%3C/g%3E%3Cg%3E%3Ctext x='500' y='50' text-anchor='middle' font-size='12' font-weight='bold'%3ERahat (1.5)%3C/text%3E%3Ctext x='420' y='70' font-size='11'%3EBu metin rahat%3C/text%3E%3Ctext x='420' y='88' font-size='11'%3Earalıkla yazılmıştır.%3C/text%3E%3Ctext x='420' y='106' font-size='11'%3EDaha fazla%3C/text%3E%3Ctext x='420' y='124' font-size='11'%3Eboşluk vardır.%3C/text%3E%3C/g%3E%3C/svg%3E"
+        }
+      }
+    },
+    
+    {
+      "id": "efektler",
+      "title": "✨ Efektler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Tema efektleri, şekiller, SmartArt ve grafiklerin görünümünü belirler.",
+        
+        "effect_styles": [
+          {
+            "name": "Office",
+            "description": "Hafif gölge ve yansıma",
+            "style": "Minimal, profesyonel"
+          },
+          {
+            "name": "Hafif",
+            "description": "Çok hafif efektler",
+            "style": "Temiz, sade"
+          },
+          {
+            "name": "Orta",
+            "description": "Belirgin gölge ve derinlik",
+            "style": "Dengeli, modern"
+          },
+          {
+            "name": "Yoğun",
+            "description": "Güçlü 3D efektler",
+            "style": "Dikkat çekici, dinamik"
+          },
+          {
+            "name": "Parlak",
+            "description": "Işıltı ve yansıma",
+            "style": "Canlı, enerjik"
+          },
+          {
+            "name": "Mat",
+            "description": "Gölgesiz, düz",
+            "style": "Minimalist"
+          }
+        ],
+        
+        "effect_types": {
+          "shadow": {
+            "types": ["İç gölge", "Dış gölge", "Perspektif gölge"],
+            "parameters": ["Renk", "Saydamlık", "Boyut", "Bulanıklık", "Açı", "Mesafe"]
+          },
+          "reflection": {
+            "types": ["Yakın yansıma", "Yarı yansıma", "Tam yansıma"],
+            "parameters": ["Saydamlık", "Boyut", "Mesafe", "Bulanıklık"]
+          },
+          "glow": {
+            "types": ["Hafif ışıma", "Normal ışıma", "Yoğun ışıma"],
+            "parameters": ["Renk", "Boyut", "Saydamlık"]
+          },
+          "soft_edges": {
+            "description": "Kenarları yumuşatma",
+            "sizes": ["1 pt", "2.5 pt", "5 pt", "10 pt", "25 pt", "50 pt"]
+          },
+          "bevel": {
+            "types": ["Üst kabartma", "Alt kabartma", "Dışbükey", "İçbükey"],
+            "3d_rotation": "X, Y, Z eksenleri"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "sayfa-arkaplani",
+      "title": "📄 Sayfa Arka Planı",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Belgenize filigran, sayfa rengi ve sayfa kenarlıkları ekleyerek özelleştirin.",
+        
+        "watermarks": {
+          "description": "Sayfanın arkasında görünen soluk metin veya resim",
+          "types": [
+            {
+              "type": "Metin Filigranı",
+              "presets": ["GİZLİ", "ÖZEL", "TASLAK", "KOPYA", "ACİL", "ÖRNEKTİR"],
+              "custom_text": {
+                "options": [
+              "Üç tarafta kenarlık",
+              "Gölge efekti",
+              "3D efekt"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  
+  "practice_exercises": [
+    {
+      "title": "Kurumsal Rapor Tasarımı",
+      "description": "Profesyonel görünümlü bir rapor oluşturun",
+      "steps": [
+        "Integral temasını uygulayın",
+        "Kurumsal renkleri özelleştirin",
+        "Başlık için serif, gövde için sans-serif font seçin",
+        "Paragraf aralığını 'Açık' olarak ayarlayın",
+        "TASLAK filigranı ekleyin",
+        "İnce mavi sayfa kenarlığı ekleyin"
+      ]
+    },
+    {
+      "title": "Yaratıcı Broşür",
+      "description": "Dikkat çekici bir broşür tasarlayın",
+      "steps": [
+        "Ion temasını seçin",
+        "Canlı renk paleti oluşturun",
+        "Modern font kombinasyonu seçin",
+        "Gradyan sayfa arka planı ekleyin",
+        "Dekoratif sayfa kenarlığı uygulayın"
+      ]
+    },
+    {
+      "title": "Akademik Makale",
+      "description": "APA formatına uygun makale düzeni",
+      "steps": [
+        "Office temasını kullanın",
+        "Times New Roman font şeması",
+        "Çift satır aralığı ayarlayın",
+        "Beyaz sayfa arka planı",
+        "Filigran kullanmayın"
+      ]
+    }
+  ],
+  
+  "tips_tricks": [
+    "Tema değişikliği geri alınamaz, önce belgenizi kaydedin",
+    "Özel temalarınızı başka belgelerde kullanmak için dışa aktarın",
+    "Filigran tüm sayfalara otomatik uygulanır",
+    "Sayfa rengi yazdırmak için özel ayar gerekir",
+    "Farklı bölümlere farklı tasarım öğeleri uygulayabilirsiniz"
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "Alt+G", "action": "Tasarım sekmesine git"},
+    {"keys": "Alt+G, T", "action": "Temalar galerisi"},
+    {"keys": "Alt+G, C", "action": "Renkler menüsü"},
+    {"keys": "Alt+G, F", "action": "Yazı tipleri menüsü"},
+    {"keys": "Alt+G, W", "action": "Filigran menüsü"}
+  ],
+  
+  "common_issues": [
+    {
+      "problem": "Tema değişikliği bazı metinleri etkilemiyor",
+      "solution": "Manuel biçimlendirmeleri temizleyin (Ctrl+Boşluk)"
+    },
+    {
+      "problem": "Filigran görünmüyor",
+      "solution": "Görünüm → Baskı Düzeni'nde olduğunuzdan emin olun"
+    },
+    {
+      "problem": "Sayfa rengi yazdırılmıyor",
+      "solution": "Dosya → Seçenekler → Görüntü → Arka plan renklerini yazdır"
+    }
+  ],
+  
+  "resources": {
+    "videos": [
+      "Profesyonel Tema Tasarımı",
+      "Kurumsal Kimlik Oluşturma",
+      "Filigran Kullanım Teknikleri"
+    ],
+    "templates": [
+      "Kurumsal rapor şablonu",
+      "Yaratıcı broşür şablonu",
+      "Akademik makale şablonu"
+    ],
+    "microsoft_support": "https://support.microsoft.com/tr-tr/office/word-de-tasarım-sekmesi"
+  },
+  
+  "next_menu": {
+    "id": "duzen",
+    "name": "Düzen Menüsü",
+    "description": "Sayfa yapısı, kenar boşlukları, yönlendirme ve sütunlar"
+  }
+}
+                  "Özel metin girişi",
+                  "Font seçimi",
+                  "Boyut (otomatik/özel)",
+                  "Renk (varsayılan gri)",
+                  "Yarı saydam/opak",
+                  "Çapraz/Yatay düzen"
+                ]
+              }
+            },
+            {
+              "type": "Resim Filigranı",
+              "sources": [
+                "Dosyadan resim",
+                "Çevrimiçi resim",
+                "Şirket logosu"
+              ],
+              "settings": [
+                "Ölçek (otomatik/özel %)",
+                "Soluklaştır (varsayılan açık)",
+                "Yerleşim (ortalı)"
+              ]
+            }
+          ],
+          
+          "use_cases": [
+            "Taslak belgeleri işaretleme",
+            "Gizlilik seviyesi belirtme",
+            "Kurumsal marka görünürlüğü",
+            "Telif hakkı koruması",
+            "Belge durumu gösterme"
+          ],
+          
+          "removal": "Tasarım → Filigran → Filigranı Kaldır"
+        },
+        
+        "page_color": {
+          "options": [
+            {
+              "type": "Düz Renk",
+              "choices": "Tema renkleri, standart renkler, özel renk",
+              "tip": "Açık renkler yazdırma maliyetini artırır"
+            },
+            {
+              "type": "Gradyan Dolgu",
+              "styles": ["Doğrusal", "Radyal", "Dikdörtgen", "Yol"],
+              "directions": ["Yukarıdan aşağı", "Soldan sağa", "Köşegen", "Merkez"]
+            },
+            {
+              "type": "Doku Dolgu",
+              "textures": ["Kağıt", "Tuval", "Kumaş", "Mermer", "Ahşap", "Su"],
+              "usage": "Yaratıcı belgeler"
+            },
+            {
+              "type": "Desen Dolgu",
+              "patterns": ["Çizgili", "Kareli", "Noktalı", "Zigzag"],
+              "colors": "Ön plan ve arka plan rengi"
+            },
+            {
+              "type": "Resim Dolgu",
+              "options": ["Dosyadan", "Çevrimiçi", "Pano"],
+              "settings": ["Döşeme", "Uzat", "Sığdır"]
+            }
+          ],
+          
+          "printing_note": "Sayfa renkleri varsayılan olarak yazdırılmaz. Dosya → Seçenekler → Görüntü'den etkinleştirin."
+        },
+        
+        "page_borders": {
+          "styles": [
+            "Tek çizgi",
+            "Çift çizgi",
+            "Üçlü çizgi",
+            "Noktalı",
+            "Kesikli",
+            "Kalın/İnce kombinasyonu"
+          ],
+          
+          "art_borders": {
+            "description": "Dekoratif kenarlık desenleri",
+            "examples": ["Yıldızlar", "Kalpler", "Ağaçlar", "Çiçekler", "Geometrik"],
+            "usage": "Sertifika, davetiye, özel belgeler"
+          },
+          
+          "settings": {
+            "width": "0.25 pt - 6 pt",
+            "color": "Tema veya özel renk",
+            "apply_to": [
+              "Tüm belge",
+              "Bu bölüm",
+              "Bu bölüm - yalnızca ilk sayfa",
+              "Bu noktadan itibaren"
+            ],
+            "margins": "Kenar boşlukları ayarı",
+            "options": [
+              "

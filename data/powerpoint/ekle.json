@@ -1,0 +1,607 @@
+{
+  "id": "powerpoint-ekle",
+  "title": "Microsoft PowerPoint - Ekle Menüsü",
+  "description": "Sunuma tablo, resim, şekil, grafik, video, ses ve diğer multimedya öğelerini ekleme.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "2.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "tablolar",
+      "title": "📊 Tablolar",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Verileri düzenli göstermek için tablo ekleme.",
+        
+        "insert_methods": [
+          {
+            "method": "Izgara ile Seçim",
+            "description": "Fare ile satır/sütun seçimi",
+            "path": "Ekle → Tablo → Izgara üzerinde seçim"
+          },
+          {
+            "method": "Tablo Ekle Penceresi",
+            "description": "Satır ve sütun sayısını yazarak",
+            "path": "Ekle → Tablo → Tablo Ekle"
+          },
+          {
+            "method": "Excel'den Çizim",
+            "description": "Excel tablosu olarak ekle",
+            "path": "Ekle → Tablo → Excel Elektronik Tablosu"
+          }
+        ],
+        
+        "formatting": {
+          "table_styles": "Tablo Tasarımı sekmesinden hazır stiller",
+          "custom": "Hücre birleştir, böl, kenarlıklar",
+          "colors": "Dolgu rengi, kenarlık rengi"
+        },
+        
+        "best_practices": [
+          "Başlık satırını vurgulayın",
+          "Fazla satır kullanmayın (maksimum 7-8)",
+          "Hücreleri çok doldurmayın",
+          "Kontrast yüksek renkler kullanın"
+        ]
+      }
+    },
+    
+    {
+      "id": "resimler",
+      "title": "🖼️ Resimler",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görsel içerik ekleyerek sunumunuzu zenginleştirin.",
+        
+        "insert_sources": [
+          {
+            "source": "Bu Cihazdan",
+            "description": "Bilgisayarınızdan resim ekleyin",
+            "path": "Ekle → Resimler → Bu Cihaz"
+          },
+          {
+            "source": "Çevrimiçi Resimler",
+            "description": "Bing'den arama yapın",
+            "path": "Ekle → Resimler → Çevrimiçi Resimler"
+          },
+          {
+            "source": "Stok Görseller",
+            "description": "Microsoft'un ücretsiz görselleri",
+            "path": "Ekle → Resimler → Stok Görseller"
+          }
+        ],
+        
+        "editing": {
+          "crop": "Kırpma - İstenmeyen kısımları kaldırın",
+          "corrections": "Parlaklık, kontrast, keskinlik",
+          "color": "Renk doygunluğu, ton ayarı",
+          "artistic_effects": "Artistik filtreler (suluboya, kalem vb.)",
+          "remove_background": "Arka Plan Kaldır özelliği"
+        },
+        
+        "picture_styles": {
+          "quick_styles": "Hazır çerçeve ve efektler",
+          "border": "Kenarlık ekleme",
+          "effects": "Gölge, yansıma, ışıltı"
+        },
+        
+        "tips": [
+          "Yüksek çözünürlüklü görseller kullanın",
+          "Görselleri sıkıştırarak dosya boyutunu küçültün",
+          "Telif hakkına dikkat edin",
+          "Görseller metni desteklemeli, onunla yarışmamalı"
+        ]
+      }
+    },
+    
+    {
+      "id": "sekiller",
+      "title": "⬜ Şekiller",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Diyagramlar, akış şemaları ve dekoratif öğeler için şekiller.",
+        
+        "shape_categories": [
+          {
+            "category": "Temel Şekiller",
+            "examples": "Dikdörtgen, daire, üçgen, ok"
+          },
+          {
+            "category": "Blok Oklar",
+            "examples": "Çeşitli yönlerde kalın oklar"
+          },
+          {
+            "category": "Akış Şeması",
+            "examples": "Süreç, karar, başlangıç/bitiş"
+          },
+          {
+            "category": "Yıldızlar ve Şeritler",
+            "examples": "Patlama, kurdele, rozet"
+          },
+          {
+            "category": "Açıklama Baloncukları",
+            "examples": "Konuşma ve düşünce balonu"
+          }
+        ],
+        
+        "formatting": {
+          "fill": "Dolgu rengi, gradyan, doku",
+          "outline": "Kenarlık rengi ve kalınlığı",
+          "effects": "Gölge, yansıma, ışıltı, 3D",
+          "text": "Şekil içine metin yazabilirsiniz"
+        },
+        
+        "smart_guides": {
+          "description": "Şekilleri hizalarken otomatik kılavuzlar",
+          "alignment": "Merkez, kenar hizalama",
+          "spacing": "Eşit aralıklar"
+        },
+        
+        "grouping": {
+          "how": "Birden fazla şekil seç → Sağ tık → Grupla",
+          "benefit": "Tek nesne gibi taşınır ve biçimlendirilir",
+          "ungroup": "Grubu çözmek için Grubu Çöz"
+        }
+      }
+    },
+    
+    {
+      "id": "grafikler",
+      "title": "📈 Grafikler",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Verileri görselleştirmek için grafikler ekleyin.",
+        
+        "chart_types": [
+          {
+            "type": "Sütun Grafikleri",
+            "use": "Kategoriler arası karşılaştırma",
+            "best_for": "Aylık satışlar, departman performansı"
+          },
+          {
+            "type": "Çizgi Grafikler",
+            "use": "Zaman içindeki değişim",
+            "best_for": "Trendler, büyüme oranları"
+          },
+          {
+            "type": "Pasta Grafikler",
+            "use": "Yüzdelik dağılımlar",
+            "best_for": "Pazar payı, bütçe dağılımı",
+            "warning": "7'den fazla dilim kullanmayın"
+          },
+          {
+            "type": "Çubuk Grafikler",
+            "use": "Yatay karşılaştırmalar",
+            "best_for": "Sıralama, uzun kategori adları"
+          },
+          {
+            "type": "Alan Grafikler",
+            "use": "Toplamların zamanla değişimi",
+            "best_for": "Kümülatif büyüme"
+          },
+          {
+            "type": "Dağılım Grafikleri",
+            "use": "İki değişken arası ilişki",
+            "best_for": "Korelasyon analizi"
+          }
+        ],
+        
+        "insert_process": {
+          "step1": "Ekle → Grafik → Grafik türü seç",
+          "step2": "Excel penceresi açılır",
+          "step3": "Verileri Excel'e girin",
+          "step4": "Excel'i kapatın, grafik güncellenir"
+        },
+        
+        "editing": {
+          "data": "Grafik üzerinde sağ tık → Verileri Düzenle",
+          "type": "Grafik Tasarımı → Grafik Türünü Değiştir",
+          "style": "Grafik Stili seçenekleri",
+          "elements": "Başlık, eksen, veri etiketleri, gösterge"
+        },
+        
+        "design_tips": [
+          "Basit tutun - karmaşık grafikler yanıltıcıdır",
+          "Eksen başlıkları ve birimler ekleyin",
+          "Renkleri anlamlı kullanın",
+          "3D grafiklerden kaçının (yanıltıcı olabilir)",
+          "Doğru grafik türünü seçin"
+        ]
+      }
+    },
+    
+    {
+      "id": "smartart",
+      "title": "🎯 SmartArt",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Bilgileri görsel olarak temsil eden hazır diyagramlar.",
+        
+        "categories": [
+          {
+            "category": "Liste",
+            "use": "Sıralı veya gruplanmış bilgiler",
+            "examples": "Madde listeleri, gruplar"
+          },
+          {
+            "category": "Süreç",
+            "use": "Adımlar ve akışlar",
+            "examples": "İş akışı, zaman çizelgesi"
+          },
+          {
+            "category": "Döngü",
+            "use": "Sürekli süreçler",
+            "examples": "Yaşam döngüsü, iteratif süreçler"
+          },
+          {
+            "category": "Hiyerarşi",
+            "use": "Organizasyon yapıları",
+            "examples": "Şirket yapısı, aile ağacı"
+          },
+          {
+            "category": "İlişki",
+            "use": "Kavramlar arası bağlantılar",
+            "examples": "Venn diyagramı, hedef diyagram"
+          },
+          {
+            "category": "Matris",
+            "use": "Dört bölümlü sınıflandırma",
+            "examples": "SWOT analizi"
+          },
+          {
+            "category": "Piramit",
+            "use": "Hiyerarşik ilişkiler",
+            "examples": "Maslow ihtiyaçlar hiyerarşisi"
+          }
+        ],
+        
+        "editing": {
+          "text": "SmartArt içine metin yazın",
+          "shapes": "Şekil ekle/sil butonları",
+          "layout": "Düzeni değiştir (SmartArt Tasarımı sekmesi)",
+          "colors": "Renk şemaları",
+          "styles": "3D, parlak, mat stiller"
+        },
+        
+        "convert": {
+          "from_text": "Madde işaretli metni SmartArt'a çevir",
+          "to_shapes": "SmartArt'ı normal şekillere çevir"
+        }
+      }
+    },
+    
+    {
+      "id": "video-ses",
+      "title": "🎬 Video ve Ses",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumunuza multimedya içeriği ekleyin.",
+        
+        "video": {
+          "sources": [
+            {
+              "source": "Bu Cihazdan Video",
+              "formats": "MP4, AVI, WMV, MOV",
+              "path": "Ekle → Video → Bu Cihaz"
+            },
+            {
+              "source": "Çevrimiçi Video",
+              "description": "YouTube, Vimeo bağlantıları",
+              "path": "Ekle → Video → Çevrimiçi Video",
+              "note": "İnternet bağlantısı gerektirir"
+            },
+            {
+              "source": "Stok Videolar",
+              "description": "Microsoft'un ücretsiz videoları",
+              "path": "Ekle → Video → Stok Videolar"
+            }
+          ],
+          
+          "playback": {
+            "auto": "Slayt gösterildiğinde otomatik oynat",
+            "click": "Tıklandığında oynat",
+            "trim": "Video kırpma",
+            "fade": "Başlangıç/bitiş sönümlemesi",
+            "volume": "Ses seviyesi ayarı",
+            "fullscreen": "Tam ekran oynatma"
+          },
+          
+          "tips": [
+            "Videoları sıkıştırın (büyük dosyalar sunum boyutunu artırır)",
+            "Video dosyasını sunumla aynı klasörde tutun",
+            "Test edin - farklı bilgisayarda çalışmayabilir",
+            "Alternatif olarak online video bağlantısı kullanın"
+          ]
+        },
+        
+        "audio": {
+          "sources": [
+            {
+              "source": "Bu Cihazdan Ses",
+              "formats": "MP3, WAV, M4A",
+              "path": "Ekle → Ses → Bu Cihaz"
+            },
+            {
+              "source": "Ses Kaydı",
+              "description": "Mikrofon ile kayıt yapın",
+              "path": "Ekle → Ses → Ses Kaydet"
+            },
+            {
+              "source": "Stok Sesler",
+              "description": "Müzik ve efektler",
+              "path": "Ekle → Ses → Stok Ses"
+            }
+          ],
+          
+          "playback": {
+            "auto": "Slayt gösterildiğinde başlat",
+            "click": "Simgeye tıkla",
+            "loop": "Döngüde oynat",
+            "hide_icon": "Simgeyi gizle",
+            "fade": "Sönümleme efektleri",
+            "trim": "Ses kırpma"
+          },
+          
+          "narration": {
+            "description": "Tüm sunuma anlatım ekleyin",
+            "path": "Slayt Gösterisi → Slayt Gösterisini Kaydet",
+            "saves": "Her slayt için zamanlamalar ve anlatım"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "baglanti",
+      "title": "🔗 Köprü ve Eylem",
+      "order": 7,
+      "content": {
+        "type": "detailed",
+        "introduction": "İnteraktif öğeler ekleyin.",
+        
+        "hyperlink": {
+          "targets": [
+            "Web sitesi URL'si",
+            "E-posta adresi",
+            "Sunumdaki başka bir slayt",
+            "Başka bir dosya",
+            "Yeni belge oluştur"
+          ],
+          
+          "insert": "Metin/nesne seç → Ekle → Bağlantı (Ctrl+K)",
+          "edit": "Bağlantıya sağ tık → Köprüyü Düzenle",
+          "remove": "Sağ tık → Köprüyü Kaldır",
+          
+          "screentip": "Üzerine gelindiğinde ipucu metni göster"
+        },
+        
+        "action_buttons": {
+          "description": "Navigasyon için hazır butonlar",
+          "path": "Ekle → Şekiller → Eylem Düğmeleri",
+          "types": [
+            "İleri/Geri",
+            "İlk/Son slayt",
+            "Önceki görüntülenen",
+            "Belge/ses/video çalıştır",
+            "Ana sayfa"
+          ],
+          
+          "actions": [
+            "Köprü - Başka slayda git",
+            "Program çalıştır - Dosya aç",
+            "Nesne eylemi - Oynat, düzenle",
+            "Ses çal"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "metin-kutusu",
+      "title": "📝 Metin Kutusu",
+      "order": 8,
+      "content": {
+        "type": "detailed",
+        "introduction": "Serbest konumlandırılabilir metin alanları.",
+        
+        "insert": {
+          "path": "Ekle → Metin Kutusu",
+          "horizontal": "Yatay metin kutusu (varsayılan)",
+          "vertical": "Dikey metin kutusu"
+        },
+        
+        "formatting": {
+          "text": "Font, boyut, renk, hizalama",
+          "box": "Dolgu, kenarlık, efektler",
+          "margins": "İç boşluklar",
+          "columns": "Çok sütunlu metin",
+          "direction": "Metin yönü (soldan sağa, sağdan sola)"
+        },
+        
+        "tips": [
+          "Yer tutucu yetersizse metin kutusu kullanın",
+          "Görsellerin üzerine açıklama eklemek için ideal",
+          "Şeffaf arka plan için dolgu yok seçin"
+        ]
+      }
+    },
+    
+    {
+      "id": "word-art",
+      "title": "🎨 WordArt",
+      "order": 9,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dekoratif metin efektleri.",
+        
+        "insert": "Ekle → WordArt → Stil seç → Metni yaz",
+        
+        "effects": [
+          "Gradyan dolgular",
+          "Kontur renkleri",
+          "Gölge ve yansıma",
+          "3D dönüşümler",
+          "Metin bükme (dalga, şişirme vb.)"
+        ],
+        
+        "use_cases": [
+          "Başlıklar ve vurgu metinleri",
+          "Logolar ve afişler",
+          "Yaratıcı sunumlar"
+        ],
+        
+        "warning": "Aşırı kullanım amatör görünüm yaratır - dikkatli kullanın"
+      }
+    },
+    
+    {
+      "id": "tarih-slayt-no",
+      "title": "📅 Tarih ve Slayt Numarası",
+      "order": 10,
+      "content": {
+        "type": "detailed",
+        "introduction": "Üstbilgi ve altbilgi öğeleri.",
+        
+        "insert": {
+          "path": "Ekle → Üstbilgi ve Altbilgi",
+          "options": [
+            "Tarih ve saat",
+            "Slayt numarası",
+            "Altbilgi metni"
+          ]
+        },
+        
+        "date_time": {
+          "auto_update": "Otomatik güncellenen tarih",
+          "fixed": "Sabit tarih",
+          "format": "Tarih formatını seçin"
+        },
+        
+        "slide_number": {
+          "benefit": "İzleyicilere navigasyon kolaylığı",
+          "position": "Genellikle alt köşede"
+        },
+        
+        "footer": {
+          "text": "Özel metin (şirket adı, sunum başlığı vb.)",
+          "all_slides": "Tüm slaytlarda görünür",
+          "exclude_title": "Başlık slaytında gizle seçeneği"
+        }
+      }
+    },
+    
+    {
+      "id": "sembol",
+      "title": "Ω Sembol",
+      "order": 11,
+      "content": {
+        "type": "detailed",
+        "introduction": "Özel karakterler ve semboller ekleyin.",
+        
+        "insert": {
+          "path": "Ekle → Sembol",
+          "fonts": "Farklı fontlarda farklı semboller",
+          "recent": "Son kullanılan semboller"
+        },
+        
+        "common_symbols": [
+          "© Telif hakkı",
+          "® Kayıtlı marka",
+          "™ Marka",
+          "€ € işareti",
+          "£ Pound",
+          "¥ Yen",
+          "° Derece",
+          "± Artı eksi",
+          "≠ Eşit değil",
+          "≈ Yaklaşık",
+          "α β γ Yunan harfleri",
+          "→ ← ↑ ↓ Oklar",
+          "✓ ✗ İşaretler"
+        ],
+        
+        "special_fonts": {
+          "Wingdings": "Şekiller ve simgeler",
+          "Webdings": "Web sembolleri",
+          "Symbol": "Matematiksel semboller"
+        }
+      }
+    },
+    
+    {
+      "id": "zoom",
+      "title": "🔍 Zoom",
+      "order": 12,
+      "content": {
+        "type": "detailed",
+        "introduction": "İnteraktif slayt navigasyonu.",
+        
+        "types": [
+          {
+            "type": "Özet Yakınlaştırma",
+            "description": "Ana başlıkları gösteren giriş slayti",
+            "use": "Sunumun genel yapısını göster"
+          },
+          {
+            "type": "Bölüm Yakınlaştırma",
+            "description": "Bölümler arası gezinme",
+            "use": "Modüler sunumlar"
+          },
+          {
+            "type": "Slayt Yakınlaştırma",
+            "description": "Belirli bir slayda atlama",
+            "use": "Nonlinear sunum akışı"
+          }
+        ],
+        
+        "benefits": [
+          "Modern ve dinamik görünüm",
+          "Esnek navigasyon",
+          "İzleyici ilgisini çeker",
+          "Özelleştirilebilir sunum akışı"
+        ],
+        
+        "insert": "Ekle → Zoom → Zoom türü seç → Slaytları seç"
+      }
+    }
+  ],
+  
+  "tips": [
+    "Her slayta çok fazla öğe eklemeyin - basit tutun",
+    "Görseller yüksek çözünürlüklü olmalı",
+    "Video ve ses dosyalarını test edin",
+    "Telif haklarına dikkat edin",
+    "Multimedya öğeleri sunum boyutunu artırır",
+    "SmartArt karmaşık bilgileri basitleştirir"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Tablo ekle",
+      "shortcut": "Ekle sekmesi → Tablo"
+    },
+    {
+      "action": "Resim ekle",
+      "shortcut": "Ctrl + D (kopyala) veya Ekle → Resim"
+    },
+    {
+      "action": "Şekil ekle",
+      "shortcut": "Ekle → Şekiller"
+    },
+    {
+      "action": "Metin kutusu ekle",
+      "shortcut": "Ekle → Metin Kutusu"
+    },
+    {
+      "action": "Köprü ekle",
+      "shortcut": "Ctrl + K"
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "id": "powerpoint-gozden-gecir",
+  "title": "Microsoft PowerPoint - Gözden Geçir Menüsü",
+  "description": "Yazım denetimi, yorum ekleme, sunumu koruma ve işbirliği araçları.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "1.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "yazim-denetimi",
+      "title": "✅ Yazım Denetimi",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yazım hatalarını, dilbilgisi sorunlarını ve stil önerilerini tespit edin.",
+        
+        "spell_check": {
+          "name": "Yazım Denetimi",
+          "path": "Gözden Geçir → Yazım Denetimi",
+          "shortcut": "F7",
+          "what_checks": [
+            "Yazım hataları (kırmızı dalgalı çizgi)",
+            "Dilbilgisi hataları (mavi dalgalı çizgi)",
+            "Stil önerileri (altın çizgi)"
+          ],
+          
+          "process": {
+            "step1": "F7'ye basın veya Yazım Denetimi'ne tıklayın",
+            "step2": "Hata bulundu mu? Pencere açılır",
+            "step3": "Öneriler gösterilir",
+            "step4": {
+              "options": [
+                {
+                  "option": "Yoksay",
+                  "description": "Bu hatayı atla, devam et"
+                },
+                {
+                  "option": "Tümünü Yoksay",
+                  "description": "Aynı hatayı tüm belgede yoksay"
+                },
+                {
+                  "option": "Ekle",
+                  "description": "Kelimeyi sözlüğe ekle (artık hata değil)"
+                },
+                {
+                  "option": "Değiştir",
+                  "description": "Önerilen düzeltmeyi uygula"
+                },
+                {
+                  "option": "Tümünü Değiştir",
+                  "description": "Aynı hatayı tüm belgede düzelt"
+                }
+              ]
+            },
+            "step5": "Tüm belgede dolaşır, sonunda 'Tamamlandı' mesajı"
+          },
+          
+          "inline_corrections": {
+            "name": "Satır İçi Düzeltme",
+            "how": "Altı çizili kelimeye sağ tık",
+            "quick": "Hızlı düzeltme, pencere açmadan",
+            "options": [
+              "Önerilen kelimeler",
+              "Yoksay",
+              "Sözlüğe Ekle"
+            ]
+          },
+          
+          "auto_correct": {
+            "name": "Otomatik Düzeltme",
+            "what": "Yazdıkça otomatik düzeltir",
+            "examples": [
+              "bri → bir",
+              "orne → örnek",
+              "(c) → ©"
+            ],
+            "settings": "Dosya → Seçenekler → Yazım Denetimi → Otomatik Düzeltme Seçenekleri"
+          }
+        },
+        
+        "thesaurus": {
+          "name": "Eş Anlamlı Sözcükler",
+          "path": "Gözden Geçir → Eş Anlamlı Sözcükler",
+          "shortcut": "Shift + F7",
+          "how": [
+            "Kelimeyi seçin",
+            "Shift + F7 veya Eş Anlamlı Sözcükler'e tıklayın",
+            "Alternatif kelimeler gösterilir"
+          ],
+          "quick_method": "Kelimeye sağ tık → Eş anlamlılar",
+          "use": "Kelime tekrarlarından kaçınmak, zengin dil"
+        },
+        
+        "word_count": {
+          "name": "Kelime Sayımı",
+          "path": "Gözden Geçir → Kelime Sayımı",
+          "shows": [
+            "Slayt sayısı",
+            "Kelime sayısı",
+            "Paragraf sayısı",
+            "Notlardaki kelimeler"
+          ],
+          "use": "İçerik miktarını ölçmek"
+        },
+        
+        "language": {
+          "name": "Dil",
+          "path": "Gözden Geçir → Dil → Düzeltme Dilini Ayarla",
+          "what": "Yazım denetimi hangi dilde yapılsın",
+          "options": [
+            "Türkçe",
+            "İngilizce (ABD/İngiltere)",
+            "Almanca, Fransızca, vb."
+          ],
+          "multi_language": "Farklı metinlere farklı dil atayabilirsiniz",
+          "tip": "İngilizce teknik terimler varsa bölüm bölüm dil ayarlayın"
+        }
+      }
+    },
+    
+    {
+      "id": "yorumlar",
+      "title": "💬 Yorumlar",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumlara yorum ekleyerek işbirliği yapın. Geri bildirim, soru ve öneriler için idealdir.",
+        
+        "what_are_comments": {
+          "description": "Slaytlara eklenmiş notlar/geri bildirimler",
+          "visible": "Küçük ikonlar olarak görünür",
+          "not_printed": "Yazdırılmaz (istenmedikçe)",
+          "collaborative": "Birden fazla kişi yorum ekleyebilir"
+        },
+        
+        "adding_comments": {
+          "method1": {
+            "name": "Yeni Yorum",
+            "path": "Gözden Geçir → Yeni Yorum",
+            "shortcut": "Ctrl + Alt + M",
+            "steps": [
+              "Yorumlamak istediğiniz metni/nesneyi seçin (opsiyonel)",
+              "Yeni Yorum'a tıklayın",
+              "Yorumunuzu yazın",
+              "Enter veya dışarı tıklayın"
+            ]
+          },
+          
+          "comment_icon": {
+            "appearance": "Sağ üstte küçük konuşma balonu",
+            "color": "Her kullanıcı farklı renk",
+            "number": "Yorum sayısı gösterir"
+          }
+        },
+        
+        "viewing_comments": {
+          "show_hide": "Gözden Geçir → Yorumları Göster/Gizle",
+          "click_icon": "Yorum ikonuna tıklayınca açılır",
+          "panel": "Yorumlar paneli sağda açılır",
+          "navigation": "Önceki/Sonraki Yorum butonları"
+        },
+        
+        "replying_comments": {
+          "how": "Yorumun altındaki 'Yanıtla' kutusuna yazın",
+          "thread": "Konuşma dizisi oluşur",
+          "benefit": "Tartışma takibi"
+        },
+        
+        "managing_comments": {
+          "edit": "Kendi yorumunuzu düzenleyebilirsiniz",
+          "delete": "Yorumu Sil (kendi yorumlarınız)",
+          "resolve": {
+            "name": "Çözüldü Olarak İşaretle",
+            "what": "Yorum tamamlandı, işlendi",
+            "appearance": "Gri/soluk görünür",
+            "benefit": "Hangi yorumlar aktif, hangisi tamamlandı belli"
+          },
+          "delete_all": "Tüm Yorumları Sil → Slayttaki/Sunumdaki Tümü"
+        },
+        
+        "comment_notifications": {
+          "name": "@Mentions",
+          "how": "@ işareti + İsim",
+          "benefit": "Kişi bildirim alır",
+          "example": "@Ahmet bu kısmı kontrol eder misin?"
+        },
+        
+        "use_cases": [
+          {
+            "case": "Takım İşbirliği",
+            "description": "Ekip üyeleri geri bildirim verir",
+            "example": "Tasarımcı: 'Bu görseli değiştirelim'"
+          },
+          {
+            "case": "Müdür Onayı",
+            "description": "Yönetici inceleyip yorum yapar",
+            "example": "'Bu slaytı daha kısa yapabilir miyiz?'"
+          },
+          {
+            "case": "Öğretmen-Öğrenci",
+            "description": "Öğretmen ödev üzerinde yorum yapar",
+            "example": "'Kaynak ekle', 'İyi açıklama!'"
+          },
+          {
+            "case": "Kendi Kendine Notlar",
+            "description": "Kendinize hatırlatıcılar",
+            "example": "'Burada istatistik ekle', 'Grafik güncelle'"
+          }
+        ],
+        
+        "tips": [
+          "Spesifik ve yapıcı yorumlar yazın",
+          "Nesne/metin seçili iken yorum ekleyin (bağlam)",
+          "Çözülen yorumları işaretleyin (düzen)",
+          "Yazdırmadan önce yorumları gizleyin",
+          "@Mentions ile ilgili kişiyi etiketleyin"
+        ]
+      }
+    },
+    
+    {
+      "id": "koruma",
+      "title": "🔒 Koruma",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumunuzu yetkisiz değişikliklerden koruyun, şifre ekleyin.",
+        
+        "protect_presentation": {
+          "name": "Sunumu Koru",
+          "path": "Gözden Geçir → Sunumu Koru",
+          "options": [
+            {
+              "option": "Salt Okunur Olarak İşaretle",
+              "description": "Düzenleme yapılamaz, sadece görüntüleme",
+              "strength": "Zayıf - Kullanıcı 'yine de düzenle' diyebilir",
+              "use": "Nazik uyarı, kazara değişiklik önleme",
+              "reversible": "Kolayca kaldırılabilir"
+            },
+            {
+              "option": "Şifre ile Şifrele",
+              "description": "Dosyayı açmak için şifre gerekir",
+              "path": "Dosya → Bilgi → Sunumu Koru → Şifre ile Şifrele",
+              "strength": "Güçlü - Şifre olmadan açılmaz",
+              "warning": "⚠️ Şifreyi unutursanız dosyayı açamazsınız!",
+              "password_tips": [
+                "En az 8 karakter",
+                "Büyük/küçük harf + sayı + sembol",
+                "Güvenli yerde saklayın",
+                "Güçlü şifre üreticisi kullanın"
+              ]
+            }
+          ]
+        },
+        
+        "restrict_editing": {
+          "name": "Düzenlemeyi Kısıtla",
+          "description": "Nelerin değiştirilebileceğini kontrol et",
+          "note": "PowerPoint'te Word kadar gelişmiş değil",
+          "alternative": "Salt okunur veya şifre kullanın"
+        },
+        
+        "digital_signature": {
+          "name": "Dijital İmza",
+          "path": "Dosya → Bilgi → Sunumu Koru → Dijital İmza Ekle",
+          "what": "Belgenin özgünlüğünü doğrular",
+          "benefit": [
+            "Belge değiştirilmemiş kanıtı",
+            "İmzalayan kişi belli",
+            "Yasal geçerlilik (bazı durumlarda)"
+          ],
+          "requirement": "Dijital sertifika gerekir",
+          "use_case": "Resmi belgeler, sözleşmeler"
+        },
+        
+        "inspect_document": {
+          "name": "Belgeyi Denetle",
+          "path": "Dosya → Bilgi → Sorunları Denetle → Belgeyi Denetle",
+          "what": "Gizli ve kişisel bilgileri bul",
+          "checks": [
+            "Yorumlar ve işaretlemeler",
+            "Belge özellikleri ve kişisel bilgiler",
+            "Gizli içerik",
+            "Gömülü belgeler",
+            "Makrolar",
+            "Konuşmacı notları"
+          ],
+          "action": "Bulunan öğeleri temizleme seçeneği",
+          "use_case": "Dosyayı dışarıya göndermeden önce"
+        },
+        
+        "accessibility_checker": {
+          "name": "Erişilebilirlik Denetleyicisi",
+          "path": "Gözden Geçir → Erişilebilirliği Denetle",
+          "what": "Engelli bireyler için erişilebilirlik sorunları",
+          "checks": [
+            "Alternatif metin (resimler için açıklama)",
+            "Metin kontrast oranı",
+            "Ekran okuyucu uyumluluğu",
+            "Başlık kullanımı",
+            "Tablo yapısı"
+          ],
+          "importance": "Kapsayıcı içerik oluşturma",
+          "legal": "Bazı kurumlarda zorunlu"
+        }
+      }
+    },
+    
+    {
+      "id": "karsilastir-birlestir",
+      "title": "🔄 Karşılaştır ve Birleştir",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "İki sunumu karşılaştırın veya farklı versiyonları birleştirin.",
+        
+        "compare": {
+          "name": "Karşılaştır",
+          "path": "Gözden Geçir → Karşılaştır",
+          "what": "İki PowerPoint dosyasındaki farkları gösterir",
+          
+          "process": {
+            "step1": "Karşılaştırmak istediğiniz dosyayı açın",
+            "step2": "Gözden Geçir → Karşılaştır",
+            "step3": "Karşılaştırılacak diğer dosyayı seçin",
+            "step4": "Farklar Düzeltmeler panelinde gösterilir"
+          },
+          
+          "what_shows": [
+            {
+              "change": "Eklenen slaytlar",
+              "indicator": "Yeşil işaret"
+            },
+            {
+              "change": "Silinen slaytlar",
+              "indicator": "Kırmızı işaret"
+            },
+            {
+              "change": "Değiştirilen içerik",
+              "indicator": "Turuncu/mavi işaret",
+              "details": "Metin, resim, format değişiklikleri"
+            }
+          ],
+          
+          "reviewing_changes": {
+            "accept": "Değişikliği kabul et (uygula)",
+            "reject": "Değişikliği reddet (eski hali kalsın)",
+            "navigation": "Önceki/Sonraki Değişiklik",
+            "show_details": "Her değişikliğin detayı"
+          },
+          
+          "use_cases": [
+            {
+              "case": "Versiyon Kontrolü",
+              "example": "Eski ve yeni sunum arasındaki farklar",
+              "benefit": "Nelerin değiştiğini görme"
+            },
+            {
+              "case": "İşbirliği",
+              "example": "Meslektaşın yaptığı değişiklikleri inceleme",
+              "benefit": "Seçici olarak değişiklikleri uygulama"
+            },
+            {
+              "case": "Yedek Kontrolü",
+              "example": "Güncel ile yedek dosyayı karşılaştır",
+              "benefit": "Veri kaybı kontrolü"
+            }
+          ]
+        },
+        
+        "merge": {
+          "name": "Birleştir",
+          "description": "Karşılaştır özelliğinin bir parçası",
+          "how": "Karşılaştırma sonrası değişiklikleri kabul ederek birleştirme",
+          "result": "Tek birleşik sunum"
+        },
+        
+        "tips": [
+          "Önemli değişiklikler öncesi dosya yedekleyin",
+          "Tüm değişiklikleri kabul etmeden önce inceleyin",
+          "Büyük değişiklikler varsa dikkatli olun",
+          "Karşılaştırma sonrası farklı kaydet yapın (orijinal korunsun)"
+        ]
+      }
+    },
+    
+    {
+      "id": "ceviri-isaretleme",
+      "title": "🌍 Çeviri ve İşaretleme",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Metinleri çevirin ve mürekkep araçlarıyla işaretleme yapın.",
+        
+        "translate": {
+          "name": "Çevir",
+          "path": "Gözden Geçir → Çevir",
+          "options": [
+            {
+              "option": "Seçimi Çevir",
+              "how": "Metin seç → Çevir → Kaynak ve hedef dil seç",
+              "result": "Çeviri panelinde gösterilir",
+              "action": "Çeviriyi kopyalayıp yapıştırabilirsiniz"
+            },
+            {
+              "option": "Mini Çevirmen",
+              "description": "Fareyi kelimenin üzerine getirin",
+              "popup": "Küçük açılır pencerede çeviri",
+              "activation": "Gözden Geçir → Çevir → Mini Çevirmen",
+              "quick": "Hızlı referans"
+            },
+            {
+              "option": "Belgeyi Çevir",
+              "description": "Tüm sunumu çevir",
+              "warning": "Büyük dosyalarda zaman alabilir",
+              "result": "Yeni bir dosya oluşturulur (orijinal korunur)"
+            }
+          ],
+          
+          "supported_languages": "70+ dil",
+          "powered_by": "Microsoft Translator",
+          "internet_required": "İnternet bağlantısı gerekir",
+          
+          "tips": [
+            "Otomatik çeviriler her zaman %100 doğru olmayabilir",
+            "Önemli belgeler için profesyonel çevirmen kullanın",
+            "Teknik terimler yanlış çevrilebilir",
+            "Çeviri sonrası mutlaka gözden geçirin"
+          ]
+        },
+        
+        "ink_tools": {
+          "name": "Mürekkep/Kalem Araçları",
+          "description": "Dokunmatik ekran veya kalem ile çizim",
+          "path": "Gözden Geçir → Mürekkebi İnceleme Başlat",
+          
+          "tools": [
+            {
+              "tool": "Kalem",
+              "colors": "Çeşitli renkler",
+              "thickness": "İnce, Orta, Kalın",
+              "use": "Serbest çizim, işaretleme"
+            },
+            {
+              "tool": "Vurgulayıcı",
+              "description": "Yarı saydam işaretleme",
+              "use": "Metin vurgulama"
+            },
+            {
+              "tool": "Silgi",
+              "types": [
+                "Vuruş silgisi (tüm çizgiyi sil)",
+                "Küçük silgi",
+                "Orta silgi"
+              ]
+            }
+          ],
+          
+          "convert_ink": {
+            "name": "Mürekkebi Şekillere Dönüştür",
+            "what": "Elle çizilen şekiller düzgün şekillere dönüşür",
+            "examples": "Kaba daire → Mükemmel daire, Çizgi → Düz çizgi",
+            "automatic": "Bazı cihazlarda otomatik"
+          },
+          
+          "use_cases": [
+            "Toplantı sırasında notlar",
+            "Beyin fırtınası seansları",
+            "Açıklama ve işaretlemeler",
+            "Dijital imza"
+          ]
+        }
+      }
+    }
+  ],
+  
+  "best_practices": {
+    "title": "Gözden Geçirme En İyi Uygulamaları",
+    "rules": [
+      {
+        "rule": "Her Zaman Yazım Denetimi",
+        "description": "Sunmadan önce F7'ye basın",
+        "reason": "Yazım hataları profesyonelliği düşürür"
+      },
+      {
+        "rule": "Yorumları Ekip İle Kullanın",
+        "description": "Geri bildirim için yorumlar ideal",
+        "benefit": "Organize işbirliği"
+      },
+      {
+        "rule": "Hassas Dosyalara Şifre",
+        "description": "Önemli sunumları şifreleyin",
+        "security": "Bilgi güvenliği"
+      },
+      {
+        "rule": "Paylaşmadan Önce Denetle",
+        "description": "Belgeyi Denetle ile gizli bilgileri temizle",
+        "privacy": "Kişisel veri koruması"
+      },
+      {
+        "rule": "Erişilebilirlik Düşünün",
+        "description": "Alternatif metin, kontrast kontrol",
+        "inclusive": "Herkes için erişilebilir içerik"
+      }
+    ]
+  },
+  
+  "summary": {
+    "key_points": [
+      "F7 = Yazım denetimi",
+      "Yorumlar = İşbirliği aracı",
+      "Şifreleme = Güçlü koruma",
+      "Karşılaştır = Versiyon kontrolü",
+      "Belgeyi Denetle = Paylaşım öncesi temizlik"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Yazım Denetimi", "keys": "F7"},
+    {"action": "Eş Anlamlılar", "keys": "Shift + F7"},
+    {"action": "Yeni Yorum", "keys": "Ctrl + Alt + M"}
+  ]
+}

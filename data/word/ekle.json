@@ -1,0 +1,569 @@
+{
+  "id": "word-ekle",
+  "title": "Microsoft Word - Ekle Menüsü",
+  "description": "Word'de tablolar, resimler, grafikler, bağlantılar, üst bilgi/alt bilgi, semboller ve diğer nesneleri eklemeyi öğrenin. Belgelerinizi zenginleştirmek için gerekli tüm araçlar bu menüde.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "tablolar",
+      "title": "Tablolar",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Tablolar, verileri düzenli satır ve sütunlarda organize etmenin en etkili yoludur. Word'de tablo oluşturmanın birkaç farklı yöntemi vardır.",
+        
+        "methods": [
+          {
+            "name": "Hızlı Tablo Ekleme",
+            "steps": [
+              "Ekle sekmesine tıklayın",
+              "Tablo butonuna tıklayın",
+              "Açılan ızgarada fare ile satır ve sütun sayısını seçin",
+              "Tıklayarak tabloyu ekleyin"
+            ],
+            "tip": "En fazla 10x8 boyutunda hızlı tablo eklenebilir"
+          },
+          {
+            "name": "Tablo Ekle İletişim Kutusu",
+            "steps": [
+              "Ekle → Tablo → Tablo Ekle'ye tıklayın",
+              "Satır sayısını girin",
+              "Sütun sayısını girin",
+              "Otomatik Sığdır seçeneğini ayarlayın",
+              "Tamam'a tıklayın"
+            ],
+            "options": {
+              "sabit_sutun": "Belirli genişlikte sütunlar",
+              "icerige_sigdir": "İçeriğe göre otomatik genişlik",
+              "pencereye_sigdir": "Sayfa genişliğine göre ayarla"
+            }
+          },
+          {
+            "name": "Metni Tabloya Dönüştürme",
+            "steps": [
+              "Dönüştürülecek metni seçin",
+              "Ekle → Tablo → Metni Tabloya Dönüştür",
+              "Ayırıcı karakteri belirleyin",
+              "Sütun sayısını kontrol edin",
+              "Tamam'a tıklayın"
+            ],
+            "separators": ["Sekme", "Virgül", "Paragraf", "Diğer karakter"]
+          },
+          {
+            "name": "Excel Tablosu Ekleme",
+            "steps": [
+              "Ekle → Tablo → Excel Elektronik Tablosu",
+              "Excel arayüzünde veri girin",
+              "Belgenin dışına tıklayarak tamamlayın"
+            ],
+            "advantages": "Formül kullanımı, hesaplama özellikleri"
+          }
+        ],
+        
+        "table_tools": {
+          "tasarim_sekmesi": [
+            "Tablo Stilleri galerisi",
+            "Kenarlık stilleri",
+            "Gölgelendirme",
+            "Başlık Satırı",
+            "Toplam Satırı",
+            "İlk/Son Sütun vurgulama"
+          ],
+          "duzen_sekmesi": [
+            "Satır/Sütun ekleme ve silme",
+            "Hücre birleştirme ve bölme",
+            "Hücre boyutu ayarlama",
+            "Metin hizalama",
+            "Hücre kenar boşlukları",
+            "Tabloyu bölme"
+          ]
+        },
+        
+        "best_practices": [
+          "Başlık satırı kullanarak tabloyu daha anlaşılır yapın",
+          "Uzun tablolarda başlık satırını tekrarlayın",
+          "Zebra deseni (alternatif satır renkleri) okunabilirliği artırır",
+          "Hücre içi boşlukları tutarlı tutun",
+          "Gerekmedikçe hücreleri birleştirmekten kaçının"
+        ],
+        
+        "quiz": {
+          "title": "Tablo Bilgi Testi",
+          "questions": [
+            {
+              "question": "Tabloya yeni satır eklemenin en hızlı yolu nedir?",
+              "options": [
+                "Son hücrede Tab tuşuna basmak",
+                "Sağ tık menüsünden satır ekle",
+                "Düzen sekmesinden satır ekle",
+                "Ctrl+Enter kombinasyonu"
+              ],
+              "correct": 0,
+              "explanation": "Son hücrede Tab tuşu otomatik yeni satır ekler"
+            },
+            {
+              "question": "Tablo başlığını her sayfada tekrarlamak için ne yapılır?",
+              "options": [
+                "Her sayfaya manuel kopyalama",
+                "Düzen → Veri → Başlık Satırlarını Yinele",
+                "Tasarım → Başlık Satırı seçeneği",
+                "Tablo özelliklerinden ayarlama"
+              ],
+              "correct": 1,
+              "explanation": "Başlık satırlarını yinele seçeneği ile otomatik tekrar sağlanır"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "resimler",
+      "title": "Resimler ve Grafikler",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görsel öğeler belgenizi daha ilgi çekici ve anlaşılır hale getirir. Word, çeşitli kaynaklardan resim eklemeyi destekler.",
+        
+        "image_sources": [
+          {
+            "name": "Bu Cihaz",
+            "description": "Bilgisayarınızdaki resim dosyalarını ekler",
+            "supported_formats": ["JPG", "PNG", "GIF", "BMP", "SVG", "WEBP"],
+            "steps": [
+              "Ekle → Resimler → Bu Cihaz",
+              "Resim dosyasını seçin",
+              "Ekle butonuna tıklayın"
+            ]
+          },
+          {
+            "name": "Stok Görüntüler",
+            "description": "Microsoft'un ücretsiz stok görsel kütüphanesi",
+            "categories": ["İnsanlar", "Doğa", "İş", "Eğitim", "Teknoloji"],
+            "features": "Telif hakkı sorunu yok, yüksek kalite"
+          },
+          {
+            "name": "Çevrimiçi Resimler",
+            "description": "Bing görsel arama ile web'den resim",
+            "filters": ["Boyut", "Renk", "Tür", "Düzen", "Lisans"],
+            "creative_commons": "Yalnızca Creative Commons lisanslı görseller"
+          }
+        ],
+        
+        "picture_tools": {
+          "corrections": [
+            "Parlaklık ve kontrast",
+            "Keskinlik ve yumuşatma",
+            "Renk tonu ve doygunluk"
+          ],
+          "styles": [
+            "Resim çerçeveleri",
+            "Resim efektleri",
+            "Resim düzenleri",
+            "3D döndürme"
+          ],
+          "arrange": [
+            "Metinle kaydırma",
+            "Konumu sabitleme",
+            "Öne/arkaya gönderme",
+            "Hizalama ve dağıtma",
+            "Gruplandırma"
+          ],
+          "size": [
+            "Kırpma aracı",
+            "En-boy oranını koruma",
+            "Özgün boyuta sıfırlama",
+            "Sıkıştırma seçenekleri"
+          ]
+        },
+        
+        "text_wrapping": {
+          "satir_icinde": "Metin satırı içinde, paragraf gibi davranır",
+          "kare": "Metin resmin etrafında kare şeklinde akar",
+          "sikistir": "Metin resme yaklaşır",
+          "arkasinda": "Resim metnin arkasında",
+          "onunde": "Resim metnin önünde",
+          "ust_alt": "Resmin üstünde ve altında metin",
+          "kontur": "Metin resmin şeklini takip eder"
+        },
+        
+        "advanced_features": [
+          {
+            "name": "Arka Planı Kaldır",
+            "description": "Otomatik arka plan silme aracı",
+            "usage": "Resim Araçları → Biçim → Arka Planı Kaldır"
+          },
+          {
+            "name": "Sanatsal Efektler",
+            "description": "Resme sanatsal filtreler uygulama",
+            "options": ["Karakalem", "Pastel", "Suluboya", "Işıklı Kenarlar"]
+          },
+          {
+            "name": "SmartArt Grafikleri",
+            "description": "Profesyonel diyagramlar ve şemalar",
+            "types": ["Liste", "İşlem", "Döngü", "Hiyerarşi", "İlişki", "Matris", "Piramit"]
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "sekiller",
+      "title": "Şekiller ve Çizimler",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word'ün yerleşik şekil kütüphanesi ile diyagramlar, akış şemaları ve özel çizimler oluşturabilirsiniz.",
+        
+        "shape_categories": [
+          {
+            "name": "Temel Şekiller",
+            "items": ["Dikdörtgen", "Daire", "Üçgen", "Ok", "Yıldız", "Kalp"]
+          },
+          {
+            "name": "Blok Oklar",
+            "items": ["Sağ ok", "Sol ok", "Yukarı ok", "Aşağı ok", "Döngüsel ok"]
+          },
+          {
+            "name": "Akış Şeması",
+            "items": ["İşlem", "Karar", "Veri", "Belge", "Başlangıç/Bitiş"]
+          },
+          {
+            "name": "Belirtme Çizgileri",
+            "items": ["Konuşma balonu", "Düşünce balonu", "Not"]
+          },
+          {
+            "name": "Yıldızlar ve Bayraklar",
+            "items": ["4 köşeli yıldız", "5 köşeli yıldız", "Patlama şekilleri"]
+          }
+        ],
+        
+        "drawing_tools": {
+          "format_options": [
+            "Şekil Dolgusu (renk, gradyan, doku, resim)",
+            "Şekil Ana Hattı (renk, kalınlık, tire stili)",
+            "Şekil Efektleri (gölge, yansıma, ışıma, 3D)",
+            "Metin ekle ve biçimlendir"
+          ],
+          "advanced": [
+            "Şekilleri birleştirme",
+            "Şekil noktalarını düzenleme",
+            "Serbest çizim araçları",
+            "Bağlayıcılar (çizgiler)"
+          ]
+        },
+        
+        "practical_uses": [
+          "Organizasyon şemaları",
+          "Süreç akış diyagramları",
+          "Venn diyagramları",
+          "Zaman çizelgeleri",
+          "Özel logo ve filigranlar"
+        ]
+      }
+    },
+    
+    {
+      "id": "baglantilar",
+      "title": "Bağlantılar ve Yer İşaretleri",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Köprüler belgenizi interaktif hale getirir. Web sayfalarına, diğer belgelere veya belge içi konumlara bağlantı oluşturabilirsiniz.",
+        
+        "link_types": [
+          {
+            "type": "Web Sayfası",
+            "format": "https://example.com",
+            "steps": [
+              "Bağlantı yapılacak metni seçin",
+              "Ekle → Bağlantılar → Bağlantı (Ctrl+K)",
+              "Web adresini girin",
+              "Tamam'a tıklayın"
+            ]
+          },
+          {
+            "type": "E-posta Adresi",
+            "format": "mailto:ornek@email.com",
+            "features": "Konu satırı otomatik doldurulabilir"
+          },
+          {
+            "type": "Belge İçi Konum",
+            "options": ["Başlıklar", "Yer işaretleri", "Sayfa başı"],
+            "usage": "İçindekiler tablosu, çapraz referanslar"
+          },
+          {
+            "type": "Başka Belge",
+            "steps": [
+              "Dosya yolunu belirtin",
+              "İsteğe bağlı: belirli konuma git"
+            ]
+          }
+        ],
+        
+        "bookmarks": {
+          "create": [
+            "Yer işareti konumunu seçin",
+            "Ekle → Bağlantılar → Yer İşareti",
+            "İsim verin (boşluksuz)",
+            "Ekle'ye tıklayın"
+          ],
+          "use": [
+            "Belge içi navigasyon",
+            "Çapraz referanslar",
+            "İndeks ve içindekiler"
+          ],
+          "manage": "Yer işaretlerini sıralama, gitme, silme"
+        },
+        
+        "cross_references": {
+          "description": "Belge içindeki başka öğelere otomatik güncellenen referanslar",
+          "reference_types": [
+            "Numaralı öğe",
+            "Başlık",
+            "Yer işareti", 
+            "Dipnot/Sonnot",
+            "Tablo/Şekil/Denklem"
+          ],
+          "insert_options": [
+            "Sayfa numarası",
+            "Paragraf numarası",
+            "Paragraf metni",
+            "Yukarıda/aşağıda"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "ustbilgi-altbilgi",
+      "title": "Üst Bilgi ve Alt Bilgi",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Üst bilgi ve alt bilgiler, her sayfada tekrarlanan bilgileri (sayfa numaraları, tarih, belge başlığı) göstermek için kullanılır.",
+        
+        "header_footer_basics": {
+          "access": "Ekle → Üst Bilgi ve Alt Bilgi",
+          "quick_parts": [
+            "Sayfa numarası",
+            "Tarih ve saat",
+            "Belge bilgileri",
+            "Yazar adı",
+            "Dosya yolu"
+          ],
+          "sections": "Farklı bölümler için farklı üst/alt bilgiler"
+        },
+        
+        "page_numbers": {
+          "positions": [
+            "Sayfanın Üstü (sol, orta, sağ)",
+            "Sayfanın Altı (sol, orta, sağ)",
+            "Sayfa Kenar Boşlukları",
+            "Geçerli Konum"
+          ],
+          "formats": [
+            "1, 2, 3...",
+            "i, ii, iii...",
+            "I, II, III...",
+            "a, b, c...",
+            "A, B, C..."
+          ],
+          "advanced": [
+            "Farklı ilk sayfa",
+            "Tek/Çift sayfalar farklı",
+            "Bölüme göre numaralandırma",
+            "X / Y formatı (Sayfa X / Toplam Y)"
+          ]
+        },
+        
+        "design_options": {
+          "builtin_designs": "Hazır tasarım galerileri",
+          "custom_design": [
+            "Logo ekleme",
+            "Şirket bilgileri",
+            "Gizlilik notları",
+            "Sürüm bilgileri"
+          ],
+          "formatting": [
+            "Kenarlık ekleme",
+            "Arka plan rengi",
+            "Farklı yazı tipi"
+          ]
+        },
+        
+        "best_practices": [
+          "İlk sayfada farklı üst/alt bilgi kullanın",
+          "Profesyonel belgelerde sayfa numarası şart",
+          "Tarih için otomatik güncelleme kullanın",
+          "Bölüm sonları ile farklı düzenler oluşturun",
+          "Üst bilgide belge başlığı, alt bilgide sayfa numarası"
+        ]
+      }
+    },
+    
+    {
+      "id": "semboller",
+      "title": "Semboller ve Özel Karakterler",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Klavyede bulunmayan özel karakterleri, matematiksel sembolleri ve diğer işaretleri belgenize ekleyin.",
+        
+        "symbol_categories": [
+          {
+            "name": "Matematiksel Semboller",
+            "examples": ["±", "÷", "×", "≠", "≤", "≥", "√", "∞", "∑", "∫"]
+          },
+          {
+            "name": "Para Birimleri",
+            "examples": ["€", "£", "¥", "₹", "₽", "¢", "₺"]
+          },
+          {
+            "name": "Telif Hakları",
+            "examples": ["©", "®", "™", "℗"]
+          },
+          {
+            "name": "Yunan Harfleri",
+            "examples": ["α", "β", "γ", "δ", "π", "Σ", "Ω"]
+          },
+          {
+            "name": "Oklar",
+            "examples": ["→", "←", "↑", "↓", "↔", "⇒", "⇐", "⇔"]
+          }
+        ],
+        
+        "insert_methods": {
+          "symbol_dialog": [
+            "Ekle → Semboller → Sembol",
+            "Font seçimi",
+            "Alt küme seçimi",
+            "Son kullanılanlar",
+            "Karakter kodu ile bulma"
+          ],
+          "autocorrect": {
+            "description": "Otomatik düzeltme ile hızlı sembol ekleme",
+            "examples": [
+              "(c) → ©",
+              "(r) → ®",
+              "(tm) → ™",
+              "... → …",
+              "-- → —"
+            ]
+          },
+          "alt_codes": {
+            "description": "Alt tuşu + sayısal tuş takımı",
+            "examples": [
+              "Alt+0169 → ©",
+              "Alt+0174 → ®",
+              "Alt+0176 → °",
+              "Alt+0177 → ±"
+            ]
+          }
+        },
+        
+        "equations": {
+          "description": "Matematiksel denklemler için özel editör",
+          "access": "Ekle → Semboller → Denklem veya Alt+=",
+          "features": [
+            "Kesirler",
+            "Üst/alt indis",
+            "Kök işaretleri",
+            "İntegral ve toplam",
+            "Matrisler",
+            "Profesyonel matematik gösterimi"
+          ],
+          "templates": [
+            "Binom teoremi",
+            "Kuadratik formül",
+            "Pisagor teoremi",
+            "Fourier serisi"
+          ]
+        }
+      }
+    }
+  ],
+  
+  "practice_exercises": [
+    {
+      "title": "Tablo Oluşturma Alıştırması",
+      "description": "Aylık bütçe tablosu oluşturun",
+      "steps": [
+        "5x4 boyutunda tablo ekleyin",
+        "Başlık satırına: Kategori, Planlanan, Gerçekleşen, Fark yazın",
+        "Kategorilere: Kira, Market, Ulaşım, Diğer ekleyin",
+        "Tablo stilini uygulayın",
+        "Toplam satırı ekleyin"
+      ]
+    },
+    {
+      "title": "Resim Düzenleme Alıştırması",
+      "description": "Resim ekleme ve biçimlendirme",
+      "steps": [
+        "Stok görsellerden bir resim ekleyin",
+        "Resmi yuvarlak köşeli yapın",
+        "Gölge efekti ekleyin",
+        "Metin kaydırmayı 'Sıkı' olarak ayarlayın",
+        "Resmi sıkıştırın"
+      ]
+    },
+    {
+      "title": "Üst Bilgi/Alt Bilgi Tasarımı",
+      "description": "Profesyonel belge düzeni oluşturun",
+      "steps": [
+        "Üst bilgiye şirket logosu ekleyin",
+        "Alt bilgiye sayfa numarası ekleyin",
+        "İlk sayfada farklı düzen kullanın",
+        "Tek/çift sayfalar için farklı düzen",
+        "Tarih ve dosya yolu ekleyin"
+      ]
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "Ctrl+Alt+I", "action": "Yazdırma önizlemesi"},
+    {"keys": "Ctrl+K", "action": "Köprü ekle"},
+    {"keys": "F9", "action": "Alanları güncelle"},
+    {"keys": "Shift+F9", "action": "Alan kodlarını göster/gizle"},
+    {"keys": "Alt+=", "action": "Denklem editörü"},
+    {"keys": "Ctrl+Shift+F9", "action": "Köprü bağlantısını kaldır"}
+  ],
+  
+  "common_issues": [
+    {
+      "problem": "Tablo sayfa sınırlarını aşıyor",
+      "solution": "Tablo Araçları → Düzen → Otomatik Sığdır → Pencereye Otomatik Sığdır"
+    },
+    {
+      "problem": "Resim hareket etmiyor",
+      "solution": "Resmi seçin → Düzen Seçenekleri → Metinle Kaydır seçeneğini değiştirin"
+    },
+    {
+      "problem": "Sayfa numaraları yanlış",
+      "solution": "Bölüm sonları kontrol edin, 'Önceki ile bağlantı' seçeneğini kaldırın"
+    }
+  ],
+  
+  "resources": {
+    "videos": [
+      "Profesyonel Tablo Tasarımı",
+      "SmartArt ile Diyagram Oluşturma",
+      "Resim Düzenleme Teknikleri"
+    ],
+    "templates": [
+      "Tablo şablonları",
+      "SmartArt örnekleri",
+      "Üst/Alt bilgi tasarımları"
+    ],
+    "microsoft_support": "https://support.microsoft.com/tr-tr/office/word-de-ekle-sekmesi"
+  },
+  
+  "next_menu": {
+    "id": "tasarim",
+    "name": "Tasarım Menüsü",
+    "description": "Belge teması, renkler, yazı tipleri ve sayfa arka planı ayarlarını öğrenin"
+  }
+}

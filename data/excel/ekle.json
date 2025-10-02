@@ -1,0 +1,632 @@
+{
+  "id": "excel-ekle",
+  "title": "Microsoft Excel - Ekle Menüsü",
+  "description": "Excel'e tablo, grafik, resim, şekil ve diğer nesneleri ekleme. Veriyi görselleştirme araçları.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "tablolar",
+      "title": "📊 Tablolar ve PivotTable",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Excel tablolarını ve Pivot Tablolarını ekleme.",
+        
+        "excel_table": {
+          "description": "Tablo (Excel Table)",
+          "shortcut": "Ctrl + T veya Ctrl + L",
+          "benefits": [
+            "Otomatik filtreleme",
+            "Toplam satırı",
+            "Yapılandırılmış referanslar",
+            "Otomatik genişleme",
+            "Hazır tablo stilleri"
+          ],
+          
+          "features": {
+            "headers": "Başlık satırı sabitleme",
+            "filter_buttons": "Otomatik filtre butonları",
+            "total_row": "Toplam satırı (Ctrl+Shift+T)",
+            "banded_rows": "Şeritli satırlar",
+            "auto_expand": "Yeni veri girişinde otomatik büyüme",
+            "table_name": "Tabloya özel isim ver"
+          },
+          
+          "structured_references": {
+            "description": "Yapılandırılmış referanslar",
+            "syntax": "=Tablo[@Sütun]",
+            "example": "=Satışlar[@Fiyat]*Satışlar[@Miktar]",
+            "benefit": "Hücre referanslarından daha okunabilir"
+          },
+          
+          "table_tools": {
+            "design_tab": "Tablo Tasarımı sekmesi",
+            "resize": "Tablo boyutunu değiştir",
+            "convert_to_range": "Aralığa dönüştür (tabloyu sil)",
+            "remove_duplicates": "Yinelenenleri kaldır",
+            "export": "SharePoint'e aktar"
+          }
+        },
+        
+        "pivot_table": {
+          "description": "PivotTable (Özet Tablo)",
+          "path": "Ekle → PivotTable",
+          "powerful": "Excel'in en güçlü veri analiz aracı",
+          
+          "creation": {
+            "from_table": "Bir tablo/aralık seçin",
+            "location": "Yeni çalışma sayfası (önerilir)",
+            "data_model": "Veri Modeline ekle seçeneği"
+          },
+          
+          "fields": {
+            "filters": "Rapor filtreleri",
+            "columns": "Sütunlar",
+            "rows": "Satırlar",
+            "values": "Değerler"
+          },
+          
+          "quick_start": [
+            "Tablo içinde herhangi bir hücreyi seç",
+            "Ekle → PivotTable",
+            "Tamam'a tıkla",
+            "Alanları sürükle-bırak"
+          ]
+        },
+        
+        "recommended_pivot": {
+          "description": "Önerilen PivotTable'lar",
+          "path": "Ekle → Önerilen PivotTable'lar",
+          "ai_powered": "Excel otomatik öneri sunar",
+          "quick": "Hızlı analiz için ideal",
+          "preview": "Önizleme ile seç"
+        }
+      }
+    },
+    
+    {
+      "id": "grafikler",
+      "title": "📈 Grafikler",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Verileri görselleştiren grafikler ekleme.",
+        
+        "chart_types": {
+          "column_bar": {
+            "name": "Sütun ve Çubuk Grafikler",
+            "column": "Dikey sütunlar",
+            "bar": "Yatay çubuklar",
+            "use": "Kategoriler arası karşılaştırma",
+            "subtypes": ["Kümelenmiş", "Yığılmış", "100% Yığılmış"],
+            "best_for": "5-15 kategori"
+          },
+          
+          "line": {
+            "name": "Çizgi Grafikler",
+            "use": "Zaman içindeki değişim",
+            "trend": "Trend gösterme",
+            "best_for": "Sürekli veri",
+            "markers": "İşaretli veya işaretsiz"
+          },
+          
+          "pie_donut": {
+            "name": "Pasta ve Halka Grafikler",
+            "use": "Yüzdelik dağılımlar",
+            "warning": "6'dan fazla dilim kullanmayın",
+            "labels": "Veri etiketleri önemli",
+            "best_for": "Tek bir veri serisi"
+          },
+          
+          "area": {
+            "name": "Alan Grafikler",
+            "use": "Toplamların zamanla değişimi",
+            "stacked": "Yığılmış alan",
+            "best_for": "Kümülatif veriler"
+          },
+          
+          "scatter": {
+            "name": "Dağılım Grafiği (XY)",
+            "use": "İki değişken arası ilişki",
+            "correlation": "Korelasyon gösterme",
+            "best_for": "Bilimsel veriler"
+          },
+          
+          "combo": {
+            "name": "Birleşik Grafik",
+            "use": "Farklı ölçeklerdeki verileri birlikte göster",
+            "example": "Sütun + Çizgi",
+            "secondary_axis": "İkincil eksen"
+          },
+          
+          "waterfall": {
+            "name": "Şelale Grafiği",
+            "use": "Kümülatif değişimi göster",
+            "example": "Başlangıç → Artışlar/Azalışlar → Bitiş",
+            "financial": "Finansal analizde popüler"
+          },
+          
+          "funnel": {
+            "name": "Huni Grafiği",
+            "use": "Aşamalı azalan süreçler",
+            "example": "Satış hunisi, dönüşüm oranları"
+          },
+          
+          "treemap": {
+            "name": "Ağaç Haritası",
+            "use": "Hiyerarşik veri",
+            "rectangles": "İç içe dikdörtgenler",
+            "proportional": "Boyut orantılı"
+          },
+          
+          "sunburst": {
+            "name": "Güneş Patlaması",
+            "use": "Hiyerarşik veri (ağaç haritasının dairesel versiyonu)",
+            "rings": "Halkalar halinde gösterim"
+          },
+          
+          "histogram": {
+            "name": "Histogram",
+            "use": "Frekans dağılımı",
+            "bins": "Aralık sayısı ayarlanabilir",
+            "statistical": "İstatistiksel analiz"
+          },
+          
+          "box_whisker": {
+            "name": "Kutu Grafiği",
+            "use": "İstatistiksel dağılım",
+            "shows": "Min, Q1, Median, Q3, Max",
+            "outliers": "Aykırı değerleri gösterir"
+          }
+        },
+        
+        "recommended_charts": {
+          "description": "Önerilen Grafikler",
+          "path": "Ekle → Önerilen Grafikler",
+          "smart": "Excel veri tipine göre öneri sunar",
+          "quick": "Hızlı grafik oluşturma"
+        },
+        
+        "chart_elements": {
+          "title": "Grafik başlığı",
+          "axis_titles": "Eksen başlıkları",
+          "legend": "Gösterge",
+          "data_labels": "Veri etiketleri",
+          "gridlines": "Kılavuz çizgileri",
+          "trendline": "Trend çizgisi",
+          "error_bars": "Hata çubukları",
+          "data_table": "Veri tablosu"
+        },
+        
+        "chart_design": {
+          "quick_layouts": "Hızlı Düzenler",
+          "chart_styles": "Grafik Stilleri",
+          "change_colors": "Renkleri Değiştir",
+          "change_type": "Grafik Türünü Değiştir",
+          "switch_row_column": "Satır/Sütun Değiştir"
+        },
+        
+        "sparklines": {
+          "description": "Mini Grafikler (Sparklines)",
+          "path": "Ekle → Mini Grafikler",
+          "types": ["Çizgi", "Sütun", "Kazanç/Kayıp"],
+          "use": "Hücre içinde küçük trend grafiği",
+          "benefits": [
+            "Az yer kaplar",
+            "Hızlı görsel",
+            "Tablonun içinde",
+            "Dinamik güncelleme"
+          ],
+          "markers": "Yüksek, düşük, ilk, son noktaları vurgula"
+        }
+      }
+    },
+    
+    {
+      "id": "resimler-sekiller",
+      "title": "🖼️ Resimler ve Şekiller",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görsel öğeler ekleme ve düzenleme.",
+        
+        "pictures": {
+          "description": "Resimler",
+          "sources": [
+            {
+              "source": "Bu Cihaz",
+              "formats": "JPG, PNG, GIF, BMP",
+              "path": "Ekle → Resimler → Bu Cihaz"
+            },
+            {
+              "source": "Çevrimiçi Resimler",
+              "bing": "Bing görsel arama",
+              "creative_commons": "Creative Commons lisanslı"
+            },
+            {
+              "source": "Stok Görseller",
+              "microsoft": "Microsoft'un ücretsiz kütüphanesi",
+              "categories": "İş, teknoloji, insan vb."
+            }
+          ],
+          
+          "picture_tools": {
+            "corrections": "Parlaklık, kontrast, keskinlik",
+            "color": "Renk doygunluğu ve ton",
+            "artistic_effects": "Artistik efektler",
+            "compress": "Sıkıştır (dosya boyutunu küçült)",
+            "crop": "Kırp",
+            "remove_background": "Arka plan kaldır"
+          },
+          
+          "picture_styles": {
+            "quick_styles": "Hazır çerçeve ve gölge stilleri",
+            "border": "Kenarlık",
+            "effects": "Gölge, yansıma, ışıltı, 3D"
+          }
+        },
+        
+        "shapes": {
+          "description": "Şekiller",
+          "categories": [
+            "Temel Şekiller - Dikdörtgen, daire, üçgen",
+            "Blok Oklar - Kalın yön okları",
+            "Akış Şeması - Süreç diyagramları için",
+            "Yıldızlar ve Şeritler",
+            "Açıklama Baloncukları"
+          ],
+          
+          "formatting": {
+            "fill": "Dolgu rengi, gradyan, doku, resim",
+            "outline": "Kenarlık rengi ve kalınlığı",
+            "effects": "Gölge, yansıma, ışıltı, 3D",
+            "size": "Boyut ve oran kilitleme"
+          },
+          
+          "text_in_shape": {
+            "description": "Şekil içine metin",
+            "edit": "Şekle çift tıkla",
+            "formatting": "Normal metin biçimlendirme",
+            "alignment": "Yatay ve dikey hizalama"
+          }
+        },
+        
+        "icons": {
+          "description": "Simgeler",
+          "path": "Ekle → Simgeler",
+          "microsoft_library": "Microsoft'un simge kütüphanesi",
+          "categories": ["İş", "Teknoloji", "İletişim", "Analitik", "İnsan"],
+          "svg": "SVG formatı (ölçeklenebilir)",
+          "editable": "Şekle dönüştür → Düzenle"
+        },
+        
+        "3d_models": {
+          "description": "3D Modeller",
+          "path": "Ekle → 3D Modeller",
+          "sources": ["Dosyadan", "Çevrimiçi Kaynaklar"],
+          "rotate": "360° döndürme",
+          "views": "Farklı açılardan görünüm"
+        },
+        
+        "smartart": {
+          "description": "SmartArt",
+          "path": "Ekle → SmartArt",
+          "use": "Görsel diyagramlar",
+          
+          "categories": [
+            {
+              "category": "Liste",
+              "use": "Gruplanmış veya sıralı bilgi"
+            },
+            {
+              "category": "Süreç",
+              "use": "Adımları ve akışı gösterme"
+            },
+            {
+              "category": "Döngü",
+              "use": "Sürekli döngüler"
+            },
+            {
+              "category": "Hiyerarşi",
+              "use": "Organizasyon şemaları"
+            },
+            {
+              "category": "İlişki",
+              "use": "Bağlantıları gösterme (Venn)"
+            },
+            {
+              "category": "Matris",
+              "use": "Dört bölümlü sınıflandırma"
+            },
+            {
+              "category": "Piramit",
+              "use": "Temel/üst ilişkisi"
+            }
+          ],
+          
+          "features": {
+            "text_pane": "Metin bölmesi",
+            "add_shape": "Şekil ekle/sil",
+            "change_layout": "Düzeni değiştir",
+            "colors": "SmartArt renkleri",
+            "styles": "SmartArt stilleri"
+          }
+        },
+        
+        "screenshots": {
+          "description": "Ekran Görüntüsü",
+          "path": "Ekle → Ekran Görüntüsü",
+          "available_windows": "Açık pencereleri gösterir",
+          "screen_clipping": "Ekran Kırpma (özel alan seç)"
+        }
+      }
+    },
+    
+    {
+      "id": "baglanti-metin",
+      "title": "🔗 Bağlantı ve Metin",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Köprüler, metin kutuları ve özel nesneler.",
+        
+        "hyperlink": {
+          "description": "Köprü (Hyperlink)",
+          "shortcut": "Ctrl + K",
+          "targets": [
+            "Web adresi (URL)",
+            "Dosya veya klasör",
+            "E-posta adresi",
+            "Bu çalışma kitabındaki yer"
+          ],
+          
+          "internal_link": {
+            "description": "Kitap içi bağlantı",
+            "use": "Farklı sayfaya veya hücreye git",
+            "example": "Sayfa1!A1, VeriSayfası!C5",
+            "named_range": "Adlandırılmış aralığa bağlantı"
+          },
+          
+          "edit_remove": {
+            "edit": "Sağ tık → Köprüyü Düzenle",
+            "remove": "Sağ tık → Köprüyü Kaldır",
+            "screentip": "Üzerine gelince ipucu metni"
+          }
+        },
+        
+        "text_box": {
+          "description": "Metin Kutusu",
+          "path": "Ekle → Metin Kutusu",
+          "use": "Serbest konumlu metin",
+          
+          "formatting": {
+            "text": "Normal metin biçimlendirme",
+            "box": "Kutu dolgusu ve kenarlığı",
+            "effects": "Gölge, yansıma, 3D",
+            "shape_fill": "Şeffaf arka plan için 'Dolgu Yok'"
+          },
+          
+          "text_direction": {
+            "horizontal": "Yatay (varsayılan)",
+            "rotate": "90°, 270°",
+            "vertical": "Dikey metin"
+          },
+          
+          "linking": {
+            "description": "Metin kutusu bağlama",
+            "overflow": "Taşan metin başka kutuya akar",
+            "use": "Haber bülteni düzeni"
+          }
+        },
+        
+        "header_footer": {
+          "description": "Üstbilgi ve Altbilgi",
+          "path": "Ekle → Üstbilgi ve Altbilgi",
+          "view": "Sayfa Düzeni Görünümü'nde düzenle",
+          
+          "elements": [
+            "Sayfa numarası",
+            "Sayfa sayısı",
+            "Tarih",
+            "Saat",
+            "Dosya yolu",
+            "Dosya adı",
+            "Sayfa adı",
+            "Resim"
+          ],
+          
+          "different_first": "İlk sayfada farklı",
+          "different_odd_even": "Tek/çift sayfalarda farklı",
+          "scale_with_doc": "Belgeyle birlikte ölçekle"
+        },
+        
+        "wordart": {
+          "description": "WordArt",
+          "path": "Ekle → WordArt",
+          "use": "Dekoratif metin",
+          "styles": "Önceden tasarlanmış stiller",
+          
+          "effects": {
+            "transform": "Metin şekilleri (dalga, şişir, yay)",
+            "3d": "3D döndürme ve derinlik",
+            "shadow": "Gölge efektleri",
+            "reflection": "Yansıma"
+          },
+          
+          "warning": "Aşırı kullanım amatörce görünür"
+        },
+        
+        "signature_line": {
+          "description": "İmza Satırı",
+          "path": "Ekle → İmza Satırı",
+          "digital": "Dijital imza desteği",
+          "fields": ["İmza sahibi", "Başlık", "E-posta", "Talimatlar"]
+        },
+        
+        "object": {
+          "description": "Nesne",
+          "path": "Ekle → Nesne",
+          "embed": "Başka dosyaları göm",
+          "types": [
+            "Word belgesi",
+            "PowerPoint sunumu",
+            "PDF dosyası",
+            "Video/Ses dosyası"
+          ],
+          "edit": "Çift tıklayarak düzenle"
+        },
+        
+        "equation": {
+          "description": "Denklem",
+          "path": "Ekle → Denklem",
+          "shortcut": "Alt + =",
+          "use": "Matematiksel formüller",
+          "symbols": "Matematiksel semboller",
+          "structures": "Kesir, üs, kök, integral vb."
+        },
+        
+        "symbol": {
+          "description": "Sembol",
+          "path": "Ekle → Sembol",
+          "special_characters": "©, ®, ™, €, £ vb.",
+          "math_symbols": "±, ≠, ≈, √ vb.",
+          "fonts": "Farklı fontlarda farklı semboller"
+        }
+      }
+    },
+    
+    {
+      "id": "filtreler-dilimleyiciler",
+      "title": "🎚️ Filtreler ve Dilimleyiciler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Görsel filtreleme araçları.",
+        
+        "slicer": {
+          "description": "Dilimleyici (Slicer)",
+          "path": "Ekle → Dilimleyici (Tablo veya PivotTable için)",
+          "visual": "Görsel filtre butonları",
+          
+          "benefits": [
+            "Tek tıkla filtreleme",
+            "Görsel ve kullanıcı dostu",
+            "Birden fazla tablo/pivot'a bağlanabilir",
+            "Raporlarda kullanışlı"
+          ],
+          
+          "settings": {
+            "columns": "Sütun sayısı",
+            "buttons": "Buton yüksekliği ve genişliği",
+            "style": "Dilimleyici stilleri",
+            "multi_select": "Ctrl ile çoklu seçim"
+          },
+          
+          "report_connections": {
+            "description": "Rapor Bağlantıları",
+            "use": "Dilimleyiciyi birden fazla PivotTable'a bağla",
+            "sync": "Tüm tablolar birlikte filtrenir"
+          }
+        },
+        
+        "timeline": {
+          "description": "Zaman Çizelgesi",
+          "path": "Ekle → Zaman Çizelgesi",
+          "requirement": "Tarih alanı gerekli",
+          "visual": "Görsel tarih filtresi",
+          
+          "levels": {
+            "years": "Yıllar",
+            "quarters": "Çeyrekler",
+            "months": "Aylar",
+            "days": "Günler"
+          },
+          
+          "selection": {
+            "single": "Tek dönem",
+            "range": "Tarih aralığı (sürükle)",
+            "multiple": "Ctrl ile çoklu seçim"
+          },
+          
+          "zoom": "Yakınlaştırma seviyeleri",
+          "scroll": "Zaman çizelgesinde kaydırma"
+        }
+      }
+    },
+    
+    {
+      "id": "eklentiler",
+      "title": "🧩 Eklentiler ve Uygulamalar",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Excel işlevselliğini genişleten eklentiler.",
+        
+        "get_add_ins": {
+          "description": "Eklenti Al",
+          "path": "Ekle → Eklenti Al",
+          "office_store": "Office mağazasından uygulama indir",
+          "categories": ["Üretkenlik", "Veri Analizi", "Finans", "Eğitim", "Yardımcı Programlar"]
+        },
+        
+        "my_add_ins": {
+          "description": "Eklentilerim",
+          "path": "Ekle → Eklentilerim",
+          "manage": "Yüklü eklentileri yönet",
+          "enable_disable": "Etkinleştir/Devre dışı bırak"
+        },
+        
+        "popular_add_ins": [
+          {
+            "name": "Power Query",
+            "description": "Veri dönüştürme",
+            "built_in": "Excel'de yerleşik"
+          },
+          {
+            "name": "Solver",
+            "description": "Optimizasyon problemleri",
+            "enable": "Dosya → Seçenekler → Eklentiler"
+          },
+          {
+            "name": "Analysis ToolPak",
+            "description": "İleri istatistik araçları",
+            "enable": "Dosya → Seçenekler → Eklentiler"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "tips": [
+    "Grafikler için veriyi önce tablo haline getirin (Ctrl+T)",
+    "Pivot Tablo yerine Önerilen PivotTable'ları deneyin",
+    "Mini grafikleri trend göstermek için kullanın",
+    "SmartArt ile karmaşık fikirleri görselleştirin",
+    "Dilimleyiciler raporları interaktif yapar",
+    "Grafik türünü sonradan değiştirebilirsiniz",
+    "Resim arka planını kaldırarak profesyonel görünüm elde edin",
+    "Şekillere metin ekleyerek akış şemaları oluşturun"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Tablo oluştur",
+      "shortcut": "Ctrl + T"
+    },
+    {
+      "action": "Köprü ekle",
+      "shortcut": "Ctrl + K"
+    },
+    {
+      "action": "Denklem ekle",
+      "shortcut": "Alt + ="
+    },
+    {
+      "action": "Hücre yorumu ekle",
+      "shortcut": "Shift + F2"
+    }
+  ]
+}

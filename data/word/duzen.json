@@ -1,0 +1,581 @@
+{
+  "id": "word-duzen",
+  "title": "Microsoft Word - Düzen Menüsü",
+  "description": "Sayfa yapısı, kenar boşlukları, yönlendirme, boyut, sütunlar, kesme işaretleri ve sayfa numaralandırma ayarlarını öğrenin.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "2 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "kenar-bosluklar",
+      "title": "📐 Kenar Boşlukları",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Kenar boşlukları, sayfanın kenarları ile metin arasındaki boş alandır. Doğru kenar boşluğu ayarı, belgenizin profesyonel görünmesini ve kolay okunmasını sağlar.",
+        
+        "preset_margins": [
+          {
+            "name": "Normal",
+            "measurements": {
+              "top": "2.54 cm",
+              "bottom": "2.54 cm",
+              "left": "2.54 cm",
+              "right": "2.54 cm"
+            },
+            "usage": "Genel kullanım, standart belgeler"
+          },
+          {
+            "name": "Dar",
+            "measurements": {
+              "top": "1.27 cm",
+              "bottom": "1.27 cm",
+              "left": "1.27 cm",
+              "right": "1.27 cm"
+            },
+            "usage": "Yer tasarrufu, daha fazla içerik"
+          },
+          {
+            "name": "Orta",
+            "measurements": {
+              "top": "2.54 cm",
+              "bottom": "2.54 cm",
+              "left": "1.91 cm",
+              "right": "1.91 cm"
+            },
+            "usage": "Dengeli görünüm"
+          },
+          {
+            "name": "Geniş",
+            "measurements": {
+              "top": "2.54 cm",
+              "bottom": "2.54 cm",
+              "left": "5.08 cm",
+              "right": "5.08 cm"
+            },
+            "usage": "Notlar için yan alan, lüks görünüm"
+          },
+          {
+            "name": "Yansıtılmış",
+            "measurements": {
+              "top": "2.54 cm",
+              "bottom": "2.54 cm",
+              "inside": "3.18 cm",
+              "outside": "2.54 cm"
+            },
+            "usage": "Çift taraflı yazdırma, kitap düzeni"
+          }
+        ],
+        
+        "custom_margins": {
+          "access": "Düzen → Kenar Boşlukları → Özel Kenar Boşlukları",
+          "settings": {
+            "basic": [
+              "Üst (0-55.87 cm)",
+              "Alt (0-55.87 cm)",
+              "Sol (0-55.87 cm)",
+              "Sağ (0-55.87 cm)"
+            ],
+            "advanced": [
+              "Cilt payı (spiral, ciltleme için)",
+              "Cilt payı konumu (üst/sol)",
+              "Birden çok sayfa (normal, yansıtılmış, 2 sayfa/yaprak, kitap katlama)"
+            ]
+          },
+          "apply_to": [
+            "Tüm belge",
+            "Bu noktadan itibaren",
+            "Seçili bölümler"
+          ]
+        },
+        
+        "special_cases": {
+          "academic": {
+            "APA": "2.54 cm tüm kenarlar",
+            "MLA": "2.54 cm tüm kenarlar",
+            "Chicago": "2.54 cm veya 3.81 cm sol kenar"
+          },
+          "business": {
+            "letter": "2.54 cm üst, 2.54 cm yan",
+            "report": "2.54 cm normal veya 3.18 cm sol (ciltleme)"
+          },
+          "book": {
+            "standard": "İç: 3.18 cm, Dış: 2.54 cm",
+            "paperback": "İç: 2 cm, Dış: 1.5 cm"
+          }
+        },
+        
+        "visual_guide": {
+          "type": "margin_diagram",
+          "image_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500'%3E%3Crect width='400' height='500' fill='%23f0f0f0'/%3E%3Crect x='50' y='60' width='300' height='380' fill='white' stroke='%23333' stroke-width='2'/%3E%3Crect x='70' y='80' width='260' height='340' fill='%23f8f8f8' stroke='%23999' stroke-dasharray='5,5'/%3E%3Ctext x='200' y='40' text-anchor='middle' font-family='Arial' font-size='14' font-weight='bold'%3EKenar Boşlukları%3C/text%3E%3Cg fill='%23d24726' font-family='Arial' font-size='11'%3E%3Ctext x='200' y='55' text-anchor='middle'%3EÜst: 2.54 cm%3C/text%3E%3Ctext x='200' y='460' text-anchor='middle'%3EAlt: 2.54 cm%3C/text%3E%3Ctext x='25' y='250' text-anchor='middle' transform='rotate(-90 25 250)'%3ESol: 2.54 cm%3C/text%3E%3Ctext x='375' y='250' text-anchor='middle' transform='rotate(90 375 250)'%3ESağ: 2.54 cm%3C/text%3E%3C/g%3E%3Cg fill='%23666' font-family='Arial' font-size='10'%3E%3Ctext x='200' y='150' text-anchor='middle'%3EMetin Alanı%3C/text%3E%3Ctext x='200' y='250' text-anchor='middle'%3EBu alan içinde%3C/text%3E%3Ctext x='200' y='270' text-anchor='middle'%3Emetinleriniz%3C/text%3E%3Ctext x='200' y='290' text-anchor='middle'%3Egörüntülenir%3C/text%3E%3C/g%3E%3C/svg%3E"
+        }
+      }
+    },
+    
+    {
+      "id": "yonlendirme",
+      "title": "🔄 Yönlendirme",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sayfa yönlendirmesi, belgenizin dikey (portre) veya yatay (manzara) düzende olmasını belirler.",
+        
+        "orientation_types": [
+          {
+            "name": "Dikey (Portre)",
+            "dimensions": "Genişlik < Yükseklik",
+            "default_a4": "21 cm x 29.7 cm",
+            "usage": [
+              "Mektuplar",
+              "Raporlar",
+              "Makaleler",
+              "Özgeçmişler",
+              "Çoğu standart belge"
+            ],
+            "advantages": [
+              "Okuma akışına uygun",
+              "Metin için ideal",
+              "Standart yazdırma"
+            ]
+          },
+          {
+            "name": "Yatay (Manzara)",
+            "dimensions": "Genişlik > Yükseklik",
+            "default_a4": "29.7 cm x 21 cm",
+            "usage": [
+              "Geniş tablolar",
+              "Gantt şemaları",
+              "Sunumlar",
+              "Sertifikalar",
+              "Grafikler ve diyagramlar"
+            ],
+            "advantages": [
+              "Geniş içerik için",
+              "Yan yana karşılaştırma",
+              "Görsel sunumlar"
+            ]
+          }
+        ],
+        
+        "mixed_orientation": {
+          "description": "Aynı belgede farklı yönlendirmeler",
+          "how_to": [
+            "Yönlendirme değişeceği yere imleci getirin",
+            "Düzen → Kesme İşaretleri → Sonraki Sayfa",
+            "Yeni bölümde Düzen → Yönlendirme",
+            "İstediğiniz yönlendirmeyi seçin"
+          ],
+          "example": "Raporda dikey metin, yatay tablolar"
+        },
+        
+        "best_practices": [
+          "Belge türüne uygun yönlendirme seçin",
+          "Geniş tablolar için yatay kullanın",
+          "Karışık yönlendirme dikkatli kullanın",
+          "Yazdırma ayarlarını kontrol edin"
+        ]
+      }
+    },
+    
+    {
+      "id": "boyut",
+      "title": "📏 Boyut",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sayfa boyutu, belgenizin fiziksel ölçülerini belirler. Farklı ülkeler ve kullanım amaçları için standart boyutlar vardır.",
+        
+        "standard_sizes": [
+          {
+            "name": "A4",
+            "dimensions": "21 x 29.7 cm",
+            "region": "Avrupa, Türkiye",
+            "usage": "Standart ofis belgeleri"
+          },
+          {
+            "name": "Letter",
+            "dimensions": "21.59 x 27.94 cm",
+            "region": "ABD, Kanada",
+            "usage": "Amerikan standart belgeleri"
+          },
+          {
+            "name": "Legal",
+            "dimensions": "21.59 x 35.56 cm",
+            "region": "ABD",
+            "usage": "Hukuki belgeler"
+          },
+          {
+            "name": "A3",
+            "dimensions": "29.7 x 42 cm",
+            "region": "Dünya çapında",
+            "usage": "Posterler, büyük tablolar"
+          },
+          {
+            "name": "A5",
+            "dimensions": "14.8 x 21 cm",
+            "region": "Dünya çapında",
+            "usage": "Not defterleri, küçük broşürler"
+          },
+          {
+            "name": "B5",
+            "dimensions": "17.6 x 25 cm",
+            "region": "Asya, özellikle Japonya",
+            "usage": "Kitaplar, dergiler"
+          }
+        ],
+        
+        "custom_size": {
+          "access": "Düzen → Boyut → Diğer Kağıt Boyutları",
+          "settings": [
+            "Genişlik (0.1 - 55.87 cm)",
+            "Yükseklik (0.1 - 55.87 cm)",
+            "Varsayılan olarak ayarla"
+          ],
+          "examples": [
+            "Kartvizit: 9 x 5 cm",
+            "DL Zarf: 11 x 22 cm",
+            "Kare format: 20 x 20 cm"
+          ]
+        },
+        
+        "envelope_sizes": [
+          {
+            "name": "DL",
+            "dimensions": "11 x 22 cm",
+            "fits": "A4 üçe katlanmış"
+          },
+          {
+            "name": "C4",
+            "dimensions": "22.9 x 32.4 cm",
+            "fits": "A4 katlanmamış"
+          },
+          {
+            "name": "C5",
+            "dimensions": "16.2 x 22.9 cm",
+            "fits": "A5 veya A4 ikiye katlanmış"
+          },
+          {
+            "name": "C6",
+            "dimensions": "11.4 x 16.2 cm",
+            "fits": "A4 dörde katlanmış"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "sutunlar",
+      "title": "📰 Sütunlar",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sütunlar, metni gazete veya dergi düzeninde organize etmenizi sağlar.",
+        
+        "column_presets": [
+          {
+            "name": "Bir",
+            "description": "Standart tek sütun",
+            "usage": "Normal belgeler"
+          },
+          {
+            "name": "İki",
+            "description": "Eşit genişlikte iki sütun",
+            "usage": "Bültenler, broşürler"
+          },
+          {
+            "name": "Üç",
+            "description": "Eşit genişlikte üç sütun",
+            "usage": "Gazeteler, dergiler"
+          },
+          {
+            "name": "Sol",
+            "description": "Dar sol, geniş sağ sütun",
+            "usage": "Yan notlar ile ana metin"
+          },
+          {
+            "name": "Sağ",
+            "description": "Geniş sol, dar sağ sütun",
+            "usage": "Ana metin ile yan notlar"
+          }
+        ],
+        
+        "custom_columns": {
+          "access": "Düzen → Sütunlar → Diğer Sütunlar",
+          "options": [
+            "Sütun sayısı (1-45)",
+            "Genişlik ve aralık",
+            "Eşit sütun genişliği",
+            "Sütunlar arası çizgi",
+            "Uygulama alanı"
+          ],
+          "advanced": {
+            "different_widths": "Her sütun için özel genişlik",
+            "spacing": "Sütunlar arası boşluk (0.3 cm min)",
+            "line_between": "Ayırıcı çizgi ekleme"
+          }
+        },
+        
+        "column_breaks": {
+          "insert": "Düzen → Kesme İşaretleri → Sütun",
+          "shortcut": "Ctrl+Shift+Enter",
+          "usage": "Metni sonraki sütuna geçirme"
+        },
+        
+        "best_practices": [
+          "Dar sütunlar için küçük font kullanın",
+          "Sütun genişliği 7-10 kelime ideal",
+          "İki yana yaslama ile daha iyi görünüm",
+          "Resimler sütun genişliğine uygun olmalı",
+          "Başlıklar tüm sütunlara yayılabilir"
+        ],
+        
+        "visual_example": {
+          "type": "column_layout",
+          "image_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Ctext x='300' y='20' text-anchor='middle' font-family='Arial' font-size='14' font-weight='bold'%3ESütun Düzenleri%3C/text%3E%3Cg%3E%3Ctext x='100' y='45' text-anchor='middle' font-size='12'%3ETek Sütun%3C/text%3E%3Crect x='50' y='55' width='100' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3C/g%3E%3Cg%3E%3Ctext x='250' y='45' text-anchor='middle' font-size='12'%3Eİki Sütun%3C/text%3E%3Crect x='200' y='55' width='45' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3Crect x='255' y='55' width='45' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3C/g%3E%3Cg%3E%3Ctext x='400' y='45' text-anchor='middle' font-size='12'%3EÜç Sütun%3C/text%3E%3Crect x='350' y='55' width='28' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3Crect x='386' y='55' width='28' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3Crect x='422' y='55' width='28' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3C/g%3E%3Cg%3E%3Ctext x='500' y='45' text-anchor='middle' font-size='12'%3ESol (Asimetrik)%3C/text%3E%3Crect x='470' y='55' width='25' height='200' fill='%23f0e8f8' stroke='%23999'/%3E%3Crect x='505' y='55' width='55' height='200' fill='%23e8f4f8' stroke='%23999'/%3E%3C/g%3E%3C/svg%3E"
+        }
+      }
+    },
+    
+    {
+      "id": "kesme-isaretleri",
+      "title": "➖ Kesme İşaretleri",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Kesme işaretleri, belgeyi sayfalara, bölümlere veya sütunlara ayırmanızı sağlar.",
+        
+        "break_types": [
+          {
+            "name": "Sayfa Sonu",
+            "shortcut": "Ctrl+Enter",
+            "description": "Sonraki içeriği yeni sayfada başlatır",
+            "usage": "Yeni bölüm başlangıcı, ek belgeler"
+          },
+          {
+            "name": "Sütun Sonu",
+            "shortcut": "Ctrl+Shift+Enter",
+            "description": "Sonraki içeriği sonraki sütunda başlatır",
+            "usage": "Çok sütunlu düzenlerde"
+          },
+          {
+            "name": "Metin Kaydırma",
+            "shortcut": "Shift+Enter",
+            "description": "Yeni satır, paragraf değil",
+            "usage": "Adres satırları, şiirler"
+          }
+        ],
+        
+        "section_breaks": [
+          {
+            "name": "Sonraki Sayfa",
+            "description": "Yeni bölümü sonraki sayfada başlatır",
+            "usage": "Farklı bölümler için farklı düzen"
+          },
+          {
+            "name": "Sürekli",
+            "description": "Yeni bölümü aynı sayfada başlatır",
+            "usage": "Aynı sayfada farklı sütun düzeni"
+          },
+          {
+            "name": "Çift Sayfa",
+            "description": "Yeni bölümü sonraki çift sayfada başlatır",
+            "usage": "Kitap bölümleri (sağ sayfa)"
+          },
+          {
+            "name": "Tek Sayfa",
+            "description": "Yeni bölümü sonraki tek sayfada başlatır",
+            "usage": "Kitap bölümleri (sol sayfa)"
+          }
+        ],
+        
+        "section_formatting": {
+          "independent_settings": [
+            "Kenar boşlukları",
+            "Sayfa boyutu ve yönlendirme",
+            "Üst bilgi ve alt bilgi",
+            "Sayfa numaralandırma",
+            "Sütun düzeni",
+            "Dipnot/sonnot ayarları"
+          ],
+          "link_to_previous": {
+            "description": "Önceki bölümle bağlantı",
+            "control": "Üst/Alt bilgi düzenlemede kontrol edilir"
+          }
+        },
+        
+        "viewing_breaks": {
+          "show_hide": "Giriş → Paragraf → Göster/Gizle ¶",
+          "symbols": {
+            "page_break": "············Sayfa Sonu············",
+            "section_break": "=======Bölüm Sonu=======",
+            "column_break": "·····Sütun Sonu·····"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "satir-numaralari",
+      "title": "🔢 Satır Numaraları",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Satır numaraları, özellikle hukuki belgeler, kod örnekleri veya akademik metinlerde referans kolaylığı sağlar.",
+        
+        "line_number_options": [
+          {
+            "name": "Yok",
+            "description": "Satır numarası gösterme"
+          },
+          {
+            "name": "Sürekli",
+            "description": "Tüm belge boyunca sürekli numaralandırma"
+          },
+          {
+            "name": "Her Sayfayı Yeniden Başlat",
+            "description": "Her sayfada 1'den başla"
+          },
+          {
+            "name": "Her Bölümü Yeniden Başlat",
+            "description": "Her bölümde 1'den başla"
+          },
+          {
+            "name": "Bastır",
+            "description": "Geçerli paragraf için numaraları gizle"
+          }
+        ],
+        
+        "custom_settings": {
+          "access": "Düzen → Satır Numaraları → Satır Numaralandırma Seçenekleri",
+          "options": [
+            "Başlangıç numarası",
+            "Metinden uzaklık",
+            "Sayma aralığı (her satır, 5'er, 10'ar)",
+            "Numaralandırmayı yeniden başlat"
+          ]
+        },
+        
+        "use_cases": [
+          "Hukuki sözleşmeler ve anlaşmalar",
+          "Kod örnekleri ve programlama",
+          "Şiir ve edebi metinler",
+          "Akademik tartışma metinleri",
+          "Editörlük ve düzeltme işlemleri"
+        ]
+      }
+    },
+    
+    {
+      "id": "heceleme",
+      "title": "📝 Heceleme",
+      "order": 7,
+      "content": {
+        "type": "detailed",
+        "introduction": "Otomatik heceleme, satır sonlarında kelimeleri bölerek metni daha düzgün hizalar.",
+        
+        "hyphenation_options": [
+          {
+            "name": "Yok",
+            "description": "Heceleme yapma"
+          },
+          {
+            "name": "Otomatik",
+            "description": "Word otomatik heceler",
+            "settings": [
+              "Heceleme bölgesi (0.63 cm varsayılan)",
+              "Ardışık tire sayısı sınırı"
+            ]
+          },
+          {
+            "name": "El ile",
+            "description": "Heceleme önerileri ile manuel kontrol"
+          }
+        ],
+        
+        "best_practices": [
+          "Dar sütunlarda heceleme kullanın",
+          "İki yana yaslı metinlerde etkilidir",
+          "Başlıklarda hecelemeden kaçının",
+          "URL'leri ve e-postaları hecelemeyin"
+        ]
+      }
+    }
+  ],
+  
+  "practice_exercises": [
+    {
+      "title": "Akademik Makale Düzeni",
+      "steps": [
+        "A4 boyut, dikey yönlendirme ayarlayın",
+        "APA formatı için 2.54 cm kenar boşlukları",
+        "Satır numaraları ekleyin (sürekli)",
+        "Başlık sayfası için bölüm sonu ekleyin"
+      ]
+    },
+    {
+      "title": "Bülten Tasarımı",
+      "steps": [
+        "A3 boyut, yatay yönlendirme",
+        "Dar kenar boşlukları (1.27 cm)",
+        "3 sütun düzeni uygulayın",
+        "Başlık için tek sütun bölümü",
+        "Sütunlar arası çizgi ekleyin"
+      ]
+    },
+    {
+      "title": "Kitap Formatı",
+      "steps": [
+        "B5 boyut seçin",
+        "Yansıtılmış kenar boşlukları",
+        "Çift/tek sayfa farklı üst bilgi",
+        "Bölüm sonları ile bölümleri ayırın",
+        "Sayfa numaraları dış kenarda"
+      ]
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "Ctrl+Enter", "action": "Sayfa sonu ekle"},
+    {"keys": "Ctrl+Shift+Enter", "action": "Sütun sonu ekle"},
+    {"keys": "Shift+Enter", "action": "Satır sonu (paragraf değil)"},
+    {"keys": "Alt+P, M", "action": "Kenar boşlukları menüsü"},
+    {"keys": "Alt+P, O", "action": "Yönlendirme menüsü"},
+    {"keys": "Alt+P, S", "action": "Boyut menüsü"}
+  ],
+  
+  "common_issues": [
+    {
+      "problem": "Sayfa numaraları karışık",
+      "solution": "Bölüm sonları ve 'Önceki ile bağlantı' ayarını kontrol edin"
+    },
+    {
+      "problem": "Sütunlar eşit değil",
+      "solution": "Düzen → Sütunlar → Diğer Sütunlar → Eşit sütun genişliği"
+    },
+    {
+      "problem": "Kenar boşlukları yazdırılmıyor",
+      "solution": "Yazıcının yazdırma alanı sınırlarını kontrol edin"
+    }
+  ],
+  
+  "resources": {
+    "videos": [
+      "Profesyonel Sayfa Düzeni",
+      "Bölüm Sonları Kullanımı",
+      "Çok Sütunlu Belgeler"
+    ],
+    "templates": [
+      "Akademik makale şablonu",
+      "Bülten şablonu",
+      "Kitap formatı şablonu"
+    ],
+    "microsoft_support": "https://support.microsoft.com/tr-tr/office/word-de-düzen-sekmesi"
+  },
+  
+  "next_menu": {
+    "id": "basvurular",
+    "name": "Başvurular Menüsü",
+    "description": "İçindekiler, dipnot, alıntı ve kaynakça yönetimi"
+  }
+}

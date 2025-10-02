@@ -1,0 +1,235 @@
+{
+  "id": "powerpoint-tasarim",
+  "title": "Microsoft PowerPoint - Tasarım Menüsü",
+  "description": "Sunumunuza profesyonel görünüm kazandıran temalar, renkler, fontlar ve efektler.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "2 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "temalar",
+      "title": "🎨 Temalar",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Temalar, sunumunuzun genel görünümünü belirleyen hazır tasarım setleridir. Tek tıkla tüm sunumunuzun stilini değiştirebilirsiniz.",
+        
+        "what_is_theme": {
+          "definition": "Tema = Renkler + Fontlar + Efektler + Arka plan stilleri",
+          "benefit": "Tutarlı ve profesyonel görünüm"
+        },
+        
+        "applying_themes": {
+          "method": "Tasarım → Temalar galerisi → Tema seçin",
+          "instant_apply": "Tıkladığınızda tüm sunuma uygulanır",
+          "preview": "Fare ile üzerine gelince önizleme görürsünüz",
+          
+          "variants": {
+            "name": "Çeşitler",
+            "description": "Seçili temanın farklı renk kombinasyonları",
+            "location": "Temalar grubunun sağındaki küçük kutular",
+            "tip": "Aynı tema, farklı renkler"
+          }
+        },
+        
+        "popular_themes": [
+          {
+            "name": "Office Teması",
+            "style": "Temiz, minimal, profesyonel",
+            "use": "Kurumsal sunumlar"
+          },
+          {
+            "name": "Facet",
+            "style": "Modern, geometrik",
+            "use": "Teknoloji, yenilikçi sunumlar"
+          },
+          {
+            "name": "Ion",
+            "style": "Parlak, canlı renkler",
+            "use": "Yaratıcı, enerji dolu sunumlar"
+          },
+          {
+            "name": "Basis",
+            "style": "Sade, şık",
+            "use": "Genel amaçlı"
+          }
+        ],
+        
+        "custom_theme": {
+          "how": "Tasarım → Temalar → Temaları Kaydet",
+          "benefit": "Kendi temanızı oluşturun",
+          "reuse": "Diğer sunumlarda kullanabilirsiniz"
+        }
+      }
+    },
+    
+    {
+      "id": "renkler",
+      "title": "🎨 Renkler",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumunuzun renk paletini özelleştirin.",
+        
+        "theme_colors": {
+          "definition": "Her temada 12 renk vardır",
+          "colors": [
+            "4 Ana Renk (Accent 1-4)",
+            "6 Vurgu Rengi (Accent 5-10)",
+            "2 Bağlantı Rengi (Köprü ve takip edilmiş)"
+          ]
+        },
+        
+        "custom_colors": {
+          "path": "Tasarım → Renkler → Renkleri Özelleştir",
+          "tip": "Marka renklerinizi kullanın",
+          "save": "Yeni renk paletini kaydedin"
+        }
+      }
+    },
+    
+    {
+      "id": "fontlar",
+      "title": "🔤 Fontlar",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunumunuzun yazı tiplerini belirleyin.",
+        
+        "theme_fonts": {
+          "structure": "Her tema 2 font içerir",
+          "heading": "Başlık fontu",
+          "body": "Gövde metni fontu"
+        },
+        
+        "custom_fonts": {
+          "path": "Tasarım → Fontlar → Fontları Özelleştir",
+          "best_practice": "Okunabilir ve profesyonel fontlar seçin",
+          "examples": [
+            "Calibri - Modern, temiz",
+            "Arial - Klasik, okunabilir",
+            "Segoe UI - Modern Windows fontu",
+            "Gill Sans - Şık ve zarif"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "efektler",
+      "title": "✨ Efektler",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Şekiller ve grafiklere uygulanan görsel efektler.",
+        
+        "effect_types": [
+          {
+            "name": "Gölge Efektleri",
+            "description": "Nesnelere derinlik katar"
+          },
+          {
+            "name": "Yansıma",
+            "description": "Ayna görüntüsü efekti"
+          },
+          {
+            "name": "Işıltı",
+            "description": "Parlayan kenarlar"
+          },
+          {
+            "name": "Yumuşak Kenarlar",
+            "description": "Kenarları bulanıklaştırır"
+          },
+          {
+            "name": "Eğim",
+            "description": "3D derinlik efekti"
+          },
+          {
+            "name": "3D Döndürme",
+            "description": "Perspektif efekti"
+          }
+        ],
+        
+        "applying": "Tasarım → Efektler → Bir efekt seti seçin"
+      }
+    },
+    
+    {
+      "id": "arka-plan-stilleri",
+      "title": "🖼️ Arka Plan Stilleri",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Slayt arka planlarını hızlıca değiştirin.",
+        
+        "quick_styles": {
+          "path": "Tasarım → Arka Plan Stilleri",
+          "options": "Düz, gradyan, doku arka planlar",
+          "preview": "Üzerine gelerek önizleme yapın"
+        },
+        
+        "custom_background": {
+          "path": "Tasarım → Arka Planı Biçimlendir",
+          "options": [
+            "Düz Dolgu - Tek renk",
+            "Gradyan Dolgu - Renk geçişi",
+            "Resim veya doku dolgusu",
+            "Desen Dolgusu"
+          ],
+          "hide_graphics": "Arka plan grafiklerini gizle seçeneği"
+        }
+      }
+    },
+    
+    {
+      "id": "slayt-boyutu",
+      "title": "📐 Slayt Boyutu",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sunum boyutunu ayarlayın.",
+        
+        "standard_sizes": [
+          {
+            "name": "Geniş Ekran (16:9)",
+            "use": "Modern ekranlar ve projektörler",
+            "default": true
+          },
+          {
+            "name": "Standart (4:3)",
+            "use": "Eski projektörler",
+            "classic": true
+          }
+        ],
+        
+        "custom_size": {
+          "path": "Tasarım → Slayt Boyutu → Özel Slayt Boyutu",
+          "options": "Genişlik ve yüksekliği manuel girin",
+          "units": "cm, inç veya piksel"
+        },
+        
+        "warning": "Boyut değiştirirken içeriğin bozulabileceğini unutmayın. Önce yedek alın!"
+      }
+    }
+  ],
+  
+  "tips": [
+    "Tutarlılık için tüm sunumda aynı temayı kullanın",
+    "Çok fazla renk kullanmayın (maksimum 3-4 ana renk)",
+    "Okunabilir fontlar seçin (minimum 18pt)",
+    "Arka plan ve metin arasında yüksek kontrast sağlayın",
+    "Efektleri abartmayın - sade ve profesyonel görünüm hedefleyin"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Tema uygula",
+      "method": "Temalar galerisinden seçim yapın"
+    },
+    {
+      "action": "Arka plan değiştir",
+      "method": "Sağ tık → Arka Planı Biçimlendir"
+    }
+  ]
+}

@@ -1,0 +1,689 @@
+{
+  "id": "photoshop-retus-onarim",
+  "title": "Adobe Photoshop - Rötuş ve Onarım",
+  "description": "Kusur giderme, cilt rötuşu, obje kaldırma ve fotoğraf onarım teknikleri.",
+  "difficulty": "Orta",
+  "estimated_time": "4 saat",
+  "version": "Adobe Photoshop 2024",
+  
+  "sections": [
+    {
+      "id": "healing-tools",
+      "title": "🩹 İyileştirme Araçları (Healing Tools)",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Kusurları giderme ve onarım için temel araçlar.",
+        
+        "spot_healing_brush": {
+          "tool": "Spot Healing Brush Tool (J)",
+          "description": "Tek tıkla kusur giderme",
+          "shortcut": "J",
+          "use": "Küçük kusurlar, benler, lekeleler",
+          "how": "Kusurun üzerine boya, otomatik düzeltir",
+          "automatic": "✓✓✓ En kolay, en hızlı",
+          
+          "types": [
+            {
+              "type": "Content-Aware",
+              "description": "Çevreden örnek alıp karıştırır",
+              "best": "✓ Çoğu durum için ideal",
+              "smart": "AI destekli"
+            },
+            {
+              "type": "Create Texture",
+              "description": "Doku oluşturur",
+              "use": "Dokulu yüzeyler"
+            },
+            {
+              "type": "Proximity Match",
+              "description": "Yakın pikselleri kullanır",
+              "use": "Belirgin dokular"
+            }
+          ],
+          
+          "tips": [
+            "Fırça boyutu kusurdan biraz büyük olmalı",
+            "Sample All Layers: Tüm katmanları örnekle",
+            "Yeni katmanda çalışın (yıkıcı olmayan)"
+          ],
+          
+          "workflow": [
+            "1. Yeni katman oluştur",
+            "2. Sample All Layers açık",
+            "3. Kusura tıkla veya boya",
+            "4. Otomatik temizlenir"
+          ]
+        },
+        
+        "healing_brush": {
+          "tool": "Healing Brush Tool (J)",
+          "description": "Manuel örnekleme ile iyileştirme",
+          "vs_spot": "Daha fazla kontrol, örnek seçimi",
+          "use": "Büyük alanlar, karmaşık dokular",
+          
+          "how_to_use": [
+            "1. Alt + Tıkla = Örnek al (kaynak)",
+            "2. Kusurun üzerine boya",
+            "3. Kaynak doku ile çevre karışır"
+          ],
+          
+          "options": {
+            "mode": "Blend mode (Normal önerilir)",
+            "source": [
+              "Sampled - Manuel örnek",
+              "Pattern - Desen kullan"
+            ],
+            "aligned": {
+              "checked": "Sürekli takip eder",
+              "unchecked": "Her seferinde aynı örnek"
+            },
+            "sample": "Current Layer / All Layers"
+          },
+          
+          "tips": [
+            "Dokunun yönüne dikkat edin",
+            "Sık sık yeni örnek alın",
+            "Yumuşak kenarlı fırça kullanın"
+          ]
+        },
+        
+        "patch_tool": {
+          "tool": "Patch Tool (J)",
+          "description": "Alan seçerek onarım",
+          "use": "Büyük alanlar, hızlı düzeltme",
+          
+          "modes": [
+            {
+              "mode": "Normal",
+              "method": [
+                "1. Kusurlu alanı çevreyle seç",
+                "2. Temiz alana sürükle",
+                "3. Otomatik karışır"
+              ]
+            },
+            {
+              "mode": "Content-Aware",
+              "description": "AI ile otomatik doldurma",
+              "best": "✓ En iyi sonuç",
+              "structure": "Yapı kontrolü (1-7)",
+              "color": "Renk uyumu (0-10)"
+            }
+          ],
+          
+          "options": {
+            "source": "Seçimi kaynağa çek",
+            "destination": "Seçimi hedefe çek",
+            "transparent": "Şeffaf modda"
+          }
+        },
+        
+        "clone_stamp": {
+          "tool": "Clone Stamp Tool (S)",
+          "description": "Birebir kopyalama",
+          "shortcut": "S",
+          "use": "Obje kopyalama, hassas çoğaltma",
+          
+          "how_to_use": [
+            "1. Alt + Tıkla = Kaynak belirle",
+            "2. Hedefe boya",
+            "3. Kaynak birebir kopyalanır"
+          ],
+          
+          "vs_healing": {
+            "clone": "Birebir kopya, karışım yok",
+            "healing": "Çevre ile karışır",
+            "when_clone": "Kesin kontrol gerektiğinde"
+          },
+          
+          "options": {
+            "opacity": "Kopyalama yoğunluğu",
+            "flow": "Fırça akışı",
+            "aligned": "Sürekli takip",
+            "sample": "Current Layer / All Layers",
+            "clone_source": "Birden fazla kaynak tanımla"
+          },
+          
+          "clone_source_panel": {
+            "name": "Clone Source Panel",
+            "path": "Window → Clone Source",
+            "features": [
+              "5 farklı kaynak kaydı",
+              "Ölçeklendirme ve döndürme",
+              "Overlay önizlemesi",
+              "Offset ayarı"
+            ]
+          },
+          
+          "tips": [
+            "Yumuşak fırça kullanın",
+            "Opacity 50-70% daha doğal",
+            "Aligned açık = Sürekli doku",
+            "Sık kaynak değiştirin (desen oluşmasın)"
+          ]
+        },
+        
+        "content_aware_fill": {
+          "name": "Content-Aware Fill",
+          "shortcut": "Shift + Delete (Seçim yapılınca)",
+          "description": "AI ile otomatik doldurma",
+          "power": "✓✓✓ Çok güçlü",
+          
+          "basic_use": [
+            "1. Silinecek objeyi seç",
+            "2. Shift + Delete",
+            "3. Contents: Content-Aware seç",
+            "4. OK - Otomatik dolar"
+          ],
+          
+          "workspace": {
+            "name": "Content-Aware Fill Workspace",
+            "path": "Edit → Content-Aware Fill",
+            "advanced": "Gelişmiş kontrol",
+            
+            "features": [
+              "Sampling area - Nereden örnek alsın",
+              "Fill settings - Renk uyumu, döndürme",
+              "Preview - Gerçek zamanlı önizleme",
+              "Output - Yeni katmana veya mevcut"
+            ],
+            
+            "workflow": [
+              "1. Objeyi seç",
+              "2. Edit → Content-Aware Fill",
+              "3. Sampling brush ile örnek alanı belirle",
+              "4. Ayarları optimize et",
+              "5. OK"
+            ]
+          },
+          
+          "use_cases": [
+            "İstenmeyen obje kaldırma",
+            "Kişi/nesne çıkarma",
+            "Tel, direk temizleme",
+            "Arka plan genişletme"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "portrait-retouching",
+      "title": "👤 Portre Rötuşu",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Profesyonel portre düzenleme ve cilt rötuşu teknikleri.",
+        
+        "skin_retouching_workflow": {
+          "step1": {
+            "name": "Kusur Giderme",
+            "tool": "Spot Healing Brush",
+            "targets": "Sivilce, yara izi, leke",
+            "layer": "Yeni katman - 'Healing'",
+            "tip": "Abartmayın, doğal doku kalmalı"
+          },
+          
+          "step2": {
+            "name": "Cilt Pürüzsüzleştirme",
+            "methods": [
+              {
+                "method": "Frequency Separation",
+                "description": "Renk ve dokuyu ayırma",
+                "professional": "✓✓✓ Profesyonel standart",
+                "advanced": "İleri seviye teknik"
+              },
+              {
+                "method": "Surface Blur",
+                "path": "Filter → Blur → Surface Blur",
+                "simple": "Basit yöntem",
+                "settings": "Radius: 5-10, Threshold: 10-20"
+              },
+              {
+                "method": "Neural Filters - Skin Smoothing",
+                "ai": "AI destekli",
+                "automatic": "Otomatik"
+              }
+            ]
+          },
+          
+          "step3": {
+            "name": "Dodge and Burn",
+            "description": "Kontur ve derinlik ekleme",
+            "dodge": "Dodge Tool (O) - Aydınlatma",
+            "burn": "Burn Tool (O) - Koyulaştırma",
+            
+            "workflow": [
+              "1. Yeni katman (50% gray, Overlay mode)",
+              "2. Beyaz fırça ile parlak alanları vurgula",
+              "3. Siyah fırça ile gölgeleri derinleştir",
+              "4. Opacity ile ince ayar"
+            ],
+            
+            "targets": {
+              "dodge": "Elmacık kemikleri, burun sırtı, alın ortası, çene",
+              "burn": "Yüz konturları, gölgeler, çene altı"
+            }
+          },
+          
+          "step4": {
+            "name": "Göz İyileştirme",
+            "techniques": [
+              "Göz beyazını hafif aydınlat (Dodge)",
+              "Iris'i keskinleştir (Sharpen)",
+              "Catchlight ekle (beyaz nokta)",
+              "Kırmızı damarları gider (Hue/Saturation Red)"
+            ]
+          },
+          
+          "step5": {
+            "name": "Diş Beyazlatma",
+            "method": [
+              "1. Dişleri seç (Lasso/Quick Selection)",
+              "2. Hue/Saturation adjustment",
+              "3. Yellows seç, Saturation azalt",
+              "4. Lightness hafif artır",
+              "5. Opacity: 40-60%"
+            ],
+            "warning": "Çok beyaz yapay görünür"
+          }
+        },
+        
+        "frequency_separation": {
+          "name": "Frequency Separation",
+          "description": "Renk ve dokuyu ayrı katmanlarda işleme",
+          "professional": "✓✓✓ Profesyonel standart",
+          
+          "setup": [
+            "1. Katmanı çoğalt 2 kez",
+            "2. Üst katman adı: Texture",
+            "3. Alt katman adı: Color",
+            "4. Color katmanında: Gaussian Blur (5-10 px)",
+            "5. Texture katmanında: Image → Apply Image",
+            "   - Layer: Color, Blending: Subtract, Scale: 2, Offset: 128",
+            "6. Texture katman blend mode: Linear Light"
+          ],
+          
+          "workflow": [
+            "Color katmanı: Clone Stamp/Healing (renk düzgünleştirme)",
+            "Texture katmanı: Clone Stamp (doku düzeltme)",
+            "Ayrı kontrol = Mükemmel sonuç"
+          ],
+          
+          "benefits": [
+            "Doku kaybı olmadan renk düzeltme",
+            "Hassas kontrol",
+            "Doğal sonuç",
+            "Profesyonel kalite"
+          ]
+        },
+        
+        "liquify_tool": {
+          "name": "Liquify (Sıvılaştır)",
+          "path": "Filter → Liquify",
+          "shortcut": "Shift + Ctrl/Cmd + X",
+          "description": "Şekil düzeltme ve deformasyon",
+          
+          "tools": [
+            "Forward Warp (W) - İtme",
+            "Reconstruct (R) - Geri alma",
+            "Smooth (E) - Yumuşatma",
+            "Twirl Clockwise (C) - Saat yönü döndürme",
+            "Pucker (S) - Küçültme",
+            "Bloat (B) - Büyütme",
+            "Push Left (O) - Sola itme",
+            "Freeze Mask (F) - Dondurma (koruma)",
+            "Thaw Mask (D) - Çözme"
+          ],
+          
+          "face_aware": {
+            "name": "Face-Aware Liquify",
+            "auto_detect": "Yüzü otomatik algılar",
+            "sliders": [
+              "Eyes - Göz boyutu, aralık, eğiklik",
+              "Nose - Burun genişliği, yüksekliği",
+              "Mouth - Ağız gülümseme, genişlik",
+              "Face Shape - Yüz şekli, alın, çene"
+            ],
+            "easy": "Çok kolay, hızlı"
+          },
+          
+          "tips": [
+            "Küçük fırça, küçük hareketler",
+            "Zoom in - Yakından çalışın",
+            "Show Backdrop - Önceki halini göster",
+            "Smart Object üzerinde uygula",
+            "Abartmayın - Doğallık önemli"
+          ],
+          
+          "use_cases": [
+            "Yüz inceltme",
+            "Göz büyütme",
+            "Burun küçültme",
+            "Gülümseme ekleme",
+            "Vücut konturları"
+          ]
+        },
+        
+        "common_retouching": [
+          {
+            "issue": "Kırışıklıklar",
+            "solution": "Healing Brush, hafif Opacity",
+            "tip": "Tamamen silmeyin, azaltın"
+          },
+          {
+            "issue": "Parlama (Shine)",
+            "solution": "Clone Stamp düşük Opacity ile mat alan kopyala",
+            "or": "Dodge&Burn ile dengele"
+          },
+          {
+            "issue": "Göz Altı Morlukları",
+            "solution": "Patch Tool Content-Aware veya Healing Brush",
+            "color": "Color mode ile rengi düzelt"
+          },
+          {
+            "issue": "Çift Çene",
+            "solution": "Liquify ile şekil düzeltme + Burn ile gölge"
+          },
+          {
+            "issue": "Parlak Alın",
+            "solution": "Clone Stamp ile mat doku kopyala"
+          }
+        ],
+        
+        "natural_retouching_rules": [
+          "Dokuyu koruyun - Porselenleştirmeyin",
+          "Tüm kusurları silmeyin - Doğal kalmalı",
+          "Önce/sonra karşılaştırın",
+          "Yüz yapısını değiştirmeyin",
+          "Ten rengini koruyun",
+          "Az çoktur - Abartı amatörce görünür"
+        ]
+      }
+    },
+    
+    {
+      "id": "object-removal",
+      "title": "🗑️ Obje Kaldırma",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "İstenmeyen objeleri fotoğraftan temizleme teknikleri.",
+        
+        "generative_fill": {
+          "name": "Generative Fill (2024)",
+          "new": "✨ Yeni nesil AI",
+          "power": "✓✓✓ İnanılmaz güçlü",
+          "description": "AI ile obje kaldırma ve ekleme",
+          
+          "how_to_use": [
+            "1. Remove Tool (R) veya seçim araçlarıyla objeyi seç",
+            "2. Contextual Task Bar'da 'Remove' tıkla",
+            "   VEYA",
+            "   Generative Fill butonu → Prompt boş bırak",
+            "3. AI otomatik arka plan oluşturur",
+            "4. Variations arasından seçim yap"
+          ],
+          
+          "remove_tool": {
+            "name": "Remove Tool (R)",
+            "description": "Tek tıkla obje kaldırma",
+            "how": "Objenin üzerine boya, otomatik siler",
+            "instant": "Anında sonuç",
+            "best": "Küçük/orta boyut objeler için"
+          },
+          
+          "tips": [
+            "Seçim hassas olmalı",
+            "Basit arka planlar daha iyi sonuç",
+            "Birden fazla varyasyon dene",
+            "Gerekirse manuel düzeltme yap"
+          ],
+          
+          "use_cases": [
+            "İnsanları çıkarma",
+            "Tel, direk temizleme",
+            "Turist/istenmeyen kişi",
+            "Kirlilik, çöp",
+            "Fotobomasyon düzeltme"
+          ]
+        },
+        
+        "traditional_methods": [
+          {
+            "method": "Content-Aware Fill",
+            "when": "Generative Fill yoksa veya yeterli değilse",
+            "workflow": [
+              "1. Objeyi seç (hafif geniş seçim)",
+              "2. Edit → Content-Aware Fill",
+              "3. Sampling area düzenle",
+              "4. OK"
+            ]
+          },
+          {
+            "method": "Clone Stamp",
+            "when": "Hassas kontrol gerektiğinde",
+            "workflow": [
+              "1. Yeni katman",
+              "2. Alt + Tıkla (temiz alandan örnek)",
+              "3. Objenin üzerine boya",
+              "4. Opacity 70-80% doğal görünür"
+            ],
+            "tip": "Sürekli farklı yerlerden örnek alın"
+          },
+          {
+            "method": "Patch Tool",
+            "when": "Büyük düz alanlar",
+            "content_aware": "Content-Aware mode en iyi"
+          }
+        ],
+        
+        "complex_removals": {
+          "title": "Karmaşık Silmeler",
+          
+          "techniques": [
+            {
+              "technique": "Katman Kombinasyonu",
+              "description": "Birden fazla tekniği birleştir",
+              "example": "Clone Stamp + Content-Aware + Manuel boyama"
+            },
+            {
+              "technique": "Farklı Fotoğraf Kullanma",
+              "description": "Aynı sahnenin başka açısını kullan",
+              "copy_paste": "Temiz kısmı kopyala yapıştır"
+            },
+            {
+              "technique": "Yeniden Oluşturma",
+              "description": "Arka planı sıfırdan boya/oluştur",
+              "use": "Arka plan çok karmaşıksa"
+            }
+          ],
+          
+          "difficult_scenarios": [
+            {
+              "scenario": "Obje Kesişiyorsa",
+              "problem": "Kaldırınca boşluk kalır",
+              "solution": "Clone Stamp ile yeniden inşa et"
+            },
+            {
+              "scenario": "Karmaşık Arka Plan",
+              "problem": "Content-Aware başarısız",
+              "solution": "Manuel Clone Stamp + Pattern"
+            },
+            {
+              "scenario": "Gradient/Gökyüzü",
+              "problem": "Süreklilik bozulması",
+              "solution": "Gradient Tool + Layer Mask"
+            }
+          ]
+        },
+        
+        "perspective_warp": {
+          "name": "Perspective Warp",
+          "path": "Edit → Perspective Warp",
+          "use": "Bina/obje perspektif düzeltme",
+          "when": "Obje kaldırınca perspektif bozulursa"
+        }
+      }
+    },
+    
+    {
+      "id": "restoration",
+      "title": "🖼️ Eski Fotoğraf Onarımı",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Hasarlı ve eski fotoğrafları restore etme.",
+        
+        "common_damages": [
+          {
+            "damage": "Çizikler ve Çatlaklar",
+            "tools": "Spot Healing Brush + Healing Brush",
+            "method": "Çizgi boyunca fırçala, otomatik tamir"
+          },
+          {
+            "damage": "Lekeler ve Bozulmalar",
+            "tools": "Clone Stamp + Patch Tool",
+            "method": "Temiz alandan kopyala"
+          },
+          {
+            "damage": "Renk Solması",
+            "adjustment": "Levels + Curves + Vibrance",
+            "restore": "Ton aralığını genişlet, renk canlandır"
+          },
+          {
+            "damage": "Sararmış Beyaz",
+            "fix": "Color Balance (mavi/cyan ekle)",
+            "or": "Black & White → Yeniden renklendirme"
+          },
+          {
+            "damage": "Gürültü ve Grain",
+            "filter": "Camera RAW → Noise Reduction",
+            "balance": "Çok fazla azaltma = Detay kaybı"
+          },
+          {
+            "damage": "Bulanıklık",
+            "sharpen": "Unsharp Mask veya Smart Sharpen",
+            "realistic": "Kayıp detay geri getirilemez"
+          },
+          {
+            "damage": "Eksik Parçalar",
+            "methods": [
+              "Content-Aware Fill",
+              "Clone Stamp ile yeniden oluşturma",
+              "Simetrik kopyalama (yüzde)"
+            ]
+          }
+        ],
+        
+        "restoration_workflow": [
+          "1. Tarama/Dijitalleştirme (yüksek çözünürlük)",
+          "2. Kırpma ve Düzleştirme",
+          "3. Toz ve çizik giderme (Spot Healing)",
+          "4. Büyük hasarları onarma (Clone Stamp)",
+          "5. Ton düzeltme (Levels, Curves)",
+          "6. Renk restore (Color Balance, Hue/Saturation)",
+          "7. Keskinleştirme (Smart Sharpen)",
+          "8. Gürültü azaltma (gerekirse)",
+          "9. Final dokunuşlar"
+        ],
+        
+        "colorization": {
+          "name": "Siyah-Beyaz Renklendirme",
+          
+          "methods": [
+            {
+              "method": "Neural Filters - Colorize",
+              "ai": "AI otomatik renklendirme",
+              "easy": "En kolay yöntem",
+              "quality": "Genelde iyi"
+            },
+            {
+              "method": "Manuel Renklendirme",
+              "layers": "Her renk için ayrı katman",
+              "blend_mode": "Color mode",
+              "workflow": [
+                "1. Yeni katman → Color blend mode",
+                "2. Fırça ile boya (doğal renkler)",
+                "3. Opacity azalt (30-60%)",
+                "4. Her renk için tekrarla"
+              ],
+              "tip": "Yumuşak fırça, düşük opacity"
+            }
+          ],
+          
+          "realistic_colors": {
+            "skin": "Pembe/turuncu tonlar",
+            "sky": "Açık mavi",
+            "grass": "Yeşil tonları",
+            "clothing": "Döneme uygun renkler",
+            "research": "Dönem fotoğraflarını araştırın"
+          }
+        }
+      }
+    }
+  ],
+  
+  "best_practices": [
+    {
+      "practice": "Yeni Katmanda Çalışın",
+      "importance": "✓✓✓ Zorunlu",
+      "benefit": "Yıkıcı olmayan, geri alınabilir",
+      "layer": "Her düzeltme ayrı katman"
+    },
+    {
+      "practice": "Zoom In",
+      "description": "Yakından çalışın (100% veya daha fazla)",
+      "benefit": "Hassas sonuç"
+    },
+    {
+      "practice": "Yumuşak Fırça",
+      "hardness": "0-10% için rötuş",
+      "natural": "Sert kenarlar yapay görünür"
+    },
+    {
+      "practice": "Düşük Opacity",
+      "value": "30-70% arası",
+      "buildup": "Kademeli inşa daha doğal"
+    },
+    {
+      "practice": "Sık Kaynak Değiştirin",
+      "tool": "Clone Stamp kullanırken",
+      "reason": "Desen oluşmasını önler"
+    },
+    {
+      "practice": "Abartmayın",
+      "rule": "Az çoktur",
+      "natural": "Doğal görünüm hedef"
+    },
+    {
+      "practice": "Önce/Sonra Karşılaştırın",
+      "method": "Katmanları aç/kapat",
+      "objective": "Objektif değerlendirme"
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Spot Healing Brush = Küçük kusurlar için en hızlı",
+      "Content-Aware Fill = Büyük obje kaldırma",
+      "Generative Fill = AI ile yeni nesil silme",
+      "Clone Stamp = Hassas kontrol",
+      "Frequency Separation = Profesyonel cilt rötuşu",
+      "Liquify = Şekil düzeltme",
+      "Her zaman yeni katmanda çalışın"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Spot Healing Brush", "keys": "J"},
+    {"action": "Clone Stamp", "keys": "S"},
+    {"action": "Remove Tool", "keys": "R"},
+    {"action": "Dodge Tool", "keys": "O"},
+    {"action": "Burn Tool", "keys": "O (Shift+O ile değiştir)"},
+    {"action": "Liquify", "keys": "Shift + Ctrl/Cmd + X"},
+    {"action": "Content-Aware Fill", "keys": "Shift + Delete"},
+    {"action": "Fırça boyutu", "keys": "[ ]"},
+    {"action": "Fırça sertliği", "keys": "Shift + [ ]"}
+  ]
+}

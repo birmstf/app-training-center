@@ -1,0 +1,633 @@
+{
+  "id": "excel-veri",
+  "title": "Microsoft Excel - Veri Menüsü",
+  "description": "Veri alma, dönüştürme, analiz ve yönetim araçları. Power Query ve veri modelleme özellikleri.",
+  "difficulty": "Orta - İleri",
+  "estimated_time": "4 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "veri-alma",
+      "title": "📥 Veri Al ve Dönüştür",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dış kaynaklardan veri alma ve Power Query ile dönüştürme.",
+        
+        "data_sources": {
+          "file_sources": [
+            {
+              "source": "Excel Çalışma Kitabı",
+              "description": "Başka Excel dosyalarından veri al",
+              "format": ".xlsx, .xls"
+            },
+            {
+              "source": "CSV/TXT",
+              "description": "Metin dosyalarından veri al",
+              "delimiter": "Ayırıcı seçimi (virgül, noktalı virgül, tab)"
+            },
+            {
+              "source": "XML",
+              "description": "XML dosyalarından veri al",
+              "structure": "Otomatik yapı algılama"
+            },
+            {
+              "source": "JSON",
+              "description": "JSON dosyalarından veri al",
+              "nested": "İç içe yapıları destekler"
+            },
+            {
+              "source": "PDF",
+              "description": "PDF'den tablo çıkarma",
+              "limitation": "Tabloların net olması gerekir"
+            }
+          ],
+          
+          "database_sources": [
+            {
+              "source": "SQL Server",
+              "description": "Microsoft SQL Server veritabanı",
+              "connection": "Server adı ve veritabanı adı gerekli"
+            },
+            {
+              "source": "MySQL",
+              "description": "MySQL veritabanı",
+              "driver": "MySQL ODBC driver gerekli"
+            },
+            {
+              "source": "Oracle",
+              "description": "Oracle veritabanı"
+            },
+            {
+              "source": "Access",
+              "description": "Microsoft Access veritabanı",
+              "format": ".accdb, .mdb"
+            }
+          ],
+          
+          "web_sources": [
+            {
+              "source": "Web'den",
+              "description": "Web sayfasından tablo çekme",
+              "auto_detect": "Tabloları otomatik algılar",
+              "refresh": "Yenilenebilir bağlantı"
+            },
+            {
+              "source": "SharePoint",
+              "description": "SharePoint listelerinden veri",
+              "online": "SharePoint Online desteklenir"
+            },
+            {
+              "source": "OData",
+              "description": "OData feed'lerinden veri"
+            }
+          ],
+          
+          "cloud_services": [
+            {
+              "source": "OneDrive",
+              "description": "OneDrive dosyalarından",
+              "sync": "Otomatik senkronizasyon"
+            },
+            {
+              "source": "SharePoint Klasörü",
+              "description": "SharePoint'teki dosyalar"
+            }
+          ]
+        },
+        
+        "power_query": {
+          "description": "Power Query Editor - Veri dönüştürme motoru",
+          "access": "Veri Al → Veri Dönüştür",
+          
+          "transformations": [
+            {
+              "category": "Sütun İşlemleri",
+              "operations": [
+                "Sütun ekle/sil/yeniden adlandır",
+                "Veri tipini değiştir",
+                "Sütunları böl (ayırıcıya göre)",
+                "Sütunları birleştir",
+                "Sütun çıkar (metin içinden)"
+              ]
+            },
+            {
+              "category": "Satır İşlemleri",
+              "operations": [
+                "Üst satırları kaldır",
+                "Alt satırları kaldır",
+                "Satırları filtrele",
+                "Yinelenen satırları kaldır",
+                "Boş satırları kaldır"
+              ]
+            },
+            {
+              "category": "Temizleme",
+              "operations": [
+                "Fazla boşlukları temizle",
+                "Büyük/küçük harf dönüştür",
+                "Değerleri değiştir",
+                "Hataları kaldır/değiştir",
+                "Null değerleri doldur"
+              ]
+            },
+            {
+              "category": "Dönüştürme",
+              "operations": [
+                "Pivot (satırdan sütuna)",
+                "Unpivot (sütundan satıra)",
+                "Transpose (satır ↔ sütun)",
+                "Gruplandır (Group By)",
+                "Birleştir (Merge)"
+              ]
+            }
+          ],
+          
+          "m_language": {
+            "description": "M formül dili",
+            "use": "Gelişmiş dönüşümler için",
+            "view": "Gelişmiş Düzenleyici'den görülebilir",
+            "example": "= Table.SelectRows(Source, each [Sales] > 1000)"
+          },
+          
+          "applied_steps": {
+            "description": "Uygulanan Adımlar",
+            "feature": "Her dönüşüm bir adım olarak kaydedilir",
+            "edit": "Adımları düzenle/sil/yeniden sırala",
+            "refresh": "Veri yenilendiğinde tüm adımlar tekrar uygulanır"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "siralama-filtreleme",
+      "title": "🔄 Sıralama ve Filtreleme",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Verileri sıralama ve filtreleme araçları.",
+        
+        "sort": {
+          "quick_sort": {
+            "a_to_z": "A'dan Z'ye",
+            "z_to_a": "Z'den A'ya",
+            "smallest_largest": "En küçükten en büyüğe",
+            "largest_smallest": "En büyükten en küçüğe",
+            "access": "Sağ tık → Sırala veya Veri → Sırala"
+          },
+          
+          "custom_sort": {
+            "description": "Özel Sırala",
+            "path": "Veri → Sırala",
+            "multi_level": "Birden fazla sütuna göre sıralama",
+            "example": "İlk sütuna göre, sonra ikinciye göre",
+            "options": [
+              "Değere göre",
+              "Hücre rengine göre",
+              "Font rengine göre",
+              "Hücre simgesine göre"
+            ],
+            "order": ["A'dan Z'ye", "Z'den A'ya", "Özel Liste"],
+            "custom_list": "Özel sıralama listesi (Pazartesi, Salı...)"
+          },
+          
+          "sort_warning": {
+            "expand_selection": "Seçimi genişlet uyarısı",
+            "important": "Tüm satırı sırala, yoksa veriler bozulur",
+            "header": "Başlık satırı kontrolü"
+          }
+        },
+        
+        "filter": {
+          "auto_filter": {
+            "description": "Otomatik Filtre",
+            "shortcut": "Ctrl + Shift + L",
+            "dropdown": "Başlık satırında dropdown okları",
+            "clear": "Filtreyi temizle seçeneği"
+          },
+          
+          "filter_types": {
+            "text_filters": {
+              "options": [
+                "Eşittir",
+                "Eşit değildir",
+                "Başlar",
+                "Biter",
+                "İçerir",
+                "İçermez"
+              ],
+              "wildcards": "* ve ? joker karakterler"
+            },
+            
+            "number_filters": {
+              "options": [
+                "Eşittir",
+                "Büyüktür",
+                "Küçüktür",
+                "Arasında",
+                "İlk 10...",
+                "Ortalamanın üstü",
+                "Ortalamanın altı"
+              ]
+            },
+            
+            "date_filters": {
+              "options": [
+                "Bugün",
+                "Dün",
+                "Yarın",
+                "Bu hafta",
+                "Geçen hafta",
+                "Bu ay",
+                "Geçen ay",
+                "Bu çeyrek",
+                "Bu yıl"
+              ],
+              "custom": "Özel tarih aralığı"
+            },
+            
+            "color_filters": {
+              "cell_color": "Hücre rengine göre filtrele",
+              "font_color": "Font rengine göre filtrele"
+            }
+          },
+          
+          "advanced_filter": {
+            "description": "Gelişmiş Filtre",
+            "path": "Veri → Gelişmiş",
+            "criteria_range": {
+              "description": "Kriter aralığı kullanarak filtreleme",
+              "and": "Aynı satırda = VE koşulu",
+              "or": "Farklı satırlarda = VEYA koşulu",
+              "example": "A1: >100, B1: <500 (VE koşulu)"
+            },
+            "copy_to": "Sonuçları farklı konuma kopyala",
+            "unique_only": "Sadece benzersiz kayıtlar"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "veri-araclari",
+      "title": "🛠️ Veri Araçları",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Veri temizleme ve hazırlama araçları.",
+        
+        "text_to_columns": {
+          "description": "Sütunlara Dönüştür (Text to Columns)",
+          "use": "Bir sütundaki veriyi birden fazla sütuna bölmek",
+          "example": "Ad Soyad → Ad | Soyad",
+          
+          "delimited": {
+            "type": "Sınırlandırılmış",
+            "delimiters": ["Tab", "Noktalı virgül", "Virgül", "Boşluk", "Diğer"],
+            "example": "Ahmet,Yılmaz,İstanbul → 3 sütun"
+          },
+          
+          "fixed_width": {
+            "type": "Sabit Genişlik",
+            "description": "Belirli pozisyonlardan böl",
+            "example": "Pozisyon 10 ve 20'den böl"
+          }
+        },
+        
+        "flash_fill": {
+          "description": "Flash Fill (Hızlı Doldur)",
+          "shortcut": "Ctrl + E",
+          "magic": "Excel deseni öğrenir ve otomatik doldurur",
+          "examples": [
+            {
+              "input": "Ahmet Yılmaz → Ahmet",
+              "pattern": "İlk kelimeyi al",
+              "result": "Tüm satırlar için ad çıkarır"
+            },
+            {
+              "input": "05551234567 → (555) 123-4567",
+              "pattern": "Telefon formatla",
+              "result": "Otomatik format uygular"
+            },
+            {
+              "input": "mehmet@firma.com → mehmet",
+              "pattern": "Email'den kullanıcı adı",
+              "result": "@ öncesini alır"
+            }
+          ],
+          "how": "1-2 örnek yazın, Ctrl+E basın"
+        },
+        
+        "remove_duplicates": {
+          "description": "Yinelenen Verileri Kaldır",
+          "path": "Veri → Yinelenenleri Kaldır",
+          "column_selection": "Hangi sütunlara bakılacağını seçin",
+          "keeps": "İlk kaydı korur, diğerlerini siler",
+          "warning": "Geri alınamaz, yedek alın!",
+          "report": "Kaç kayıt silindi raporlar"
+        },
+        
+        "data_validation": {
+          "description": "Veri Doğrulama",
+          "use": "Hücreye girilebilecek verileri kısıtla",
+          
+          "validation_types": [
+            {
+              "type": "Liste",
+              "example": "Dropdown: Evet, Hayır, Belki",
+              "source": "Manuel veya hücre aralığı"
+            },
+            {
+              "type": "Tam Sayı",
+              "example": "18-65 arası yaş",
+              "operators": "Arasında, Büyüktür, Küçüktür vb."
+            },
+            {
+              "type": "Ondalık",
+              "example": "0-100 arası puan",
+              "decimals": "Ondalık sayılar"
+            },
+            {
+              "type": "Tarih",
+              "example": "Gelecek tarihler",
+              "formula": "=BUGÜN()"
+            },
+            {
+              "type": "Saat",
+              "example": "09:00-18:00 arası"
+            },
+            {
+              "type": "Metin Uzunluğu",
+              "example": "Max 50 karakter",
+              "use": "Form validasyonu"
+            },
+            {
+              "type": "Özel (Formül)",
+              "example": "=VE(A1>0, A1<100)",
+              "powerful": "En esnek yöntem"
+            }
+          ],
+          
+          "messages": {
+            "input_message": "Hücre seçilince göster",
+            "error_alert": "Hatalı girişte uyar",
+            "styles": ["Durdur (kırmızı X)", "Uyarı (sarı üçgen)", "Bilgi (mavi i)"]
+          },
+          
+          "circle_invalid": {
+            "description": "Geçersiz Verileri Dairele",
+            "path": "Veri → Veri Doğrulama → Geçersiz Verileri Dairele",
+            "visual": "Hatalı hücreleri kırmızı daireler içine alır"
+          }
+        },
+        
+        "consolidate": {
+          "description": "Birleştir (Consolidate)",
+          "path": "Veri → Birleştir",
+          "use": "Birden fazla aralıktaki verileri birleştir",
+          "functions": ["Toplam", "Sayım", "Ortalama", "Max", "Min"],
+          "example": "3 farklı sayfadaki satış verilerini topla",
+          "create_links": "Kaynak verilere bağlantı oluştur"
+        },
+        
+        "what_if_analysis": {
+          "description": "Benzetim Analizi",
+          "path": "Veri → Benzetim Analizi",
+          
+          "scenario_manager": {
+            "description": "Senaryo Yöneticisi",
+            "use": "Farklı değer setlerini kaydet ve karşılaştır",
+            "example": "İyimser, Kötümser, Gerçekçi senaryolar",
+            "report": "Senaryo özet raporu"
+          },
+          
+          "goal_seek": {
+            "description": "Hedef Ara",
+            "use": "İstenen sonuç için gerekli girdiyi bul",
+            "example": "1000 TL kar için kaç ürün satmalıyım?",
+            "formula_required": "Formül içeren hücre gerekli"
+          },
+          
+          "data_table": {
+            "description": "Veri Tablosu",
+            "one_variable": "Tek değişkenli veri tablosu",
+            "two_variable": "İki değişkenli veri tablosu",
+            "use": "Farklı girdilerle sonuçları görselleştir",
+            "example": "Farklı faiz oranlarında kredi ödemeleri"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "pivot-tablo",
+      "title": "📊 Pivot Tablo",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Excel'in en güçlü veri analiz aracı. Büyük veri setlerini özetleme ve analiz etme.",
+        
+        "what_is_pivot": {
+          "description": "Pivot Tablo, verileri dinamik olarak özetler",
+          "benefits": [
+            "Büyük veri setlerini anlık özetle",
+            "Sürükle-bırak ile analiz yap",
+            "Farklı perspektiflerden bakış",
+            "Hızlı raporlama"
+          ]
+        },
+        
+        "create_pivot": {
+          "path": "Ekle → PivotTable veya Veri sekmesinden",
+          "steps": [
+            "Veri aralığını seç (veya tabloda herhangi bir hücre)",
+            "PivotTable'a tıkla",
+            "Yeni sayfa veya mevcut sayfa seç",
+            "Alanları sürükle-bırak"
+          ]
+        },
+        
+        "pivot_areas": {
+          "filters": {
+            "description": "Filtreler (Rapor Filtreleri)",
+            "use": "Tüm tabloyu filtrele",
+            "example": "Yıl seç → Sadece 2025 verilerini göster"
+          },
+          
+          "columns": {
+            "description": "Sütunlar",
+            "use": "Sütun başlıkları",
+            "example": "Ayları sütunlarda göster"
+          },
+          
+          "rows": {
+            "description": "Satırlar",
+            "use": "Satır başlıkları",
+            "example": "Ürün kategorilerini satırlarda göster"
+          },
+          
+          "values": {
+            "description": "Değerler",
+            "use": "Hesaplanan veriler",
+            "functions": ["Toplam", "Sayım", "Ortalama", "Max", "Min", "Ürün", "Standart Sapma"],
+            "example": "Satış toplamlarını göster"
+          }
+        },
+        
+        "pivot_features": {
+          "grouping": {
+            "description": "Gruplama",
+            "date_grouping": "Tarihleri grupla (Gün → Ay → Çeyrek → Yıl)",
+            "number_grouping": "Sayıları grupla (0-100, 100-200)",
+            "use": "Veriyi özetlemek için"
+          },
+          
+          "calculated_field": {
+            "description": "Hesaplanan Alan",
+            "path": "PivotTable Çözümle → Alanlar, Öğeler ve Kümeler → Hesaplanan Alan",
+            "use": "Yeni hesaplama sütunu ekle",
+            "example": "Kar = Gelir - Gider"
+          },
+          
+          "calculated_item": {
+            "description": "Hesaplanan Öğe",
+            "use": "Mevcut alanlar arasında hesaplama",
+            "example": "Q1 = Ocak + Şubat + Mart"
+          },
+          
+          "slicers": {
+            "description": "Dilimleyiciler",
+            "visual": "Görsel filtre butonları",
+            "use": "Kolay filtreleme için",
+            "multiple": "Birden fazla pivot'a bağlanabilir"
+          },
+          
+          "timeline": {
+            "description": "Zaman Çizelgesi",
+            "use": "Tarih filtreleme için görsel araç",
+            "zoom": "Gün, Ay, Çeyrek, Yıl seviyeleri"
+          }
+        },
+        
+        "pivot_chart": {
+          "description": "Pivot Grafik",
+          "connection": "Pivot Tablo'ya bağlı dinamik grafik",
+          "update": "Pivot değişince grafik otomatik güncellenir",
+          "types": "Tüm grafik türleri kullanılabilir"
+        },
+        
+        "pivot_tips": [
+          "Veriyi tablo olarak biçimlendir (Ctrl+T)",
+          "Başlık satırı mutlaka olmalı",
+          "Boş sütun/satır bırakmayın",
+          "Tablo genişledikçe Veri Kaynağını Değiştir",
+          "Pivot Tablo Stilleri ile güzelleştirin",
+          "Değer alanı ayarlarını özelleştirin",
+          "Alt toplamları kontrol edin"
+        ]
+      }
+    },
+    
+    {
+      "id": "anahat",
+      "title": "📑 Anahat ve Alt Toplamlar",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Verileri gruplayarak hiyerarşik görünüm oluşturma.",
+        
+        "subtotals": {
+          "description": "Alt Toplamlar",
+          "path": "Veri → Alt Toplam",
+          "requirement": "Veri sıralı olmalı!",
+          
+          "how_to": [
+            "Verileri gruplamak istediğiniz sütuna göre sırala",
+            "Veri → Alt Toplam",
+            "Her değişimde: Hangi sütuna göre grupla",
+            "Kullanılacak fonksiyon: Toplam, Sayım, Ortalama vb.",
+            "Alt toplam ekle: Hangi sütunun toplamı"
+          ],
+          
+          "functions": ["Toplam", "Sayım", "Ortalama", "Max", "Min", "Ürün", "Sayım (sayılar)", "Std. Sapma"],
+          
+          "features": [
+            "Otomatik anahat oluşturur",
+            "Grupları daralt/genişlet",
+            "Toplamları vurgular",
+            "Sayfa sonlarını ekleyebilir"
+          ]
+        },
+        
+        "outline": {
+          "description": "Anahat (Outline)",
+          "manual": "Manuel gruplama",
+          "auto": "Otomatik anahat",
+          
+          "group": {
+            "description": "Grupla",
+            "shortcut": "Alt + Shift + →",
+            "path": "Veri → Grupla",
+            "use": "Seçili satırları/sütunları grupla"
+          },
+          
+          "ungroup": {
+            "description": "Grubu Çöz",
+            "shortcut": "Alt + Shift + ←",
+            "path": "Veri → Grubu Çöz"
+          },
+          
+          "levels": {
+            "description": "Seviyeler (1, 2, 3...)",
+            "buttons": "Sol/üstteki rakam butonları",
+            "collapse_all": "Tümünü daralt",
+            "expand_all": "Tümünü genişlet"
+          },
+          
+          "settings": {
+            "path": "Veri → Anahat → Ayarlar",
+            "summary_below": "Özet satırları verilerin altında",
+            "summary_right": "Özet sütunları verilerin sağında",
+            "auto_styles": "Otomatik stiller"
+          }
+        }
+      }
+    }
+  ],
+  
+  "tips": [
+    "Power Query ile veri dönüşümlerini otomatikleştirin",
+    "Pivot Tablo'yu öğrenin - veri analizinin anahtarı",
+    "Veri Doğrulama ile hatalı girişleri önleyin",
+    "Flash Fill ile tekrarlayan işlemleri otomatikleştirin",
+    "Yinelenen verileri düzenli olarak temizleyin",
+    "Filtreleri temizlemeyi unutmayın",
+    "Alt Toplam öncesi mutlaka sıralayın",
+    "Büyük veri setlerinde tablo kullanın (Ctrl+T)"
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Filtre aç/kapat",
+      "shortcut": "Ctrl + Shift + L"
+    },
+    {
+      "action": "Flash Fill",
+      "shortcut": "Ctrl + E"
+    },
+    {
+      "action": "Veri Doğrulama",
+      "shortcut": "Alt + D + L"
+    },
+    {
+      "action": "Grupla",
+      "shortcut": "Alt + Shift + →"
+    },
+    {
+      "action": "Grubu Çöz",
+      "shortcut": "Alt + Shift + ←"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tabanlı Uygulama Eğitim Sistemi</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	 <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Eğitim sistemi yükleniyor...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1><img src="images/GamaMyoLogo.png" alt="Örnek Resim" width="45" height="45"> Web Tabanlı Uygulama Eğitim Sistemi</h1>
+                <span class="version">v1.0.0</span>
+            </div>
+            
+            <nav class="header-nav">
+                <div class="search-container">
+                    <input type="text" id="global-search" placeholder="Eğitim içeriği ara...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                
+                <div class="user-controls">
+                    <button class="progress-btn" onclick="showProgressModal()">
+                        📊 İlerleme
+                    </button>
+                    <button class="settings-btn" onclick="showSettingsModal()">
+                        ⚙️ Ayarlar
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Application Selection Panel -->
+            <div id="app-selection" class="application-panel">
+                <div class="panel-header">
+
+                    <p>Eğitim almak istediğiniz Microsoft Office uygulamasını seçin</p>
+                </div>
+                
+                <div id="applications-grid" class="applications-grid">
+                    <!-- Applications will be loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Menu Selection Panel -->
+            <div id="menu-selection" class="menu-panel" style="display: none;">
+                <div class="panel-header">
+                    <button class="back-btn" onclick="showApplications()">← Geri</button>
+                    <div class="current-app-info">
+                        <span id="current-app-icon">📝</span>
+                        <h2 id="current-app-name">Microsoft Word</h2>
+                    </div>
+                </div>
+                
+                <div class="menu-grid" id="menus-grid">
+                    <!-- Menus will be loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Content Display Panel -->
+            <div id="content-panel" class="content-panel" style="display: none;">
+                <div class="content-header">
+                    <nav class="breadcrumb">
+                        <span class="breadcrumb-item" onclick="showApplications()">Ana Sayfa</span>
+                        <span class="breadcrumb-separator">></span>
+                        <span class="breadcrumb-item" onclick="showMenus()" id="breadcrumb-app">Word</span>
+                        <span class="breadcrumb-separator">></span>
+                        <span class="breadcrumb-item active" id="breadcrumb-menu">Giriş</span>
+                    </nav>
+                    
+                    <div class="content-controls">
+                        <button class="toggle-sidebar" onclick="toggleSidebar()">☰ İçerik</button>
+                        <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+                    </div>
+                </div>
+
+                <div class="content-layout">
+                    <!-- Sidebar -->
+                    <aside id="content-sidebar" class="content-sidebar">
+                        <div class="sidebar-header">
+                            <h3>İçerik Menüsü</h3>
+                        </div>
+                        <nav id="content-navigation" class="content-nav">
+                            <!-- Dynamic content navigation -->
+                        </nav>
+                    </aside>
+
+                    <!-- Main Content Area -->
+                    <div class="content-main">
+                        <div id="content-display" class="content-display">
+                            <!-- Dynamic content will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#" onclick="showHelp()">Yardım</a></li>
+                        <li><a href="#" onclick="showKeyboardShortcuts()">Klavye Kısayolları</a></li>
+                        <li><a href="#" onclick="showAbout()">Hakkında</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Destek Siteleri</h4>
+                    <ul>
+                        <li><a href="https://support.microsoft.com/tr-tr/" target="_blank">Microsoft Destek</a></li>
+                        <li><a href="https://support.microsoft.com/tr-tr/office" target="_blank">Office Desteği</a></li>
+						 <li><a href="https://www.adobe.com/tr/learn/photoshop?learnIn=1&locale=tr" target="_blank">Photoshop Desteği</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İstatistikler</h4>
+                    <div class="stats">
+                        <span>Toplam Dersler: <strong id="total-lessons">0</strong></span>
+                        <span>Tamamlanan: <strong id="completed-lessons">0</strong></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Web Tabanlı Uygulama Eğitim Sistemi - Eğitim amaçlı hazırlanmıştır</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Progress Modal -->
+    <div id="progress-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📊 İlerleme Durumu</h3>
+                <button class="close-modal" onclick="closeModal('progress-modal')">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="progress-content">
+                    <!-- Progress charts and stats will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>⚙️ Sistem Ayarları</h3>
+                <button class="close-modal" onclick="closeModal('settings-modal')">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h4>Tema Ayarları</h4>
+                    <label class="setting-item">
+                        <input type="radio" name="theme" value="light" checked>
+                        <span>Açık Tema</span>
+                    </label>
+                    <label class="setting-item">
+                        <input type="radio" name="theme" value="dark">
+                        <span>Koyu Tema</span>
+                    </label>
+                </div>
+                
+                <div class="settings-section">
+                    <h4>Dil Ayarları</h4>
+                    <select id="language-select">
+                        <option value="tr">Türkçe</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                
+                <div class="settings-section">
+                    <h4>Bildirimler</h4>
+                    <label class="setting-item">
+                        <input type="checkbox" id="enable-notifications" checked>
+                        <span>Bildirimler aktif</span>
+                    </label>
+                </div>
+                
+                <div class="settings-section">
+                    <h4>Veri Yönetimi</h4>
+                    <button class="btn btn-warning" onclick="clearProgress()">İlerlemeyi Sıfırla</button>
+                    <button class="btn btn-info" onclick="exportProgress()">İlerlemeyi Dışa Aktar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="help-modal" class="modal">
+        <div class="modal-content large-modal">
+            <div class="modal-header">
+                <h3>❓ Yardım ve Kullanım Kılavuzu</h3>
+                <button class="close-modal" onclick="closeModal('help-modal')">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="help-content">
+                    <div class="help-section">
+                        <h4>Sistem Nasıl Kullanılır?</h4>
+                        <ol>
+                            <li>Ana sayfada eğitim almak istediğiniz uygulamayı seçin</li>
+                            <li>Uygulamanın menülerinden birini seçin</li>
+                            <li>Sol taraftaki içerik menüsünden konuyu seçin</li>
+                            <li>Eğitim materyalini inceleyin</li>
+                            <li>İlerleme durumunuzu takip edin</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="help-section">
+                        <h4>Klavye Kısayolları</h4>
+                        <div class="keyboard-shortcuts">
+                            <div class="shortcut"><kbd>Ctrl</kbd> + <kbd>F</kbd> - Arama</div>
+                            <div class="shortcut"><kbd>Esc</kbd> - Modali kapat</div>
+                            <div class="shortcut"><kbd>←</kbd> / <kbd>→</kbd> - Navigasyon</div>
+                            <div class="shortcut"><kbd>F11</kbd> - Tam ekran</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notifications" class="notifications-container"></div>
+
+    <!-- Scripts -->
+	<script src="js/render-config.js"></script>
+	<script src="js/simple-renderer.js"></script>
+	<script src="js/data-loader.js"></script>
+	<script src="js/ui-components.js"></script>
+	<script src="js/app.js"></script>
+
+    <script>
+        // Initialize the application when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+        });
+    </script>
+</body>
+</html>

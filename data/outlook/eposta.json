@@ -1,0 +1,1100 @@
+{
+  "id": "outlook-eposta",
+  "title": "Microsoft Outlook - E-posta Yönetimi",
+  "description": "E-posta gönderme, alma, düzenleme ve ileri seviye e-posta özellikleri.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "gelismis-yazma",
+      "title": "✍️ Gelişmiş E-posta Yazma",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Profesyonel ve etkili e-postalar yazmak için gelişmiş özellikler.",
+        
+        "email_formatting": {
+          "title": "Biçimlendirme Araçları",
+          "path": "E-posta yazarken → Metin Biçimlendirme sekmesi",
+          
+          "text_formatting": [
+            {
+              "category": "Temel Biçimlendirme",
+              "options": [
+                {"feature": "Font ailesi", "use": "Profesyonel fontlar: Calibri, Arial"},
+                {"feature": "Font boyutu", "recommended": "11-12 pt ideal"},
+                {"feature": "Kalın (Bold)", "shortcut": "Ctrl + B", "use": "Vurgulama"},
+                {"feature": "İtalik", "shortcut": "Ctrl + I", "use": "Atıf, vurgulama"},
+                {"feature": "Altı çizili", "shortcut": "Ctrl + U", "warning": "Az kullanın"},
+                {"feature": "Renk", "tip": "Koyu renkler, kontrast"}
+              ]
+            },
+            {
+              "category": "Paragraf Biçimlendirme",
+              "options": [
+                {"feature": "Madde işaretleri", "use": "Liste öğeleri"},
+                {"feature": "Numaralandırma", "use": "Sıralı adımlar"},
+                {"feature": "Hizalama", "options": ["Sola", "Ortala", "Sağa", "İki yana yasla"]},
+                {"feature": "Girinti", "use": "Alt seviye öğeler"}
+              ]
+            },
+            {
+              "category": "Ekleme",
+              "options": [
+                {"feature": "Tablo", "use": "Yapılandırılmış veri"},
+                {"feature": "Resim", "inline": "Satır içi veya ek olarak"},
+                {"feature": "Bağlantı", "shortcut": "Ctrl + K", "tip": "Anlamlı metin kullanın"},
+                {"feature": "İmza", "automatic": "Otomatik eklenebilir"}
+              ]
+            }
+          ],
+          
+          "styles": {
+            "name": "Stiller",
+            "description": "Tutarlı biçimlendirme için hazır stiller",
+            "options": ["Başlık 1", "Başlık 2", "Normal", "Vurgulu", "Alıntı"],
+            "benefit": "Profesyonel, tutarlı görünüm"
+          }
+        },
+        
+        "importance_priority": {
+          "name": "Önem ve Öncelik",
+          "path": "E-posta → Etiketler grubu",
+          
+          "importance": [
+            {
+              "level": "Yüksek Önem",
+              "icon": "❗ Kırmızı ünlem",
+              "when": "Acil, kritik e-postalar",
+              "warning": "Sık kullanmayın, etkisini kaybeder",
+              "example": "Sunucu çöktü, sistem arızası"
+            },
+            {
+              "level": "Normal",
+              "default": true,
+              "description": "Çoğu e-posta"
+            },
+            {
+              "level": "Düşük Önem",
+              "icon": "⬇️ Aşağı ok",
+              "when": "Bilgilendirme, acil olmayan",
+              "example": "FYI e-postaları, bültenler"
+            }
+          ],
+          
+          "sensitivity": {
+            "name": "Duyarlılık",
+            "levels": [
+              "Normal",
+              "Kişisel",
+              "Özel",
+              "Gizli"
+            ],
+            "effect": "Alıcıya işlem kısıtlamaları",
+            "example": "Gizli → İletme, yazdırma kısıtlı"
+          }
+        },
+        
+        "signatures": {
+          "name": "İmzalar",
+          "description": "E-posta sonuna otomatik eklenen bilgiler",
+          "path": "Dosya → Seçenekler → Posta → İmzalar",
+          
+          "creating_signature": {
+            "steps": [
+              "1. Yeni imza adı verin",
+              "2. İçeriği düzenleyin",
+              "3. Biçimlendirme ekleyin",
+              "4. Resim/logo ekleyin (opsiyonel)",
+              "5. Varsayılan olarak ayarlayın"
+            ]
+          },
+          
+          "elements": [
+            "Ad Soyad",
+            "Ünvan/Pozisyon",
+            "Şirket adı",
+            "Telefon numarası",
+            "E-posta adresi",
+            "Web sitesi",
+            "Sosyal medya bağlantıları",
+            "Şirket logosu",
+            "Yasal uyarı/disclaimer"
+          ],
+          
+          "multiple_signatures": {
+            "why": "Farklı durumlar için farklı imzalar",
+            "examples": [
+              "Resmi iş e-postaları",
+              "Dahili ekip e-postaları (basit)",
+              "Dış müşteri e-postaları (detaylı)"
+            ]
+          },
+          
+          "auto_include": {
+            "new_messages": "Yeni e-postalarda otomatik ekle",
+            "replies": "Yanıtlar ve iletmelerde",
+            "account_specific": "Hesap bazlı farklı imzalar"
+          },
+          
+          "tips": [
+            "Kısa ve öz tutun (4-6 satır ideal)",
+            "Çok fazla renk/font kullanmayın",
+            "Mobil uyumlu olsun (büyük resimler sorun çıkarır)",
+            "Sosyal medya ikonları küçük olsun",
+            "Yasal gereklilikler varsa ekleyin"
+          ]
+        },
+        
+        "templates": {
+          "name": "E-posta Şablonları",
+          "description": "Sık kullanılan e-postaları şablon olarak kaydedin",
+          
+          "creating": {
+            "steps": [
+              "1. E-postayı normal şekilde yazın",
+              "2. Dosya → Farklı Kaydet",
+              "3. Dosya türü: Outlook Şablonu (*.oft)",
+              "4. İsim verin ve kaydedin"
+            ]
+          },
+          
+          "using": {
+            "method1": "Dosya → Yeni → Şablonu Seç",
+            "method2": "Hızlı Adımlar'a ekleyin",
+            "edit": "Şablonu açın, düzenleyin, gönderin"
+          },
+          
+          "use_cases": [
+            {
+              "case": "Standart Yanıtlar",
+              "example": "Teşekkür e-postaları, onay mesajları"
+            },
+            {
+              "case": "Toplantı Davetleri",
+              "example": "Haftalık takım toplantısı şablonu"
+            },
+            {
+              "case": "Proje Güncellemeleri",
+              "example": "Durum raporu formatı"
+            },
+            {
+              "case": "Müşteri İletişimi",
+              "example": "Teklif e-postaları, takip mesajları"
+            }
+          ]
+        },
+        
+        "delivery_options": {
+          "name": "Teslimat Seçenekleri",
+          "path": "E-posta → Seçenekler → Diğer Seçenekler",
+          
+          "options": [
+            {
+              "option": "Gecikmiş Teslimat",
+              "description": "Belirli tarih/saatte gönder",
+              "use": "İleride gönderilecek e-postalar",
+              "example": "Pazartesi sabahı 9:00'da gönder",
+              "tip": "Bilgisayar açık ve Outlook çalışıyor olmalı"
+            },
+            {
+              "option": "Son Tarih",
+              "description": "E-posta bu tarihten sonra geçersiz",
+              "use": "Zamana duyarlı bilgiler",
+              "effect": "Alıcı gecikmeli açarsa uyarı görür"
+            },
+            {
+              "option": "Doğrudan Yanıtla",
+              "description": "Yanıtlar başka bir adrese gitsin",
+              "use": "Paylaşılan posta kutuları"
+            },
+            {
+              "option": "Okundu Bilgisi İste",
+              "description": "Alıcı okuduğunda bildirim",
+              "caution": "Alıcı reddedebilir",
+              "professional": "Sık kullanmayın"
+            },
+            {
+              "option": "Teslim Bilgisi İste",
+              "description": "E-posta ulaştığında bildirim",
+              "technical": "Sunucu düzeyinde"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "ek-yonetimi",
+      "title": "📎 Ek Dosya Yönetimi",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "E-postalara dosya ekleme ve ekleri yönetme.",
+        
+        "adding_attachments": {
+          "title": "Ek Ekleme Yöntemleri",
+          "methods": [
+            {
+              "method": "Ekle Butonu",
+              "path": "E-posta → Ekle → Dosya Ekle",
+              "shortcut": "Alt + N, A, F",
+              "select": "Dosya seçme penceresi açılır"
+            },
+            {
+              "method": "Sürükle-Bırak",
+              "description": "Dosyayı Explorer'dan e-postaya sürükle",
+              "quick": "✓ En hızlı yöntem",
+              "multiple": "Birden fazla dosya seçilebilir"
+            },
+            {
+              "method": "Sağ Tık Menüsü",
+              "description": "Dosyaya sağ tık → Gönder → E-posta Alıcısı",
+              "automatic": "Yeni e-posta otomatik açılır"
+            },
+            {
+              "method": "Son Öğeler",
+              "path": "Ekle → Son Öğeler",
+              "description": "Son kullanılan dosyalar",
+              "quick_access": true
+            }
+          ]
+        },
+        
+        "cloud_attachments": {
+          "name": "Bulut Ekleri",
+          "description": "OneDrive/SharePoint dosyalarını bağlantı olarak ekle",
+          "path": "Ekle → Dosya Ekle → OneDrive",
+          
+          "types": [
+            {
+              "type": "OneDrive Bağlantısı",
+              "icon": "☁️ Bulut ikonu",
+              "description": "Dosya bağlantısı olarak",
+              "benefits": [
+                "Dosya boyutu sınırı yok",
+                "Gerçek zamanlı işbirliği",
+                "Alıcılar her zaman güncel sürümü görür",
+                "Değişiklikler senkronize olur"
+              ],
+              "permissions": {
+                "options": [
+                  "Kuruluştaki kişiler düzenleyebilir",
+                  "Kuruluştaki kişiler görüntüleyebilir",
+                  "Alıcılar düzenleyebilir",
+                  "Alıcılar görüntüleyebilir"
+                ],
+                "change": "Bağlantıya sağ tık → İzinleri Değiştir"
+              }
+            },
+            {
+              "type": "Kopya Olarak",
+              "description": "Dosyanın anlık kopyası",
+              "traditional": "Geleneksel ek",
+              "static": "Değişiklikler yansımaz"
+            }
+          ],
+          
+          "advantages": [
+            "25 MB üzeri dosyalar için ideal",
+            "Posta kutusu kotasını etkilemez",
+            "Toplu gönderimde verimli",
+            "İşbirliği için mükemmel"
+          ]
+        },
+        
+        "attachment_management": {
+          "title": "Ek Yönetimi",
+          
+          "viewing": {
+            "preview": "Ek'e tıkla → Önizleme paneli",
+            "open": "Çift tık → Uygulamada aç",
+            "save": "Sağ tık → Farklı Kaydet"
+          },
+          
+          "saving": {
+            "single": "Eke sağ tık → Farklı Kaydet",
+            "multiple": "Tüm Ekleri Kaydet butonu",
+            "location": "Varsayılan: İndirilenler klasörü",
+            "tip": "Proje bazlı klasörlere kaydedin"
+          },
+          
+          "security": {
+            "title": "Ek Güvenliği",
+            "warnings": [
+              "Bilinmeyen gönderenden ek açmayın",
+              "Şüpheli dosya uzantıları: .exe, .bat, .scr",
+              "Beklenmeyen ekler dikkat gerektirir",
+              "Virüs tarayıcı güncel olmalı"
+            ],
+            "blocked_types": {
+              "description": "Outlook bazı dosya tiplerini engeller",
+              "examples": [".exe", ".bat", ".cmd", ".vbs"],
+              "reason": "Güvenlik riski",
+              "workaround": "ZIP ile sıkıştırın veya bulut bağlantısı kullanın"
+            }
+          }
+        },
+        
+        "tips": [
+          {
+            "tip": "Boyut Limiti",
+            "detail": "Çoğu sunucu 20-25 MB limiti koyar",
+            "solution": "Büyük dosyalar için OneDrive kullanın"
+          },
+          {
+            "tip": "Sıkıştırma",
+            "detail": "Çok dosya varsa ZIP'le",
+            "benefit": "Tek dosya, daha küçük boyut"
+          },
+          {
+            "tip": "İsimlendirme",
+            "detail": "Anlamlı dosya isimleri kullanın",
+            "bad": "belge1.pdf, yeni.xlsx",
+            "good": "2024_Q1_Rapor.pdf, Bütçe_Teklif_v2.xlsx"
+          },
+          {
+            "tip": "Önizleme",
+            "detail": "Göndermeden önce ekleri kontrol edin",
+            "check": "Doğru dosya, güncel versiyon"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "organizasyon",
+      "title": "🗂️ E-posta Organizasyonu",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "E-postalarınızı düzenli tutmak için klasörler, kategoriler ve aramalar.",
+        
+        "folder_structure": {
+          "name": "Klasör Yapısı",
+          "description": "E-postaları konulara göre organize edin",
+          
+          "creating_folders": {
+            "method": "Klasör listesinde sağ tık → Yeni Klasör",
+            "shortcut": "Ctrl + Shift + E",
+            "naming": "Net, açıklayıcı isimler",
+            "hierarchy": "Alt klasörler ile hiyerarşi"
+          },
+          
+          "recommended_structure": {
+            "example": [
+              "📁 Projeler",
+              "  └─ 📁 Proje A",
+              "  └─ 📁 Proje B",
+              "📁 Müşteriler",
+              "  └─ 📁 Müşteri 1",
+              "  └─ 📁 Müşteri 2",
+              "📁 Ekip İletişimi",
+              "📁 Toplantılar",
+              "📁 Referans/Arşiv",
+              "📁 Bekleyen İşler"
+            ]
+          },
+          
+          "moving_emails": {
+            "drag_drop": "E-postayı sürükle klasöre bırak",
+            "right_click": "Sağ tık → Taşı → Klasör seç",
+            "shortcut": "Ctrl + Shift + V (Taşı)",
+            "quick_move": "Shift + sürükle = taşı, Ctrl + sürükle = kopyala"
+          },
+          
+          "folder_tips": [
+            "Çok derin hiyerarşi kurmayın (max 3-4 seviye)",
+            "Sık kullanılanları Sık Kullanılanlara ekleyin",
+            "Boş klasörleri düzenli temizleyin",
+            "İsimlendirmede tutarlı olun"
+          ]
+        },
+        
+        "categories": {
+          "name": "Kategoriler",
+          "description": "Renk kodlu etiketler ile e-postaları işaretleme",
+          "shortcut": "Ctrl + F2",
+          
+          "advantages": [
+            "Birden fazla kategori atanabilir",
+            "Klasörlerden bağımsız",
+            "Görsel organizasyon",
+            "Filtreleme kolay"
+          ],
+          
+          "default_categories": [
+            "🔴 Kırmızı Kategori",
+            "🟠 Turuncu Kategori",
+            "🟡 Sarı Kategori",
+            "🟢 Yeşil Kategori",
+            "🔵 Mavi Kategori",
+            "🟣 Mor Kategori"
+          ],
+          
+          "customizing": {
+            "path": "Giriş → Kategorize Et → Tüm Kategoriler",
+            "rename": "Kategorileri yeniden adlandırın",
+            "examples": [
+              "🔴 Acil",
+              "🟠 Müşteri",
+              "🟡 Takip Et",
+              "🟢 Tamamlandı",
+              "🔵 Ekip",
+              "🟣 Kişisel"
+            ],
+            "shortcuts": "Her kategoriye klavye kısayolu atayın"
+          },
+          
+          "applying": {
+            "single": "E-posta seç → Kategorize Et → Kategori seç",
+            "multiple": "Birden fazla e-posta seç → Toplu kategorize",
+            "automatic": "Kurallar ile otomatik"
+          },
+          
+          "filtering": {
+            "view": "Kategoriye göre görünüm",
+            "search": "Kategori: Acil şeklinde arama",
+            "group": "Görünüm → Kategorilere Göre Grupla"
+          }
+        },
+        
+        "search_folders": {
+          "name": "Arama Klasörleri",
+          "description": "Dinamik, otomatik filtrelenen sanal klasörler",
+          "virtual": "Fiziksel klasör değil, sorgu sonucu",
+          "auto_update": "Gerçek zamanlı güncellenir",
+          
+          "default_folders": [
+            "Okunmamış E-posta",
+            "Bayraklı E-posta",
+            "Büyük E-posta (>100 KB)"
+          ],
+          
+          "creating_custom": {
+            "path": "Klasör → Yeni Arama Klasörü",
+            "criteria": [
+              "Gönderen/Alıcı",
+              "Tarih aralığı",
+              "Anahtar kelimeler",
+              "Kategoriler",
+              "Ek durumu",
+              "Önem düzeyi"
+            ],
+            "examples": [
+              {
+                "name": "Patrondan Son 7 Gün",
+                "criteria": "Gönderen: patron@firma.com VE Son 7 gün"
+              },
+              {
+                "name": "Ekli Acil E-postalar",
+                "criteria": "Ek var VE Önem: Yüksek"
+              },
+              {
+                "name": "Müşteri İletişimi Bu Ay",
+                "criteria": "Kategori: Müşteri VE Bu ay"
+              }
+            ]
+          },
+          
+          "benefits": [
+            "E-postalar birden fazla yerde görünür (orijinal + arama klasörü)",
+            "Manuel taşıma gerekmez",
+            "Karmaşık organizasyon sistemleri",
+            "Proje/tema bazlı görünüm"
+          ]
+        },
+        
+        "conversation_view": {
+          "name": "Konuşma Görünümü",
+          "description": "İlgili e-postaları konuşma dizisi olarak grupla",
+          "toggle": "Görünüm → Konuşma Olarak Göster",
+          
+          "how_it_works": {
+            "grouping": "Aynı konu satırındaki e-postalar birleşir",
+            "thread": "Yanıtlar ve iletmeler tek başlık altında",
+            "expand": "Tıkla genişlet/daralt"
+          },
+          
+          "benefits": [
+            "İlgili e-postaları birlikte görme",
+            "Gelen kutusu daha temiz",
+            "Konuşma akışını takip kolay",
+            "Bağlam kaybolmaz"
+          ],
+          
+          "settings": {
+            "path": "Görünüm → Konuşma Ayarları",
+            "options": [
+              "Tüm klasörlerde göster",
+              "Diğer klasörlerdeki mesajları göster",
+              "Konuşmalar her zaman genişletilmiş"
+            ]
+          }
+        },
+        
+        "cleanup_tools": {
+          "name": "Temizleme Araçları",
+          
+          "clean_up": {
+            "name": "Temizle",
+            "path": "Giriş → Temizle",
+            "what": "Gereksiz e-postaları sil",
+            "removes": [
+              "Önceki e-postalarda bulunan tekrarlı mesajlar",
+              "Konuşma geçmişindeki eski yanıtlar"
+            ],
+            "options": [
+              "Konuşma - Tek konuşma dizisini temizle",
+              "Klasör - Tüm klasörü temizle",
+              "Klasör & Alt Klasörler"
+            ],
+            "safe": "Orijinal mesajlar korunur"
+          },
+          
+          "archive": {
+            "name": "Arşivle",
+            "shortcut": "Backspace (veya Delete'in yanında)",
+            "description": "E-postayı Arşiv klasörüne taşı",
+            "philosophy": "Sil yerine arşivle",
+            "benefit": "Gelen kutusu temiz, e-posta kaybolmaz"
+          },
+          
+          "auto_archive": {
+            "name": "Otomatik Arşivleme",
+            "path": "Dosya → Bilgi → Temizleme Araçları → Arşivle",
+            "criteria": "Yaşlı öğeleri otomatik taşı/sil",
+            "schedule": "Düzenli aralıklarla çalışır",
+            "settings": [
+              "Kaç günlük e-postalar arşivlensin",
+              "Arşiv konumu",
+              "Klasör bazlı ayarlar"
+            ]
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "gelismis-ozellikler",
+      "title": "🚀 Gelişmiş Özellikler",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook'un güçlü ve verimlilik artırıcı özellikleri.",
+        
+        "rules_automation": {
+          "name": "Kurallar ve Otomasyon",
+          "path": "Dosya → Kuralları ve Uyarıları Yönet",
+          "description": "E-posta işlemlerini otomatikleştirin",
+          
+          "rule_wizard": {
+            "step1": {
+              "name": "Şablon Seç",
+              "options": [
+                "Gelen e-postaları düzenle",
+                "Gönderdiğim e-postaları düzenle",
+                "Bildirimler oluştur"
+              ]
+            },
+            "step2": {
+              "name": "Koşulları Belirle",
+              "conditions": [
+                "Kimden (belirli kişilerden)",
+                "Kime gönderildi",
+                "Konu/Gövde içeriği",
+                "Ek var/yok",
+                "Önem düzeyi",
+                "Boyut",
+                "Alındığı tarih aralığı"
+              ]
+            },
+            "step3": {
+              "name": "Eylemleri Seç",
+              "actions": [
+                "Klasöre taşı/kopyala",
+                "Kategorize et",
+                "Bayrak ekle",
+                "Sil",
+                "İlet",
+                "Masaüstü bildirimi gönder",
+                "Ses çal",
+                "Program/script çalıştır"
+              ]
+            },
+            "step4": {
+              "name": "İstisnalar",
+              "description": "Kuralın uygulanmayacağı durumlar"
+            }
+          },
+          
+          "example_rules": [
+            {
+              "name": "VIP E-postaları",
+              "condition": "Gönderen: CEO, CFO, Proje Müdürü",
+              "action": "Kırmızı kategori + Masaüstü bildirimi + VIP klasörüne kopyala"
+            },
+            {
+              "name": "Otomatik Bülten Arşivleme",
+              "condition": "Konu içerir: 'Bülten', 'Haber', 'Newsletter'",
+              "action": "Bültenler klasörüne taşı + Okundu işaretle"
+            },
+            {
+              "name": "Proje E-postaları",
+              "condition": "Konu başlar: '[Proje X]'",
+              "action": "Proje X klasörü + Mavi kategori"
+            },
+            {
+              "name": "Büyük Dosya Uyarısı",
+              "condition": "Ek boyutu > 5 MB",
+              "action": "Turuncu kategori + Bayrak: Bu Hafta"
+            }
+          ],
+          
+          "tips": [
+            "Basit kurallada başlayın, karmaşıklaştırmayın",
+            "Kuralları düzenli gözden geçirin",
+            "Çakışan kurallar performansı düşürür",
+            "Test için 'Mevcut klasörde çalıştır' kullanın",
+            "Kritik e-postalar için kural kullanmayın"
+          ]
+        },
+        
+        "quick_steps": {
+          "name": "Hızlı Adımlar",
+          "description": "Çoklu işlemi tek tıkla gerçekleştirin",
+          "path": "Giriş → Hızlı Adımlar",
+          "shortcut": "Ctrl + Shift + 1-9",
+          
+          "creating": {
+            "method": "Hızlı Adımlar → Yeni Oluştur",
+            "steps": [
+              "1. İsim verin",
+              "2. İşlemleri ekleyin",
+              "3. Klavye kısayolu atayın (opsiyonel)",
+              "4. İkon seçin",
+              "5. Kaydet"
+            ]
+          },
+          
+          "example_quick_steps": [
+            {
+              "name": "Ekibe İlet ve Arşivle",
+              "actions": [
+                "E-postayı team@firma.com'a ilet",
+                "Kısa not ekle: 'FYI'",
+                "Orijinali arşivle"
+              ],
+              "shortcut": "Ctrl + Shift + 1"
+            },
+            {
+              "name": "Tamamlandı",
+              "actions": [
+                "Yeşil kategoriye ekle",
+                "Okundu olarak işaretle",
+                "Tamamlananlar klasörüne taşı",
+                "Bayrağı kaldır"
+              ],
+              "shortcut": "Ctrl + Shift + 2"
+            },
+            {
+              "name": "Sonra İlgilen",
+              "actions": [
+                "Bayrak: Gelecek Hafta",
+                "Sarı kategoriye ekle",
+                "Bekleyen klasörüne taşı"
+              ],
+              "shortcut": "Ctrl + Shift + 3"
+            },
+            {
+              "name": "Patrona Rapor",
+              "actions": [
+                "Yeni e-posta oluştur",
+                "Kime: patron@firma.com",
+                "Konu: Haftalık Rapor",
+                "İmza ekle"
+              ],
+              "shortcut": "Ctrl + Shift + 4"
+            }
+          ],
+          
+          "vs_rules": {
+            "quick_steps": "Manuel tetikleme, çoklu eylem",
+            "rules": "Otomatik, koşullu",
+            "use_together": "İkisi de kullanılabilir"
+          }
+        },
+        
+        "mentions": {
+          "name": "@Mentions (Bahsetmeler)",
+          "description": "E-postada birini etiketleme",
+          "how": "@ işareti + İsim yazın",
+          "autocomplete": "Kişi listesinden seçin",
+          
+          "benefits": [
+            "Kişi bildirim alır",
+            "Dikkat çeker",
+            "Gelen kutusunda özel işaretlenir",
+            "@ Görünümü'nde görünür"
+          ],
+          
+          "at_view": {
+            "name": "@ Görünümü",
+            "path": "Görünüm → @ Görünümü",
+            "shows": "Sizi bahseden tüm e-postalar",
+            "filter": "Gürültüyü azaltır"
+          },
+          
+          "tips": [
+            "Gerçekten ilgili kişileri etiketleyin",
+            "Çok fazla @mention dikkat dağıtır",
+            "Açık sorumluluk ataması için kullanın"
+          ]
+        },
+        
+        "voting_buttons": {
+          "name": "Oylama Düğmeleri",
+          "description": "E-posta içinde hızlı yanıt seçenekleri",
+          "path": "E-posta → Seçenekler → Oylama Düğmeleri Kullan",
+          
+          "default_options": [
+            "Onayla; Reddet",
+            "Evet; Hayır",
+            "Evet; Hayır; Belki"
+          ],
+          
+          "custom": {
+            "option": "Özel",
+            "example": "Kabul Et; Gözden Geçir; İptal Et",
+            "semicolon": "Noktalı virgül ile ayırın"
+          },
+          
+          "tracking": {
+            "view": "Gönderilen Öğeler → E-postayı aç → İzleme sekmesi",
+            "shows": "Kim ne oyladı",
+            "summary": "Sonuçların özeti"
+          },
+          
+          "use_cases": [
+            "Toplantı katılım onayı",
+            "Hızlı kararlar",
+            "Anket/görüş toplama",
+            "Onay süreçleri"
+          ],
+          
+          "limitation": "Sadece Exchange/Microsoft 365 hesaplarında"
+        },
+        
+        "out_of_office": {
+          "name": "Otomatik Yanıtlar (Ofis Dışında)",
+          "description": "Uzakta olduğunuzda otomatik yanıt",
+          "path": "Dosya → Otomatik Yanıtlar",
+          
+          "settings": {
+            "enable": "Otomatik yanıt gönder",
+            "time_range": "Başlangıç ve bitiş zamanı",
+            "internal": {
+              "name": "Kuruluş İçi",
+              "message": "Çalışma arkadaşları için mesaj"
+            },
+            "external": {
+              "name": "Kuruluş Dışı",
+              "message": "Harici kişiler için mesaj",
+              "option": "Sadece kişilerim veya herkes"
+            }
+          },
+          
+          "message_tips": [
+            "Net ve profesyonel olun",
+            "Dönüş tarihinizi belirtin",
+            "Acil durum için alternatif iletişim",
+            "Örnek: 'Ben 15-20 Ocak tarihleri arasında izindeyim. Acil durumlar için ahmet@firma.com ile iletişime geçebilirsiniz.'"
+          ],
+          
+          "rules": {
+            "name": "Kurallar ile Gelişmiş",
+            "use": "Belirli gönderenler için farklı yanıtlar",
+            "example": "VIP müşterilere özel mesaj"
+          }
+        },
+        
+        "recall_message": {
+          "name": "Mesajı Geri Çağırma",
+          "description": "Gönderilmiş e-postayı geri alma",
+          "path": "Gönderilen Öğeler → E-posta çift tık → Dosya → Mesajı Geri Çağır",
+          
+          "options": [
+            {
+              "option": "Okunmamış kopyaları sil",
+              "description": "E-postayı alıcının gelen kutusundan kaldır"
+            },
+            {
+              "option": "Okunmamış kopyaları sil ve yerine yenisini koy",
+              "description": "Hatayı düzelt, yeni sürüm gönder"
+            }
+          ],
+          
+          "conditions": [
+            "✓ Alıcı henüz okumamış olmalı",
+            "✓ Aynı Exchange sunucusunda olmalı",
+            "✓ Her iki taraf çevrimiçi",
+            "✓ E-posta başka klasöre taşınmamış"
+          ],
+          
+          "limitations": [
+            "✗ Dış e-posta hesapları (Gmail, Yahoo) için çalışmaz",
+            "✗ Alıcı zaten okuduysa işe yaramaz",
+            "✗ Mobil cihazda açılmışsa başarısız olabilir",
+            "✗ Geri çağırma denemesi alıcıya bildirim gider!"
+          ],
+          
+          "tip": "Geri çağırma güvenilir değil. Göndermeden önce iki kez kontrol edin!"
+        },
+        
+        "message_options": {
+          "name": "Mesaj Seçenekleri",
+          "path": "E-posta → Etiketler → Dialog açıcı ok",
+          
+          "advanced_settings": [
+            {
+              "setting": "Son Tarih",
+              "description": "Mesaj bu tarihten sonra işaretlenir"
+            },
+            {
+              "setting": "Güvenlik",
+              "options": ["Şifrele", "Dijital olarak imzala"],
+              "requirement": "Sertifika gerekir"
+            },
+            {
+              "setting": "İzleme",
+              "options": ["Teslim bilgisi", "Okundu bilgisi"]
+            },
+            {
+              "setting": "İletişim",
+              "options": ["Yanıtla adresi", "İnternet başlıkları"]
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "ipuclari-eniyiler",
+      "title": "💡 İpuçları ve En İyi Uygulamalar",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Profesyonel ve verimli e-posta kullanımı için en iyi uygulamalar.",
+        
+        "email_etiquette": {
+          "title": "E-posta Görgü Kuralları",
+          
+          "writing": [
+            {
+              "rule": "Net Konu Satırı",
+              "description": "Konu e-postanın içeriğini özetlemeli",
+              "good": "Proje X Toplantısı - 15 Ocak Saat 14:00",
+              "bad": "Toplantı", "Merhaba", "Önemli!"
+            },
+            {
+              "rule": "Kısa ve Öz",
+              "description": "Gereksiz uzun e-postalar okunmaz",
+              "guideline": "3-5 paragraf ideal",
+              "tip": "Önemli bilgiyi en başa koyun"
+            },
+            {
+              "rule": "Profesyonel Ton",
+              "avoid": "Aşırı emoji, slang, argo",
+              "formal": "İş e-postaları resmi olmalı",
+              "greeting": "Selam yerine Sayın, Merhaba"
+            },
+            {
+              "rule": "Doğru Alıcılar",
+              "to": "Kime: Doğrudan muhatap",
+              "cc": "Bilgi: Bilgi sahibi olmalı ama aksiyon beklenmeyen",
+              "bcc": "Gizli: Toplu gönderim, gizlilik",
+              "warning": "Gereksiz kişileri dahil etmeyin!"
+            },
+            {
+              "rule": "Yazım Denetimi",
+              "always": "Göndermeden önce F7",
+              "impression": "Yazım hataları profesyonelliği düşürür"
+            },
+            {
+              "rule": "Yanıt Süresi",
+              "guideline": "24-48 saat içinde yanıt",
+              "quick": "Acil e-postalara daha hızlı",
+              "unavailable": "Uzun süre cevaplayamayacaksanız otomatik yanıt ayarlayın"
+            }
+          ],
+          
+          "replying": [
+            {
+              "rule": "İlgili Metni Bırakın",
+              "description": "Orijinal mesajın ilgili kısmını dahil edin",
+              "context": "Alıcı bağlamı anlar",
+              "trim": "Çok uzun zincirleri kısaltın"
+            },
+            {
+              "rule": "Tümünü Yanıtla Dikkatli",
+              "warning": "Gereksiz kişilere e-posta gitmesin",
+              "check": "Kime listesini kontrol edin"
+            },
+            {
+              "rule": "Alt-Üst Yanıt",
+              "preference": "Kurum kültürüne göre",
+              "top": "En üstte yanıt (yaygın)",
+              "bottom": "Altta yanıt (resmi yazışma)"
+            }
+          ]
+        },
+        
+        "productivity_tips": {
+          "title": "Verimlilik İpuçları",
+          
+          "inbox_zero": {
+            "name": "Gelen Kutusu Sıfır",
+            "philosophy": "Gelen kutusunu her gün temizle",
+            "method_4d": {
+              "delete": "Gereksizleri hemen sil",
+              "do": "2 dakikadan kısaysa hemen yap",
+              "delegate": "Başkasına devret",
+              "defer": "Sonra yapılacaksa bayrak ekle, klasöre taşı"
+            },
+            "goal": "Gelen kutusu yapılacak listesi değil, geçiş noktası"
+          },
+          
+          "email_batching": {
+            "name": "E-posta Toplu İşleme",
+            "description": "Belirli saatlerde e-posta kontrol et",
+            "schedule": "Günde 2-3 saat (örn: 9:00, 13:00, 16:00)",
+            "benefit": "Sürekli dikkat dağınıklığından kurtulma",
+            "focus": "Derin çalışma zamanları korun"
+          },
+          
+          "two_minute_rule": {
+            "name": "2 Dakika Kuralı",
+            "rule": "Yapılması 2dk'dan kısaysa hemen yap",
+            "immediate": "Hemen yanıtla, hemen arşivle",
+            "benefit": "İş biriktirme önlenir"
+          },
+          
+          "unsubscribe": {
+            "name": "Abonelikten Çık",
+            "action": "Okumadığınız bültenlerden çıkın",
+            "regular": "Ayda bir temizlik yapın",
+            "clean_inbox": "Gürültüyü azaltın"
+          },
+          
+          "keyboard_master": {
+            "name": "Klavye Kısayolları Öğren",
+            "benefit": "Fare kullanımını azaltın",
+            "speed": "2-3 kat hız artışı",
+            "essential": "En az 10 kısayol öğrenin"
+          }
+        },
+        
+        "security_tips": {
+          "title": "Güvenlik İpuçları",
+          
+          "practices": [
+            {
+              "tip": "Phishing'e Dikkat",
+              "signs": [
+                "Bilinmeyen gönderen",
+                "Acil eylem isteği",
+                "Şüpheli bağlantılar",
+                "Yazım hataları",
+                "Şifre/kart bilgisi isteme"
+              ],
+              "action": "Şüpheli e-postaları açmayın, IT'ye bildirin"
+            },
+            {
+              "tip": "Bağlantıları Kontrol Edin",
+              "method": "Bağlantının üzerine gelin (tıklamayın)",
+              "check": "URL'yi kontrol edin",
+              "mismatch": "Görünen ≠ Gerçek URL ise tehlike"
+            },
+            {
+              "tip": "Ekleri Dikkatlice Açın",
+              "scan": "Antivirüs taraması",
+              "suspicious": "Beklenmeyen ekler açılmaz",
+              "verify": "Göndereni doğrulayın"
+            },
+            {
+              "tip": "Hassas Bilgi Paylaşımı",
+              "encrypt": "Gizli bilgiler için şifreleme kullanın",
+              "careful": "Kredi kartı, SSN gibi bilgileri e-postayla göndermekten kaçının"
+            },
+            {
+              "tip": "Güvenli Şifreler",
+              "strong": "Güçlü şifreler kullanın",
+              "mfa": "İki faktörlü doğrulama aktif edin",
+              "unique": "Her hesap için farklı şifre"
+            }
+          ]
+        },
+        
+        "common_mistakes": {
+          "title": "Yaygın Hatalar",
+          
+          "mistakes": [
+            {
+              "mistake": "Yanlış Alıcı",
+              "problem": "Confidential bilgi yanlış kişiye gider",
+              "prevention": "Göndermeden önce Kime alanını kontrol et"
+            },
+            {
+              "mistake": "Aşırı CC Kullanımı",
+              "problem": "Gereksiz e-posta yığını",
+              "guideline": "Sadece ilgili kişiler"
+            },
+            {
+              "mistake": "Belirsiz Konu",
+              "problem": "Alıcı öncelik veremiyor",
+              "solution": "Açıklayıcı, spesifik konular"
+            },
+            {
+              "mistake": "Duygusal E-postalar",
+              "problem": "Öfkeli yanıtlar, sonra pişmanlık",
+              "rule": "Duygusal anında gönderme, taslak kaydet, sonra gözden geçir"
+            },
+            {
+              "mistake": "Çok Büyük Ekler",
+              "problem": "Sunucu reddeder",
+              "solution": "OneDrive/bulut bağlantısı kullan"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Profesyonel e-posta = Net konu + Kısa içerik + Doğru alıcılar",
+      "Organizasyon = Klasörler + Kategoriler + Arama klasörleri",
+      "Otomasyon = Kurallar + Hızlı Adımlar",
+      "Güvenlik = Phishing dikkat + Şifreleme + MFA",
+      "Verimlilik = Gelen kutusu sıfır + Toplu işlem + Klavye kısayolları"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Yeni e-posta", "keys": "Ctrl + N"},
+    {"action": "Gönder", "keys": "Ctrl + Enter"},
+    {"action": "Yanıtla", "keys": "Ctrl + R"},
+    {"action": "Tümünü yanıtla", "keys": "Ctrl + Shift + R"},
+    {"action": "İlet", "keys": "Ctrl + F"},
+    {"action": "Sil", "keys": "Delete"},
+    {"action": "Arşivle", "keys": "Backspace"},
+    {"action": "Kategorize et", "keys": "Ctrl + F2"},
+    {"action": "Bayrak ekle/kaldır", "keys": "Insert"},
+    {"action": "Taşı", "keys": "Ctrl + Shift + V"},
+    {"action": "Klasör oluştur", "keys": "Ctrl + Shift + E"},
+    {"action": "Okundu işaretle", "keys": "Ctrl + Q"},
+    {"action": "Okunmadı işaretle", "keys": "Ctrl + U"}
+  ]
+}

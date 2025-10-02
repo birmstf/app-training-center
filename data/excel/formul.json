@@ -1,0 +1,426 @@
+{
+  "id": "excel-formul",
+  "title": "Microsoft Excel - Formüller Menüsü",
+  "description": "Excel'in en güçlü özelliği formüller ve fonksiyonlardır. Matematiksel işlemlerden veri analizine kadar her şey burada.",
+  "difficulty": "Orta - İleri",
+  "estimated_time": "5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "temel-fonksiyonlar",
+      "title": "🔢 Temel Fonksiyonlar",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "En sık kullanılan matematik ve istatistik fonksiyonları.",
+        
+        "sum_functions": {
+          "SUM": {
+            "description": "Toplama",
+            "syntax": "=SUM(sayı1, [sayı2], ...)",
+            "example": "=SUM(A1:A10)",
+            "shortcut": "Alt + Shift + ="
+          },
+          "SUMIF": {
+            "description": "Koşullu toplama",
+            "syntax": "=SUMIF(aralık, kriter, [toplam_aralığı])",
+            "example": "=SUMIF(A1:A10, \">100\", B1:B10)"
+          },
+          "SUMIFS": {
+            "description": "Çoklu koşullu toplama",
+            "syntax": "=SUMIFS(toplam_aralığı, kriter_aralığı1, kriter1, ...)",
+            "example": "=SUMIFS(C1:C10, A1:A10, \"Meyve\", B1:B10, \">50\")"
+          }
+        },
+        
+        "average_functions": {
+          "AVERAGE": {
+            "description": "Ortalama",
+            "syntax": "=AVERAGE(sayı1, [sayı2], ...)",
+            "example": "=AVERAGE(A1:A10)"
+          },
+          "AVERAGEIF": {
+            "description": "Koşullu ortalama",
+            "syntax": "=AVERAGEIF(aralık, kriter, [ortalama_aralığı])",
+            "example": "=AVERAGEIF(A1:A10, \">50\")"
+          }
+        },
+        
+        "count_functions": {
+          "COUNT": {
+            "description": "Sayı içeren hücreleri sayar",
+            "syntax": "=COUNT(değer1, [değer2], ...)",
+            "example": "=COUNT(A1:A10)"
+          },
+          "COUNTA": {
+            "description": "Boş olmayan hücreleri sayar",
+            "syntax": "=COUNTA(değer1, [değer2], ...)",
+            "example": "=COUNTA(A1:A10)"
+          },
+          "COUNTIF": {
+            "description": "Koşullu sayma",
+            "syntax": "=COUNTIF(aralık, kriter)",
+            "example": "=COUNTIF(A1:A10, \">100\")"
+          }
+        },
+        
+        "min_max_functions": {
+          "MAX": {
+            "description": "En büyük değer",
+            "syntax": "=MAX(sayı1, [sayı2], ...)",
+            "example": "=MAX(A1:A10)"
+          },
+          "MIN": {
+            "description": "En küçük değer",
+            "syntax": "=MIN(sayı1, [sayı2], ...)",
+            "example": "=MIN(A1:A10)"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "mantiksal-fonksiyonlar",
+      "title": "🧠 Mantıksal Fonksiyonlar",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Karar verme ve koşullu işlemler için kullanılan fonksiyonlar.",
+        
+        "if_functions": {
+          "IF": {
+            "description": "Koşullu işlem",
+            "syntax": "=IF(mantıksal_test, doğru_ise, yanlış_ise)",
+            "example": "=IF(A1>100, \"Yüksek\", \"Düşük\")"
+          },
+          "IFS": {
+            "description": "Çoklu koşul",
+            "syntax": "=IFS(mantıksal_test1, değer1, [mantıksal_test2, değer2], ...)",
+            "example": "=IFS(A1>100, \"Yüksek\", A1>50, \"Orta\", A1>0, \"Düşük\")"
+          },
+          "IFERROR": {
+            "description": "Hata kontrolü",
+            "syntax": "=IFERROR(değer, hata_değeri)",
+            "example": "=IFERROR(A1/B1, \"Hata!\")"
+          }
+        },
+        
+        "logical_operators": {
+          "AND": {
+            "description": "Tüm koşullar doğru mu?",
+            "syntax": "=AND(mantıksal1, [mantıksal2], ...)",
+            "example": "=AND(A1>50, B1<100)"
+          },
+          "OR": {
+            "description": "En az bir koşul doğru mu?",
+            "syntax": "=OR(mantıksal1, [mantıksal2], ...)",
+            "example": "=OR(A1>100, B1>100)"
+          },
+          "NOT": {
+            "description": "Tersi",
+            "syntax": "=NOT(mantıksal)",
+            "example": "=NOT(A1>100)"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "metin-fonksiyonlari",
+      "title": "📝 Metin Fonksiyonları",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Metin işleme ve düzenleme fonksiyonları.",
+        
+        "text_manipulation": {
+          "CONCAT": {
+            "description": "Metinleri birleştir",
+            "syntax": "=CONCAT(metin1, [metin2], ...)",
+            "example": "=CONCAT(A1:A10)"
+          },
+          "TEXTJOIN": {
+            "description": "Ayırıcı ile birleştir",
+            "syntax": "=TEXTJOIN(ayırıcı, boşları_yoksay, metin1, ...)",
+            "example": "=TEXTJOIN(\", \", TRUE, A1:A10)"
+          }
+        },
+        
+        "text_extraction": {
+          "LEFT": {
+            "description": "Soldan karakter al",
+            "syntax": "=LEFT(metin, [karakter_sayısı])",
+            "example": "=LEFT(A1, 5)"
+          },
+          "RIGHT": {
+            "description": "Sağdan karakter al",
+            "syntax": "=RIGHT(metin, [karakter_sayısı])",
+            "example": "=RIGHT(A1, 3)"
+          },
+          "MID": {
+            "description": "Ortadan karakter al",
+            "syntax": "=MID(metin, başlangıç, karakter_sayısı)",
+            "example": "=MID(A1, 3, 5)"
+          }
+        },
+        
+        "text_cleaning": {
+          "TRIM": {
+            "description": "Fazla boşlukları temizle",
+            "syntax": "=TRIM(metin)",
+            "example": "=TRIM(A1)"
+          },
+          "UPPER": {
+            "description": "Büyük harfe çevir",
+            "syntax": "=UPPER(metin)",
+            "example": "=UPPER(A1)"
+          },
+          "LOWER": {
+            "description": "Küçük harfe çevir",
+            "syntax": "=LOWER(metin)",
+            "example": "=LOWER(A1)"
+          },
+          "PROPER": {
+            "description": "Her kelimenin ilk harfi büyük",
+            "syntax": "=PROPER(metin)",
+            "example": "=PROPER(A1)"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "tarih-saat",
+      "title": "📅 Tarih ve Saat Fonksiyonları",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Tarih ve zaman hesaplamaları için fonksiyonlar.",
+        
+        "current_datetime": {
+          "TODAY": {
+            "description": "Bugünün tarihi",
+            "syntax": "=TODAY()",
+            "example": "=TODAY()"
+          },
+          "NOW": {
+            "description": "Şu anki tarih ve saat",
+            "syntax": "=NOW()",
+            "example": "=NOW()"
+          }
+        },
+        
+        "date_creation": {
+          "DATE": {
+            "description": "Tarih oluştur",
+            "syntax": "=DATE(yıl, ay, gün)",
+            "example": "=DATE(2025, 9, 30)"
+          },
+          "YEAR": {
+            "description": "Yıl çıkar",
+            "syntax": "=YEAR(tarih)",
+            "example": "=YEAR(TODAY())"
+          },
+          "MONTH": {
+            "description": "Ay çıkar",
+            "syntax": "=MONTH(tarih)",
+            "example": "=MONTH(TODAY())"
+          },
+          "DAY": {
+            "description": "Gün çıkar",
+            "syntax": "=DAY(tarih)",
+            "example": "=DAY(TODAY())"
+          }
+        },
+        
+        "date_calculations": {
+          "DATEDIF": {
+            "description": "İki tarih arası fark",
+            "syntax": "=DATEDIF(başlangıç, bitiş, birim)",
+            "example": "=DATEDIF(A1, B1, \"D\")",
+            "units": "D=Gün, M=Ay, Y=Yıl"
+          },
+          "NETWORKDAYS": {
+            "description": "İş günü sayısı",
+            "syntax": "=NETWORKDAYS(başlangıç, bitiş)",
+            "example": "=NETWORKDAYS(A1, B1)"
+          },
+          "EDATE": {
+            "description": "N ay sonrası",
+            "syntax": "=EDATE(başlangıç, aylar)",
+            "example": "=EDATE(TODAY(), 3)"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "arama-referans",
+      "title": "🔍 Arama ve Referans",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Veri arama fonksiyonları.",
+        
+        "vlookup_xlookup": {
+          "VLOOKUP": {
+            "description": "Dikey arama",
+            "syntax": "=VLOOKUP(aranan, tablo, sütun, [yaklaşık])",
+            "example": "=VLOOKUP(A1, B:D, 3, FALSE)"
+          },
+          "XLOOKUP": {
+            "description": "Modern arama",
+            "syntax": "=XLOOKUP(aranan, arama_dizisi, sonuç_dizisi)",
+            "example": "=XLOOKUP(A1, B:B, C:C)"
+          }
+        },
+        
+        "index_match": {
+          "INDEX": {
+            "description": "Konumdan değer al",
+            "syntax": "=INDEX(dizi, satır, [sütun])",
+            "example": "=INDEX(A1:C10, 5, 2)"
+          },
+          "MATCH": {
+            "description": "Değerin konumunu bul",
+            "syntax": "=MATCH(aranan, dizi, [eşleşme])",
+            "example": "=MATCH(\"Elma\", A1:A10, 0)"
+          }
+        },
+        
+        "filter_functions": {
+          "FILTER": {
+            "description": "Koşula göre filtrele",
+            "syntax": "=FILTER(dizi, koşul)",
+            "example": "=FILTER(A1:C10, B1:B10>100)"
+          },
+          "UNIQUE": {
+            "description": "Tekil değerler",
+            "syntax": "=UNIQUE(dizi)",
+            "example": "=UNIQUE(A1:A100)"
+          },
+          "SORT": {
+            "description": "Sırala",
+            "syntax": "=SORT(dizi, [sıra_indeks], [düzen])",
+            "example": "=SORT(A1:C10, 2, -1)"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "istatistik",
+      "title": "📊 İstatistik Fonksiyonları",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "İstatistiksel analiz fonksiyonları.",
+        
+        "basic_stats": {
+          "MEDIAN": {
+            "description": "Ortanca",
+            "syntax": "=MEDIAN(sayı1, [sayı2], ...)",
+            "example": "=MEDIAN(A1:A10)"
+          },
+          "MODE.SNGL": {
+            "description": "En sık tekrarlanan",
+            "syntax": "=MODE.SNGL(sayı1, [sayı2], ...)",
+            "example": "=MODE.SNGL(A1:A10)"
+          },
+          "STDEV.S": {
+            "description": "Standart sapma",
+            "syntax": "=STDEV.S(sayı1, [sayı2], ...)",
+            "example": "=STDEV.S(A1:A100)"
+          }
+        },
+        
+        "advanced_stats": {
+          "PERCENTILE.INC": {
+            "description": "Yüzdelik dilim",
+            "syntax": "=PERCENTILE.INC(dizi, k)",
+            "example": "=PERCENTILE.INC(A1:A100, 0.95)"
+          },
+          "RANK.EQ": {
+            "description": "Sıralama",
+            "syntax": "=RANK.EQ(sayı, referans, [sıra])",
+            "example": "=RANK.EQ(A1, A:A, 0)"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "finansal",
+      "title": "💰 Finansal Fonksiyonlar",
+      "order": 7,
+      "content": {
+        "type": "detailed",
+        "introduction": "Finansal hesaplamalar.",
+        
+        "loan_payments": {
+          "PMT": {
+            "description": "Ödeme tutarı",
+            "syntax": "=PMT(oran, dönem, bugünkü_değer)",
+            "example": "=PMT(5%/12, 60, 100000)"
+          },
+          "PV": {
+            "description": "Bugünkü değer",
+            "syntax": "=PV(oran, dönem, ödeme)",
+            "example": "=PV(8%, 10, -1000)"
+          },
+          "FV": {
+            "description": "Gelecek değer",
+            "syntax": "=FV(oran, dönem, ödeme)",
+            "example": "=FV(6%, 10, -200)"
+          }
+        },
+        
+        "investment": {
+          "NPV": {
+            "description": "Net bugünkü değer",
+            "syntax": "=NPV(oran, değer1, [değer2], ...)",
+            "example": "=NPV(10%, B1:B5)"
+          },
+          "IRR": {
+            "description": "İç verim oranı",
+            "syntax": "=IRR(değerler, [tahmin])",
+            "example": "=IRR(A1:A10)"
+          }
+        }
+      }
+    }
+  ],
+  
+  "formula_tips": [
+    {
+      "tip": "Mutlak Referanslar",
+      "description": "$ işareti ile sabitle",
+      "shortcut": "F4 tuşu"
+    },
+    {
+      "tip": "Adlandırılmış Aralıklar",
+      "description": "Hücre aralıklarına isim verin",
+      "benefit": "Okunabilir formüller"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "action": "Formül başlat",
+      "shortcut": "="
+    },
+    {
+      "action": "Otomatik Toplam",
+      "shortcut": "Alt + Shift + ="
+    },
+    {
+      "action": "Mutlak referans",
+      "shortcut": "F4"
+    },
+    {
+      "action": "Formülü göster",
+      "shortcut": "Ctrl + `"
+    }
+  ]
+}

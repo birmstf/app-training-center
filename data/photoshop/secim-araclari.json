@@ -1,0 +1,833 @@
+{
+  "id": "photoshop-secim-araclari",
+  "title": "Adobe Photoshop - Seçim Araçları",
+  "description": "Hassas seçimler yapma, maskeleme ve seçim düzenleme teknikleri.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "4 saat",
+  "version": "Adobe Photoshop 2024",
+  
+  "sections": [
+    {
+      "id": "secim-temelleri",
+      "title": "🔲 Seçim Temelleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Seçim, Photoshop'ta düzenleme yapmanın temelidir. Seçim yapmadan önce neyi düzenlemek istediğinizi belirlemelisiniz.",
+        
+        "what_is_selection": {
+          "definition": "Görüntünün belirli bir bölgesini izole etme",
+          "purpose": "Sadece seçili alanda değişiklik yapmak",
+          "analogy": "Boyacının maskeleme bandı gibi",
+          "marching_ants": "Yürüyen karıncalar (marching ants) seçimi gösterir"
+        },
+        
+        "why_selections": {
+          "reasons": [
+            "Sadece belirli alanı düzenlemek",
+            "Objeleri ayırmak (arka plan çıkarma)",
+            "Renk düzeltmesini sınırlamak",
+            "Efekt uygulamak (bulanıklık, keskinlik)",
+            "Maske oluşturmak",
+            "Kopyalama ve taşıma"
+          ]
+        },
+        
+        "selection_types": [
+          {
+            "type": "Geometrik Seçimler",
+            "tools": "Marquee Tools",
+            "use": "Basit şekiller"
+          },
+          {
+            "type": "Elle Çizim",
+            "tools": "Lasso Tools",
+            "use": "Serbest form seçimler"
+          },
+          {
+            "type": "Renk Tabanlı",
+            "tools": "Magic Wand, Quick Selection",
+            "use": "Benzer renk veya tonları seçme"
+          },
+          {
+            "type": "Yapay Zeka Tabanlı",
+            "tools": "Object Selection, Select Subject",
+            "use": "Otomatik obje tanıma"
+          },
+          {
+            "type": "Hassas Yol",
+            "tools": "Pen Tool",
+            "use": "En hassas seçimler"
+          }
+        ],
+        
+        "selection_basics": [
+          {
+            "action": "Yeni Seçim",
+            "description": "Varsayılan mod, önceki seçimi iptal eder"
+          },
+          {
+            "action": "Seçime Ekle",
+            "modifier": "Shift tuşu",
+            "icon": "+"
+          },
+          {
+            "action": "Seçimden Çıkar",
+            "modifier": "Alt/Option tuşu",
+            "icon": "-"
+          },
+          {
+            "action": "Kesişim",
+            "modifier": "Shift + Alt",
+            "icon": "×",
+            "description": "İki seçimin ortak alanı"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "marquee-tools",
+      "title": "⬜ Marquee Araçları",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Geometrik şekillerde seçim yapmak için temel araçlar.",
+        
+        "tools": [
+          {
+            "tool": "Rectangular Marquee (M)",
+            "shape": "Dikdörtgen",
+            "use": "Fotoğraf kırpma, kare alanlar",
+            "modifiers": [
+              "Shift = Kare (1:1 oran)",
+              "Alt = Merkezden çiz",
+              "Shift + Alt = Merkezden kare",
+              "Boşluk + Sürükle = Seçimi taşı (çizerken)"
+            ]
+          },
+          {
+            "tool": "Elliptical Marquee (M)",
+            "shape": "Oval/Daire",
+            "use": "Yuvarlak objeler, portre vinyetleme",
+            "modifiers": [
+              "Shift = Daire",
+              "Alt = Merkezden",
+              "Shift + Alt = Merkezden daire"
+            ]
+          },
+          {
+            "tool": "Single Row Marquee",
+            "shape": "Tek piksel yatay çizgi",
+            "use": "Çok özel durumlar",
+            "rare": "Nadiren kullanılır"
+          },
+          {
+            "tool": "Single Column Marquee",
+            "shape": "Tek piksel dikey çizgi",
+            "use": "Çok özel durumlar",
+            "rare": "Nadiren kullanılır"
+          }
+        ],
+        
+        "options_bar": {
+          "feather": {
+            "name": "Feather (Yumuşatma)",
+            "description": "Seçim kenarlarını yumuşatır",
+            "range": "0-250 piksel",
+            "use": "Yumuşak geçişler için",
+            "example": "10-20 px portre için ideal",
+            "tip": "Seçimden ÖNCE ayarlayın"
+          },
+          
+          "anti_alias": {
+            "name": "Anti-aliasing",
+            "description": "Kenarları daha pürüzsüz yapar",
+            "default": "Açık (önerilir)",
+            "use": "Oval/dairesel seçimlerde"
+          },
+          
+          "style": {
+            "name": "Style",
+            "options": [
+              {
+                "style": "Normal",
+                "description": "Serbest çizim"
+              },
+              {
+                "style": "Fixed Ratio",
+                "description": "Sabit oran (örn: 16:9)",
+                "use": "Belirli en-boy oranı"
+              },
+              {
+                "style": "Fixed Size",
+                "description": "Sabit boyut (örn: 500x500 px)",
+                "use": "Belirli boyut gerektiğinde"
+              }
+            ]
+          }
+        },
+        
+        "techniques": [
+          {
+            "technique": "Mükemmel Daire",
+            "steps": [
+              "1. Elliptical Marquee seç",
+              "2. Shift basılı tut",
+              "3. Çiz",
+              "4. Tam ortalamak için Shift + Alt beraber"
+            ]
+          },
+          {
+            "technique": "Seçimi Taşıma",
+            "method": "Boşluk + Sürükle (çizerken)",
+            "use": "Yanlış yerden başladıysanız"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "lasso-tools",
+      "title": "🖊️ Lasso Araçları",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Serbest form seçimler için elle çizim araçları.",
+        
+        "tools": [
+          {
+            "tool": "Lasso Tool (L)",
+            "description": "Elle serbest çizim",
+            "use": "Hızlı, kabataşş seçimler",
+            "technique": "Fare/kalem ile objeyi çevirin",
+            "tip": "Başlangıç noktasına dönün = Seçim kapanır",
+            "pros": "Hızlı",
+            "cons": "Hassas değil"
+          },
+          {
+            "tool": "Polygonal Lasso (L)",
+            "description": "Nokta nokta düz çizgilerle",
+            "use": "Düz kenarlı objeler (binalar, kutular)",
+            "technique": [
+              "Tıkla tıkla nokta koy",
+              "Düz çizgiler oluşturulur",
+              "Başlangıca dön veya çift tıkla = Kapat"
+            ],
+            "modifiers": [
+              "Delete = Son noktayı sil",
+              "Backspace = Son noktayı sil",
+              "Alt + Tıkla = Geçici Lasso Tool (eğri çiz)"
+            ],
+            "pros": "Düz hatlar için mükemmel",
+            "recommended": "✓ Mimari, ürün fotoğrafçılığı"
+          },
+          {
+            "tool": "Magnetic Lasso (L)",
+            "description": "Otomatik kenar bulma",
+            "use": "İyi kontrastlı objeler",
+            "how_it_works": "Renk farklarını algılar, kenara yapışır",
+            "technique": [
+              "Kenar boyunca fareyi hareket ettir",
+              "Otomatik noktalar oluşturur",
+              "Gerekirse manuel nokta ekle (tıkla)"
+            ],
+            "options": {
+              "width": "Algılama genişliği (1-256 px)",
+              "contrast": "Kontrast hassasiyeti (%1-100)",
+              "frequency": "Nokta sıklığı (0-100)"
+            },
+            "pros": "Yarı otomatik, hızlı",
+            "cons": "Düşük kontrastta zorlanır",
+            "tip": "Tablet kalem ile çok daha iyi"
+          }
+        ],
+        
+        "lasso_tips": [
+          "Yakınlaştırın (zoom) - Daha hassas çalışın",
+          "Shift + Lasso = Seçime ekle",
+          "Alt + Lasso = Seçimden çıkar",
+          "Polygonal Lasso'da Alt basılı = Geçici serbest mod",
+          "Magnetic Lasso'da tıkla = Manuel nokta ekle"
+        ]
+      }
+    },
+    
+    {
+      "id": "magic-selection",
+      "title": "🪄 Sihirli Seçim Araçları",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Renk ve ton benzerliğine göre otomatik seçim yapan araçlar.",
+        
+        "magic_wand": {
+          "tool": "Magic Wand Tool (W)",
+          "description": "Benzer renkleri otomatik seçer",
+          "shortcut": "W",
+          "use": "Tek renkli arka planlar, basit objeler",
+          
+          "how_it_works": {
+            "step1": "Bir renge tıklayın",
+            "step2": "Benzer tonlar otomatik seçilir",
+            "step3": "Shift + Tıkla daha fazla ekle"
+          },
+          
+          "options": {
+            "tolerance": {
+              "name": "Tolerance (Tolerans)",
+              "range": "0-255",
+              "description": "Ne kadar benzer renk seçilsin",
+              "low": "0-10 = Çok hassas, sadece tam benzerler",
+              "medium": "20-40 = Orta, genel kullanım",
+              "high": "60-100 = Geniş, çok çeşit ton",
+              "default": "32",
+              "tip": "Düşükten başlayın, gerekirse artırın"
+            },
+            
+            "anti_alias": {
+              "name": "Anti-alias",
+              "description": "Pürüzsüz kenarlar",
+              "default": "Açık"
+            },
+            
+            "contiguous": {
+              "name": "Contiguous (Bitişik)",
+              "checked": "Sadece tıklanan noktaya bitişik benzer renkler",
+              "unchecked": "Tüm görüntüde benzer renkler",
+              "example": "Kapalı = Tüm mavi gökyüzü seçilir (ayrı parçalar olsa bile)"
+            },
+            
+            "sample_all_layers": {
+              "name": "Sample All Layers",
+              "description": "Tüm katmanları örnekle",
+              "use": "Çok katmanlı belgelerde"
+            }
+          },
+          
+          "use_cases": [
+            "Düz renkli arka plan çıkarma",
+            "Gökyüzü seçimi",
+            "Beyaz/yeşil ekran",
+            "Basit objeler"
+          ],
+          
+          "limitations": [
+            "Karmaşık arka planlarda zayıf",
+            "Gradyan geçişlerde zorlanır",
+            "Benzer tonlarda seçim zor"
+          ]
+        },
+        
+        "quick_selection": {
+          "tool": "Quick Selection Tool (W)",
+          "description": "Fırça gibi seçim yapma",
+          "shortcut": "W",
+          "use": "Hızlı obje seçimi",
+          "recommended": "✓✓✓ En çok kullanılanlardan",
+          
+          "how_to_use": [
+            "1. Araç seçiliyken obje üzerinde fırça gibi boya",
+            "2. Photoshop kenarları otomatik bulur",
+            "3. Shift + boya = Daha fazla ekle",
+            "4. Alt + boya = İstemediğiniz kısmı çıkar"
+          ],
+          
+          "options": {
+            "brush_size": "Fırça boyutu ([ ] tuşları ile)",
+            "sample_all_layers": "Tüm katmanları örnekle",
+            
+            "auto_enhance": {
+              "name": "Auto-Enhance",
+              "description": "Kenarları otomatik iyileştir",
+              "effect": "Daha pürüzsüz, daha hassas",
+              "default": "Açık (önerilir)"
+            }
+          },
+          
+          "workflow": [
+            "1. Küçük fırça ile objeye tıklayın",
+            "2. Photoshop çoğunu otomatik seçer",
+            "3. Eksik yerleri Shift + boya ile ekleyin",
+            "4. Fazla seçilenleri Alt + boya ile çıkarın",
+            "5. Kenarları Select and Mask ile düzeltin"
+          ],
+          
+          "tips": [
+            "Objenin içinden başlayın, kenarlara doğru gidin",
+            "İlk tıklama küçük fırça ile",
+            "Hızlıca boyamaya gerek yok, yavaş ilerleyin",
+            "Hata yaparsanız Alt ile düzeltin"
+          ],
+          
+          "best_for": "İyi kontrastlı objeler, net kenarlar"
+        },
+        
+        "object_selection": {
+          "tool": "Object Selection Tool (W)",
+          "description": "AI ile otomatik obje seçimi",
+          "new": "✨ Yeni nesil AI",
+          "shortcut": "W",
+          "use": "Tek tıkla obje seçimi",
+          
+          "modes": [
+            {
+              "mode": "Rectangle",
+              "description": "Objenin etrafına dikdörtgen çizin",
+              "use": "Tek, net objeler"
+            },
+            {
+              "mode": "Lasso",
+              "description": "Objenin etrafına kabaca lasso çizin",
+              "use": "Karmaşık şekiller"
+            }
+          ],
+          
+          "how_to_use": [
+            "1. Object Selection Tool seçin",
+            "2. Mod seçin (Rectangle veya Lasso)",
+            "3. Objenin etrafına kabaca alan çizin",
+            "4. Photoshop objeyi otomatik seçer"
+          ],
+          
+          "ai_power": "Adobe Sensei AI kullanır",
+          "accuracy": "Genelde %90+ doğruluk",
+          "recommended": "✓✓ Çok güçlü, modern çözüm"
+        }
+      }
+    },
+    
+    {
+      "id": "select-subject-sky",
+      "title": "🤖 AI Destekli Seçimler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Photoshop 2024'ün yapay zeka destekli tek tıklamalı seçim araçları.",
+        
+        "select_subject": {
+          "name": "Select Subject",
+          "path": "Select → Subject",
+          "description": "Tek tıkla ana obje seçimi",
+          "ai": "Adobe Sensei yapay zekası",
+          
+          "how_it_works": [
+            "1. Herhangi bir katmanda olun",
+            "2. Select → Subject tıklayın",
+            "3. Photoshop ana objeyi otomatik algılar ve seçer",
+            "4. Gerekirse Select and Mask ile ince ayar"
+          ],
+          
+          "what_it_detects": [
+            "İnsanlar (portre, tam vücut)",
+            "Hayvanlar",
+            "Araçlar",
+            "Objeler",
+            "Ön plandaki ana konu"
+          ],
+          
+          "accuracy": "Son derece yüksek - Özellikle portre için",
+          "speed": "2-5 saniye",
+          
+          "use_cases": [
+            "Portre arka plan değiştirme",
+            "Ürün fotoğrafçılığı",
+            "Hızlı kompozisyon",
+            "Başlangıç seçimi (sonra ince ayar)"
+          ],
+          
+          "limitations": [
+            "Çok karmaşık sahnelerde karışabilir",
+            "Birden fazla obje varsa en belirgin olanı seçer",
+            "Düşük kontrastta daha az hassas"
+          ],
+          
+          "tip": "Quick Selection yerine önce bunu deneyin - Çok hızlı!"
+        },
+        
+        "select_sky": {
+          "name": "Select Sky",
+          "path": "Select → Sky",
+          "description": "Tek tıkla gökyüzü seçimi",
+          "ai": "Adobe Sensei",
+          
+          "how_to_use": [
+            "1. Gökyüzü içeren fotoğraf açın",
+            "2. Select → Sky",
+            "3. Gökyüzü otomatik seçilir"
+          ],
+          
+          "what_it_does": [
+            "Gökyüzünü algılar",
+            "Ağaçlar, binalar arasındaki boşlukları bile bulur",
+            "Saç telleri gibi ince detayları korur"
+          ],
+          
+          "use_cases": [
+            "Gökyüzü değiştirme",
+            "Gökyüzü renk düzeltme",
+            "Dramatik gün batımı ekleme",
+            "Bulutlu gökyüzünü maviye çevirme"
+          ],
+          
+          "replace_sky": {
+            "name": "Sky Replacement",
+            "path": "Edit → Sky Replacement",
+            "description": "Gökyüzünü değiştirme + renk uyumu",
+            "integrated": "Select Sky + Değiştir + Renk ayarı hepsi bir arada"
+          }
+        },
+        
+        "select_and_mask": {
+          "name": "Select and Mask Workspace",
+          "path": "Select → Select and Mask",
+          "shortcut": "Ctrl/Cmd + Alt + R (Seçim yapıldıktan sonra)",
+          "description": "Seçimleri rafine etme için özel çalışma alanı",
+          
+          "when_to_use": [
+            "Saç seçimi (en zorlarından)",
+            "Kürk, tüy detayları",
+            "Kenar iyileştirme",
+            "Seçim kenarlarını yumuşatma",
+            "Renk sızıntısını önleme"
+          ],
+          
+          "view_modes": [
+            {
+              "mode": "Onion Skin",
+              "use": "Kenarları görmek",
+              "opacity": "Ayarlanabilir"
+            },
+            {
+              "mode": "Marching Ants",
+              "use": "Standart seçim görünümü"
+            },
+            {
+              "mode": "Overlay",
+              "use": "Kırmızı maske",
+              "classic": "Klasik Quick Mask modu"
+            },
+            {
+              "mode": "On Black",
+              "use": "Siyah arka planda önizleme"
+            },
+            {
+              "mode": "On White",
+              "use": "Beyaz arka planda önizleme"
+            },
+            {
+              "mode": "Black & White",
+              "use": "Maske olarak görüntüle"
+            },
+            {
+              "mode": "On Layers",
+              "use": "Gerçek katman üzerinde"
+            }
+          ],
+          
+          "tools": [
+            {
+              "tool": "Refine Edge Brush",
+              "use": "Saç, kürk gibi karmaşık kenarlar",
+              "how": "Kenar üzerinde fırça",
+              "magic": "Photoshop detayları otomatik algılar"
+            },
+            {
+              "tool": "Brush Tool",
+              "use": "Manuel düzeltme",
+              "add": "Seçime ekle",
+              "subtract": "Seçimden çıkar"
+            }
+          ],
+          
+          "edge_detection": {
+            "name": "Edge Detection",
+            "radius": "Radius kaydırıcısı",
+            "smart_radius": "Smart Radius (Akıllı yarıçap)",
+            "use": "Karmaşık kenarlar için",
+            "value": "1-250 px"
+          },
+          
+          "global_refinements": {
+            "smooth": {
+              "name": "Smooth",
+              "description": "Kenarları yumuşat",
+              "range": "0-100",
+              "use": "Dişli kenarları düzelt"
+            },
+            "feather": {
+              "name": "Feather",
+              "description": "Yumuşak geçiş",
+              "range": "0-250 px",
+              "use": "Doğal karışım"
+            },
+            "contrast": {
+              "name": "Contrast",
+              "description": "Kenar netliği",
+              "range": "-100 to +100",
+              "use": "Yumuşak kenarları keskinleştir"
+            },
+            "shift_edge": {
+              "name": "Shift Edge",
+              "description": "Kenarı içe/dışa kaydır",
+              "range": "-100% to +100%",
+              "use": "Halo veya boşluk düzeltme",
+              "tip": "Genelde -10% to -20% ideal"
+            }
+          },
+          
+          "output_settings": {
+            "title": "Output To",
+            "options": [
+              "Selection - Seçim olarak",
+              "Layer Mask - Katman maskesi",
+              "New Layer - Yeni katman",
+              "New Layer with Layer Mask",
+              "New Document",
+              "New Document with Layer Mask"
+            ],
+            "recommended": "Layer Mask - Yıkıcı olmayan"
+          },
+          
+          "decontaminate_colors": {
+            "name": "Decontaminate Colors",
+            "description": "Renk sızıntısını önle",
+            "example": "Yeşil ekran çekiminde yeşil yansıma",
+            "amount": "Ayarlanabilir",
+            "use": "Kesinlikle chromakey için"
+          },
+          
+          "hair_selection_workflow": {
+            "title": "Saç Seçimi İş Akışı",
+            "steps": [
+              "1. Quick Selection ile kaba seçim",
+              "2. Select and Mask aç",
+              "3. View Mode: On Black veya On White",
+              "4. Smart Radius aç",
+              "5. Refine Edge Brush ile saç üzerinde fırçala",
+              "6. Shift Edge: -10% to -20%",
+              "7. Feather: 0.5-1 px",
+              "8. Output To: Layer Mask",
+              "9. OK"
+            ],
+            "result": "Mükemmel saç seçimi!"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "color-range",
+      "title": "🎨 Color Range ve İleri Seçimler",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Renk bazlı gelişmiş seçim teknikleri.",
+        
+        "color_range": {
+          "name": "Color Range",
+          "path": "Select → Color Range",
+          "description": "Renk aralığına göre seçim",
+          "power": "Magic Wand'dan çok daha güçlü",
+          
+          "select_options": [
+            {
+              "option": "Sampled Colors",
+              "description": "Tıkladığınız renk ve benzerlerini seç",
+              "use": "Özel renkler"
+            },
+            {
+              "option": "Skin Tones",
+              "description": "Cilt tonlarını otomatik seç",
+              "use": "Portre, ten düzeltmesi",
+              "detect_faces": "Yüz algılama ile geliştirilmiş"
+            },
+            {
+              "option": "Highlights",
+              "description": "En parlak alanlar",
+              "use": "Aşırı pozlamayı düzeltme"
+            },
+            {
+              "option": "Midtones",
+              "description": "Orta tonlar"
+            },
+            {
+              "option": "Shadows",
+              "description": "Koyu alanlar"
+            },
+            {
+              "option": "Reds, Yellows, Greens, Cyans, Blues, Magentas",
+              "description": "Belirli renk kanalları",
+              "use": "Tek renge odaklanma"
+            }
+          ],
+          
+          "fuzziness": {
+            "name": "Fuzziness",
+            "description": "Seçim toleransı",
+            "range": "0-200",
+            "similar_to": "Magic Wand'ın Tolerance'ı gibi",
+            "tip": "Düşükten başlayın"
+          },
+          
+          "eyedroppers": {
+            "add": "Eyedropper + = Renk ekle",
+            "subtract": "Eyedropper - = Renk çıkar",
+            "sample": "Seçmek istediğiniz tüm renk varyasyonlarını örnekleyin"
+          },
+          
+          "preview": {
+            "selection": "Seçim önizlemesi (siyah-beyaz)",
+            "image": "Görüntü (renkli)",
+            "toggle": "Seçim/Görüntü arası geçiş"
+          },
+          
+          "use_cases": [
+            "Gökyüzü değiştirme (Mavi renk seç)",
+            "Yeşillik seçimi (Ağaçlar, çimler)",
+            "Ten rengi düzeltmesi",
+            "Belirli renk tonunu ayarlama",
+            "Chromakey (yeşil/mavi ekran)"
+          ]
+        },
+        
+        "focus_area": {
+          "name": "Focus Area",
+          "path": "Select → Focus Area",
+          "description": "Odaklanmış alanları otomatik seç",
+          "use": "Bokeh efekti, depth of field seçimleri",
+          
+          "parameters": {
+            "in_focus_range": "Odak aralığı",
+            "image_noise_level": "Görüntü gürültüsü seviyesi"
+          },
+          
+          "workflow": [
+            "1. Focus Area aç",
+            "2. Parametreleri ayarla",
+            "3. Add/Subtract ile düzelt",
+            "4. Select and Mask'e gönder",
+            "5. Arka planı bulanıklaştır"
+          ]
+        },
+        
+        "modify_selections": {
+          "title": "Seçim Modifikasyonları",
+          "path": "Select → Modify",
+          
+          "operations": [
+            {
+              "operation": "Border",
+              "description": "Seçim kenarından bant oluştur",
+              "width": "1-200 px",
+              "use": "Çerçeve efektleri"
+            },
+            {
+              "operation": "Smooth",
+              "description": "Dişli kenarları yumuşat",
+              "sample_radius": "1-100 px",
+              "use": "Düzgün seçim"
+            },
+            {
+              "operation": "Expand",
+              "description": "Seçimi büyüt",
+              "by": "1-100 px",
+              "use": "Seçimi genişletme"
+            },
+            {
+              "operation": "Contract",
+              "description": "Seçimi küçült",
+              "by": "1-100 px",
+              "use": "Kenarlardan kaçınma"
+            },
+            {
+              "operation": "Feather",
+              "description": "Yumuşak kenarlar",
+              "radius": "0-250 px",
+              "after_selection": "Seçim sonrası uygulama"
+            }
+          ]
+        },
+        
+        "transform_selection": {
+          "name": "Transform Selection",
+          "path": "Select → Transform Selection",
+          "description": "Seçimin kendisini dönüştür (içeriği değil)",
+          "use": "Seçim şeklini değiştirme",
+          
+          "transforms": [
+            "Scale (Ölçeklendirme)",
+            "Rotate (Döndürme)",
+            "Skew (Eğme)",
+            "Distort (Bozma)",
+            "Perspective (Perspektif)"
+          ],
+          
+          "workflow": [
+            "1. Seçim yap",
+            "2. Select → Transform Selection",
+            "3. Seçim çerçevesini dönüştür",
+            "4. Enter ile onayla"
+          ]
+        }
+      }
+    }
+  ],
+  
+  "best_practices": [
+    {
+      "practice": "Doğru Aracı Seçin",
+      "guide": [
+        "Geometrik = Marquee",
+        "Serbest form = Lasso",
+        "Renk farkı = Magic Wand / Quick Selection",
+        "Otomatik = Select Subject",
+        "En hassas = Pen Tool (sonraki modül)"
+      ]
+    },
+    {
+      "practice": "Zoom Yapın",
+      "description": "Kenar detayları için yakınlaştırın",
+      "shortcut": "Ctrl/Cmd + Boşluk + Tıkla"
+    },
+    {
+      "practice": "Feather Kullanın",
+      "description": "Doğal görünüm için hafif yumuşatma",
+      "value": "1-3 px çoğu durum için yeterli"
+    },
+    {
+      "practice": "Select and Mask",
+      "description": "Tüm önemli seçimleri buradan geçirin",
+      "benefit": "Profesyonel sonuç"
+    },
+    {
+      "practice": "Layer Mask Kullanın",
+      "description": "Seçimi kalıcı silme yerine maskeleme",
+      "reversible": "Yıkıcı olmayan"
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Seçim = Photoshop'ta düzenlemenin temeli",
+      "Quick Selection = En hızlı ve etkili",
+      "Select Subject = AI ile tek tıkla",
+      "Select and Mask = Kenar iyileştirme için zorunlu",
+      "Layer Mask = Seçimleri yıkıcı olmadan kullanma"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Marquee Tools", "keys": "M"},
+    {"action": "Lasso Tools", "keys": "L"},
+    {"action": "Quick Selection / Magic Wand", "keys": "W"},
+    {"action": "Tümünü seç", "keys": "Ctrl/Cmd + A"},
+    {"action": "Seçimi kaldır", "keys": "Ctrl/Cmd + D"},
+    {"action": "Seçimi yeniden seç", "keys": "Ctrl/Cmd + Shift + D"},
+    {"action": "Seçimi ters çevir", "keys": "Ctrl/Cmd + Shift + I"},
+    {"action": "Select and Mask", "keys": "Ctrl/Cmd + Alt + R"},
+    {"action": "Feather", "keys": "Alt + Ctrl/Cmd + D"},
+    {"action": "Seçime ekle", "keys": "Shift + Araç"},
+    {"action": "Seçimden çıkar", "keys": "Alt + Araç"}
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "id": "powerpoint-gecisler",
+  "title": "Microsoft PowerPoint - Geçişler Menüsü",
+  "description": "Slaytlar arası geçiş efektleri ve zamanlaması. Sunumunuza dinamizm katın.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "1.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "gecis-efektleri",
+      "title": "✨ Geçiş Efektleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Geçiş efektleri, bir slayttan diğerine geçerken gösterilen animasyonlardır. Profesyonel ve akıcı sunumlar için önemlidir.",
+        
+        "applying_transitions": {
+          "method": "Geçişler sekmesi → Efekt seçin",
+          "preview": "Otomatik önizleme (tekrar görmek için tekrar tıklayın)",
+          "apply_to": "Seçili slayta uygulanır",
+          "apply_all": "Tümüne Uygula butonu → Tüm sunuma"
+        },
+        
+        "transition_categories": [
+          {
+            "category": "İnce (Subtle)",
+            "description": "Hafif, profesyonel geçişler",
+            "suitable_for": "İş sunumları, kurumsal toplantılar",
+            "examples": [
+              {
+                "name": "Hiçbiri",
+                "description": "Geçiş yok, anında değişim",
+                "when": "Hızlı sunumlar"
+              },
+              {
+                "name": "Kes",
+                "description": "Dikey veya yatay geçiş",
+                "effect": "Slayt kayarak gelir"
+              },
+              {
+                "name": "Sol",
+                "description": "Soldan sağa kayma",
+                "smooth": true
+              },
+              {
+                "name": "Geç",
+                "description": "Yumuşak belirme/kayboluş",
+                "elegant": true,
+                "recommended": "✓ En profesyonel"
+              },
+              {
+                "name": "Sil",
+                "description": "Silgi gibi silme efekti",
+                "variants": "8 yön"
+              },
+              {
+                "name": "Böl",
+                "description": "Ortadan ikiye bölünme",
+                "variants": "Yatay, Dikey"
+              }
+            ]
+          },
+          
+          {
+            "category": "Heyecan Verici (Exciting)",
+            "description": "Dikkat çekici, dinamik geçişler",
+            "suitable_for": "Pazarlama, satış, eğitim sunumları",
+            "warning": "Aşırı kullanım dikkati dağıtır",
+            "examples": [
+              {
+                "name": "Origami",
+                "description": "Kağıt katlanması efekti",
+                "modern": true
+              },
+              {
+                "name": "Panjur",
+                "description": "Panjur açılması",
+                "variants": "Yatay, Dikey"
+              },
+              {
+                "name": "Kutu",
+                "description": "Kutu şeklinde yakınlaşma/uzaklaşma",
+                "eye_catching": true
+              },
+              {
+                "name": "Kıyıcı",
+                "description": "Şeritlere bölünme",
+                "variants": "Sağ-alt, Sol-üst"
+              },
+              {
+                "name": "Üstünü Örtme",
+                "description": "Bir yönden örtme",
+                "variants": "4 yön"
+              },
+              {
+                "name": "Tarama",
+                "description": "Kamera efekti",
+                "variants": "Pan, Saat yönü"
+              }
+            ]
+          },
+          
+          {
+            "category": "Dinamik İçerik",
+            "description": "3D ve hareket temelli",
+            "suitable_for": "Teknoloji, inovasyon sunumları",
+            "system": "Daha güçlü bilgisayar gerektirir",
+            "examples": [
+              {
+                "name": "Uçağı Çevir",
+                "description": "3D döndürme efekti",
+                "variants": "Sol, Sağ"
+              },
+              {
+                "name": "Galeri",
+                "description": "Perspektif kayması",
+                "modern": true
+              },
+              {
+                "name": "Konveyör",
+                "description": "Konveyör bantı gibi",
+                "smooth": true
+              },
+              {
+                "name": "Döndür",
+                "description": "Sayfa çevirme efekti"
+              },
+              {
+                "name": "Pencere",
+                "description": "Pencereden görünüm",
+                "variants": "Yatay, Dikey"
+              },
+              {
+                "name": "Yörünge",
+                "description": "Dairesel hareket",
+                "eye_catching": true
+              },
+              {
+                "name": "Dönme",
+                "description": "360 derece döndürme efekti",
+                "flashy": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "efekt-secenekleri",
+      "title": "⚙️ Efekt Seçenekleri",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Her geçiş efektini özelleştirin: yön, hız, ses ve daha fazlası.",
+        
+        "effect_options": {
+          "button": "Geçişler → Efekt Seçenekleri",
+          "varies": "Seçili efekte göre değişir",
+          
+          "common_options": [
+            {
+              "option": "Yön",
+              "available_for": "Çoğu efekt",
+              "choices": [
+                "Soldan",
+                "Sağdan",
+                "Üstten",
+                "Alttan",
+                "Sol-üstten",
+                "Sağ-alttan",
+                "vb."
+              ],
+              "tip": "İçerik akışıyla uyumlu yön seçin"
+            },
+            {
+              "option": "Renk",
+              "available_for": "Dönme, Panjur gibi efektler",
+              "what": "Geçiş sırasında görünen ara renk",
+              "default": "Siyah"
+            },
+            {
+              "option": "Yumuşatma",
+              "available_for": "Bazı efektler",
+              "what": "Kenarları yumuşatır",
+              "result": "Daha akıcı görünüm"
+            }
+          ]
+        },
+        
+        "sound": {
+          "name": "Ses",
+          "path": "Geçişler → Ses",
+          "options": [
+            "Ses Yok (Varsayılan)",
+            "Alkış",
+            "Davul",
+            "Şişe Kırma",
+            "Rüzgar",
+            "Diğer Sesler..."
+          ],
+          
+          "custom_sound": {
+            "method": "Ses → Diğer Ses",
+            "formats": ".wav, .mp3",
+            "use_case": "Marka sesi, özel efekt"
+          },
+          
+          "warning": "⚠️ Ses efektleri genelde gerekli değildir, dikkatli kullanın",
+          "professional_tip": "İş sunumlarında ses kullanmayın"
+        },
+        
+        "duration": {
+          "name": "Süre",
+          "description": "Geçişin ne kadar süreceği",
+          "path": "Geçişler → Süre",
+          "range": "0.1 - 59 saniye",
+          "default": "Çoğu efekt için 0.5-1 saniye",
+          
+          "guidelines": [
+            {
+              "duration": "0.1-0.3 saniye",
+              "feel": "Çok hızlı, sert",
+              "use": "Hızlı tempolu sunumlar"
+            },
+            {
+              "duration": "0.5-0.7 saniye",
+              "feel": "Hızlı, enerjik",
+              "use": "Standart sunumlar",
+              "recommended": "✓ En yaygın"
+            },
+            {
+              "duration": "1-1.5 saniye",
+              "feel": "Yavaş, elegant",
+              "use": "Dramatik etkiler, özel anlar"
+            },
+            {
+              "duration": "2+ saniye",
+              "feel": "Çok yavaş",
+              "use": "Nadiren, özel senaryolar"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "zamanlama",
+      "title": "⏱️ Zamanlama",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Slaytların otomatik ilerlemesini ve zamanlamasını kontrol edin.",
+        
+        "advance_slide": {
+          "name": "Slaytı İlerlet",
+          "options": [
+            {
+              "type": "Tıklamada",
+              "description": "Fare tıklaması veya ok tuşuyla",
+              "default": true,
+              "when": "Sunucu kontrollü sunumlar",
+              "benefit": "Esnek zamanlama"
+            },
+            {
+              "type": "Belirli Bir Süreden Sonra",
+              "description": "Otomatik geçiş",
+              "setting": "Saniye cinsinden süre",
+              "when": "Kiosk modları, döngüsel sunumlar",
+              "example": "Fuar standı, mağaza ekranları"
+            },
+            {
+              "type": "Her İkisi",
+              "description": "Hem tıklamada hem otomatik",
+              "benefit": "Esneklik + Güvenlik",
+              "use_case": "Eğer unutursanız otomatik geçer"
+            }
+          ]
+        },
+        
+        "rehearse_timings": {
+          "name": "Zamanlamaları Prova Et",
+          "path": "Göster Slayt → Zamanlamaları Prova Et",
+          "what_happens": [
+            "Sunum başlar",
+            "Her slayt için geçirdiğiniz süre kaydedilir",
+            "Sonunda toplam süre gösterilir",
+            "Zamanlamalar otomatik kaydedilir"
+          ],
+          
+          "controls": {
+            "next": "İleri: Sonraki slayta geç",
+            "pause": "Duraklat: Sayacı durdur",
+            "reset": "Sıfırla: Mevcut slayt süresini sıfırla",
+            "total_time": "Toplam süre görüntülenir"
+          },
+          
+          "use_cases": [
+            "Zaman sınırlı sunumlar",
+            "Sunum sürenizi hesaplamak",
+            "Otomatik sunumlar için zamanlama",
+            "Prova yapmak"
+          ],
+          
+          "tip": "İlk provada doğal tempoda konuşun, sistem zamanı öğrensin"
+        },
+        
+        "clear_timings": {
+          "name": "Zamanlamaları Temizle",
+          "when": "Zamanlamaları kaldırmak isterseniz",
+          "result": "Manuel kontrole geri döner"
+        }
+      }
+    },
+    
+    {
+      "id": "tümüne-uygula",
+      "title": "📋 Tümüne Uygula",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Seçili slaytın geçiş ayarlarını tüm sunuma uygulayın.",
+        
+        "what_applies": [
+          "Geçiş efekti",
+          "Efekt yönü",
+          "Süre",
+          "Ses",
+          "İlerleme ayarı (tıklama/otomatik)"
+        ],
+        
+        "how_to_use": {
+          "step1": "Bir slayta istediğiniz geçişi uygulayın",
+          "step2": "Geçişler → Tümüne Uygula butonuna tıklayın",
+          "result": "Tüm slaytlar aynı geçişe sahip olur"
+        },
+        
+        "when_useful": [
+          "Tutarlı sunum için hızlı yol",
+          "Tüm slaytlara aynı tempoyu vermek",
+          "Kiosk modları için toplu ayar"
+        ],
+        
+        "alternative": {
+          "method": "Seçici uygulama",
+          "how": [
+            "Ctrl tuşuna basılı tutun",
+            "Geçiş uygulamak istediğiniz slaytları tıklayın",
+            "Geçiş efekti seçin",
+            "Sadece seçili slaytlara uygulanır"
+          ]
+        }
+      }
+    }
+  ],
+  
+  "best_practices": {
+    "title": "Geçiş Kullanımında En İyi Uygulamalar",
+    "rules": [
+      {
+        "rule": "Tutarlılık",
+        "description": "Tüm sunumda 1-2 geçiş efekti kullanın",
+        "reason": "Profesyonel görünüm, dikkatin dağılmaması",
+        "example": "Tüm slaytlarda 'Geç' efekti"
+      },
+      {
+        "rule": "Sadelik",
+        "description": "İnce kategorisindeki efektleri tercih edin",
+        "reason": "Dikkat içerikte kalır, efektte değil",
+        "avoid": "Döndürme, Dönme gibi aşırı efektler"
+      },
+      {
+        "rule": "Hız",
+        "description": "0.5-0.7 saniye ideal",
+        "reason": "Akıcı ama dikkat dağıtmayan",
+        "avoid": "2+ saniye yavaş geçişler"
+      },
+      {
+        "rule": "Ses Yok",
+        "description": "Özellikle iş sunumlarında ses kullanmayın",
+        "exception": "Eğitim veya eğlence amaçlı sunumlar"
+      },
+      {
+        "rule": "Vurgulama",
+        "description": "Önemli bölüm geçişlerinde farklı efekt",
+        "example": "Ana bölümler için 'Geç', normal slaytlar için 'Sol'",
+        "limit": "Maximum 2 farklı efekt"
+      }
+    ]
+  },
+  
+  "common_scenarios": [
+    {
+      "scenario": "Kurumsal Sunum",
+      "recommendation": {
+        "transition": "Geç veya Sol",
+        "duration": "0.5 saniye",
+        "sound": "Yok",
+        "advance": "Tıklamada"
+      }
+    },
+    {
+      "scenario": "Eğitim/Öğretim",
+      "recommendation": {
+        "transition": "Kes veya Geç",
+        "duration": "0.7 saniye",
+        "sound": "İsteğe bağlı, dikkatli",
+        "advance": "Tıklamada"
+      }
+    },
+    {
+      "scenario": "Pazarlama/Satış",
+      "recommendation": {
+        "transition": "Origami, Kutu (dikkatli)",
+        "duration": "0.7-1 saniye",
+        "sound": "İsteğe bağlı",
+        "advance": "Tıklamada"
+      }
+    },
+    {
+      "scenario": "Kiosk/Döngü",
+      "recommendation": {
+        "transition": "Geç",
+        "duration": "0.5 saniye",
+        "sound": "Yok",
+        "advance": "Otomatik (5-10 saniye)"
+      }
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Geçişler = Slaytlar arası animasyon",
+      "İnce efektler daha profesyonel",
+      "0.5-0.7 saniye ideal süre",
+      "Tutarlılık önemli (1-2 efekt)",
+      "Zamanlama ile otomatik sunum yapılabilir"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Geçişi önizle", "keys": "Geçişe tekrar tıkla"},
+    {"action": "Tümüne uygula", "keys": "Alt, G, T"},
+    {"action": "Zamanlamaları prova et", "keys": "Alt, S, R"}
+  ]
+}
+  

@@ -1,0 +1,880 @@
+{
+  "id": "outlook-takvim",
+  "title": "Microsoft Outlook - Takvim Yönetimi",
+  "description": "Randevu, toplantı ve etkinlik yönetimi. Zaman planlama ve koordinasyon.",
+  "difficulty": "Başlangıç - Orta",
+  "estimated_time": "2.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "takvim-temelleri",
+      "title": "📅 Takvim Temelleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook Takvim'i kullanarak zamanınızı etkili şekilde yönetin.",
+        
+        "accessing_calendar": {
+          "methods": [
+            {"method": "Ctrl + 2", "description": "Klavye kısayolu"},
+            {"method": "Sol alt köşe takvim ikonu", "description": "Gezinti bölmesi"},
+            {"method": "Görünüm → Takvime Git", "description": "Menüden"}
+          ]
+        },
+        
+        "calendar_views": {
+          "title": "Takvim Görünümleri",
+          "description": "Takviminizi farklı açılardan görüntüleyin",
+          
+          "views": [
+            {
+              "view": "Gün",
+              "shortcut": "Ctrl + Alt + 1",
+              "description": "Tek gün detaylı görünüm",
+              "use": "Günlük planlama, saat bazlı",
+              "shows": "Saatlik dilimler, tüm etkinlikler"
+            },
+            {
+              "view": "Çalışma Haftası",
+              "shortcut": "Ctrl + Alt + 2",
+              "description": "Pazartesi-Cuma",
+              "use": "İş haftası planı",
+              "default": "Yaygın kullanım"
+            },
+            {
+              "view": "Hafta",
+              "shortcut": "Ctrl + Alt + 3",
+              "description": "7 gün (Pazartesi-Pazar)",
+              "use": "Tam hafta görünümü"
+            },
+            {
+              "view": "Ay",
+              "shortcut": "Ctrl + Alt + 4",
+              "description": "Aylık genel bakış",
+              "use": "Uzun vadeli planlama",
+              "compact": "Daha az detay"
+            },
+            {
+              "view": "Zamanlama",
+              "description": "Yan yana takvim karşılaştırması",
+              "use": "Toplantı planlama, müsaitlik kontrolü",
+              "multiple": "Birden fazla takvim yan yana"
+            }
+          ],
+          
+          "customizing": {
+            "time_scale": "Görünüm → Zaman Ölçeği (5, 10, 15, 30, 60 dakika)",
+            "work_hours": "Çalışma saatleri ayarla (örn: 9:00-18:00)",
+            "weekend": "Hafta sonu göster/gizle",
+            "time_zone": "Saat dilimi ayarları"
+          }
+        },
+        
+        "navigation": {
+          "title": "Takvimde Gezinme",
+          "shortcuts": [
+            {"action": "Bugüne git", "keys": "Alt + Home"},
+            {"action": "Sonraki gün/hafta/ay", "keys": "Ctrl + Sağ ok"},
+            {"action": "Önceki gün/hafta/ay", "keys": "Ctrl + Sol ok"},
+            {"action": "Belirli tarihe git", "keys": "Ctrl + G"}
+          ],
+          "mini_calendar": {
+            "name": "Mini Takvim",
+            "location": "Sol üst köşe",
+            "use": "Hızlı tarih seçimi",
+            "bold": "Etkinlik olan günler kalın"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "etkinlik-olusturma",
+      "title": "➕ Etkinlik Oluşturma",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Randevu, toplantı ve etkinlik oluşturma yöntemleri.",
+        
+        "creating_appointment": {
+          "name": "Randevu Oluşturma",
+          "description": "Kişisel, tek kişilik etkinlikler",
+          "shortcut": "Ctrl + N (Takvim görünümündeyken)",
+          
+          "methods": [
+            {
+              "method": "Yeni Randevu Butonu",
+              "path": "Giriş → Yeni Randevu"
+            },
+            {
+              "method": "Çift Tıklama",
+              "description": "Takvimde boş alana çift tıkla",
+              "quick": "✓ En hızlı yöntem"
+            },
+            {
+              "method": "Sürükle-Bırak",
+              "description": "Zaman dilimini sürükle",
+              "duration": "Süre otomatik ayarlanır"
+            },
+            {
+              "method": "Sağ Tık",
+              "description": "Sağ tık → Yeni Randevu"
+            }
+          ],
+          
+          "appointment_fields": [
+            {
+              "field": "Konu",
+              "description": "Etkinliğin başlığı",
+              "required": true,
+              "tip": "Açıklayıcı, kısa",
+              "example": "Doktor Randevusu", "Proje Sunumu"
+            },
+            {
+              "field": "Konum",
+              "description": "Nerede olacak",
+              "examples": ["Ofis - Toplantı Salonu A", "Online - Teams", "Dışarıda - Starbucks"],
+              "maps": "Adres girerseniz harita bağlantısı"
+            },
+            {
+              "field": "Başlangıç/Bitiş",
+              "description": "Tarih ve saat",
+              "time_picker": "Hızlı zaman seçimi",
+              "all_day": "Tüm gün etkinliği seçeneği"
+            },
+            {
+              "field": "Göster",
+              "description": "Nasıl görünsün",
+              "options": [
+                "Boş - Müsait görünürsünüz",
+                "Meşgul - Dolu",
+                "Geçici - Kesinleşmemiş",
+                "Ofis Dışı - İzin, tatil"
+              ],
+              "affects": "Toplantı planlama"
+            }
+          ]
+        },
+        
+        "creating_meeting": {
+          "name": "Toplantı Oluşturma",
+          "description": "Birden fazla kişinin katıldığı etkinlikler",
+          "shortcut": "Ctrl + Shift + Q",
+          "path": "Giriş → Yeni Toplantı",
+          
+          "difference": {
+            "appointment": "Tek kişilik, katılımcı yok",
+            "meeting": "Birden fazla katılımcı, davet gönderilir"
+          },
+          
+          "meeting_fields": [
+            {
+              "field": "Katılımcılar",
+              "types": [
+                {
+                  "type": "Gerekli",
+                  "description": "Toplantı için olmazsa olmaz",
+                  "icon": "🔴"
+                },
+                {
+                  "type": "İsteğe Bağlı",
+                  "description": "Katılması gerekmiyor ama davet ediliyor",
+                  "icon": "⚪"
+                }
+              ],
+              "add": "İsim yazın veya Kime butonuna tıklayın",
+              "autocomplete": "Adres defterinden öneriler"
+            },
+            {
+              "field": "Zamanlama Yardımcısı",
+              "description": "Katılımcıların müsaitliğini göster",
+              "button": "Zamanlama Yardımcısı sekmesi",
+              "shows": [
+                "Yeşil = Boş",
+                "Mavi = Meşgul",
+                "Mor = Geçici",
+                "Gri = Ofis dışı / Bilgi yok"
+              ],
+              "auto_pick": "Herkese uygun saat önerir",
+              "benefit": "İleri geri e-posta önler"
+            },
+            {
+              "field": "Online Toplantı",
+              "description": "Teams/Skype toplantısı ekle",
+              "button": "Teams Toplantısı",
+              "automatic": "Otomatik toplantı linki oluşturur",
+              "modern": "✓ Hibrit çalışma"
+            },
+            {
+              "field": "Toplantı Odası",
+              "description": "Fiziksel mekan rezervasyonu",
+              "path": "Kime butonu → Odalar sekmesi",
+              "shows": "Uygun toplantı odaları",
+              "booking": "Otomatik rezervasyon"
+            }
+          ],
+          
+          "sending_invitation": {
+            "button": "Gönder",
+            "what_happens": [
+              "Katılımcılara e-posta daveti gider",
+              "Davet içinde Kabul Et/Geçici/Reddet butonları",
+              "Katılımcının takvimine eklenir (Geçici olarak)",
+              "Düzenleyici takip edebilir"
+            ],
+            "responses": {
+              "accept": "Kabul Et - Takvime ekler, düzenleyiciye bildirir",
+              "tentative": "Geçici - Belki katılır, takvimde işaretli",
+              "decline": "Reddet - Katılmayacak, takvimden çıkar",
+              "propose_new_time": "Yeni Zaman Öner - Farklı saat teklifi"
+            }
+          }
+        },
+        
+        "recurring_events": {
+          "name": "Yinelenen Etkinlikler",
+          "description": "Düzenli tekrar eden randevular",
+          "button": "Yinelenme",
+          "path": "Randevu/Toplantı → Yinelenme",
+          
+          "patterns": [
+            {
+              "pattern": "Günlük",
+              "options": [
+                "Her gün",
+                "Her X günde bir",
+                "Her hafta içi günü (Pzt-Cum)"
+              ],
+              "example": "Günlük standup toplantısı"
+            },
+            {
+              "pattern": "Haftalık",
+              "options": [
+                "Her X haftada bir",
+                "Belirli günler (Pzt, Çar, Cum)",
+                "Birden fazla gün seçilebilir"
+              ],
+              "example": "Her Salı saat 10:00 ekip toplantısı"
+            },
+            {
+              "pattern": "Aylık",
+              "options": [
+                "Her ayın X. günü",
+                "Her ayın X. [günü] (örn: Her ayın 2. Çarşambası)"
+              ],
+              "example": "Aylık bütçe toplantısı"
+            },
+            {
+              "pattern": "Yıllık",
+              "options": "Belirli tarihte her yıl tekrar",
+              "example": "Doğum günü hatırlatıcısı"
+            }
+          ],
+          
+          "range": {
+            "name": "Yinelenme Aralığı",
+            "options": [
+              {
+                "option": "Bitiş tarihi yok",
+                "description": "Süresiz devam eder",
+                "use": "Düzenli toplantılar"
+              },
+              {
+                "option": "X kez sonra",
+                "description": "Belirli sayıda tekrar",
+                "example": "5 haftalık eğitim serisi"
+              },
+              {
+                "option": "Belirli tarihe kadar",
+                "description": "Son tarih belirt",
+                "example": "Yıl sonuna kadar"
+              }
+            ]
+          },
+          
+          "editing": {
+            "open_occurrence": "Sadece bu etkinliği aç",
+            "open_series": "Seriyi aç (tümünü değiştir)",
+            "delete_occurrence": "Sadece bunu sil",
+            "delete_series": "Tüm seriyi sil"
+          }
+        },
+        
+        "all_day_events": {
+          "name": "Tüm Gün Etkinlikleri",
+          "checkbox": "Tüm gün etkinliği işaretle",
+          "description": "Saat belirtmeden, gün bazlı",
+          "examples": [
+            "Tatil günleri",
+            "İzin, hastalık",
+            "Konferans, fuar",
+            "Doğum günleri"
+          ],
+          "display": "Takvimin en üstünde banner olarak görünür"
+        },
+        
+        "private_events": {
+          "name": "Özel Etkinlikler",
+          "button": "Özel işaretle",
+          "description": "Detayları başkaları göremez",
+          "shows": "Sadece 'Meşgul' görünür, konu gizli",
+          "use": "Kişisel randevular, hassas toplantılar"
+        }
+      }
+    },
+    
+    {
+      "id": "etkinlik-yonetimi",
+      "title": "🛠️ Etkinlik Yönetimi",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Mevcut etkinlikleri düzenleme, iptal etme ve takip etme.",
+        
+        "editing_events": {
+          "name": "Etkinlik Düzenleme",
+          "open": "Etkinliğe çift tıkla",
+          "shortcut": "Enter (seçiliyken)",
+          "changes": [
+            "Saat değiştirme",
+            "Katılımcı ekleme/çıkarma",
+            "Konum güncelleme",
+            "Notlar ekleme"
+          ],
+          "save": "Kaydet ve Kapat veya Güncellemeyi Gönder (toplantılarda)"
+        },
+        
+        "canceling_meetings": {
+          "name": "Toplantı İptali",
+          "method": "Toplantıyı aç → İptal Et → İptal Gönder",
+          "notification": "Tüm katılımcılara iptal bildirimi",
+          "removed": "Herkesin takviminden çıkar",
+          "etiquette": "Mümkün olduğunca önceden iptal edin"
+        },
+        
+        "tracking_responses": {
+          "name": "Yanıtları İzleme",
+          "path": "Toplantıyı aç → İzleme butonu",
+          "shows": [
+            "Kimler kabul etti",
+            "Kimler geçici kabul etti",
+            "Kimler reddetti",
+            "Kimler henüz yanıt vermedi"
+          ],
+          "follow_up": "Yanıt vermeyenlere hatırlatma gönderilebilir"
+        },
+        
+        "moving_events": {
+          "name": "Etkinlik Taşıma",
+          "drag_drop": "Sürükle-bırak ile farklı saate/güne taşı",
+          "resize": "Kenarlardan sürükle = süreyi değiştir",
+          "copy": "Ctrl + sürükle = kopyala",
+          "update": "Toplantılar için güncelleme gönder"
+        },
+        
+        "color_categories": {
+          "name": "Renkli Kategoriler",
+          "description": "Etkinlikleri renklere göre sınıflandır",
+          "shortcut": "Ctrl + F2",
+          "apply": "Etkinlik seç → Kategorize Et → Renk seç",
+          
+          "examples": [
+            "🔴 Kırmızı = Müşteri toplantıları",
+            "🟢 Yeşil = Ekip toplantıları",
+            "🔵 Mavi = Kişisel randevular",
+            "🟡 Sarı = Eğitim/Gelişim",
+            "🟣 Mor = Stratejik planlama"
+          ],
+          
+          "benefits": [
+            "Görsel organizasyon",
+            "Hızlı tanıma",
+            "Filtreleme kolaylığı",
+            "Zaman analizi"
+          ]
+        },
+        
+        "reminders": {
+          "name": "Hatırlatıcılar",
+          "description": "Etkinlik öncesi bildirim",
+          "default": "15 dakika önce",
+          
+          "timing_options": [
+            "0 dakika (etkinlik başlarken)",
+            "5, 10, 15, 30 dakika",
+            "1, 2, 4, 8 saat",
+            "1, 2, 3 gün",
+            "1, 2 hafta"
+          ],
+          
+          "customizing": "Etkinlik aç → Hatırlatıcı dropdown",
+          "popup": "Hatırlatıcı penceresi açılır",
+          "actions": [
+            "Aç - Etkinliği aç",
+            "Kapat - Hatırlatıcıyı kapat",
+            "Ertele - 5, 10 dakika sonra hatırlat",
+            "Tümünü Kapat - Tüm hatırlatıcıları kapat"
+          ],
+          
+          "sound": "Ses bildirimi (Dosya → Seçenekler → Takvim)"
+        }
+      }
+    },
+    
+    {
+      "id": "coklu-takvim",
+      "title": "📚 Çoklu Takvim Yönetimi",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Birden fazla takvimi görüntüleme ve yönetme.",
+        
+        "multiple_calendars": {
+          "name": "Birden Fazla Takvim",
+          "description": "Farklı amaçlar için ayrı takvimler",
+          
+          "creating": {
+            "path": "Klasör → Yeni Takvim",
+            "examples": [
+              "İş Takvimiş",
+              "Kişisel Takvim",
+              "Proje X Takvimi",
+              "Takım Takvimi",
+              "Aile Takvimi"
+            ]
+          },
+          
+          "display_options": [
+            {
+              "mode": "Yan Yana",
+              "description": "Her takvim ayrı sütunda",
+              "use": "Karşılaştırma, genel bakış"
+            },
+            {
+              "mode": "Üst Üste (Overlay)",
+              "description": "Tüm takvimler tek görünümde",
+              "color_coded": "Her takvim farklı renkte",
+              "use": "Birleşik görünüm"
+            }
+          ],
+          
+          "toggle": "Sol panelde takvim isimlerinin yanındaki checkbox",
+          "arrow": "Ok işareti = Üst üste modu"
+        },
+        
+        "shared_calendars": {
+          "name": "Paylaşılan Takvimler",
+          "description": "Başkalarının takvimlerini görüntüleme",
+          
+          "viewing_others": {
+            "path": "Giriş → Takvim Aç → Adres Defterinden",
+            "permission_required": "Kişi sizinle paylaşmış olmalı",
+            "levels": [
+              "Serbest/Meşgul (Sadece müsaitlik)",
+              "Sınırlı Ayrıntılar (Konu görünür)",
+              "Tam Ayrıntılar (Her şey görünür)"
+            ]
+          },
+          
+          "sharing_yours": {
+            "path": "Takvime sağ tık → Paylaşım İzinleri",
+            "recipients": "Kişi/grup seçin",
+            "permission_levels": [
+              {
+                "level": "Serbest/Meşgul zamanını görüntüleyebilir",
+                "description": "Sadece dolu/boş",
+                "use": "Toplantı planlama için yeterli"
+              },
+              {
+                "level": "Sınırlı ayrıntıları görüntüleyebilir",
+                "description": "Konu ve konum",
+                "use": "Ekip içi paylaşım"
+              },
+              {
+                "level": "Tüm ayrıntıları görüntüleyebilir",
+                "description": "Notlar dahil her şey",
+                "use": "Asistan, yakın iş birliği"
+              },
+              {
+                "level": "Düzenleyebilir",
+                "description": "Etkinlik ekleme/değiştirme/silme",
+                "use": "Asistan, delege",
+                "caution": "Dikkatli verin"
+              }
+            ]
+          },
+          
+          "team_calendars": {
+            "name": "Takım Takvimleri",
+            "description": "Ortak proje/takım etkinlikleri",
+            "shared": "Tüm ekip görür ve düzenleyebilir",
+            "examples": [
+              "Pazarlama takım etkinlikleri",
+              "Proje milestones",
+              "Ortak tatil takvimi",
+              "Vardiya planlaması"
+            ]
+          }
+        },
+        
+        "calendar_groups": {
+          "name": "Takvim Grupları",
+          "description": "İlgili takvimleri gruplama",
+          "path": "Giriş → Takvim Grupları",
+          
+          "creating": {
+            "method": "Yeni Takvim Grubu Oluştur",
+            "add_calendars": "Grup içine takvimler ekle",
+            "example": [
+              "Grup: Ekibim",
+              "  - Ahmet'in Takvimi",
+              "  - Ayşe'nin Takvimi",
+              "  - Mehmet'in Takvimi"
+            ]
+          },
+          
+          "viewing": "Tek tıkla tüm grubu göster/gizle",
+          "overlay": "Grup otomatik üst üste modunda"
+        },
+        
+        "internet_calendars": {
+          "name": "İnternet Takvimleri",
+          "description": "Dış takvimleri abonelik ile ekleme",
+          "path": "Giriş → Takvim Aç → İnternet'ten",
+          
+          "examples": [
+            "Spor takımı maç programı",
+            "Resmi tatil günleri",
+            "Üniversite akademik takvim",
+            "Konferans programları"
+          ],
+          
+          "format": "iCalendar (.ics) URL'si",
+          "sync": "Otomatik güncellenir",
+          "read_only": "Sadece görüntüleme, düzenleme yok"
+        }
+      }
+    },
+    
+    {
+      "id": "gelismis-ozellikler",
+      "title": "🚀 Gelişmiş Özellikler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Takvim kullanımınızı üst seviyeye çıkaracak özellikler.",
+        
+        "scheduling_assistant": {
+          "name": "Zamanlama Yardımcısı",
+          "description": "Herkese uygun zamanı bulma",
+          "path": "Toplantı → Zamanlama Yardımcısı sekmesi",
+          
+          "features": [
+            {
+              "feature": "Grup Müsaitliği",
+              "shows": "Tüm katılımcıların takvimleri yan yana",
+              "visual": "Renk kodlu zaman dilimleri"
+            },
+            {
+              "feature": "Otomatik Seçim",
+              "button": "Otomatik Seç → Sonraki X saat",
+              "finds": "İlk uygun zaman dilimi",
+              "criteria": [
+                "Tüm gerekli katılımcılar boş",
+                "Çalışma saatleri içinde",
+                "Oda müsait (gerekirse)"
+              ]
+            },
+            {
+              "feature": "Çakışma Göstergesi",
+              "red_bars": "Kırmızı = Birileri meşgul",
+              "adjust": "Saati kaydırarak boş alan bulun"
+            }
+          ],
+          
+          "tips": [
+            "Önce gerekli katılımcıları ekleyin",
+            "İsteğe bağlıları en son ekleyin",
+            "Çalışma saatleri dışına taşmayın",
+            "Otomatik Seç zaman kazandırır"
+          ]
+        },
+        
+        "room_finder": {
+          "name": "Oda Bulucu",
+          "description": "Müsait toplantı odası bulma ve rezervasyon",
+          "requirement": "Exchange sunucusunda oda tanımlı olmalı",
+          
+          "using": {
+            "path": "Toplantı → Oda Bulucu butonu",
+            "or": "Zamanlama Yardımcısı → Oda Seç",
+            "shows": [
+              "Müsait odalar listesi",
+              "Oda kapasitesi",
+              "Ekipmanlar (projeksiyon, telekonferans)",
+              "Konum"
+            ],
+            "select": "Oda seç → Otomatik rezerve edilir"
+          },
+          
+          "room_suggestions": {
+            "name": "Önerilen Odalar",
+            "based_on": [
+              "Katılımcı sayısı",
+              "Süre",
+              "Konum (katılımcılara yakın)",
+              "Gerekli ekipman"
+            ]
+          }
+        },
+        
+        "time_zones": {
+          "name": "Saat Dilimleri",
+          "description": "Farklı saat dilimlerinde çalışma",
+          "path": "Dosya → Seçenekler → Takvim → Saat Dilimi",
+          
+          "showing_multiple": {
+            "enable": "İkinci saat dilimini göster",
+            "display": "Takvimde iki sütun",
+            "use_case": [
+              "Uluslararası ekipler",
+              "Farklı şehirlerde ofisler",
+              "Seyahat sırasında"
+            ],
+            "labels": "Her saat dilimine etiket verin"
+          },
+          
+          "scheduling_across": {
+            "meeting": "Toplantı oluştururken saat dilimi seç",
+            "automatic": "Alıcı kendi saat diliminde görür",
+            "example": "Siz 14:00 İstanbul gönderirsiniz → Alıcı 15:00 Moskova görür"
+          }
+        },
+        
+        "weather_integration": {
+          "name": "Hava Durumu",
+          "description": "Takvimde hava tahmini",
+          "enable": "Dosya → Seçenekler → Takvim → Hava Durumu",
+          "shows": "3 günlük tahmin takvimin üstünde",
+          "location": "Konum ayarı gerekir",
+          "benefit": "Dış etkinlikler için planlama"
+        },
+        
+        "work_hours": {
+          "name": "Çalışma Saatleri",
+          "path": "Dosya → Seçenekler → Takvim → Çalışma Saatleri",
+          "settings": [
+            "Çalışma günleri (hangi günler)",
+            "Başlangıç ve bitiş saati",
+            "Saat dilimi"
+          ],
+          
+          "effects": [
+            "Takvimde vurgulu görünür",
+            "Zamanlama Yardımcısı bu saatlerde önerir",
+            "Çalışma saatleri dışı toplantılarda uyarı",
+            "Başkaları serbest/meşgul bilginizi görür"
+          ],
+          
+          "tip": "Gerçek çalışma saatlerinizi ayarlayın"
+        },
+        
+        "delegate_access": {
+          "name": "Delege Erişimi",
+          "description": "Birinin sizin adınıza takvim yönetmesi",
+          "path": "Dosya → Hesap Ayarları → Delege Erişimi",
+          
+          "granting": {
+            "who": "Genelde asistan, yönetici yardımcısı",
+            "permissions": [
+              "Toplantı isteklerini alır",
+              "Toplantı organize edebilir",
+              "Yanıt verebilir",
+              "Etkinlik ekler/düzenler/siler"
+            ],
+            "privacy": "Özel etkinlikler görünür/gizli seçeneği"
+          },
+          
+          "using_delegated": {
+            "access": "Dosya → Takvim Aç → Başka Bir Kullanıcının Klasörü",
+            "manage": "Delege edilmiş takvimi kendi gibi yönet",
+            "on_behalf": "Düzenleyen: X (Y adına)"
+          }
+        },
+        
+        "calendar_printing": {
+          "name": "Takvim Yazdırma",
+          "path": "Dosya → Yazdır",
+          "shortcut": "Ctrl + P",
+          
+          "styles": [
+            {
+              "style": "Günlük",
+              "description": "Tek günün detayları",
+              "use": "Günlük plan çıktısı"
+            },
+            {
+              "style": "Haftalık Ajanda",
+              "description": "Bir hafta, saatlik",
+              "use": "Haftalık planlama"
+            },
+            {
+              "style": "Aylık",
+              "description": "Ay genel bakış",
+              "use": "Duvara asma, genel plan"
+            },
+            {
+              "style": "Üç Aylık",
+              "description": "3 aylık özet",
+              "use": "Çeyrek bazlı planlama"
+            }
+          ],
+          
+          "options": [
+            "Tarih aralığı",
+            "Hangi takvimler dahil",
+            "Boş alanları gizle",
+            "Notları dahil et"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "verimlilik-ipuclari",
+      "title": "💡 Takvim Verimlilik İpuçları",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Takvim yönetiminizi optimize edin.",
+        
+        "best_practices": [
+          {
+            "practice": "Zaman Bloklama",
+            "description": "Derin çalışma için takvimde bloklar oluşturun",
+            "method": [
+              "Odaklanma saatleri = Meşgul olarak işaretleme",
+              "Kimsenin toplantı planlayamaması için",
+              "Günde 2-3 saat kesintisiz çalışma"
+            ],
+            "example": "Her gün 9:00-11:00 'Derin Çalışma' bloğu"
+          },
+          {
+            "practice": "Renkli Kodlama",
+            "description": "Etkinlik türlerine göre renkler",
+            "system": [
+              "Kırmızı = Müşteri",
+              "Yeşil = Ekip",
+              "Mavi = Kişisel",
+              "Sarı = Eğitim"
+            ],
+            "benefit": "Bir bakışta zamanın nereye gittiğini gör"
+          },
+          {
+            "practice": "Tampon Zamanlar",
+            "description": "Toplantılar arası boşluk bırakın",
+            "guideline": "En az 15 dakika ara",
+            "reason": "Mola, hazırlık, geçiş süresi",
+            "avoid": "Arka arkaya toplantılar = Tükenmişlik"
+          },
+          {
+            "practice": "Varsayılan Süreler",
+            "description": "Toplantıları standart sürelere ayarlayın",
+            "recommended": [
+              "25 dakika (30 yerine)",
+              "50 dakika (60 yerine)"
+            ],
+            "benefit": "Otomatik tampon + Verimli toplantılar"
+          },
+          {
+            "practice": "Toplantısız Günler/Saatler",
+            "description": "Belirli zaman dilimlerinde toplantı yok",
+            "examples": [
+              "Cuma öğleden sonra toplantısız",
+              "Her gün 8-10 arası toplantısız"
+            ],
+            "use": "Proje çalışması, stratejik düşünme"
+          },
+          {
+            "practice": "Düzenli Gözden Geçirme",
+            "description": "Haftalık takvim incelemesi",
+            "when": "Cuma öğleden sonra veya Pazar akşamı",
+            "check": [
+              "Gelecek hafta hazırlık",
+              "Öncelikler netleştir",
+              "Gereksiz toplantıları iptal et"
+            ]
+          },
+          {
+            "practice": "Tek Takvim Prensibi",
+            "description": "Her şey bir yerde",
+            "rule": "İş + Kişisel aynı takvimde (veya senkronize)",
+            "benefit": "Çakışma önlenir, bütünsel görünüm"
+          },
+          {
+            "practice": "Toplantı Hijyeni",
+            "rules": [
+              "Net ajanda her toplantıda",
+              "Gerekli katılımcıları minimize et",
+              "Zamanında başla ve bitir",
+              "Eylem öğeleri ile sonuçlandır"
+            ]
+          }
+        ],
+        
+        "time_management": {
+          "title": "Zaman Yönetimi Stratejileri",
+          
+          "strategies": [
+            {
+              "strategy": "Pomodoro Tekniği",
+              "description": "25 dk çalışma + 5 dk mola",
+              "calendar": "25'lik bloklar halinde plan",
+              "benefit": "Odak ve enerji yönetimi"
+            },
+            {
+              "strategy": "Time Blocking",
+              "description": "Gün boyunca tematik bloklar",
+              "example": [
+                "09:00-12:00: Stratejik çalışma",
+                "13:00-15:00: Toplantılar",
+                "15:00-17:00: E-posta ve rutin işler"
+              ]
+            },
+            {
+              "strategy": "Eat the Frog",
+              "description": "En zor işi günün başında",
+              "calendar": "İlk saat en önemli görev",
+              "benefit": "Motivasyon ve ilerleme hissi"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Takvim = Zaman yönetiminin temeli",
+      "Zamanlama Yardımcısı = Toplantı planlamayı kolaylaştırır",
+      "Renkli kategoriler = Görsel organizasyon",
+      "Çoklu takvim = İş/kişisel ayırma",
+      "Zaman bloklama = Derin çalışma koruması"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Takvime git", "keys": "Ctrl + 2"},
+    {"action": "Yeni randevu", "keys": "Ctrl + N"},
+    {"action": "Yeni toplantı", "keys": "Ctrl + Shift + Q"},
+    {"action": "Bugüne git", "keys": "Alt + Home"},
+    {"action": "Gün görünümü", "keys": "Ctrl + Alt + 1"},
+    {"action": "Çalışma haftası", "keys": "Ctrl + Alt + 2"},
+    {"action": "Hafta görünümü", "keys": "Ctrl + Alt + 3"},
+    {"action": "Ay görünümü", "keys": "Ctrl + Alt + 4"},
+    {"action": "Sonraki gün/hafta/ay", "keys": "Ctrl + Sağ ok"},
+    {"action": "Önceki gün/hafta/ay", "keys": "Ctrl + Sol ok"},
+    {"action": "Belirli tarihe git", "keys": "Ctrl + G"}
+  ]
+}

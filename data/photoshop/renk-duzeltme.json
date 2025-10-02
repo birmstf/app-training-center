@@ -1,0 +1,656 @@
+{
+  "id": "photoshop-renk-duzeltme",
+  "title": "Adobe Photoshop - Renk ve Düzeltme",
+  "description": "Renk ayarları, ton düzeltme, beyaz dengesi ve profesyonel görüntü iyileştirme teknikleri.",
+  "difficulty": "Orta - İleri",
+  "estimated_time": "5 saat",
+  "version": "Adobe Photoshop 2024",
+  
+  "sections": [
+    {
+      "id": "renk-teorisi",
+      "title": "🎨 Renk Teorisi Temelleri",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Etkili renk düzeltmesi için temel renk bilgisi şarttır.",
+        
+        "color_properties": {
+          "hue": {
+            "name": "Hue (Renk Tonu)",
+            "description": "Rengin kendisi",
+            "examples": "Kırmızı, mavi, sarı, yeşil",
+            "wheel": "Renk çemberi üzerindeki konum"
+          },
+          "saturation": {
+            "name": "Saturation (Doygunluk)",
+            "description": "Rengin canlılığı",
+            "range": "Gri (0%) → Canlı renk (100%)",
+            "vibrance": "Renk yoğunluğu"
+          },
+          "brightness": {
+            "name": "Brightness/Lightness (Parlaklık)",
+            "description": "Rengin açıklığı/koyuluğu",
+            "range": "Siyah (0%) → Beyaz (100%)"
+          }
+        },
+        
+        "histogram": {
+          "name": "Histogram",
+          "path": "Window → Histogram",
+          "description": "Görüntünün ton dağılımını gösteren grafik",
+          "x_axis": "Tonlar (Sol = Koyu, Sağ = Açık)",
+          "y_axis": "Piksel sayısı",
+          
+          "reading": {
+            "left_peak": "Çok koyu piksel → Potansiyel detay kaybı",
+            "right_peak": "Çok açık piksel → Aşırı poz",
+            "center": "Orta tonlar",
+            "ideal": "Dağılmış, dengeli histogram",
+            "clipping": "Siyah/beyaz nokta = Bilgi kaybı"
+          },
+          
+          "channels": {
+            "rgb": "RGB kombine görünüm",
+            "red": "Kırmızı kanal",
+            "green": "Yeşil kanal",
+            "blue": "Mavi kanal",
+            "use": "Renk dengesi problemlerini tespit"
+          }
+        },
+        
+        "tonal_range": {
+          "shadows": "Gölgeler (Koyu alanlar)",
+          "midtones": "Orta tonlar",
+          "highlights": "Parlak alanlar (Işıklar)",
+          "balance": "Dengeli fotoğraf her üçünde de detay içerir"
+        }
+      }
+    },
+    
+    {
+      "id": "adjustment-layers",
+      "title": "⚙️ Adjustment Layers (Ayarlama Katmanları)",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yıkıcı olmayan renk düzeltmenin altın standardı.",
+        
+        "why_adjustment_layers": {
+          "non_destructive": "✓✓✓ Pikseller değişmez",
+          "editable": "İstediğiniz zaman düzenleyin",
+          "maskable": "Bölgesel uygulama",
+          "stackable": "Birden fazla ayarlama",
+          "vs_image_adjustments": "Image → Adjustments kalıcı, geri alınamaz"
+        },
+        
+        "creating": {
+          "methods": [
+            {
+              "method": "Adjustments Panel",
+              "path": "Window → Adjustments",
+              "recommended": "✓ En pratik"
+            },
+            {
+              "method": "Layer Menu",
+              "path": "Layer → New Adjustment Layer"
+            },
+            {
+              "method": "Layers Panel",
+              "icon": "Yarım daire ikonu"
+            }
+          ]
+        },
+        
+        "key_adjustments": [
+          {
+            "adjustment": "Brightness/Contrast",
+            "description": "Basit parlaklık ve kontrast",
+            "use": "Hızlı düzeltme, başlangıç",
+            "legacy": "Legacy seçeneği eski algoritma",
+            "simple": "Basit ama kaba"
+          },
+          {
+            "adjustment": "Levels",
+            "description": "Histogram bazlı ton ayarı",
+            "power": "✓✓✓ Çok güçlü",
+            
+            "controls": {
+              "input_sliders": {
+                "black_point": "Sol kaydırıcı - Siyah noktası",
+                "white_point": "Sağ kaydırıcı - Beyaz noktası",
+                "gamma": "Orta kaydırıcı - Orta tonlar",
+                "tip": "Histogram'ın kenarlarına getirin"
+              },
+              "output_sliders": {
+                "description": "Çıkış seviyesi sınırlama",
+                "use": "Kontrast azaltma, mat efekt"
+              },
+              "eyedroppers": {
+                "black": "Siyah pipet - Siyah noktayı belirle",
+                "gray": "Gri pipet - Nötr gri belirle (beyaz dengesi)",
+                "white": "Beyaz pipet - Beyaz noktayı belirle"
+              }
+            },
+            
+            "workflow": [
+              "1. Histogram'i incele",
+              "2. Siyah kaydırıcıyı histogram başına",
+              "3. Beyaz kaydırıcıyı histogram sonuna",
+              "4. Orta kaydırıcı ile parlaklığı ayarla"
+            ],
+            "recommended": "✓✓ İlk adım olarak ideal"
+          },
+          {
+            "adjustment": "Curves",
+            "description": "Eğri bazlı hassas ton kontrolü",
+            "power": "✓✓✓ En güçlü araç",
+            "professional": "Profesyonellerin tercihi",
+            
+            "interface": {
+              "curve_line": "Çapraz çizgi - Tonları temsil eder",
+              "input": "Yatay eksen - Orijinal tonlar",
+              "output": "Dikey eksen - Yeni tonlar",
+              "points": "Eğriye nokta ekle, sürükle"
+            },
+            
+            "basic_adjustments": {
+              "brighten": "Eğriyi yukarı → Aydınlat",
+              "darken": "Eğriyi aşağı → Koyulaştır",
+              "contrast": "S eğrisi → Kontrast artır",
+              "fade": "Ters S → Kontrast azalt, mat"
+            },
+            
+            "advanced": {
+              "targeted": "Belirli ton aralığını ayarla",
+              "multiple_points": "Birden fazla nokta = Hassas kontrol",
+              "channel_curves": "RGB, Red, Green, Blue ayrı ayrı",
+              "color_grading": "Renk filmleme için ideal"
+            },
+            
+            "tips": [
+              "Alt + Tıkla = Grid görünümü değiştir",
+              "Ctrl/Cmd + Tıkla görüntüde = O tonu eğriye ekle",
+              "Yumuşak S eğrisi = Doğal kontrast"
+            ]
+          },
+          {
+            "adjustment": "Hue/Saturation",
+            "description": "Renk tonu ve doygunluk ayarı",
+            "use": "Renk değiştirme, canlılık artırma",
+            
+            "controls": {
+              "hue": "Renk tonunu kaydır (-180 to +180)",
+              "saturation": "Doygunluğu ayarla (-100 to +100)",
+              "lightness": "Parlaklığı ayarla (-100 to +100)"
+            },
+            
+            "master_vs_channels": {
+              "master": "Tüm renkler",
+              "channels": "Reds, Yellows, Greens, Cyans, Blues, Magentas",
+              "selective": "Sadece belirli rengi değiştir",
+              "example": "Sadece mavi gökyüzünü değiştir"
+            },
+            
+            "colorize": {
+              "checkbox": "Colorize",
+              "effect": "Tek renge boyar",
+              "use": "Siyah-beyaz renklendirme, monokrom"
+            }
+          },
+          {
+            "adjustment": "Color Balance",
+            "description": "Renk dengesi düzeltme",
+            "use": "Renk çarpıklığı giderme, ton ayarı",
+            
+            "sliders": [
+              "Cyan ←→ Red",
+              "Magenta ←→ Green",
+              "Yellow ←→ Blue"
+            ],
+            
+            "tone_options": {
+              "shadows": "Gölgelerdeki renk dengesi",
+              "midtones": "Orta tonlarda (en etkili)",
+              "highlights": "Işıklarda",
+              "preserve_luminosity": "Parlaklığı koru (açık olmalı)"
+            },
+            
+            "common_fixes": {
+              "warm_image": "Sarı/kırmızı ekle",
+              "cool_image": "Mavi/cyan ekle",
+              "remove_color_cast": "Zıt renk ekle"
+            }
+          },
+          {
+            "adjustment": "Vibrance",
+            "description": "Akıllı doygunluk artırma",
+            "vs_saturation": "Ten tonlarını korur",
+            "safe": "✓ Daha güvenli",
+            
+            "controls": {
+              "vibrance": "Akıllı doygunluk (önerilir)",
+              "saturation": "Tüm renkleri eşit artır"
+            },
+            
+            "use": "Peyzaj, ürün fotoğrafları",
+            "portrait": "Ten tonları için güvenli"
+          },
+          {
+            "adjustment": "Black & White",
+            "description": "Renkli → Siyah-beyaz dönüşüm",
+            "smart": "Renk bazlı kontrol",
+            
+            "sliders": [
+              "Reds - Kırmızı tonların parlaklığı",
+              "Yellows - Sarı tonlar",
+              "Greens - Yeşil tonlar",
+              "Cyans - Cyan tonlar",
+              "Blues - Mavi tonlar (gökyüzü)",
+              "Magentas - Magenta tonlar"
+            ],
+            
+            "auto": "Auto butonu otomatik ayar",
+            "tint": "Tint ile renklendirme (sepia vb.)",
+            "presets": "Hazır preset'ler"
+          },
+          {
+            "adjustment": "Photo Filter",
+            "description": "Renk filtresi simülasyonu",
+            "use": "Sıcak/soğuk ton, renkli filtre efekti",
+            
+            "presets": [
+              "Warming Filter (85, 81) - Sıcak",
+              "Cooling Filter (80, 82) - Soğuk",
+              "Sepia, Yellow, Orange, Red vb."
+            ],
+            
+            "custom": "Color seçeneği ile özel renk",
+            "density": "Filtre yoğunluğu",
+            "preserve_luminosity": "Parlaklığı koru"
+          },
+          {
+            "adjustment": "Selective Color",
+            "description": "CMYK bazlı seçici renk ayarı",
+            "advanced": "İleri seviye",
+            "professional": "Baskı hazırlık için",
+            
+            "channels": "Reds, Yellows, Greens, Cyans, Blues, Magentas, Whites, Neutrals, Blacks",
+            "sliders": "Cyan, Magenta, Yellow, Black",
+            "use": "Hassas renk düzeltmesi"
+          }
+        ],
+        
+        "adjustment_workflow": {
+          "order": [
+            "1. Levels - Ton aralığını düzelt",
+            "2. Curves - Hassas ton ayarı, kontrast",
+            "3. Hue/Saturation veya Vibrance - Renk canlılığı",
+            "4. Color Balance - Renk tonu ince ayar",
+            "5. İsteğe bağlı - Diğer ayarlamalar"
+          ],
+          "tip": "Her ayarlama ayrı katman = Tam kontrol"
+        }
+      }
+    },
+    
+    {
+      "id": "auto-corrections",
+      "title": "🤖 Otomatik Düzeltmeler",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Photoshop'un AI destekli otomatik düzeltme araçları.",
+        
+        "auto_adjustments": [
+          {
+            "tool": "Auto Tone",
+            "shortcut": "Shift + Ctrl/Cmd + L",
+            "path": "Image → Auto Tone",
+            "description": "Ton aralığını otomatik düzelt",
+            "algorithm": "Siyah ve beyaz noktalarını ayarlar",
+            "use": "Hızlı başlangıç"
+          },
+          {
+            "tool": "Auto Contrast",
+            "shortcut": "Alt + Shift + Ctrl/Cmd + L",
+            "path": "Image → Auto Contrast",
+            "description": "Kontrast otomatik artır",
+            "preserves": "Renkleri değiştirmez"
+          },
+          {
+            "tool": "Auto Color",
+            "shortcut": "Shift + Ctrl/Cmd + B",
+            "path": "Image → Auto Color",
+            "description": "Renk çarpıklığını otomatik düzelt",
+            "use": "Renk dengesi problemleri"
+          }
+        ],
+        
+        "auto_button": {
+          "name": "Auto Button (Levels, Curves'de)",
+          "description": "Her ayarlamada Auto butonu var",
+          "algorithm": "Gelişmiş otomatik düzeltme",
+          "options": {
+            "access": "Auto butonuna Alt + Tıkla",
+            "algorithms": [
+              "Enhance Monochromatic Contrast",
+              "Enhance Per Channel Contrast",
+              "Find Dark & Light Colors",
+              "Enhance Brightness and Contrast"
+            ],
+            "customize": "Kendi algoritmanızı seçin"
+          }
+        },
+        
+        "neural_filters": {
+          "name": "Neural Filters (AI)",
+          "path": "Filter → Neural Filters",
+          "ai_powered": "Adobe Sensei yapay zekası",
+          
+          "filters": [
+            "Skin Smoothing - Ten pürüzsüzleştirme",
+            "Smart Portrait - Portre düzenleme (yaş, ifade)",
+            "Style Transfer - Sanat stili transfer",
+            "Colorize - Otomatik renklendirme",
+            "Super Zoom - Yapay detay ekleme"
+          ],
+          
+          "cloud": "Bazıları bulutta işlenir",
+          "beta": "Sürekli güncellenen özellikler"
+        },
+        
+        "camera_raw_filter": {
+          "name": "Camera RAW Filter",
+          "path": "Filter → Camera RAW Filter",
+          "shortcut": "Shift + Ctrl/Cmd + A",
+          "description": "RAW düzenleme araçlarını her görüntüye",
+          
+          "advantages": [
+            "Güçlü ton/renk kontrolleri",
+            "Detay ve keskinlik",
+            "Gürültü azaltma",
+            "Lens düzeltme",
+            "Dehaze (puslanma giderme)",
+            "Texture control"
+          ],
+          
+          "workflow": "Smart Object üzerinde uygula = Yıkıcı olmayan",
+          "professional": "✓✓✓ Profesyonel düzeltme için şart"
+        }
+      }
+    },
+    
+    {
+      "id": "color-grading",
+      "title": "🎬 Color Grading (Renk Filmleme)",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sinematik görünüm ve sanatsal renk düzeltmesi.",
+        
+        "what_is_color_grading": {
+          "definition": "Görüntüye sanatsal renk tonu ve ruh hali katma",
+          "vs_correction": "Correction = Teknik düzeltme, Grading = Yaratıcı stil",
+          "cinematic": "Film ve sinema estetiği"
+        },
+        
+        "color_lookup": {
+          "name": "Color Lookup (LUT)",
+          "path": "Adjustment Layer → Color Lookup",
+          "description": "Hazır renk preset'leri",
+          
+          "luts": {
+            "3DLUT": "3D renk tabloları",
+            "abstract": "Moonlight, NightFromDay vb.",
+            "device_link": "Cihaz profilleri",
+            "presets": "Hazır sinematik görünümler"
+          },
+          
+          "custom": "Kendi LUT'larınızı import edebilirsiniz",
+          "use": "Hızlı sinematik efekt"
+        },
+        
+        "split_toning": {
+          "name": "Split Toning",
+          "description": "Gölge ve ışıklara farklı renk tonu",
+          "classic": "Klasik sinema tekniği",
+          
+          "method": {
+            "tool": "Color Balance veya Curves",
+            "shadows": "Gölgelere mavi/cyan",
+            "highlights": "Işıklara turuncu/sarı",
+            "popular": "Teal & Orange (en popüler)"
+          },
+          
+          "examples": [
+            "Teal & Orange - Hollywood standart",
+            "Blue & Yellow - Soğuk/sıcak kontrast",
+            "Sepia - Nostaljik"
+          ]
+        },
+        
+        "cinematic_techniques": [
+          {
+            "technique": "Contrast Reduction",
+            "method": "Curves → Çıkış seviyelerini daralt",
+            "effect": "Mat, film görünümü",
+            "lift_blacks": "Siyahları hafif gri yap"
+          },
+          {
+            "technique": "Color Push",
+            "description": "Belirli renkleri vurgula",
+            "example": "Yeşilleri canlı tut, diğerlerini azalt"
+          },
+          {
+            "technique": "Vignette",
+            "description": "Kenarları koyulaştırma",
+            "focus": "Merkeze odaklanma",
+            "subtle": "İnce kullanılmalı"
+          },
+          {
+            "technique": "Film Grain",
+            "path": "Filter → Camera RAW → Effects → Grain",
+            "effect": "Analog film dokusu",
+            "amount": "Az miktar doğal görünür"
+          }
+        ],
+        
+        "popular_looks": [
+          {
+            "look": "Teal & Orange",
+            "description": "Hollywood aksiyon filmleri",
+            "method": "Gölgeler teal/cyan, ışıklar turuncu"
+          },
+          {
+            "look": "Bleach Bypass",
+            "description": "Düşük doygunluk, yüksek kontrast",
+            "use": "Aksiyon, gerilim"
+          },
+          {
+            "look": "Cross Process",
+            "description": "Yanlış kimyasal işlem simülasyonu",
+            "effect": "Garip renkler, yüksek kontrast"
+          },
+          {
+            "look": "Vintage",
+            "description": "Eski fotoğraf görünümü",
+            "elements": "Soluk renkler, grain, vignette"
+          },
+          {
+            "look": "High Key",
+            "description": "Parlak, aydınlık",
+            "use": "Moda, güzellik"
+          },
+          {
+            "look": "Low Key",
+            "description": "Koyu, dramatik",
+            "use": "Portre, gizemli"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "problem-solving",
+      "title": "🔧 Yaygın Problemler ve Çözümler",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Sık karşılaşılan renk ve ton problemlerinin çözümleri.",
+        
+        "common_problems": [
+          {
+            "problem": "Düşük Kontrast (Flat Image)",
+            "causes": ["Puslu hava", "Düşük dinamik aralık"],
+            "solutions": [
+              "Levels ile siyah/beyaz noktalarını ayarla",
+              "Curves ile S eğrisi",
+              "Camera RAW → Dehaze",
+              "Clarity artır"
+            ]
+          },
+          {
+            "problem": "Aşırı/Eksik Poz",
+            "overexposed": {
+              "symptom": "Çok parlak, detay kaybı",
+              "fix": [
+                "Highlights kaydırıcısını azalt",
+                "Curves'de parlak ucu aşağı",
+                "Exposure düşür (Camera RAW)"
+              ]
+            },
+            "underexposed": {
+              "symptom": "Çok koyu, gölgeler siyah",
+              "fix": [
+                "Shadows kaydırıcısını artır",
+                "Curves'de koyu ucu yukarı",
+                "Exposure artır"
+              ]
+            }
+          },
+          {
+            "problem": "Renk Çarpıklığı (Color Cast)",
+            "description": "İstenmeyen renk tonu",
+            "causes": ["Yanlış beyaz dengesi", "Işık kaynağı"],
+            "solutions": [
+              "Levels → Gri pipet ile nötr gri seç",
+              "Color Balance ile zıt renk ekle",
+              "Camera RAW → Temperature/Tint",
+              "Photo Filter ile düzelt"
+            ]
+          },
+          {
+            "problem": "Solgun Renkler",
+            "causes": "Düşük doygunluk",
+            "solutions": [
+              "Vibrance artır",
+              "Hue/Saturation ile doygunluk",
+              "Curves ile kontrast artır",
+              "Camera RAW → Vibrance/Saturation"
+            ]
+          },
+          {
+            "problem": "Gürültü (Noise/Grain)",
+            "causes": ["Yüksek ISO", "Düşük ışık"],
+            "solutions": [
+              "Camera RAW Filter → Detail → Noise Reduction",
+              "Filter → Noise → Reduce Noise",
+              "Luminance vs Color noise ayrı ayarla",
+              "Detail kaybetmemeye dikkat"
+            ]
+          },
+          {
+            "problem": "Puslu Görünüm (Haze)",
+            "causes": "Atmosferik pus, nem",
+            "solutions": [
+              "Camera RAW → Dehaze (en etkili)",
+              "Levels ile kontrast",
+              "Curves ile S eğrisi",
+              "Saturation artır"
+            ]
+          },
+          {
+            "problem": "Kırmızı Göz",
+            "tool": "Red Eye Tool (J)",
+            "method": [
+              "1. Red Eye Tool seç",
+              "2. Kırmızı göze tıkla",
+              "3. Otomatik düzeltilir"
+            ],
+            "settings": "Pupil Size ve Darken Amount ayarla"
+          },
+          {
+            "problem": "Yeşil/Mavi Ekran Keying",
+            "tools": [
+              "Color Range → Select green/blue",
+              "Layer Mask oluştur",
+              "Refine Edge",
+              "Decontaminate Colors"
+            ],
+            "professional": "Keying için özel pluginler daha iyi"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "workflow_tips": [
+    {
+      "tip": "Adjustment Layers Kullanın",
+      "importance": "✓✓✓ Zorunlu",
+      "reason": "Yıkıcı olmayan, esnek",
+      "never": "Image → Adjustments asla"
+    },
+    {
+      "tip": "Sıralama Önemli",
+      "order": "Levels → Curves → Color → Diğer",
+      "reason": "Ton önce, renk sonra"
+    },
+    {
+      "tip": "Histogram'ı İzleyin",
+      "constant": "Sürekli kontrol edin",
+      "clipping": "Bilgi kaybından kaçının"
+    },
+    {
+      "tip": "Önce/Sonra Karşılaştırın",
+      "method": "Katmanı açıp kapatın",
+      "objective": "Abartmadığınızdan emin olun"
+    },
+    {
+      "tip": "Maskelemeyi Kullanın",
+      "selective": "Bölgesel düzenleme",
+      "example": "Sadece gökyüzünü değiştir"
+    },
+    {
+      "tip": "16-bit'te Çalışın",
+      "when": "Ağır düzenleme yapacaksanız",
+      "benefit": "Daha yumuşak geçişler, banding yok"
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Adjustment Layers = Yıkıcı olmayan düzenleme",
+      "Levels = İlk adım, ton aralığı düzeltme",
+      "Curves = En güçlü araç, hassas kontrol",
+      "Hue/Saturation = Renk değiştirme",
+      "Camera RAW Filter = Profesyonel düzeltme paketi",
+      "Color Grading = Sanatsal renk tonu",
+      "Histogram = Rehberiniz, sürekli kontrol edin"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Levels", "keys": "Ctrl/Cmd + L"},
+    {"action": "Curves", "keys": "Ctrl/Cmd + M"},
+    {"action": "Hue/Saturation", "keys": "Ctrl/Cmd + U"},
+    {"action": "Color Balance", "keys": "Ctrl/Cmd + B"},
+    {"action": "Desaturate", "keys": "Ctrl/Cmd + Shift + U"},
+    {"action": "Auto Tone", "keys": "Shift + Ctrl/Cmd + L"},
+    {"action": "Auto Contrast", "keys": "Alt + Shift + Ctrl/Cmd + L"},
+    {"action": "Auto Color", "keys": "Shift + Ctrl/Cmd + B"},
+    {"action": "Camera RAW Filter", "keys": "Shift + Ctrl/Cmd + A"},
+    {"action": "Invert", "keys": "Ctrl/Cmd + I"}
+  ]
+}

@@ -1,0 +1,1020 @@
+{
+  "id": "word-dosya",
+  "title": "Microsoft Word - Dosya Menüsü",
+  "description": "Dosya oluşturma, açma, kaydetme, yazdırma ve belge yönetimi işlemlerini öğrenin.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "1.5 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "yeni-belge",
+      "title": "Yeni Belge Oluşturma",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word'de yeni bir belge oluşturmak için birkaç farklı yöntem vardır. Boş belge, şablonlardan veya mevcut belgeden yeni belge oluşturabilirsiniz.",
+        
+        "methods": [
+          {
+            "name": "Boş Belge",
+            "shortcut": "Ctrl+N",
+            "description": "Tamamen boş, yeni bir belge oluşturur",
+            "steps": [
+              "Dosya > Yeni'ye tıklayın",
+              "Boş belge seçeneğini seçin",
+              "Veya Ctrl+N kısayolunu kullanın"
+            ]
+          },
+          {
+            "name": "Şablondan Oluşturma",
+            "description": "Hazır şablonları kullanarak profesyonel belgeler oluşturun",
+            "template_categories": [
+              "Mektuplar",
+              "Özgeçmiş ve CV",
+              "Raporlar",
+              "Broşürler",
+              "Kartvizitler",
+              "Takvimler",
+              "Daveti̇yeler",
+              "Menüler"
+            ],
+            "steps": [
+              "Dosya > Yeni",
+              "Şablon kategorilerinden birini seçin",
+              "İstediğiniz şablonu seçin",
+              "Oluştur'a tıklayın"
+            ]
+          },
+          {
+            "name": "Mevcut Belgeden",
+            "description": "Var olan bir belgeyi temel alarak yeni belge oluşturun",
+            "steps": [
+              "Dosya > Yeni > Mevcut belgeden",
+              "Kaynak belgeyi seçin",
+              "Yeni Oluştur'a tıklayın"
+            ],
+            "note": "Orijinal belge değişmez, kopyası yeni belge olur"
+          }
+        ],
+        
+        "online_templates": {
+          "description": "Office.com üzerinden binlerce ücretsiz şablona erişebilirsiniz",
+          "search_tip": "Arama kutusuna 'özgeçmiş', 'fatura', 'rapor' gibi kelimeler yazarak arama yapabilirsiniz"
+        },
+        
+        "best_practices": [
+          "Düzenli belge türleri için şablon kullanın",
+          "Kendi şablonlarınızı oluşturup kaydedin",
+          "Şablonları kurumsal kimliğe göre özelleştirin",
+          "Sık kullandığınız şablonları sabit yapın"
+        ]
+      }
+    },
+    
+    {
+      "id": "ac",
+      "title": "Belge Açma",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Daha önce kaydedilmiş belgeleri açmak için çeşitli yöntemler mevcuttur.",
+        
+        "open_methods": [
+          {
+            "name": "Son Kullanılanlar",
+            "access": "Dosya > Aç > Son Kullanılanlar",
+            "description": "En son açtığınız belgelere hızlı erişim",
+            "features": [
+              "Son 50 belge listelenir",
+              "Sabitle seçeneği ile favorilere ekleyin",
+              "Dosya konumu ve tarih bilgisi"
+            ]
+          },
+          {
+            "name": "Bu PC",
+            "shortcut": "Ctrl+O",
+            "description": "Bilgisayarınızdaki belgelerden seçim yapın",
+            "steps": [
+              "Dosya > Aç > Bu PC",
+              "Klasörü seçin veya Gözat'a tıklayın",
+              "Belgeyi seçip Aç'a tıklayın"
+            ]
+          },
+          {
+            "name": "OneDrive",
+            "description": "Bulut üzerindeki belgelerinize erişin",
+            "advantages": [
+              "Her yerden erişim",
+              "Otomatik yedekleme",
+              "Çoklu cihaz senkronizasyonu",
+              "Paylaşım kolaylığı"
+            ]
+          },
+          {
+            "name": "SharePoint",
+            "description": "Kurumsal belge yönetimi",
+            "usage": "Ekip çalışması ve kurumsal belge paylaşımı için"
+          }
+        ],
+        
+        "file_formats": {
+          "word_formats": [
+            ".docx (Word 2007 ve sonrası)",
+            ".doc (Word 97-2003)",
+            ".dotx (Word Şablonu)",
+            ".docm (Makro içeren Word)"
+          ],
+          "other_formats": [
+            ".pdf (Salt Okunur)",
+            ".rtf (Zengin Metin)",
+            ".txt (Düz Metin)",
+            ".odt (OpenDocument)",
+            ".xml (Word XML)",
+            ".html/.htm (Web Sayfası)"
+          ],
+          "note": "PDF açılırken Word düzenlenebilir formata dönüştürür"
+        },
+        
+        "open_options": {
+          "open": "Normal açma",
+          "open_read_only": "Salt okunur olarak aç (değişiklik yapılamaz)",
+          "open_as_copy": "Kopya olarak aç (orijinal korunur)",
+          "open_in_browser": "Tarayıcıda aç (Office Online)",
+          "open_and_repair": "Aç ve Onar (bozuk dosyalar için)"
+        },
+        
+        "keyboard_shortcuts": [
+          {"keys": "Ctrl+O", "action": "Aç iletişim kutusunu göster"},
+          {"keys": "Ctrl+F12", "action": "Aç iletişim kutusu (alternatif)"},
+          {"keys": "Alt+F, O", "action": "Aç menüsüne git"}
+        ]
+      }
+    },
+    
+    {
+      "id": "kaydet",
+      "title": "Belge Kaydetme",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Belgelerinizi düzenli kaydetmek veri kaybını önler. Word otomatik kaydetme ve farklı format seçenekleri sunar.",
+        
+        "save_methods": [
+          {
+            "name": "Kaydet",
+            "shortcut": "Ctrl+S",
+            "description": "Belgeyi mevcut konuma ve adla kaydeder",
+            "when_to_use": "Düzenli aralıklarla belgeyi korumak için",
+            "recommendation": "Her 5-10 dakikada bir veya önemli değişikliklerden sonra"
+          },
+          {
+            "name": "Farklı Kaydet",
+            "shortcut": "F12",
+            "description": "Belgeyi yeni ad veya konumla kaydetme",
+            "options": [
+              "Dosya adını değiştirme",
+              "Farklı klasöre kaydetme",
+              "Farklı formatta kaydetme",
+              "Belgenin kopyasını oluşturma"
+            ]
+          },
+          {
+            "name": "Kopya Kaydet",
+            "description": "Mevcut belgeyi açık tutarak kopya oluşturur",
+            "access": "Dosya > Farklı Kaydet veya Dosya > Kopya Kaydet"
+          }
+        ],
+        
+        "save_locations": [
+          {
+            "name": "OneDrive",
+            "icon": "☁️",
+            "advantages": [
+              "Bulut yedekleme",
+              "Çoklu cihaz erişimi",
+              "Otomatik senkronizasyon",
+              "Paylaşım kolaylığı",
+              "Sürüm geçmişi"
+            ],
+            "storage": "Ücretsiz 5 GB"
+          },
+          {
+            "name": "Bu PC",
+            "icon": "💻",
+            "advantages": [
+              "Çevrimdışı erişim",
+              "Hızlı kaydetme",
+              "Tam kontrol",
+              "Gizlilik"
+            ],
+            "recommendation": "Belgeler klasörünü OneDrive ile senkronize edin"
+          },
+          {
+            "name": "SharePoint",
+            "icon": "🏢",
+            "usage": "Kurumsal ortamlar için",
+            "features": [
+              "Ekip çalışması",
+              "İzin yönetimi",
+              "Sürüm kontrolü",
+              "İş akışları"
+            ]
+          }
+        ],
+        
+        "file_formats": [
+          {
+            "format": "Word Belgesi (*.docx)",
+            "description": "Standart Word formatı",
+            "recommendation": "Genel kullanım için önerilir",
+            "features": "Tüm Word özelliklerini destekler"
+          },
+          {
+            "format": "Word 97-2003 Belgesi (*.doc)",
+            "description": "Eski Word sürümleriyle uyumluluk",
+            "when_to_use": "Eski Word kullanan kişilerle paylaşım"
+          },
+          {
+            "format": "PDF (*.pdf)",
+            "description": "Evrensel format, düzenlenemez",
+            "when_to_use": [
+              "Resmi belgeler",
+              "Yazdırma için",
+              "İçeriğin değişmesini istemediğinizde",
+              "Evrensel erişim gerektiğinde"
+            ]
+          },
+          {
+            "format": "Düz Metin (*.txt)",
+            "description": "Sadece metin, biçimlendirme yok",
+            "when_to_use": "Basit metin paylaşımı"
+          },
+          {
+            "format": "Zengin Metin Biçimi (*.rtf)",
+            "description": "Temel biçimlendirme ile metin",
+            "when_to_use": "Farklı programlar arası uyumluluk"
+          },
+          {
+            "format": "Web Sayfası (*.html)",
+            "description": "İnternette yayınlanacak belgeler",
+            "when_to_use": "Web sitesi içeriği"
+          },
+          {
+            "format": "Word Şablonu (*.dotx)",
+            "description": "Yeniden kullanılabilir şablon",
+            "when_to_use": "Standart belge formatları için"
+          }
+        ],
+        
+        "auto_save": {
+          "description": "Word belgelerinizi otomatik olarak kaydeder",
+          "onedrive_required": "OneDrive veya SharePoint gereklidir",
+          "how_to_enable": [
+            "Dosyayı OneDrive'a kaydedin",
+            "Sol üst köşede Otomatik Kaydet düğmesini açın"
+          ],
+          "benefits": [
+            "Veri kaybını önler",
+            "Manuel kaydetmeye gerek kalmaz",
+            "Gerçek zamanlı işbirliği",
+            "Sürüm geçmişi"
+          ]
+        },
+        
+        "auto_recover": {
+          "description": "Word beklenmedik kapanırsa belgeyi kurtarır",
+          "default_interval": "10 dakika",
+          "settings": "Dosya > Seçenekler > Kaydet",
+          "recovery_location": "Kurtarma dosyası konumu değiştirilebilir"
+        },
+        
+        "best_practices": [
+          "Sık sık Ctrl+S ile kaydedin",
+          "Önemli belgeler için OneDrive kullanın",
+          "Farklı sürümler için Farklı Kaydet kullanın",
+          "Otomatik Kaydet özelliğini aktifleştirin",
+          "Düzenli yedekleme yapın",
+          "Anlamlı dosya adları kullanın",
+          "Klasör yapısı oluşturun"
+        ]
+      }
+    },
+    
+    {
+      "id": "yazdir",
+      "title": "Yazdırma",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word'den belge yazdırmak için çeşitli seçenekler ve ayarlar mevcuttur. Doğru yazdırma ayarları kağıt ve mürekkep tasarrufu sağlar.",
+        
+        "print_access": {
+          "shortcut": "Ctrl+P",
+          "menu": "Dosya > Yazdır",
+          "preview": "Yazdırma önizlemesi otomatik gösterilir"
+        },
+        
+        "printer_settings": [
+          {
+            "name": "Yazıcı Seçimi",
+            "description": "Kullanılabilir yazıcılardan seçim yapın",
+            "options": [
+              "Varsayılan yazıcı",
+              "Ağ yazıcıları",
+              "PDF yazıcı (dosya olarak kaydet)",
+              "XPS yazıcı (Microsoft formatı)"
+            ]
+          },
+          {
+            "name": "Kopya Sayısı",
+            "description": "Kaç adet çıktı alınacağını belirleyin",
+            "collate": "Harmanla seçeneği ile sayfalar sıralı yazdırılır"
+          },
+          {
+            "name": "Sayfa Aralığı",
+            "options": [
+              "Tümünü Yazdır - Tüm belge",
+              "Geçerli Sayfa - Sadece aktif sayfa",
+              "Seçimi Yazdır - Seçili metin",
+              "Özel Aralık - Örnek: 1-5, 8, 11-15"
+            ]
+          }
+        ],
+        
+        "page_settings": [
+          {
+            "name": "Tek/Çift Taraflı",
+            "single_sided": "Kağıdın sadece bir yüzüne yazdır",
+            "duplex_long": "Uzun kenardan çevirerek çift taraflı",
+            "duplex_short": "Kısa kenardan çevirerek çift taraflı",
+            "manual_duplex": "Manuel çift taraflı yazdırma"
+          },
+          {
+            "name": "Sayfa Düzeni",
+            "options": [
+              "1 Sayfa/Yaprak - Standart",
+              "2 Sayfa/Yaprak - Kitapçık tarzı",
+              "4 Sayfa/Yaprak - Mini sayfa",
+              "6 Sayfa/Yaprak - Kompakt",
+              "8 Sayfa/Yaprak - Çok küçük"
+            ]
+          },
+          {
+            "name": "Kağıt Boyutu",
+            "common_sizes": ["A4", "A5", "Letter", "Legal"],
+            "note": "Yazıcının desteklediği boyutlar listelenir"
+          },
+          {
+            "name": "Yönlendirme",
+            "portrait": "Dikey (Portre)",
+            "landscape": "Yatay (Manzara)"
+          }
+        ],
+        
+        "advanced_options": {
+          "access": "Yazdır > Sayfa Yapısı veya Yazıcı Özellikleri",
+          "settings": [
+            {
+              "name": "Ölçeklendirme",
+              "description": "Belgeyi sayfa boyutuna sığdır",
+              "options": [
+                "Sayfa genişliğine sığdır",
+                "Tam sayfaya sığdır",
+                "Özel ölçek (50%-200%)"
+              ]
+            },
+            {
+              "name": "Kenar Boşlukları",
+              "description": "Yazdırma için kenar boşluklarını ayarlayın",
+              "presets": ["Normal", "Dar", "Orta", "Geniş", "Özel"]
+            },
+            {
+              "name": "Renk/Siyah-Beyaz",
+              "color": "Renkli yazdırma",
+              "grayscale": "Gri tonlamalı",
+              "black_and_white": "Siyah-beyaz"
+            },
+            {
+              "name": "Kalite",
+              "draft": "Taslak (hızlı, az mürekkep)",
+              "normal": "Normal",
+              "high": "Yüksek (yavaş, çok mürekkep)"
+            }
+          ]
+        },
+        
+        "special_print_options": [
+          {
+            "name": "Biçimlendirme İşaretlerini Yazdır",
+            "description": "Paragraf işaretleri, boşluklar vb. görünür",
+            "access": "Dosya > Seçenekler > Görüntü"
+          },
+          {
+            "name": "Belge Özelliklerini Yazdır",
+            "description": "Belge bilgileri (yazar, tarih vb.) yazdırılır",
+            "access": "Yazdır > Sayfa Yapısı"
+          },
+          {
+            "name": "Gizli Metni Yazdır",
+            "description": "Gizli olarak işaretlenmiş metinleri yazdır",
+            "access": "Dosya > Seçenekler > Görüntü"
+          },
+          {
+            "name": "Arka Plan Renklerini ve Görüntüleri",
+            "description": "Sayfa arka planını ve filigranları yazdır",
+            "access": "Dosya > Seçenekler > Görüntü",
+            "note": "Mürekkep tüketimini artırır"
+          }
+        ],
+        
+        "print_to_pdf": {
+          "description": "Belgeyi PDF formatında kaydedin",
+          "methods": [
+            "Yazdır > Microsoft Print to PDF seçin",
+            "Dosya > Dışa Aktar > PDF/XPS Oluştur"
+          ],
+          "advantages": [
+            "Evrensel format",
+            "İçerik değiştirilemez",
+            "Düşük dosya boyutu",
+            "Kolay paylaşım"
+          ],
+          "pdf_options": {
+            "standard": "Standart - Normal kalite",
+            "minimum": "Minimum - Küçük dosya boyutu",
+            "iso_19005": "PDF/A - Arşivleme standardı"
+          }
+        },
+        
+        "troubleshooting": [
+          {
+            "problem": "Yazıcı listede görünmüyor",
+            "solutions": [
+              "Yazıcının açık ve bağlı olduğundan emin olun",
+              "Yazıcı sürücülerini güncelleyin",
+              "Yazıcıyı yeniden kurun",
+              "Windows ayarlarından yazıcı ekleyin"
+            ]
+          },
+          {
+            "problem": "Sayfa düzeni bozuk",
+            "solutions": [
+              "Yazdırma önizlemesini kontrol edin",
+              "Sayfa yapısı ayarlarını kontrol edin",
+              "Yazıcının kağıt boyutunu doğrulayın",
+              "Ölçeklendirme ayarını kontrol edin"
+            ]
+          },
+          {
+            "problem": "Renkler yanlış",
+            "solutions": [
+              "Renk yönetimi ayarlarını kontrol edin",
+              "Mürekkep seviyelerini kontrol edin",
+              "Yazıcı başlıklarını temizleyin",
+              "Test sayfası yazdırın"
+            ]
+          }
+        ],
+        
+        "cost_saving_tips": [
+          "Taslak kalitede yazdırın (dahili belgeler için)",
+          "Çift taraflı yazdırma kullanın",
+          "2 veya 4 sayfa/yaprak seçeneğini kullanın",
+          "Gereksiz sayfaları yazdırmayın",
+          "Önce PDF'e kaydedin, gerekirse yazdırın",
+          "Siyah-beyaz yazdırma tercih edin",
+          "Arka plan renklerini yazdırmayın",
+          "Yazdırma önizlemesi ile kontrol edin"
+        ]
+      }
+    },
+    
+    {
+      "id": "paylasim",
+      "title": "Paylaşım ve İşbirliği",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word belgenizi başkalarıyla paylaşmak ve birlikte çalışmak için çeşitli yöntemler mevcuttur.",
+        
+        "share_methods": [
+          {
+            "name": "OneDrive ile Paylaş",
+            "description": "Gerçek zamanlı işbirliği için en iyi yöntem",
+            "requirements": "Belge OneDrive'da olmalı",
+            "steps": [
+              "Sağ üst köşede Paylaş düğmesine tıklayın",
+              "Kişilerin e-posta adreslerini girin",
+              "İzin seviyesini seçin (düzenleyebilir/görüntüleyebilir)",
+              "İsteğe bağlı mesaj ekleyin",
+              "Gönder'e tıklayın"
+            ],
+            "features": [
+              "Gerçek zamanlı düzenleme",
+              "Değişiklikleri anında görme",
+              "Sohbet ve yorum",
+              "Sürüm geçmişi",
+              "İzin yönetimi"
+            ]
+          },
+          {
+            "name": "Bağlantı ile Paylaş",
+            "description": "Link gönderme yöntemi",
+            "link_types": [
+              "Kuruluştaki herkes - Şirket içi",
+              "Belirli kişiler - Davetiye ile",
+              "Bağlantıya sahip herkes - Herkese açık"
+            ],
+            "permissions": [
+              "Düzenleyebilir - Tam erişim",
+              "Görüntüleyebilir - Salt okunur"
+            ]
+          },
+          {
+            "name": "E-posta ile Gönder",
+            "options": [
+              "Ek olarak gönder (.docx)",
+              "PDF olarak gönder",
+              "XPS olarak gönder",
+              "İnternet Faksı"
+            ],
+            "note": "Gerçek zamanlı işbirliği olmaz"
+          },
+          {
+            "name": "Sunuma Gönder",
+            "description": "PowerPoint sunumuna dönüştür",
+            "use_case": "Belge içeriğinden slayt oluşturma"
+          }
+        ],
+        
+        "collaboration_features": [
+          {
+            "name": "Eş Zamanlı Düzenleme",
+            "description": "Birden fazla kişi aynı anda çalışabilir",
+            "indicators": "Her kullanıcı farklı renk ile gösterilir",
+            "requirements": "Belge OneDrive/SharePoint'te olmalı"
+          },
+          {
+            "name": "Yorumlar",
+            "shortcut": "Ctrl+Alt+M",
+            "description": "Metin üzerine yorum ekleyin",
+            "features": [
+              "Yanıtlama",
+              "Çözüldü olarak işaretleme",
+              "Kişileri etiketleme (@mention)",
+              "Yorum geçmişi"
+            ]
+          },
+          {
+            "name": "Değişiklikleri İzle",
+            "description": "Tüm düzenlemeler kaydedilir",
+            "access": "Gözden Geçir > Değişiklikleri İzle",
+            "features": [
+              "Ekleme/silme takibi",
+              "Biçimlendirme değişiklikleri",
+              "Kabul/reddetme seçeneği",
+              "Yorum ekleme"
+            ]
+          }
+        ],
+        
+        "permission_management": {
+          "owner": {
+            "rights": "Tam kontrol",
+            "capabilities": [
+              "Belgeyi düzenleyebilir",
+              "Başkalarını davet edebilir",
+              "İzinleri değiştirebilir",
+              "Belgeyi silebilir"
+            ]
+          },
+          "editor": {
+            "rights": "Düzenleme izni",
+            "capabilities": [
+              "İçeriği değiştirebilir",
+              "Başkalarını davet edebilir (ayarlara göre)",
+              "Yorumlar ekleyebilir"
+            ]
+          },
+          "viewer": {
+            "rights": "Salt okunur",
+            "capabilities": [
+              "Belgeyi görüntüleyebilir",
+              "İndirebilir",
+              "Yorumlar ekleyebilir (ayarlara göre)",
+              "Değişiklik yapamaz"
+            ]
+          }
+        },
+        
+        "security_options": [
+          {
+            "name": "Parola Koruması",
+            "access": "Dosya > Bilgi > Belgeyi Koru",
+            "types": [
+              "Açmak için parola",
+              "Değiştirmek için parola"
+            ],
+            "recommendation": "Güçlü parolalar kullanın (büyük/küçük harf, rakam, sembol)"
+          },
+          {
+            "name": "Şifreleme",
+            "description": "Belge içeriğini şifreler",
+            "access": "Dosya > Bilgi > Belgeyi Koru > Şifrele"
+          },
+          {
+            "name": "Son Hali Olarak İşaretle",
+            "description": "Belgenin tamamlandığını belirtir",
+            "effect": "Salt okunur moda geçer (kolayca kaldırılabilir)"
+          },
+          {
+            "name": "Düzenlemeyi Kısıtla",
+            "access": "Gözden Geçir > Düzenlemeyi Kısıtla",
+            "options": [
+              "Biçimlendirme kısıtlamaları",
+              "Düzenleme kısıtlamaları",
+              "Belirli bölümlere izin"
+            ]
+          }
+        ],
+        
+        "version_history": {
+          "description": "Belgede yapılan değişikliklerin geçmişi",
+          "access": "Dosya > Bilgi > Sürüm Geçmişi",
+          "features": [
+              "Önceki sürümleri görme",
+              "Eski sürüme geri dönme",
+              "Sürüm karşılaştırma",
+              "Otomatik kayıt noktaları"
+          ],
+          "retention": "OneDrive/SharePoint ayarlarına göre değişir"
+        },
+        
+        "best_practices": [
+          "Hassas belgeler için parola kullanın",
+          "İzinleri düzenli kontrol edin",
+          "Gereksiz erişimleri kaldırın",
+          "Önemli değişikliklerden önce yedek alın",
+          "Yorum ve değişiklik takibi kullanın",
+          "Sürüm geçmişini düzenli kontrol edin",
+          "Paylaşım linklerinin süresini sınırlayın"
+        ]
+      }
+    },
+    
+    {
+      "id": "disa-aktar",
+      "title": "Dışa Aktarma ve Dönüştürme",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word belgelerinizi farklı formatlara dönüştürerek farklı platformlarda kullanabilirsiniz.",
+        
+        "export_formats": [
+          {
+            "name": "PDF",
+            "access": "Dosya > Dışa Aktar > PDF/XPS Oluştur",
+            "advantages": [
+              "Evrensel format",
+              "Düzenleme koruması",
+              "Profesyonel görünüm",
+              "Küçük dosya boyutu"
+            ],
+            "options": {
+              "optimize_for": ["Standart", "Minimum boyut"],
+              "include": ["Başlık ve özellikler", "Yer imleri", "Belge yapısı etiketleri"],
+              "page_range": "Tümü veya özel aralık"
+            }
+          },
+          {
+            "name": "XPS",
+            "description": "Microsoft'un PDF alternatifi",
+            "usage": "Windows ortamlarında kullanım",
+            "note": "PDF kadar yaygın değil"
+          },
+          {
+            "name": "Farklı Word Formatları",
+            "formats": [
+              ".docx - Modern Word",
+              ".doc - Word 97-2003",
+              ".dotx - Word Şablonu",
+              ".docm - Makro içeren",
+              ".dot - Eski şablon formatı"
+            ]
+          },
+        {
+            "name": "Web Formatları",
+            "formats": [
+              ".html - Web sayfası",
+              ".htm - Web sayfası (kısa)",
+              ".mht - Tek dosyalı web sayfası"
+            ],
+            "usage": "İnternet sitelerine yükleme için"
+          },
+          {
+            "name": "Metin Formatları",
+            "formats": [
+              ".txt - Düz metin",
+              ".rtf - Zengin metin formatı",
+              ".odt - OpenDocument metin"
+            ],
+            "note": "Biçimlendirme kaybı olabilir"
+          }
+        ],
+        
+        "change_file_type": {
+          "access": "Dosya > Dışa Aktar > Dosya Türünü Değiştir",
+          "description": "Belgeyi farklı Word formatına dönüştürme",
+          "note": "Mevcut belge yeni formatta kaydedilir"
+        }
+      }
+    },
+    
+    {
+      "id": "belge-ozellikleri",
+      "title": "📋 Belge Özellikleri ve Bilgiler",
+      "order": 7,
+      "content": {
+        "type": "detailed",
+        "introduction": "Belge özellikleri, dosyanız hakkında meta bilgiler içerir. Bu bilgiler arama, düzenleme ve yönetim için önemlidir.",
+        
+        "document_info": {
+          "access": "Dosya > Bilgi",
+          "sections": [
+            {
+              "name": "Koruma",
+              "options": [
+                "Her Zaman Salt Okunur Aç",
+                "Parola ile Şifrele",
+                "Düzenlemeyi Kısıtla",
+                "Dijital İmza Ekle",
+                "Son Hali Olarak İşaretle"
+              ]
+            },
+            {
+              "name": "Belgeyi Denetle",
+              "tools": [
+                "Denetçi - Gizli veri ve kişisel bilgileri bul",
+                "Erişilebilirlik Denetleyicisi",
+                "Uyumluluk Denetleyicisi"
+              ]
+            },
+            {
+              "name": "Sürümler",
+              "description": "Belgenin önceki sürümlerine erişim",
+              "note": "OneDrive/SharePoint için mevcut"
+            }
+          ]
+        },
+        
+        "properties": {
+          "basic": [
+            {
+              "field": "Başlık",
+              "description": "Belge başlığı",
+              "searchable": true
+            },
+            {
+              "field": "Etiketler",
+              "description": "Anahtar kelimeler",
+              "searchable": true
+            },
+            {
+              "field": "Kategoriler",
+              "description": "Belge kategorisi",
+              "example": "Rapor, Mektup, Sözleşme"
+            },
+            {
+              "field": "Açıklamalar",
+              "description": "Belge hakkında notlar"
+            },
+            {
+              "field": "Yazar",
+              "description": "Belgeyi oluşturan",
+              "auto_filled": true
+            },
+            {
+              "field": "Konu",
+              "description": "Belge konusu"
+            }
+          ],
+          
+          "advanced": [
+            "Yönetici",
+            "Şirket",
+            "Durum",
+            "İçerik durumu",
+            "Dil",
+            "Tarih oluşturuldu",
+            "Son değiştirilme tarihi",
+            "Son yazdırma",
+            "Son kaydeden"
+          ],
+          
+          "statistics": {
+            "access": "Dosya > Bilgi > Özellikler > Gelişmiş Özellikler > İstatistikler",
+            "data": [
+              "Sayfa sayısı",
+              "Sözcük sayısı",
+              "Karakter sayısı (boşluklu/boşluksuz)",
+              "Paragraf sayısı",
+              "Satır sayısı",
+              "Düzenleme süresi"
+            ]
+          }
+        },
+        
+        "inspector": {
+          "description": "Belgeden hassas bilgileri kaldırma",
+          "access": "Dosya > Bilgi > Sorunları Denetle > Belgeyi Denetle",
+          "checks": [
+            "Yorumlar ve revizyonlar",
+            "Belge özellikleri ve kişisel bilgiler",
+            "Özel XML verileri",
+            "Üst bilgi, alt bilgi ve filigranlar",
+            "Gizli metin",
+            "Görünmez içerik"
+          ],
+          "recommendation": "Belgeyi paylaşmadan önce çalıştırın"
+        },
+        
+        "accessibility_checker": {
+          "description": "Belgenin erişilebilirliğini kontrol eder",
+          "checks": [
+            "Alternatif metin (resimler için)",
+            "Tablo başlıkları",
+            "Başlık sırası",
+            "Renk kontrastı",
+            "Köprü metinleri",
+            "Liste yapısı"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "secenekler",
+      "title": "⚙️ Word Seçenekleri",
+      "order": 8,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word'ün çalışma şeklini özelleştirmek için seçenekler menüsünü kullanabilirsiniz.",
+        
+        "options_categories": [
+          {
+            "name": "Genel",
+            "settings": [
+              "Kullanıcı arabirimi seçenekleri",
+              "Başlangıç seçenekleri",
+              "Microsoft Office'i Kişiselleştirin",
+              "Varsayılan yazı tipi ve renk temaları"
+            ]
+          },
+          {
+            "name": "Görüntü",
+            "settings": [
+              "Sayfa görüntüleme seçenekleri",
+              "Biçimlendirme işaretleri",
+              "Yazdırma ve Web Düzeni seçenekleri"
+            ]
+          },
+          {
+            "name": "Yazım Denetimi",
+            "settings": [
+              "Otomatik düzeltme seçenekleri",
+              "Özel sözlükler",
+              "Dil tercihleri",
+              "Yazım ve dilbilgisi denetimi"
+            ]
+          },
+          {
+            "name": "Kaydet",
+            "settings": [
+              "Varsayılan dosya formatı",
+              "Otomatik kaydetme aralığı",
+              "Varsayılan kayıt konumu",
+              "Dosya paylaşım seçenekleri"
+            ]
+          },
+          {
+            "name": "Dil",
+            "settings": [
+              "Düzenleme dilleri",
+              "Görüntüleme ve Yardım dilleri"
+            ]
+          },
+          {
+            "name": "Gelişmiş",
+            "settings": [
+              "Düzenleme seçenekleri",
+              "Kes, kopyala ve yapıştır",
+              "Görüntü boyutu ve kalitesi",
+              "Yazdırma seçenekleri",
+              "Belge içeriğini göster"
+            ]
+          }
+        ],
+        
+        "recommended_settings": [
+          {
+            "category": "Kaydet",
+            "setting": "Otomatik Kurtarma bilgilerini kaydet",
+            "value": "5 dakika",
+            "reason": "Veri kaybını önler"
+          },
+          {
+            "category": "Yazım Denetimi",
+            "setting": "Yazarken yazım denetimi yap",
+            "value": "Açık",
+            "reason": "Hataları anında yakalar"
+          },
+          {
+            "category": "Görüntü",
+            "setting": "Paragraf işaretlerini göster",
+            "value": "İsteğe bağlı",
+            "reason": "Biçimlendirme sorunlarını görmek için"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "Ctrl+N", "action": "Yeni belge"},
+    {"keys": "Ctrl+O", "action": "Belge aç"},
+    {"keys": "Ctrl+S", "action": "Kaydet"},
+    {"keys": "F12", "action": "Farklı kaydet"},
+    {"keys": "Ctrl+P", "action": "Yazdır"},
+    {"keys": "Ctrl+W", "action": "Belgeyi kapat"},
+    {"keys": "Alt+F4", "action": "Word'ü kapat"},
+    {"keys": "Ctrl+F2", "action": "Baskı önizleme"},
+    {"keys": "Alt+F", "action": "Dosya menüsü"}
+  ],
+  
+  "quick_tips": [
+    "Ctrl+S ile sık sık kaydedin",
+    "OneDrive'a kaydederek otomatik yedekleme yapın",
+    "Yazdırmadan önce PDF önizlemesi alın",
+    "Önemli belgeler için parola koruması kullanın",
+    "Paylaşım öncesinde Belge Denetçisi çalıştırın",
+    "Şablonları kullanarak zaman kazanın"
+  ],
+  
+  "common_issues": [
+    {
+      "problem": "Dosya açılmıyor",
+      "solutions": [
+        "Dosyanın bozuk olup olmadığını kontrol edin",
+        "Aç ve Onar seçeneğini deneyin",
+        "Farklı bir bilgisayarda açmayı deneyin",
+        "Dosya uzantısını kontrol edin"
+      ]
+    },
+    {
+      "problem": "Kayıt yapamıyorum",
+      "solutions": [
+        "Dosyanın salt okunur olup olmadığını kontrol edin",
+        "Yeterli disk alanı olduğundan emin olun",
+        "Farklı bir konuma kaydetmeyi deneyin",
+        "Dosya adında özel karakter kullanmayın"
+      ]
+    },
+    {
+      "problem": "Yazdırma çıkmıyor",
+      "solutions": [
+        "Yazıcı bağlantısını kontrol edin",
+        "Yazıcı kuyruğunu temizleyin",
+        "Yazıcı sürücülerini güncelleyin",
+        "PDF'e yazdırıp sonra fiziksel yazdırma yapın"
+      ]
+    }
+  ],
+  
+  "best_practices": [
+    "Anlamlı dosya adları kullanın (tarih, konu, versiyon)",
+    "Düzenli klasör yapısı oluşturun",
+    "Önemli belgeler için yedekleme stratejisi belirleyin",
+    "Versiyon numaraları kullanın (v1.0, v1.1, v2.0)",
+    "Paylaşılan belgeler için net adlandırma kuralları",
+    "Arşiv klasörleri oluşturun (eski versiyonlar için)",
+    "OneDrive senkronizasyonunu aktif tutun",
+    "Düzenli olarak kullanılmayan dosyaları temizleyin"
+  ],
+  
+  "resources": {
+    "microsoft_docs": "https://support.microsoft.com/tr-tr/word",
+    "video_tutorials": [
+      "Dosya İşlemleri Temelleri",
+      "Yazdırma ve PDF Oluşturma",
+      "Belge Paylaşımı ve İşbirliği"
+    ],
+    "templates": "https://templates.office.com"
+  },
+  
+  "next_menu": {
+    "id": "giris",
+    "name": "Giriş Menüsü",
+    "description": "Pano, yazı tipi, paragraf ve biçimlendirme işlemleri"
+  }
+}

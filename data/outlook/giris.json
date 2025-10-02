@@ -1,0 +1,747 @@
+{
+  "id": "outlook-giris",
+  "title": "Microsoft Outlook - Giriş",
+  "description": "Outlook'a giriş, arayüz tanıtımı ve temel kullanım. E-posta, takvim, kişiler ve görevleri yönetin.",
+  "difficulty": "Başlangıç",
+  "estimated_time": "2 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "outlook-nedir",
+      "title": "📧 Outlook Nedir?",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Microsoft Outlook, kişisel bilgi yöneticisi ve e-posta istemcisidir. E-posta, takvim, kişiler, görevler ve notları tek bir uygulamada yönetmenizi sağlar.",
+        
+        "main_features": [
+          {
+            "feature": "E-posta Yönetimi",
+            "description": "E-postaları gönderme, alma ve organize etme",
+            "capabilities": [
+              "Birden fazla e-posta hesabı yönetimi",
+              "Klasörleme ve kategorilendirme",
+              "Kurallar ve filtreler",
+              "Spam koruması"
+            ]
+          },
+          {
+            "feature": "Takvim",
+            "description": "Randevu ve toplantı yönetimi",
+            "capabilities": [
+              "Etkinlik oluşturma ve takip",
+              "Toplantı davetleri",
+              "Hatırlatıcılar",
+              "Birden fazla takvim görünümü"
+            ]
+          },
+          {
+            "feature": "Kişiler",
+            "description": "İletişim bilgileri veritabanı",
+            "capabilities": [
+              "Detaylı kişi kartları",
+              "Gruplar oluşturma",
+              "İş ve kişisel bilgiler",
+              "Sosyal medya entegrasyonu"
+            ]
+          },
+          {
+            "feature": "Görevler",
+            "description": "Yapılacaklar listesi ve proje takibi",
+            "capabilities": [
+              "Görev oluşturma ve atama",
+              "Öncelik belirleme",
+              "İlerleme takibi",
+              "Son tarih hatırlatıcıları"
+            ]
+          },
+          {
+            "feature": "Notlar",
+            "description": "Hızlı notlar ve hatırlatmalar",
+            "simple": true
+          }
+        ],
+        
+        "benefits": [
+          "Tek yerden tüm iletişimi yönetme",
+          "Zaman yönetimi ve organizasyon",
+          "Ekip işbirliği ve koordinasyon",
+          "Mobil cihazlarla senkronizasyon",
+          "Microsoft 365 entegrasyonu"
+        ],
+        
+        "versions": {
+          "desktop": {
+            "name": "Masaüstü Uygulaması",
+            "platforms": ["Windows", "Mac"],
+            "features": "Tam özellik seti",
+            "offline": true
+          },
+          "web": {
+            "name": "Outlook Web (OWA)",
+            "access": "Tarayıcı üzerinden",
+            "url": "outlook.office.com",
+            "internet_required": true
+          },
+          "mobile": {
+            "name": "Mobil Uygulama",
+            "platforms": ["iOS", "Android"],
+            "features": "Optimize edilmiş deneyim",
+            "on_the_go": true
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "arayuz-tanitimi",
+      "title": "🖥️ Arayüz Tanıtımı",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook arayüzünün ana bileşenlerini tanıyın ve verimli kullanmayı öğrenin.",
+        
+        "main_interface": {
+          "title": "Ana Arayüz Bileşenleri",
+          "components": [
+            {
+              "component": "Şerit (Ribbon)",
+              "location": "Üst kısım",
+              "description": "Tüm komutlar ve araçlar",
+              "tabs": [
+                "Giriş - En sık kullanılan komutlar",
+                "Gönder/Al - E-posta senkronizasyonu",
+                "Klasör - Klasör yönetimi",
+                "Görünüm - Arayüz özelleştirme"
+              ],
+              "tip": "Şerit gizlenebilir: Ctrl + F1"
+            },
+            {
+              "component": "Gezinti Bölmesi (Sol)",
+              "location": "Sol taraf",
+              "description": "Modüller ve klasörler arası geçiş",
+              "sections": [
+                {
+                  "name": "Modül Seçici (Alt)",
+                  "icons": ["📧 Posta", "📅 Takvim", "👥 Kişiler", "✓ Görevler"]
+                },
+                {
+                  "name": "Klasör Ağacı (Üst)",
+                  "shows": "Hesaplar, klasörler ve alt klasörler",
+                  "collapsible": true
+                }
+              ],
+              "customize": "Genişlik ayarlanabilir veya tamamen gizlenebilir"
+            },
+            {
+              "component": "İçerik Listesi (Orta)",
+              "location": "Ortada",
+              "description": "E-postalar, takvim etkinlikleri veya kişiler listesi",
+              "features": [
+                "Sıralama (Tarih, Gönderen, Konu)",
+                "Filtreleme",
+                "Arama",
+                "Seçim ve toplu işlem"
+              ],
+              "views": "Liste, Compact, Single gibi görünümler"
+            },
+            {
+              "component": "Okuma Bölmesi (Sağ)",
+              "location": "Sağ taraf veya alt",
+              "description": "Seçili öğenin önizlemesi",
+              "configurable": true,
+              "options": [
+                "Sağda göster",
+                "Altta göster",
+                "Kapalı"
+              ],
+              "shortcut": "Alt + V, P"
+            },
+            {
+              "component": "Yapılacaklar Çubuğu",
+              "location": "Sağ kenar",
+              "description": "Yaklaşan randevular ve görevler",
+              "quick_access": "Takvim ve görevlere hızlı erişim",
+              "toggle": "Görünüm → Yapılacaklar Çubuğu"
+            }
+          ]
+        },
+        
+        "quick_access_toolbar": {
+          "name": "Hızlı Erişim Araç Çubuğu",
+          "location": "Şeridin üstünde (sol üst köşe)",
+          "default_commands": [
+            "Gönder/Al",
+            "Geri Al",
+            "Yanıtla"
+          ],
+          "customization": {
+            "how": "Sağ tık → Hızlı Erişim Araç Çubuğunu Özelleştir",
+            "add": "Sık kullandığınız komutları ekleyin",
+            "tip": "En çok kullandığınız 5-10 komutu buraya ekleyin"
+          }
+        },
+        
+        "status_bar": {
+          "name": "Durum Çubuğu",
+          "location": "En alt",
+          "shows": [
+            "Öğe sayısı (Toplam, Okunmamış)",
+            "Bağlantı durumu",
+            "Görünüm değiştirici"
+          ]
+        },
+        
+        "search_box": {
+          "name": "Arama Kutusu",
+          "location": "Üst orta",
+          "shortcut": "Ctrl + E",
+          "features": [
+            "Tüm öğelerde arama",
+            "Gelişmiş arama filtreleri",
+            "Son aramalar",
+            "Arama klasörleri oluşturma"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "hesap-kurulumu",
+      "title": "⚙️ Hesap Kurulumu",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "E-posta hesaplarınızı Outlook'a ekleyin ve yapılandırın.",
+        
+        "adding_account": {
+          "title": "İlk Hesap Ekleme",
+          "first_launch": {
+            "description": "Outlook ilk açılışta otomatik kurulum başlar",
+            "steps": [
+              "E-posta adresinizi girin",
+              "Şifrenizi girin",
+              "Outlook otomatik ayarları algılar",
+              "Hesap eklenir ve senkronizasyon başlar"
+            ]
+          },
+          
+          "manual_setup": {
+            "path": "Dosya → Hesap Ekle",
+            "when": "İlave hesap eklemek için",
+            "steps": [
+              {
+                "step": "1. E-posta Adresi",
+                "input": "ornek@domain.com"
+              },
+              {
+                "step": "2. Gelişmiş Seçenekler",
+                "option": "Hesabımı elle yapılandırmama izin ver (opsiyonel)"
+              },
+              {
+                "step": "3. Hesap Türü Seçimi",
+                "types": [
+                  "Exchange - İş/Kurumsal",
+                  "POP3 - Eski e-posta protokolü",
+                  "IMAP - Çoklu cihaz senkronizasyonu"
+                ]
+              },
+              {
+                "step": "4. Sunucu Ayarları",
+                "required": [
+                  "Gelen sunucu (IMAP/POP3)",
+                  "Giden sunucu (SMTP)",
+                  "Port numaraları",
+                  "SSL/TLS ayarları"
+                ],
+                "tip": "E-posta sağlayıcınızdan alın"
+              },
+              {
+                "step": "5. Test ve Bitir",
+                "action": "Hesap ayarları test edilir"
+              }
+            ]
+          }
+        },
+        
+        "account_types": [
+          {
+            "type": "Microsoft 365 / Exchange",
+            "description": "İş veya kurumsal hesaplar",
+            "features": [
+              "Sunucu tarafında depolama",
+              "Gelişmiş işbirliği özellikleri",
+              "Toplantı odası rezervasyonu",
+              "Paylaşılan posta kutuları"
+            ],
+            "auto_setup": true,
+            "recommended": "✓ İş kullanımı için"
+          },
+          {
+            "type": "Outlook.com / Hotmail",
+            "description": "Kişisel Microsoft hesapları",
+            "free": true,
+            "auto_setup": true
+          },
+          {
+            "type": "Gmail",
+            "description": "Google e-posta",
+            "oauth": "Google hesabı ile oturum açma",
+            "sync": "Takvim ve kişiler de senkronize edilir"
+          },
+          {
+            "type": "IMAP",
+            "description": "Standart e-posta protokolü",
+            "pros": [
+              "Çoklu cihaz senkronizasyonu",
+              "E-postalar sunucuda kalır",
+              "Evrensel uyumluluk"
+            ],
+            "cons": "Manuel ayar gerekebilir"
+          },
+          {
+            "type": "POP3",
+            "description": "Eski protokol",
+            "behavior": "E-postalar cihaza indirilir, sunucudan silinir",
+            "use": "Tek cihaz kullanımı",
+            "not_recommended": "Modern kullanım için önerilmez"
+          }
+        ],
+        
+        "multiple_accounts": {
+          "name": "Birden Fazla Hesap Yönetimi",
+          "how": "Her hesap ayrı klasör ağacında görünür",
+          "switching": "Hesaplar arası kolay geçiş",
+          "tips": [
+            "Her hesap için farklı renk atayın",
+            "Varsayılan hesap belirleyin (gönderim için)",
+            "Hesap bazlı imzalar oluşturun"
+          ]
+        },
+        
+        "troubleshooting": {
+          "title": "Yaygın Sorunlar",
+          "issues": [
+            {
+              "problem": "Hesap eklenmiyor",
+              "solutions": [
+                "İnternet bağlantınızı kontrol edin",
+                "E-posta ve şifre doğru mu?",
+                "2FA (İki faktörlü doğrulama) aktifse uygulama şifresi kullanın",
+                "Antivirüs/Firewall Outlook'u engelliyor olabilir"
+              ]
+            },
+            {
+              "problem": "E-postalar gelmiyor",
+              "solutions": [
+                "Gönder/Al butonuna tıklayın (F9)",
+                "Çevrimdışı modu kontrol edin",
+                "Hesap ayarlarını test edin",
+                "E-posta kurallarını kontrol edin"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "temel-islemler",
+      "title": "📨 Temel İşlemler",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook'ta günlük kullanacağınız temel işlemleri öğrenin.",
+        
+        "sending_email": {
+          "name": "E-posta Gönderme",
+          "shortcut": "Ctrl + N",
+          "path": "Giriş → Yeni E-posta",
+          
+          "compose_window": {
+            "fields": [
+              {
+                "field": "Kime",
+                "description": "Ana alıcılar",
+                "multiple": "Virgül veya noktalı virgülle ayırın",
+                "autocomplete": "Yazmaya başlayınca öneriler gelir"
+              },
+              {
+                "field": "Bilgi (Cc)",
+                "description": "Bilgi için gönderilecekler",
+                "visible": "Tüm alıcılar birbirini görür",
+                "expand": "Bilgi butonuna tıkla"
+              },
+              {
+                "field": "Gizli (Bcc)",
+                "description": "Gizli kopya",
+                "hidden": "Diğer alıcılar göremez",
+                "privacy": "Toplu gönderim için kullanın",
+                "expand": "Gizli butonuna tıkla"
+              },
+              {
+                "field": "Konu",
+                "description": "E-posta başlığı",
+                "important": "✓ Net ve açıklayıcı olmalı",
+                "example": "Proje Toplantısı - 15 Ekim"
+              },
+              {
+                "field": "Gövde",
+                "description": "Mesaj içeriği",
+                "formatting": "Zengin metin biçimlendirme"
+              }
+            ]
+          },
+          
+          "formatting": {
+            "name": "Biçimlendirme Seçenekleri",
+            "options": [
+              "Font, boyut, renk",
+              "Kalın, italik, altı çizili",
+              "Madde işaretleri ve numaralandırma",
+              "Hizalama",
+              "Bağlantı ekleme",
+              "Resim ve tablo"
+            ],
+            "formats": [
+              {
+                "format": "HTML",
+                "description": "Zengin biçimlendirme",
+                "default": true,
+                "recommended": "✓"
+              },
+              {
+                "format": "Düz Metin",
+                "description": "Biçimlendirme yok",
+                "size": "Daha küçük",
+                "universal": "Evrensel uyumluluk"
+              },
+              {
+                "format": "Zengin Metin (RTF)",
+                "description": "Microsoft formatı",
+                "limited": "Sadece Outlook kullanıcıları"
+              }
+            ]
+          },
+          
+          "attachments": {
+            "name": "Ek Dosyalar",
+            "button": "Ekle → Dosya Ekle",
+            "shortcut": "Alt + N, A, F",
+            "methods": [
+              {
+                "method": "Bu Bilgisayardan",
+                "description": "Yerel dosya seçimi",
+                "drag_drop": "Sürükle-bırak da çalışır"
+              },
+              {
+                "method": "OneDrive/SharePoint",
+                "description": "Bulut dosyaları",
+                "types": [
+                  "Bağlantı olarak (dosya değişir, alıcı güncel halini görür)",
+                  "Kopya olarak (anlık durum)"
+                ],
+                "collaboration": "✓ İşbirliği için ideal"
+              },
+              {
+                "method": "Son Öğeler",
+                "description": "Son kullanılan dosyalar",
+                "quick": "Hızlı erişim"
+              }
+            ],
+            "size_limit": "Genelde 20-25 MB (sunucuya göre değişir)",
+            "tip": "Büyük dosyalar için OneDrive bağlantısı kullanın"
+          },
+          
+          "sending_options": [
+            {
+              "option": "Gönder",
+              "shortcut": "Ctrl + Enter (veya Alt + S)",
+              "action": "Hemen gönderir"
+            },
+            {
+              "option": "Taslak Olarak Kaydet",
+              "path": "Taslaklar klasörüne kaydedilir",
+              "auto": "Otomatik olarak 3 dakikada bir kaydedilir"
+            },
+            {
+              "option": "Gecikmiş Gönderim",
+              "path": "Seçenekler → Geciktirme Teslimi",
+              "use": "İleride belirli tarih/saatte gönder",
+              "example": "Pazartesi sabahı gönderilecek e-postayı Cuma hazırla"
+            }
+          ]
+        },
+        
+        "reading_email": {
+          "name": "E-posta Okuma",
+          "views": [
+            {
+              "view": "Okuma Bölmesi",
+              "description": "Listede seçili e-posta sağda/altta görünür",
+              "quick": "Hızlı önizleme"
+            },
+            {
+              "view": "Ayrı Pencere",
+              "description": "E-postaya çift tıklayarak aç",
+              "shortcut": "Enter (seçiliyken)",
+              "fullscreen": "Tam ekran, dikkat dağıtmaz"
+            }
+          ],
+          
+          "actions": [
+            {
+              "action": "Yanıtla",
+              "shortcut": "Ctrl + R",
+              "description": "Sadece gönderene cevap",
+              "automatic": "Orijinal mesaj altta eklenir"
+            },
+            {
+              "action": "Tümünü Yanıtla",
+              "shortcut": "Ctrl + Shift + R",
+              "description": "Tüm alıcılara cevap",
+              "warning": "Gereksiz kişileri silin!"
+            },
+            {
+              "action": "İlet",
+              "shortcut": "Ctrl + F",
+              "description": "E-postayı başkasına aktar",
+              "note": "Açıklama ekleyebilirsiniz"
+            },
+            {
+              "action": "Yazdır",
+              "shortcut": "Ctrl + P",
+              "preview": "Yazdırma önizlemesi"
+            }
+          ],
+          
+          "flags": {
+            "name": "Bayraklar",
+            "description": "E-postaları işaretleme ve takip",
+            "types": [
+              "Bugün",
+              "Yarın",
+              "Bu Hafta",
+              "Sonraki Hafta",
+              "Özel Tarih"
+            ],
+            "follow_up": "Yapılacaklar listesine eklenir",
+            "reminder": "Hatırlatıcı ayarlanabilir"
+          }
+        },
+        
+        "organizing": {
+          "name": "E-postaları Organize Etme",
+          "methods": [
+            {
+              "method": "Klasörler",
+              "create": "Sağ tık → Yeni Klasör",
+              "structure": "Alt klasörler oluşturabilirsiniz",
+              "drag_drop": "Sürükle-bırak ile taşıma",
+              "example": "Projeler → Proje A, Proje B"
+            },
+            {
+              "method": "Kategoriler",
+              "description": "Renk kodlu etiketler",
+              "shortcut": "Ctrl + F2",
+              "multiple": "Bir e-postaya birden fazla kategori",
+              "custom": "Kendi kategorilerinizi oluşturun",
+              "example": "Kırmızı = Acil, Mavi = Müşteri, Yeşil = Takım"
+            },
+            {
+              "method": "Arama Klasörleri",
+              "description": "Dinamik, otomatik filtreleme",
+              "examples": [
+                "Son 7 gündeki e-postalar",
+                "Belirli kişiden gelenler",
+                "Okunmamışlar",
+                "Eki olanlar"
+              ],
+              "auto_update": "Otomatik güncellenir"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "verimlilik-ipuclari",
+      "title": "⚡ Verimlilik İpuçları",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Outlook'u daha verimli kullanmak için ipuçları ve kısayollar.",
+        
+        "keyboard_shortcuts": {
+          "title": "Temel Klavye Kısayolları",
+          "essential": [
+            {"action": "Yeni e-posta", "keys": "Ctrl + N"},
+            {"action": "Gönder", "keys": "Ctrl + Enter (veya Alt + S)"},
+            {"action": "Yanıtla", "keys": "Ctrl + R"},
+            {"action": "Tümünü yanıtla", "keys": "Ctrl + Shift + R"},
+            {"action": "İlet", "keys": "Ctrl + F"},
+            {"action": "Sil", "keys": "Delete (veya Ctrl + D)"},
+            {"action": "Arama", "keys": "Ctrl + E"},
+            {"action": "Gönder/Al", "keys": "F9"},
+            {"action": "Takvime git", "keys": "Ctrl + 2"},
+            {"action": "Postaya geri dön", "keys": "Ctrl + 1"},
+            {"action": "Okundu olarak işaretle", "keys": "Ctrl + Q"},
+            {"action": "Bayrak ekle", "keys": "Insert"}
+          ]
+        },
+        
+        "quick_steps": {
+          "name": "Hızlı Adımlar",
+          "description": "Çoklu işlemi tek tıkla gerçekleştirin",
+          "path": "Giriş → Hızlı Adımlar",
+          
+          "default_steps": [
+            {
+              "name": "Yöneticiye Taşı",
+              "actions": ["E-postayı belirli klasöre taşı", "Okundu olarak işaretle"]
+            },
+            {
+              "name": "Ekibe İlet",
+              "actions": ["Seçili e-postayı ekip üyelerine ilet", "Mesaj ekle"]
+            },
+            {
+              "name": "Tamamlandı",
+              "actions": ["Klasöre taşı", "Okundu işaretle", "Bayrak kaldır"]
+            }
+          ],
+          
+          "custom_steps": {
+            "create": "Yeni Hızlı Adım oluştur",
+            "actions_available": [
+              "Taşı",
+              "Kategorize et",
+              "İşaretle",
+              "İlet",
+              "Yanıtla",
+              "Yeni e-posta oluştur"
+            ],
+            "shortcut_assign": "Ctrl + Shift + 1-9 kısayolu atayın",
+            "benefit": "Tekrarlayan işleri otomatikleştirin"
+          }
+        },
+        
+        "rules": {
+          "name": "Kurallar",
+          "description": "E-postaları otomatik organize edin",
+          "path": "Dosya → Kuralları ve Uyarıları Yönet",
+          
+          "examples": [
+            {
+              "rule": "Patrondan Gelen Acil E-postalar",
+              "condition": "Gönderen: patron@firma.com VE Konu içerir: 'ACİL'",
+              "action": "Kırmızı kategoriye ekle VE Masaüstü bildirimi gönder"
+            },
+            {
+              "rule": "Bültenler",
+              "condition": "Konu içerir: 'bülten' VEYA 'haber'",
+              "action": "Bültenler klasörüne taşı VE Okundu olarak işaretle"
+            },
+            {
+              "rule": "Toplantı Davetleri",
+              "condition": "Mesaj türü: Toplantı daveti",
+              "action": "Toplantılar klasörüne kopyala"
+            }
+          ],
+          
+          "rule_types": [
+            "Gelen e-postalar için",
+            "Gönderilen e-postalar için",
+            "Bildirimler için"
+          ],
+          
+          "conditions": [
+            "Gönderen",
+            "Alıcı",
+            "Konu",
+            "Gövde içeriği",
+            "Ek var mı",
+            "Önem düzeyi",
+            "Boyut"
+          ],
+          
+          "actions": [
+            "Klasöre taşı/kopyala",
+            "Sil",
+            "Kategorize et",
+            "Bayrak ekle",
+            "İlet",
+            "Ses çal",
+            "Bildirim gönder"
+          ]
+        },
+        
+        "focused_inbox": {
+          "name": "Odaklanmış Gelen Kutusu",
+          "description": "Önemli e-postaları otomatik ayırma",
+          "tabs": [
+            {
+              "tab": "Odaklanmış",
+              "description": "Sizin için önemli e-postalar",
+              "ai": "Yapay zeka ile belirlenir"
+            },
+            {
+              "tab": "Diğer",
+              "description": "Bültenler, bildirimler vb.",
+              "less_important": "Daha az öncelikli"
+            }
+          ],
+          "training": "Sağ tık → 'Odaklanmış'a/Diğer'e taşı ile sistemi eğitin",
+          "toggle": "Görünüm → Odaklanmış Gelen Kutusunu Göster"
+        },
+        
+        "tips": [
+          {
+            "tip": "Gelen Kutusu Sıfır",
+            "description": "Her gün gelen kutusunu temizleyin",
+            "method": "Arşivle, Sil, Harekete Geç, Delege Et"
+          },
+          {
+            "tip": "E-posta Saatleri",
+            "description": "Günde 2-3 belirli saatte e-posta kontrol edin",
+            "benefit": "Sürekli dikkat dağınıklığından kaçının"
+          },
+          {
+            "tip": "2 Dakika Kuralı",
+            "description": "2 dakikadan kısa sürecekse hemen yapın",
+            "action": "Yoksa bayrak ekle, sonra ilgilen"
+          },
+          {
+            "tip": "Şablonlar Kullanın",
+            "description": "Sık kullanılan yanıtları şablon olarak kaydedin",
+            "path": "Dosya → Farklı Kaydet → Outlook Şablonu"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "summary": {
+    "key_points": [
+      "Outlook = E-posta + Takvim + Kişiler + Görevler",
+      "Ctrl + N = Yeni e-posta",
+      "F9 = Gönder/Al",
+      "Kurallar ve Hızlı Adımlar ile otomasyon ve verimlilik",
+      "Klasörler ve kategoriler ile organizasyon"
+    ]
+  },
+  
+  "shortcuts": [
+    {"action": "Yeni e-posta", "keys": "Ctrl + N"},
+    {"action": "Gönder", "keys": "Ctrl + Enter"},
+    {"action": "Yanıtla", "keys": "Ctrl + R"},
+    {"action": "Tümünü yanıtla", "keys": "Ctrl + Shift + R"},
+    {"action": "İlet", "keys": "Ctrl + F"},
+    {"action": "Gönder/Al", "keys": "F9"},
+    {"action": "Arama", "keys": "Ctrl + E"},
+    {"action": "Postaya git", "keys": "Ctrl + 1"},
+    {"action": "Takvime git", "keys": "Ctrl + 2"},
+    {"action": "Kişilere git", "keys": "Ctrl + 3"},
+    {"action": "Görevlere git", "keys": "Ctrl + 4"}
+  ]
+}

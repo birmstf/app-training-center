@@ -1,0 +1,583 @@
+{
+  "id": "word-gozden-gecir",
+  "title": "Microsoft Word - Gözden Geçir Menüsü",
+  "description": "Yazım ve dilbilgisi denetimi, değişiklikleri izleme, yorumlar, belge karşılaştırma ve işbirliği araçları. Belge düzenleme ve gözden geçirme süreçlerini yönetin.",
+  "difficulty": "Orta",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "yazim-denetimi",
+      "title": "✏️ Yazım ve Dilbilgisi Denetimi",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word'ün güçlü yazım ve dilbilgisi denetimi araçları, belgenizdeki hataları bulmanıza ve düzeltmenize yardımcı olur.",
+        
+        "spelling_grammar": {
+          "automatic": {
+            "indicators": {
+              "red_underline": "Yazım hataları",
+              "blue_underline": "Dilbilgisi hataları",
+              "double_blue": "Biçim tutarsızlıkları"
+            },
+            "right_click": {
+              "options": [
+                "Önerilen düzeltmeler",
+                "Yoksay",
+                "Tümünü Yoksay",
+                "Sözlüğe Ekle"
+              ]
+            }
+          },
+          "manual_check": {
+            "menu": "Gözden Geçir → Yazım ve Dilbilgisi (F7)",
+            "panel": "Düzenleyici bölmesi açılır",
+            "actions": [
+              "Değiştir - Önerilen düzeltmeyi kabul et",
+              "Tümünü Değiştir - Tüm aynı hataları düzelt",
+              "Yoksay - Bu seferlik atla",
+              "Tümünü Yoksay - Bu kelimeyi her yerde atla",
+              "Ekle - Sözlüğe ekle"
+            ]
+          }
+        },
+        
+        "editor_pane": {
+          "description": "Microsoft Editör - Gelişmiş yazım asistanı",
+          "categories": {
+            "corrections": {
+              "name": "Düzeltmeler",
+              "includes": ["Yazım", "Dilbilgisi"]
+            },
+            "refinements": {
+              "name": "İyileştirmeler",
+              "includes": [
+                "Netlik - Belirsiz ifadeler",
+                "Kısalık - Gereksiz kelimeler",
+                "Resmiyet - Ton ayarı",
+                "Kelime dağarcığı - Kelime seçimi"
+              ]
+            },
+            "similarity": {
+              "name": "Benzerlik",
+              "description": "İntihal kontrolü (365 sürümü)"
+            }
+          },
+          "score": {
+            "description": "Belge puanı (0-100)",
+            "improvement": "Önerileri kabul ederek puanı artırın"
+          }
+        },
+        
+        "language_settings": {
+          "proofing_language": {
+            "menu": "Gözden Geçir → Dil → Yazım Denetleme Dilini Ayarla",
+            "options": [
+              "Türkçe (Türkiye)",
+              "İngilizce (ABD/İngiltere)",
+              "Çoklu dil desteği"
+            ]
+          },
+          "autocorrect": {
+            "menu": "Dosya → Seçenekler → Yazım Denetleme → Otomatik Düzeltme Seçenekleri",
+            "features": [
+              "İki büyük harfi düzelt",
+              "Cümle başını büyük yap",
+              "Gün adlarını büyük yap",
+              "Yanlışlıkla basılan Caps Lock düzeltmesi"
+            ],
+            "custom_entries": {
+              "add": "Kendi kısaltmalarınızı ekleyin",
+              "example": "bkz → bakınız, vb → ve benzeri"
+            }
+          }
+        },
+        
+        "custom_dictionaries": {
+          "add_words": "Teknik terimler, özel isimler",
+          "import_export": "Özel sözlükleri paylaşma",
+          "exclusion": "Her zaman yanlış kabul edilecek kelimeler"
+        },
+        
+        "thesaurus": {
+          "menu": "Gözden Geçir → Eş Anlamlılar Sözlüğü (Shift+F7)",
+          "features": [
+            "Eş anlamlı kelimeler",
+            "Zıt anlamlılar",
+            "İlgili terimler"
+          ],
+          "usage": "Kelime seçip Shift+F7 veya sağ tık → Eş anlamlılar"
+        }
+      }
+    },
+    
+    {
+      "id": "degisiklikleri-izleme",
+      "title": "🔄 Değişiklikleri İzleme",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Değişiklikleri İzle özelliği, belgede yapılan tüm düzenlemeleri kaydeder ve işbirliğini kolaylaştırır.",
+        
+        "track_changes": {
+          "enable": {
+            "menu": "Gözden Geçir → Değişiklikleri İzle",
+            "shortcut": "Ctrl+Shift+E",
+            "indicator": "Durum çubuğunda 'İzleme' etkin"
+          },
+          "what_is_tracked": [
+            "Eklenen metin (altı çizili, renkli)",
+            "Silinen metin (üstü çizili)",
+            "Biçimlendirme değişiklikleri",
+            "Taşınan içerik",
+            "Yorumlar"
+          ],
+          "markup_options": {
+            "simple": "Basit İşaretleme - Temiz görünüm, yan çubuk",
+            "all": "Tüm İşaretleme - Tüm değişiklikler görünür",
+            "no_markup": "İşaretleme Yok - Son hali göster",
+            "original": "Özgün - Değişiklik öncesi hali"
+          }
+        },
+        
+        "reviewing_changes": {
+          "navigation": {
+            "next": "Gözden Geçir → Sonraki",
+            "previous": "Gözden Geçir → Önceki",
+            "jump": "Belirli değişiklik türlerine git"
+          },
+          "accepting_rejecting": {
+            "accept": {
+              "single": "Kabul Et - Seçili değişikliği onayla",
+              "all": "Tümünü Kabul Et - Tüm değişiklikleri onayla",
+              "stop_tracking": "Kabul Et ve İzlemeyi Durdur"
+            },
+            "reject": {
+              "single": "Reddet - Seçili değişikliği geri al",
+              "all": "Tümünü Reddet - Tüm değişiklikleri geri al",
+              "stop_tracking": "Reddet ve İzlemeyi Durdur"
+            }
+          }
+        },
+        
+        "change_tracking_options": {
+          "menu": "Gözden Geçir → İzleme → Değişiklik İzleme Seçenekleri",
+          "settings": {
+            "insertions": {
+              "format": "Altı çizili, Çift altı çizili, Kalın, İtalik",
+              "color": "Yazara göre, özel renk"
+            },
+            "deletions": {
+              "format": "Üstü çizili, Gizli, # işareti",
+              "location": "Satır içi, balon"
+            },
+            "moves": {
+              "track": "Taşınan içeriği izle",
+              "format": "Çift üstü/altı çizili"
+            },
+            "formatting": {
+              "track": "Biçim değişikliklerini izle",
+              "balloons": "Yan balonda göster"
+            }
+          }
+        },
+        
+        "author_identification": {
+          "change_user": "Gözden Geçir → İzleme → Kullanıcı Adını Değiştir",
+          "colors": "Her yazar için otomatik renk ataması",
+          "initials": "Yorumlarda ve değişikliklerde görünür"
+        },
+        
+        "lock_tracking": {
+          "password_protect": "Gözden Geçir → Düzenlemeyi Kısıtla",
+          "options": [
+            "İzlemeyi açık tut",
+            "Parola ile koru",
+            "Belirli kullanıcılara izin ver"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "yorumlar",
+      "title": "💬 Yorumlar",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yorumlar, belge içeriğini değiştirmeden not eklemenizi ve tartışma başlatmanızı sağlar.",
+        
+        "adding_comments": {
+          "methods": [
+            {
+              "name": "Seçili metne yorum",
+              "steps": [
+                "Metni seçin",
+                "Gözden Geçir → Yeni Yorum",
+                "Veya Ctrl+Alt+M",
+                "Yorumu yazın"
+              ]
+            },
+            {
+              "name": "Belirli noktaya yorum",
+              "steps": [
+                "İmleci konumlandırın",
+                "Yeni Yorum ekleyin",
+                "Nokta yorumu oluşur"
+              ]
+            }
+          ],
+          "comment_content": [
+            "Düz metin",
+            "Basit biçimlendirme",
+            "@mentions (365'te)",
+            "Bağlantılar"
+          ]
+        },
+        
+        "managing_comments": {
+          "reply": {
+            "action": "Yanıtla düğmesi",
+            "threading": "Yorumlar iş parçacığı oluşturur"
+          },
+          "resolve": {
+            "action": "Çözümle düğmesi",
+            "effect": "Yorum soluklaşır, gizlenebilir"
+          },
+          "delete": {
+            "single": "Yorumu Sil",
+            "thread": "İş parçacığını sil",
+            "all": "Tüm yorumları sil"
+          },
+          "navigation": {
+            "next": "Sonraki yorum",
+            "previous": "Önceki yorum",
+            "filter": "Yazara veya duruma göre filtrele"
+          }
+        },
+        
+        "comment_display": {
+          "show_hide": {
+            "menu": "Gözden Geçir → Yorumları Göster",
+            "options": [
+              "Tüm yorumlar",
+              "Yalnızca satır içi görünüm",
+              "Yorumları gizle"
+            ]
+          },
+          "balloon_options": {
+            "position": "Sağ kenar boşluğu",
+            "connect": "Çizgilerle bağlantı",
+            "collapse": "Küçült/Genişlet"
+          }
+        },
+        
+        "modern_commenting": {
+          "description": "Microsoft 365'te gelişmiş özellikler",
+          "features": [
+            "@mentions - Kişileri etiketleme",
+            "Bildirimler - E-posta uyarıları",
+            "Gerçek zamanlı işbirliği",
+            "Yorum geçmişi"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "karsilastirma-birlestirme",
+      "title": "📊 Karşılaştırma ve Birleştirme",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "İki belge versiyonu arasındaki farkları bulun veya birden fazla düzenlemeyi birleştirin.",
+        
+        "compare_documents": {
+          "menu": "Gözden Geçir → Karşılaştır → Karşılaştır",
+          "process": {
+            "steps": [
+              "Özgün belgeyi seçin",
+              "Gözden geçirilmiş belgeyi seçin",
+              "Karşılaştırma ayarlarını yapın",
+              "Tamam'a tıklayın"
+            ],
+            "result": "Farkları gösteren yeni belge"
+          },
+          "settings": {
+            "comparison_options": [
+              "Büyük/küçük harf",
+              "Boşluk",
+              "Tablolar",
+              "Üst bilgiler ve alt bilgiler",
+              "Dipnotlar ve son notlar",
+              "Metin kutuları",
+              "Alanlar",
+              "Yorumlar"
+            ],
+            "show_changes": {
+              "level": "Karakter veya kelime düzeyi",
+              "in": "Özgün belge, yeni belge, karşılaştırma belgesi"
+            }
+          }
+        },
+        
+        "combine_documents": {
+          "menu": "Gözden Geçir → Karşılaştır → Birleştir",
+          "use_case": "Birden fazla gözden geçirenin düzenlemeleri",
+          "process": [
+            "Özgün belgeyi seçin",
+            "İlk gözden geçirilmiş belgeyi ekleyin",
+            "Diğer gözden geçirilmiş belgeleri ekleyin",
+            "Tüm değişiklikleri tek belgede toplayın"
+          ],
+          "conflict_resolution": {
+            "same_text": "Aynı yerde farklı düzenlemeler",
+            "options": [
+              "Her değişikliği ayrı göster",
+              "Çakışmaları işaretle",
+              "Manuel çözümleme"
+            ]
+          }
+        },
+        
+        "legal_blackline": {
+          "description": "Hukuki belgeler için karşılaştırma",
+          "features": [
+            "Satır satır karşılaştırma",
+            "Değişiklik raporu",
+            "Yazdırılabilir işaretleme"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "koruma",
+      "title": "🔒 Koruma",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Belge koruma özellikleri, içeriğin yetkisiz değiştirilmesini önler ve düzenleme haklarını kontrol eder.",
+        
+        "protect_document": {
+          "restrict_editing": {
+            "menu": "Gözden Geçir → Düzenlemeyi Kısıtla",
+            "protection_types": [
+              {
+                "type": "Biçimlendirme kısıtlamaları",
+                "options": [
+                  "Belirli stillere sınırla",
+                  "Biçim değişikliklerini engelle",
+                  "Tema veya şema değişikliklerini engelle"
+                ]
+              },
+              {
+                "type": "Düzenleme kısıtlamaları",
+                "options": [
+                  "Salt okunur",
+                  "Değişiklikleri izleme",
+                  "Yorumlar",
+                  "Form doldurma"
+                ]
+              }
+            ]
+          },
+          "exceptions": {
+            "description": "Belirli bölümlere veya kullanıcılara istisna tanıma",
+            "user_permissions": [
+              "Herkes",
+              "Belirli kullanıcılar",
+              "Active Directory grupları"
+            ]
+          },
+          "password_protection": {
+            "set": "Evet, Korumayı Uygula → Parola gir",
+            "remove": "Korumayı Durdur → Parola gir",
+            "important": "Parolayı unutmayın, kurtarılamaz!"
+          }
+        },
+        
+        "document_inspection": {
+          "menu": "Dosya → Bilgi → Sorunları Denetle → Belgeyi İncele",
+          "checks": [
+            "Yorumlar ve değişiklikler",
+            "Belge özellikleri ve kişisel bilgiler",
+            "Özel XML verileri",
+            "Üst bilgiler, alt bilgiler, filigranlar",
+            "Gizli metin",
+            "Görünmez içerik"
+          ],
+          "actions": {
+            "inspect": "Belgeyi tara",
+            "remove": "Bulunan öğeleri kaldır",
+            "caution": "Kaldırma işlemi geri alınamaz"
+          }
+        },
+        
+        "mark_as_final": {
+          "menu": "Dosya → Bilgi → Belgeyi Koru → Son Olarak İşaretle",
+          "effects": [
+            "Salt okunur yapılır",
+            "Düzenleme komutları devre dışı",
+            "Durum çubuğunda 'Son' işareti"
+          ],
+          "note": "Kolayca kaldırılabilir, güçlü koruma değil"
+        },
+        
+        "digital_signatures": {
+          "purpose": "Belge bütünlüğü ve kimlik doğrulama",
+          "add": "Dosya → Bilgi → Belgeyi Koru → Dijital İmza Ekle",
+          "requirements": [
+            "Dijital sertifika",
+            "Sertifika yetkilisi (CA)"
+          ]
+        }
+      }
+    },
+    
+    {
+      "id": "isbirligi",
+      "title": "👥 İşbirliği Özellikleri",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Modern Word, gerçek zamanlı işbirliği ve paylaşım özellikleri sunar.",
+        
+        "sharing": {
+          "cloud_save": {
+            "platforms": ["OneDrive", "SharePoint", "Teams"],
+            "benefits": [
+              "Otomatik kaydetme",
+              "Sürüm geçmişi",
+              "Her yerden erişim",
+              "Gerçek zamanlı işbirliği"
+            ]
+          },
+          "share_button": {
+            "location": "Sağ üst köşe",
+            "options": [
+              "Düzenleme izni",
+              "Görüntüleme izni",
+              "Link paylaşımı",
+              "E-posta daveti"
+            ]
+          }
+        },
+        
+        "coauthoring": {
+          "requirements": [
+            "365 aboneliği veya OneDrive",
+            "Desteklenen format (.docx)",
+            "İnternet bağlantısı"
+          ],
+          "features": [
+            "Gerçek zamanlı düzenleme",
+            "Kullanıcı göstergeleri",
+            "Otomatik çakışma çözümü",
+            "Anlık senkronizasyon"
+          ],
+          "indicators": {
+            "presence": "Renkli imleçler ve etiketler",
+            "editing": "Kimin nerede çalıştığı",
+            "saves": "Otomatik kaydetme durumu"
+          }
+        },
+        
+        "version_history": {
+          "access": "Dosya → Bilgi → Sürüm Geçmişi",
+          "features": [
+            "Tüm kayıtlı sürümler",
+            "Kimin ne zaman değiştirdiği",
+            "Sürümler arası karşılaştırma",
+            "Eski sürüme geri dönme"
+          ]
+        }
+      }
+    }
+  ],
+  
+  "practice_exercises": [
+    {
+      "title": "Belge Gözden Geçirme Süreci",
+      "steps": [
+        "Değişiklikleri İzlemeyi açın",
+        "Belgeye düzenlemeler yapın",
+        "Birkaç yorum ekleyin",
+        "Basit İşaretleme görünümüne geçin",
+        "Değişiklikleri kabul/reddedin",
+        "Yorumları yanıtlayın ve çözümleyin"
+      ]
+    },
+    {
+      "title": "İşbirlikçi Düzenleme",
+      "steps": [
+        "Belgeyi OneDrive'a kaydedin",
+        "Düzenleme izniyle paylaşın",
+        "Birden fazla kullanıcıyla aynı anda düzenleyin",
+        "Sürüm geçmişini kontrol edin",
+        "Eski sürümle karşılaştırın"
+      ]
+    },
+    {
+      "title": "Belge Güvenliği",
+      "steps": [
+        "Belgeyi inceleyin (kişisel bilgiler)",
+        "Gereksiz bilgileri kaldırın",
+        "Düzenleme kısıtlaması ekleyin",
+        "Parola ile koruyun",
+        "Son olarak işaretleyin"
+      ]
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "F7", "action": "Yazım ve dilbilgisi denetimi"},
+    {"keys": "Shift+F7", "action": "Eş anlamlılar sözlüğü"},
+    {"keys": "Ctrl+Shift+E", "action": "Değişiklikleri izlemeyi aç/kapat"},
+    {"keys": "Ctrl+Alt+M", "action": "Yorum ekle"},
+    {"keys": "Alt+R", "action": "Gözden Geçir sekmesine git"}
+  ],
+  
+  "common_issues": [
+    {
+      "problem": "Değişiklikler görünmüyor",
+      "solution": "Görünüm ayarını 'Tüm İşaretleme' yapın"
+    },
+    {
+      "problem": "Yorumlar yazdırılmıyor",
+      "solution": "Yazdırma ayarlarında 'İşaretlemeyi yazdır' seçin"
+    },
+    {
+      "problem": "İzleme kapatılamıyor",
+      "solution": "Belge korumalı olabilir, korumayı kaldırın"
+    },
+    {
+      "problem": "Ortak yazma çalışmıyor",
+      "solution": "Belgenin OneDrive/SharePoint'te olduğundan emin olun"
+    }
+  ],
+  
+  "best_practices": [
+    "Önemli belgelerde her zaman değişiklikleri izleyin",
+    "Yorumları açık ve yapıcı tutun",
+    "Düzenli olarak sürüm kaydedin",
+    "Paylaşmadan önce belgeyi inceleyin",
+    "Hassas belgeler için güçlü parola kullanın"
+  ],
+  
+  "resources": {
+    "videos": [
+      "Değişiklikleri İzleme Rehberi",
+      "Etkili Yorum Kullanımı",
+      "Belge Güvenliği En İyi Uygulamalar"
+    ],
+    "templates": [
+      "Gözden geçirme şablonu",
+      "İşbirliği kılavuzu",
+      "Değişiklik günlüğü"
+    ],
+    "microsoft_support": "https://support.microsoft.com/tr-tr/office/word-de-gözden-geçir"
+  }
+}

@@ -1,0 +1,1094 @@
+{
+  "id": "word-basvurular",
+  "title": "Microsoft Word - Başvurular Menüsü",
+  "description": "İçindekiler tablosu, dipnot, sonnot, alıntı, kaynakça, resim yazısı ve dizin oluşturma işlemlerini öğrenin.",
+  "difficulty": "Orta - İleri",
+  "estimated_time": "3 saat",
+  "version": "Microsoft 365 / 2024",
+  
+  "sections": [
+    {
+      "id": "icindekiler",
+      "title": "İçindekiler Tablosu",
+      "order": 1,
+      "content": {
+        "type": "detailed",
+        "introduction": "İçindekiler tablosu, belgenizin yapısını gösteren ve okuyucuların hızlı gezinmesini sağlayan otomatik bir listedir. Başlık stillerine göre oluşturulur ve otomatik güncellenir.",
+        
+        "prerequisites": {
+          "title": "Ön Koşul: Başlık Stilleri",
+          "description": "İçindekiler oluşturmadan önce belgenizde başlık stillerini kullanmalısınız",
+          "heading_styles": [
+            "Başlık 1 - Ana bölümler",
+            "Başlık 2 - Alt bölümler",
+            "Başlık 3 - Alt alt bölümler",
+            "Başlık 4-9 - Daha detaylı alt başlıklar"
+          ],
+          "how_to_apply": "Metni seçin > Giriş > Stiller grubundan başlık stilini seçin"
+        },
+        
+        "create_toc": {
+          "steps": [
+            "İçindekiler tablosunun yerleşeceği yere imleci getirin",
+            "Başvurular > İçindekiler Tablosu'na tıklayın",
+            "Hazır stillerden birini seçin (Otomatik Tablo 1 veya 2)",
+            "Veya 'Özel İçindekiler Tablosu' ile özelleştirin"
+          ],
+          "automatic_tables": [
+            {
+              "name": "Otomatik Tablo 1",
+              "description": "'İçindekiler' başlığı ile standart format"
+            },
+            {
+              "name": "Otomatik Tablo 2",
+              "description": "'İçerik' başlığı ile standart format"
+            }
+          ]
+        },
+        
+        "custom_toc": {
+          "access": "Başvurular > İçindekiler Tablosu > Özel İçindekiler Tablosu",
+          "options": [
+            {
+              "name": "Sayfa Numaralarını Göster",
+              "description": "Her girdi için sayfa numarası ekler",
+              "default": true
+            },
+            {
+              "name": "Sayfa Numaralarını Sağa Hizala",
+              "description": "Sayfa numaraları sağ kenarda görünür",
+              "default": true
+            },
+            {
+              "name": "Sekme Lideri",
+              "options": ["Yok", ".....", "-----", "_____"],
+              "description": "Başlık ile sayfa numarası arasındaki dolgu"
+            },
+            {
+              "name": "Biçimler",
+              "options": ["Şablondan", "Klasik", "Ayırt Edici", "Biçimsel", "Basit", "Modern"],
+              "description": "İçindekiler görünümü"
+            },
+            {
+              "name": "Gösterilecek Seviyeler",
+              "range": "1-9",
+              "default": 3,
+              "description": "Kaç seviye başlık dahil edilecek"
+            }
+          ],
+          "hyperlinks": {
+            "description": "Web üzerinde kullanmak için köprüler ekler",
+            "benefit": "PDF ve online belgelerde tıklanabilir içindekiler"
+          }
+        },
+        
+        "update_toc": {
+          "why_update": "Başlıklar değiştiğinde veya sayfa numaraları değiştiğinde güncelleme gerekir",
+          "methods": [
+            {
+              "method": "Sağ Tık",
+              "steps": [
+                "İçindekiler tablosuna sağ tıklayın",
+                "'Alanı Güncelleştir' seçin",
+                "'Yalnızca sayfa numaralarını' veya 'Tüm tabloyu' seçin"
+              ]
+            },
+            {
+              "method": "Kısayol",
+              "shortcut": "F9",
+              "steps": "İçindekiler tablosunu seçip F9 tuşuna basın"
+            },
+            {
+              "method": "Şerit",
+              "steps": "Başvurular > Tabloyu Güncelleştir"
+            }
+          ],
+          "update_options": {
+            "page_numbers_only": "Sadece sayfa numaraları güncellenir (hızlı)",
+            "entire_table": "Yeni başlıklar ve değişiklikler dahil edilir (kapsamlı)"
+          }
+        },
+        
+        "advanced_features": {
+          "manual_entries": {
+            "description": "Başlık stili olmayan metinleri içindekiler tablosuna ekleme",
+            "steps": [
+              "Eklemek istediğiniz metni seçin",
+              "Alt+Shift+O tuşlarına basın",
+              "Seviyeyi belirleyin",
+              "İşaretle'ye tıklayın"
+            ]
+          },
+          "outline_levels": {
+            "description": "Paragraf formatında seviye belirleme",
+            "access": "Paragraf > Girinti ve Aralık > Anahat düzeyi",
+            "usage": "Stil kullanmadan içindekiler için seviye atama"
+          },
+          "multiple_tocs": {
+            "description": "Farklı bölümler için ayrı içindekiler",
+            "usage": [
+              "Şekiller listesi",
+              "Tablolar listesi",
+              "Bölüm özel içindekiler"
+            ]
+          }
+        },
+        
+        "troubleshooting": [
+          {
+            "problem": "İçindekiler boş görünüyor",
+            "solution": "Belgede başlık stilleri kullanıldığından emin olun"
+          },
+          {
+            "problem": "Bazı başlıklar görünmüyor",
+            "solution": "İçindekiler seviyesini artırın veya başlık stilini kontrol edin"
+          },
+          {
+            "problem": "Sayfa numaraları yanlış",
+            "solution": "F9 ile tabloyu güncelleyin"
+          },
+          {
+            "problem": "Köprüler çalışmıyor",
+            "solution": "Ctrl+tıklama ile köprüleri takip edin"
+          }
+        ],
+        
+        "best_practices": [
+          "Tutarlı başlık stilleri kullanın",
+          "İçindekiler tablosunu belgenin başına yerleştirin",
+          "Her önemli değişiklikten sonra güncelleyin",
+          "Yazdırmadan önce mutlaka güncelleyin",
+          "Çok fazla seviye kullanmaktan kaçının (3-4 ideal)",
+          "Anlamlı başlık metinleri yazın"
+        ]
+      }
+    },
+    
+    {
+      "id": "dipnot-sonnot",
+      "title": "Dipnot ve Sonnot",
+      "order": 2,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dipnotlar ve sonnotlar, belgenizde ek açıklamalar, referanslar ve kaynaklar için kullanılır. Akademik ve profesyonel belgelerde önemli bir rol oynar.",
+        
+        "differences": {
+          "footnote": {
+            "name": "Dipnot",
+            "location": "Sayfa altında",
+            "usage": "Kısa açıklamalar ve referanslar için",
+            "numbering": "Her sayfada 1'den başlar (isteğe bağlı)",
+            "visibility": "Her sayfada hemen görünür"
+          },
+          "endnote": {
+            "name": "Sonnot",
+            "location": "Belge sonunda",
+            "usage": "Uzun açıklamalar ve detaylı notlar için",
+            "numbering": "Belgede sürekli artan",
+            "visibility": "Belgenin sonunda toplanır"
+          }
+        },
+        
+        "insert_footnote": {
+          "shortcut": "Alt+Ctrl+F",
+          "steps": [
+            "Dipnot eklemek istediğiniz yere imleci getirin",
+            "Başvurular > Dipnot Ekle'ye tıklayın",
+            "Veya Alt+Ctrl+F kısayolunu kullanın",
+            "Açılan dipnot alanına metni yazın"
+          ],
+          "auto_numbering": "Word otomatik olarak sıra numarası verir"
+        },
+        
+        "insert_endnote": {
+          "shortcut": "Alt+Ctrl+D",
+          "steps": [
+            "Sonnot eklemek istediğiniz yere imleci getirin",
+            "Başvurular > Sonnot Ekle'ye tıklayın",
+            "Veya Alt+Ctrl+D kısayolunu kullanın",
+            "Açılan sonnot alanına metni yazın"
+          ]
+        },
+        
+        "formatting_options": {
+          "access": "Başvurular > Dipnot ve Sonnot iletişim kutusu başlatıcısı",
+          "location_options": {
+            "footnotes": [
+              "Sayfa altı (varsayılan)",
+              "Metin altı"
+            ],
+            "endnotes": [
+              "Belge sonu (varsayılan)",
+              "Bölüm sonu"
+            ]
+          },
+          "number_format": {
+            "options": [
+              "1, 2, 3, ... (varsayılan)",
+              "a, b, c, ...",
+              "A, B, C, ...",
+              "i, ii, iii, ...",
+              "I, II, III, ...",
+              "*, †, ‡, § (semboller)"
+            ],
+            "custom_mark": "Özel işaret de tanımlanabilir"
+          },
+          "numbering_options": [
+            {
+              "name": "Sürekli",
+              "description": "Belgede sürekli artan numaralandırma"
+            },
+            {
+              "name": "Her Bölümde Yeniden Başlat",
+              "description": "Her bölümde 1'den başlar"
+            },
+            {
+              "name": "Her Sayfada Yeniden Başlat",
+              "description": "Her sayfada 1'den başlar (sadece dipnot)"
+            }
+          ],
+          "starting_number": {
+            "description": "Numaralandırmayı farklı bir sayıdan başlatma",
+            "usage": "Birden fazla belgeden oluşan çalışmalarda"
+          }
+        },
+        
+        "navigation": {
+          "jump_to_note": "Metin içindeki numaraya çift tıklayarak nota gidebilirsiniz",
+          "return_to_text": "Not içindeki numaraya çift tıklayarak metne dönebilirsiniz",
+          "show_notes": "Başvurular > Notları Göster"
+        },
+        
+        "management": {
+          "edit": "Not metnine tıklayıp düzenleyin",
+          "delete": "Metin içindeki not numarasını silin (not otomatik silinir)",
+          "move": "Not numarasını kes/yapıştır yapın (not da taşınır)",
+          "convert": {
+            "description": "Dipnotları sonnota veya tersini çevirme",
+            "access": "Nota sağ tık > Dönüştür",
+            "options": [
+              "Tüm dipnotları sonnota dönüştür",
+              "Tüm sonnotları dipnota dönüştür",
+              "Takas et (dipnot↔sonnot)"
+            ]
+          }
+        },
+        
+        "separator_lines": {
+          "description": "Dipnot ve metin arasındaki çizgi",
+          "types": [
+            "Dipnot ayırıcı - Kısa çizgi (varsayılan)",
+            "Dipnot devamlılık ayırıcısı - Uzun çizgi",
+            "Dipnot devamlılık bildirisi - 'Devamı...' metni"
+          ],
+          "customize": "Başvurular > Notları Göster > Ayırıcı'yı seçip düzenleyin"
+        },
+        
+        "academic_standards": {
+          "APA": {
+            "style": "Dipnot yerine parantez içi alıntı tercih edilir",
+            "when_to_use": "Ek açıklamalar için sınırlı kullanım"
+          },
+          "Chicago": {
+            "style": "Dipnot yaygın kullanılır",
+            "format": "Tam bibliyografik bilgi dipnotta"
+          },
+          "MLA": {
+            "style": "Dipnot minimal kullanılır",
+            "preference": "Parantez içi alıntı tercih edilir"
+          }
+        },
+        
+        "best_practices": [
+          "Kısa açıklamalar için dipnot, uzun notlar için sonnot kullanın",
+          "Tutarlı numaralandırma sistemi kullanın",
+          "Dipnot metnini kısa ve öz tutun",
+          "Her dipnotta tam bibliyografik bilgi verin (Chicago stili)",
+          "Gereksiz dipnot kullanmaktan kaçının",
+          "Dipnot metnini de yazım denetimi yapın"
+        ]
+      }
+    },
+    
+    {
+      "id": "alinti-kaynakca",
+      "title": "Alıntı ve Kaynakça",
+      "order": 3,
+      "content": {
+        "type": "detailed",
+        "introduction": "Word'ün dahili alıntı yönetimi sistemi, akademik ve profesyonel belgelerde kaynak ekleme ve kaynakça oluşturmayı kolaylaştırır. Birçok akademik stil formatını destekler.",
+        
+        "citation_styles": {
+          "description": "Word'de desteklenen popüler alıntı stilleri",
+          "styles": [
+            {
+              "name": "APA 7th Edition",
+              "full_name": "American Psychological Association",
+              "usage": "Psikoloji, eğitim, sosyal bilimler",
+              "format": "(Yazar, Yıl)"
+            },
+            {
+              "name": "Chicago 17th Edition",
+              "full_name": "Chicago Manual of Style",
+              "usage": "Tarih, sanat, müzik",
+              "formats": ["Dipnot/Kaynakça", "Yazar-Tarih"]
+            },
+            {
+              "name": "MLA 9th Edition",
+              "full_name": "Modern Language Association",
+              "usage": "Edebiyat, dil, beşeri bilimler",
+              "format": "(Yazar Sayfa)"
+            },
+            {
+              "name": "IEEE",
+              "full_name": "Institute of Electrical and Electronics Engineers",
+              "usage": "Mühendislik, teknoloji",
+              "format": "[1]"
+            },
+            {
+              "name": "Harvard",
+              "usage": "İşletme, ekonomi, sosyal bilimler",
+              "format": "(Yazar, Yıl)"
+            },
+            {
+              "name": "ISO 690",
+              "full_name": "International Organization for Standardization",
+              "usage": "Uluslararası standart",
+              "format": "Çeşitli"
+            }
+          ],
+          "change_style": "Başvurular > Stil açılır menüsünden seçin"
+        },
+        
+        "add_source": {
+          "access": "Başvurular > Alıntılar ve Kaynakça > Kaynak Ekle",
+          "source_types": [
+            "Kitap",
+            "Kitap bölümü",
+            "Dergi makalesi",
+            "Gazete makalesi",
+            "Web sitesi",
+            "Belge web sitesinden",
+            "Elektronik kaynak",
+            "Rapor",
+            "Ses kaydı",
+            "Performans",
+            "Sanat eseri",
+            "Film",
+            "Mülakat",
+            "Patent",
+            "Mahkeme davası",
+            "Çeşitli"
+          ],
+          "required_fields": {
+            "book": ["Yazar", "Başlık", "Yıl", "Yayınevi", "Şehir"],
+            "article": ["Yazar", "Makale başlığı", "Dergi adı", "Yıl", "Cilt", "Sayı", "Sayfalar"],
+            "website": ["Yazar/Kurum", "Sayfa başlığı", "Web sitesi adı", "Yıl", "URL", "Erişim tarihi"]
+          },
+          "tag_name": {
+            "description": "Kaynak için kısa tanımlayıcı ad",
+            "example": "Smith2020, WHO2021, Jones_Article",
+            "purpose": "Kaynakları hızlı bulmak için"
+          }
+        },
+        
+        "insert_citation": {
+          "steps": [
+            "Alıntı yapılacak yere imleci getirin",
+            "Başvurular > Alıntı Ekle'ye tıklayın",
+            "Listeden kaynağı seçin veya yeni kaynak ekleyin",
+            "Gerekirse sayfa numarası ekleyin"
+          ],
+          "shortcut": "Alt+Shift+I",
+          "page_numbers": {
+            "description": "Alıntıya özel sayfa numarası ekleme",
+            "format_examples": {
+              "APA": "(Smith, 2020, s. 45)",
+              "MLA": "(Smith 45)",
+              "Chicago": "(Smith 2020, 45)"
+            }
+          }
+        },
+        
+        "manage_sources": {
+          "access": "Başvurular > Kaynakları Yönet",
+          "features": [
+            {
+              "name": "Ana Liste",
+              "description": "Bilgisayarınızda kayıtlı tüm kaynaklar",
+              "location": "Kullanıcı profili klasörü"
+            },
+            {
+              "name": "Geçerli Liste",
+              "description": "Bu belgede kullanılan kaynaklar"
+            },
+            {
+              "name": "Kaynak Kopyalama",
+              "description": "Ana listeden geçerli listeye veya tersine"
+            },
+            {
+              "name": "Düzenleme",
+              "description": "Kaynak bilgilerini güncelleme"
+            },
+            {
+              "name": "Silme",
+              "description": "Kullanılmayan kaynakları kaldırma"
+            },
+            {
+              "name": "Arama",
+              "description": "Kaynakları etiket, yazar veya başlığa göre bulma"
+            }
+          ]
+        },
+        
+        "bibliography": {
+          "description": "Kullanılan tüm kaynakların otomatik listesi",
+          "insert_steps": [
+            "Kaynakça yerleşeceği yere (genellikle belge sonu) gidin",
+            "Başvurular > Kaynakça'ya tıklayın",
+            "Hazır formatlardan birini seçin veya 'Kaynakça Ekle' tıklayın"
+          ],
+          "formats": [
+            "Kaynakça - Standart başlık",
+            "Eserler - Alternatif başlık",
+            "Başvurulan Eserler - Sadece alıntı yapılanlar"
+          ],
+          "update": {
+            "why": "Yeni kaynak eklendiğinde veya kaynak düzenlendiğinde",
+            "how": [
+              "Kaynakçaya tıklayın",
+              "'Alıntıları ve Kaynakçayı Güncelleştir'i seçin",
+              "Veya F9 tuşuna basın"
+            ]
+          },
+          "formatting": {
+            "spacing": "Genellikle çift satır aralığı",
+            "indentation": "Asılı girinti (İkinci satırdan itibaren)",
+            "alphabetical": "Yazar soyadına göre alfabetik sıralama",
+            "customization": "Kaynakça stilini özelleştirebilirsiniz"
+          }
+        },
+        
+        "placeholders": {
+          "description": "Eksik bilgili geçici kaynak",
+          "when_to_use": "Kaynak bilgileri henüz tam değilken",
+          "insert": "Alıntı Ekle > Yer Tutucu Ekle",
+          "complete_later": "Kaynakları Yönet'ten tamamlayın",
+          "warning": "Kaynakçada hata gösterebilir"
+        },
+        
+        "import_export": {
+          "export": {
+            "description": "Kaynakları XML dosyası olarak kaydetme",
+            "usage": "Başka belgelerde veya referans yönetim yazılımlarında kullanmak için"
+          },
+          "import": {
+            "description": "XML kaynakları Word'e aktarma",
+            "compatible_software": [
+              "EndNote",
+              "Zotero (eklenti ile)",
+              "Mendeley (eklenti ile)",
+              "RefWorks"
+            ]
+          }
+        },
+        
+        "advanced_features": {
+          "search_libraries": {
+            "description": "Çevrimiçi kütüphane veritabanlarında arama",
+            "access": "Kaynak Ekle > Araştır",
+            "note": "İnternet bağlantısı gerektirir"
+          },
+          "field_codes": {
+            "description": "Alıntıların arkasındaki kod",
+            "view": "Alt+F9 ile alan kodlarını göster/gizle",
+            "edit": "İleri düzey özelleştirme için"
+          }
+        },
+        
+        "common_issues": [
+          {
+            "problem": "Kaynak listede görünmüyor",
+            "solution": "Kaynakları Yönet'te Ana Liste'den Geçerli Liste'ye kopyalayın"
+          },
+          {
+            "problem": "Kaynakça güncellenmiyor",
+            "solution": "Kaynakçayı seçip F9'a basın veya sağ tık > Alanı Güncelleştir"
+          },
+          {
+            "problem": "Stil değişmiyor",
+            "solution": "Tüm alıntıları seçip stili değiştirin, sonra kaynakçayı güncelleyin"
+          },
+          {
+            "problem": "Yazar adları yanlış görünüyor",
+            "solution": "Kaynağı düzenleyip 'Kurumsal Yazar' işaretini kontrol edin"
+          }
+        ],
+        
+        "best_practices": [
+          "Yazıya başlamadan önce alıntı stilini belirleyin",
+          "Kaynakları eklerken tam bilgi girin",
+          "Etiket adlarını anlamlı ve kısa tutun",
+          "Düzenli olarak kaynakçayı güncelleyin",
+          "Yer tutucuları tamamlamayı unutmayın",
+          "Ana liste yedeklemesi alın",
+          "Her kaynak türü için gerekli alanları doldurun",
+          "URL'leri tam olarak girin",
+          "Erişim tarihlerini not edin"
+        ]
+      }
+    },
+    
+    {
+      "id": "resim-yazisi",
+      "title": "Resim Yazısı",
+      "order": 4,
+      "content": {
+        "type": "detailed",
+        "introduction": "Resim yazıları (caption), resim, tablo, denklem ve diğer nesnelere numara ve açıklayıcı metin ekler. Otomatik numaralandırma ve referans oluşturma sağlar.",
+        
+        "insert_caption": {
+          "steps": [
+            "Resim, tablo veya nesneyi seçin",
+            "Başvurular > Resim Yazısı Ekle'ye tıklayın",
+            "Etiket türünü seçin (Şekil, Tablo, Denklem)",
+            "Açıklamayı yazın",
+            "Konum seçin (üst/alt)",
+            "Tamam'a tıklayın"
+          ],
+          "shortcut": "Alt+Shift+P"
+        },
+        
+        "label_types": {
+          "built_in": [
+            {
+              "name": "Şekil",
+              "usage": "Resimler, grafikler, diyagramlar",
+              "format": "Şekil 1: Açıklama"
+            },
+            {
+              "name": "Tablo",
+              "usage": "Veri tabloları, çizelgeler",
+              "format": "Tablo 1: Açıklama",
+              "position": "Genellikle tablonun üstünde"
+            },
+            {
+              "name": "Denklem",
+              "usage": "Matematiksel formüller",
+              "format": "Denklem 1"
+            }
+          ],
+          "custom_labels": {
+            "description": "Kendi etiket türlerinizi oluşturun",
+            "examples": ["Grafik", "Harita", "Ekran Görüntüsü", "Kod", "Örnek"],
+            "create": "Resim Yazısı iletişim kutusunda 'Yeni Etiket' düğmesi"
+          }
+        },
+        
+        "numbering_options": {
+          "access": "Resim Yazısı > Numaralandırma",
+          "formats": [
+            "1, 2, 3, ...",
+            "a, b, c, ...",
+            "A, B, C, ...",
+            "i, ii, iii, ...",
+            "I, II, III, ..."
+          ],
+          "include_chapter": {
+            "description": "Bölüm numarası dahil etme",
+            "format": "Şekil 1-1, Şekil 1-2, Şekil 2-1...",
+            "requirement": "Belge bölümlere ayrılmış olmalı",
+            "usage": "Uzun belgelerde bölüm bazlı numaralandırma"
+          },
+          "separator": {
+            "description": "Bölüm ve numara arasındaki ayırıcı",
+            "options": ["Tire", "Nokta", "İki nokta"]
+          }
+        },
+        
+        "position": {
+          "above": "Seçili öğenin üstünde (tablolar için standart)",
+          "below": "Seçili öğenin altında (şekiller için standart)"
+        },
+        
+        "auto_caption": {
+          "description": "Belirli nesne türleri eklendiğinde otomatik resim yazısı",
+          "access": "Resim Yazısı > Otomatik Resim Yazısı",
+          "object_types": [
+            "Microsoft Word Tablosu",
+            "Microsoft Excel Çalışma Sayfası",
+            "Microsoft PowerPoint Sunusu",
+            "Microsoft Visio Çizimi",
+            "Resim dosyaları"
+          ],
+          "benefit": "Tutarlılık ve zaman tasarrufu"
+        },
+        
+        "cross_reference": {
+          "description": "Belgede resim yazılarına referans verme",
+          "insert": "Başvurular > Çapraz Başvuru",
+          "reference_types": [
+            "Yalnızca etiket ve numara (Şekil 1)",
+            "Yalnızca resim yazısı metni",
+            "Tüm resim yazısı",
+            "Yalnızca sayfa numarası",
+            "'Yukarıda' veya 'aşağıda'"
+          ],
+          "hyperlink": "Tıklanabilir bağlantı olarak eklenir",
+          "update": "F9 ile güncellenebilir"
+        },
+        
+        "table_of_figures": {
+          "description": "Tüm şekillerin, tabloların listesi",
+          "insert": "Başvurular > Şekil Tablosu Ekle",
+          "separate_lists": "Her etiket türü için ayrı liste oluşturabilirsiniz",
+          "location": "Genellikle içindekiler tablosundan sonra",
+          "formatting": {
+            "page_numbers": "Sayfa numaraları dahil",
+            "tab_leader": "Noktalı çizgi veya diğer",
+            "hyperlinks": "Tıklanabilir bağlantılar"
+          },
+          "update": {
+            "when": "Yeni resim yazısı eklendiğinde veya sayfa numaraları değiştiğinde",
+            "how": "Listeyi seçip F9'a basın"
+          }
+        },
+        
+        "formatting": {
+          "style": {
+            "description": "Resim yazısı stili",
+            "default": "Caption stili",
+            "modify": "Giriş > Stiller > Caption stil"
+		   },
+          "font": "Genellikle italik ve küçük punto",
+          "alignment": "Sol, orta veya iki yana yaslanmış",
+          "spacing": "Nesne ile resim yazısı arasında boşluk"
+        },
+        
+        "management": {
+          "edit": "Resim yazısı metnine tıklayıp düzenleyin",
+          "delete": "Resim yazısını seçip Delete tuşu",
+          "move": "Nesne ile birlikte taşınır",
+          "update_numbers": {
+            "description": "Resim yazısı silinirse numaralar otomatik güncellenmez",
+            "solution": "Ctrl+A ile tümünü seçip F9'a basın"
+          }
+        },
+        
+        "best_practices": [
+          "Tutarlı etiket türleri kullanın",
+          "Açıklayıcı ve özlü metinler yazın",
+          "Tablolar için üstte, şekiller için altta yerleştirin",
+          "Otomatik resim yazısı özelliğini kullanın",
+          "Düzenli olarak numaralandırmayı güncelleyin",
+          "Çapraz başvurular için manuel numara yazmayın",
+          "Şekil tablosunu belgenin başına ekleyin",
+          "Akademik kurallara uygun format kullanın"
+        ],
+        
+        "academic_requirements": {
+          "APA": {
+            "figures": "Şekil 1\nAçıklayıcı Başlık (italik)",
+            "tables": "Tablo 1\nAçıklayıcı Başlık (italik olmayan)",
+            "position": "Figürler alta, tablolar üste"
+          },
+          "IEEE": {
+            "format": "Fig. 1. Açıklama",
+            "abbreviation": "Figure yerine Fig. kullanılır"
+          }
+        }
+      }
+    },
+    
+    {
+      "id": "dizin",
+      "title": "📑 Dizin Oluşturma",
+      "order": 5,
+      "content": {
+        "type": "detailed",
+        "introduction": "Dizin (indeks), belgenizde geçen önemli terimlerin alfabetik listesi ve sayfa numaralarıdır. Özellikle uzun belgelerde okuyucuların hızlı arama yapmasını sağlar.",
+        
+        "mark_entry": {
+          "description": "Dizine eklenecek terimleri işaretleme",
+          "methods": [
+            {
+              "name": "Manuel İşaretleme",
+              "shortcut": "Alt+Shift+X",
+              "steps": [
+                "Dizine eklemek istediğiniz terimi seçin",
+                "Alt+Shift+X tuşlarına basın",
+                "İletişim kutusu açılır",
+                "Ana girdi ve alt girdi belirleyin",
+                "İşaretle veya Tümünü İşaretle'ye tıklayın"
+              ]
+            },
+            {
+              "name": "Tümünü İşaretle",
+              "description": "Aynı terimin tüm geçtiği yerleri otomatik işaretler",
+              "benefit": "Zaman tasarrufu",
+              "note": "Büyük/küçük harf duyarlı"
+            }
+          ]
+        },
+        
+        "entry_types": {
+          "main_entry": {
+            "description": "Ana başlık",
+            "example": "Microsoft Word, 5, 12, 23"
+          },
+          "subentry": {
+            "description": "Ana başlık altında alt başlık",
+            "example": "Microsoft Word\n    Başvurular, 45\n    Giriş, 12",
+            "levels": "2 seviye desteklenir (ana ve alt)"
+          },
+          "cross_reference": {
+            "description": "Başka bir terime yönlendirme",
+            "format": "Bkz. veya Ayrıca bkz.",
+            "example": "CPU. Bkz. İşlemci"
+          }
+        },
+        
+        "entry_options": {
+          "current_page": "Sadece bu sayfayı işaretle",
+          "page_range": {
+            "description": "Sayfa aralığı işaretleme",
+            "usage": "Uzun konular için",
+            "requires": "Yer işareti tanımlama"
+          },
+          "cross_reference_options": [
+            "Bkz. (See)",
+            "Ayrıca bkz. (See also)"
+          ],
+          "format": {
+            "bold": "Sayfa numarasını kalın yapma",
+            "italic": "Sayfa numarasını italik yapma",
+            "usage": "Önemli sayfaları vurgulamak için"
+          }
+        },
+        
+        "insert_index": {
+          "steps": [
+            "Dizinin yerleşeceği yere (genellikle belge sonu) gidin",
+            "Başvurular > Dizin Ekle'ye tıklayın",
+            "Biçim ve seçenekleri belirleyin",
+            "Tamam'a tıklayın"
+          ],
+          "location": "Genellikle belgenin en sonunda"
+        },
+        
+        "index_formatting": {
+          "formats": [
+            {
+              "name": "Klasik",
+              "description": "Geleneksel dizin düzeni"
+            },
+            {
+              "name": "Ayırt Edici",
+              "description": "Modern ve net görünüm"
+            },
+            {
+              "name": "Biçimsel",
+              "description": "Profesyonel format"
+            },
+            {
+              "name": "Modern",
+              "description": "Çağdaş tasarım"
+            },
+            {
+              "name": "Basit",
+              "description": "Sade ve temiz"
+            },
+            {
+              "name": "Şablondan",
+              "description": "Özel stil tanımı"
+            }
+          ],
+          "type": {
+            "indented": {
+              "name": "Girintili",
+              "description": "Alt girdiler girintili",
+              "example": "Word\n    Başvurular, 45\n    Giriş, 12"
+            },
+            "run_in": {
+              "name": "Arka Arkaya",
+              "description": "Alt girdiler aynı satırda",
+              "example": "Word: Başvurular, 45; Giriş, 12"
+            }
+          },
+          "columns": {
+            "options": [1, 2, 3, 4],
+            "default": 2,
+            "usage": "Çok sayfalı dizinler için çoklu sütun"
+          },
+          "language": {
+            "description": "Sıralama dili",
+            "importance": "Türkçe karakterlerin doğru sıralanması için"
+          }
+        },
+        
+        "update_index": {
+          "when": [
+            "Yeni girdi işaretlendiğinde",
+            "Sayfa numaraları değiştiğinde",
+            "Girdi metinleri düzenlendiğinde"
+          ],
+          "how": [
+            "Dizini seçin",
+            "F9 tuşuna basın",
+            "Veya Başvurular > Dizini Güncelleştir"
+          ],
+          "note": "Dizin bir alan olduğu için güncelleme gerektirir"
+        },
+        
+        "concordance_file": {
+          "description": "Otomatik dizin işaretleme için terim listesi",
+          "format": "İki sütunlu tablo: Aranacak terim | Dizin girdisi",
+          "create": [
+            "Yeni Word belgesi oluşturun",
+            "İki sütunlu tablo ekleyin",
+            "Sol sütun: Aranacak terim",
+            "Sağ sütun: Dizinde görünecek metin",
+            "Kaydedin"
+          ],
+          "use": "Başvurular > Dizin Ekle > Otomatik İşaretle",
+          "advantage": "Yüzlerce terimi otomatik işaretler"
+        },
+        
+        "field_codes": {
+          "view": "Alt+F9 ile dizin alan kodlarını göster",
+          "xe_field": "{ XE \"terim\" } - Dizin girdisi işareti",
+          "index_field": "{ INDEX } - Dizin tablosu",
+          "hide": "Gizli metin olarak işaretlenmiştir",
+          "show_hide": "Giriş > Paragraf > Biçimlendirme işaretlerini göster"
+        },
+        
+        "advanced_features": {
+          "multiple_indexes": {
+            "description": "Farklı türde dizinler oluşturma",
+            "examples": ["Yazar dizini", "Konu dizini", "Coğrafi dizin"],
+            "method": "XE alanına \\f anahtarı ekleme"
+          },
+          "yomi": {
+            "description": "Doğu Asya dilleri için fonetik sıralama",
+            "usage": "Japonca, Çince, Korece"
+          }
+        },
+        
+        "best_practices": [
+          "Tutarlı terim kullanın (tekil/çoğul)",
+          "Ana ve alt girdi mantığına uygun işaretleyin",
+          "Çok genel terimleri işaretlemekten kaçının",
+          "Önemli sayfa numaralarını kalın yapın",
+          "Çapraz başvuruları kullanın",
+          "Yazım denetimi yapın (dizin terimleri dahil)",
+          "Concordance dosyası kullanarak zaman kazanın",
+          "Son kontrolde dizini güncelleyin",
+          "2 sütun formatı tercih edin (okunabilirlik)"
+        ],
+        
+        "troubleshooting": [
+          {
+            "problem": "Dizin boş görünüyor",
+            "solution": "Hiç girdi işaretlenmemiştir, Alt+Shift+X ile işaretleyin"
+          },
+          {
+            "problem": "XE alanları görünüyor",
+            "solution": "Normal, gizli metin. Yazdırırken görünmez. Gizlemek için ¶ simgesini kapatın"
+          },
+          {
+            "problem": "Sayfa numaraları yanlış",
+            "solution": "F9 ile dizini güncelleyin"
+          },
+          {
+            "problem": "Türkçe karakterler yanlış sıralanıyor",
+            "solution": "Dizin dili Türkçe olarak ayarlayın"
+          }
+        ]
+      }
+    },
+    
+    {
+      "id": "yer-isareti",
+      "title": "🔖 Yer İşareti ve Köprü",
+      "order": 6,
+      "content": {
+        "type": "detailed",
+        "introduction": "Yer işaretleri belgenizde önemli yerleri işaretler. Köprüler ise belge içinde veya dışında konumlara hızlı erişim sağlar.",
+        
+        "bookmarks": {
+          "description": "Belgede belirli konumları işaretleme ve hızlı erişim",
+          "insert": {
+            "shortcut": "Ctrl+Shift+F5",
+            "steps": [
+              "İşaretlemek istediğiniz yere imleci getirin veya metni seçin",
+              "Başvurular > Yer İşareti Ekle (veya Ekle > Yer İşareti)",
+              "Yer işareti adı girin",
+              "Ekle'ye tıklayın"
+            ]
+          },
+          "naming_rules": {
+            "must_start_with": "Harf ile başlamalı",
+            "can_contain": "Harf, rakam, alt çizgi",
+            "cannot_contain": "Boşluk, özel karakterler",
+            "case_sensitive": false,
+            "examples": ["Bölüm1", "Sonuç_Tablosu", "Önemli_Not"]
+          },
+          "navigate": {
+            "go_to": "Ctrl+G veya F5 > Yer İşareti",
+            "select": "Listeden yer işaretini seçip Git'e tıklayın",
+            "display": "Yer işaretlerini belgede göster (parantez ile)"
+          },
+          "management": {
+            "view_all": "Ekle > Yer İşareti ile tüm yer işaretlerini görün",
+            "sort_options": ["Ada göre", "Konuma göre"],
+            "hidden_bookmarks": "Alt çizgi ile başlayan yer işaretleri gizlidir",
+            "delete": "Listeden seçip Sil'e tıklayın"
+          }
+        },
+        
+        "hyperlinks": {
+          "description": "Tıklanabilir bağlantılar oluşturma",
+          "insert": {
+            "shortcut": "Ctrl+K",
+            "access": "Ekle > Bağlantı veya Başvurular > Köprü"
+          },
+          "link_types": [
+            {
+              "name": "Web Sayfası",
+              "description": "İnternet adresi",
+              "example": "https://www.microsoft.com"
+            },
+            {
+              "name": "Belge İçi Konum",
+              "description": "Aynı belgede yer işareti veya başlık",
+              "usage": "Hızlı navigasyon"
+            },
+            {
+              "name": "Dosya",
+              "description": "Bilgisayardaki başka bir dosya",
+              "note": "Mutlak veya göreli yol"
+            },
+            {
+              "name": "E-posta",
+              "description": "E-posta adresi",
+              "example": "mailto:ornek@domain.com",
+              "feature": "Otomatik e-posta istemcisi açar"
+            },
+            {
+              "name": "Yeni Belge",
+              "description": "Tıklandığında yeni belge oluşturur"
+            }
+          ],
+          "display_text": {
+            "description": "Bağlantıda görünen metin",
+            "tip": "Açıklayıcı metin kullanın",
+            "accessibility": "Ekran okuyucu uyumluluğu için önemli"
+          },
+          "screen_tip": {
+            "description": "Fareyle üzerine gelindiğinde görünen ipucu",
+            "usage": "Ek bilgi veya açıklama"
+          }
+        },
+        
+        "cross_reference": {
+          "description": "Belge içinde otomatik referanslar",
+          "access": "Başvurular > Çapraz Başvuru",
+          "reference_types": [
+            "Numaralı öğe",
+            "Başlık",
+            "Yer işareti",
+            "Dipnot",
+            "Sonnot",
+            "Denklem",
+            "Şekil",
+            "Tablo"
+          ],
+          "insert_options": [
+            "Paragraf metni",
+            "Paragraf numarası",
+            "Paragraf numarası (içerik yok)",
+            "Paragraf numarası (tam içerik)",
+            "Yukarıda/aşağıda",
+            "Sayfa numarası"
+          ],
+          "hyperlink": "Köprü olarak ekle seçeneği",
+          "update": "F9 ile güncellenir"
+        },
+        
+        "best_practices": [
+          "Anlamlı yer işareti adları kullanın",
+          "Köprü metinlerini açıklayıcı yazın ('buraya tıklayın' yerine)",
+          "Harici bağlantılar için tam URL kullanın",
+          "Ekran ipucu ekleyin",
+          "Yer işaretlerini dokümante edin",
+          "Bozuk bağlantıları kontrol edin",
+          "Göreli yollar kullanarak taşınabilirlik sağlayın"
+        ]
+      }
+    }
+  ],
+  
+  "keyboard_shortcuts": [
+    {"keys": "Alt+Shift+O", "action": "İçindekiler girdisi işaretle"},
+    {"keys": "Alt+Shift+X", "action": "Dizin girdisi işaretle"},
+    {"keys": "Alt+Ctrl+F", "action": "Dipnot ekle"},
+    {"keys": "Alt+Ctrl+D", "action": "Sonnot ekle"},
+    {"keys": "Alt+Shift+P", "action": "Resim yazısı ekle"},
+    {"keys": "Ctrl+K", "action": "Köprü ekle"},
+    {"keys": "Ctrl+Shift+F5", "action": "Yer işareti ekle"},
+    {"keys": "F9", "action": "Alanları güncelle"},
+    {"keys": "Alt+F9", "action": "Alan kodlarını göster/gizle"},
+    {"keys": "Ctrl+Alt+M", "action": "Yorum ekle"}
+  ],
+  
+  "quick_tips": [
+    "İçindekiler oluşturmadan önce başlık stilleri kullanın",
+    "Dipnot ve sonnot arasındaki farkı bilin",
+    "Alıntı stilini yazıya başlamadan önce belirleyin",
+    "Resim yazılarını tutarlı kullanın",
+    "Kaynakçayı düzenli güncelleyin",
+    "Yer işaretleri ile uzun belgelerde hızlı gezinin",
+    "F9 ile tüm alanları güncelleyin"
+  ],
+  
+  "common_mistakes": [
+    "İçindekiler için manuel numara yazmak",
+    "Alıntılarda eksik kaynak bilgisi",
+    "Dipnot metinlerini çok uzun tutmak",
+    "Resim yazılarını manuel numaralandırmak",
+    "Kaynakçayı güncellememeyi unutmak",
+    "Dizin terimlerini tutarsız işaretlemek",
+    "Çapraz başvurularda manuel numara yazmak"
+  ],
+  
+  "best_practices_summary": [
+    "Otomatik numaralandırma özelliklerini kullanın",
+    "Manuel numara yazmayın, her zaman otomatik araçları tercih edin",
+    "Düzenli olarak alanları güncelleyin (F9)",
+    "Tutarlı stillendirme uygulayın",
+    "Akademik standartlara uygun format seçin",
+    "Yazdırmadan önce tüm tabloları ve referansları güncelleyin",
+    "Kaynak bilgilerini tam ve doğru girin"
+  ],
+  
+  "resources": {
+    "microsoft_docs": "https://support.microsoft.com/tr-tr/office/başvurular",
+    "video_tutorials": [
+      "İçindekiler Tablosu Oluşturma",
+      "Dipnot ve Sonnot Kullanımı",
+      "Akademik Alıntı ve Kaynakça",
+      "Dizin Oluşturma"
+    ],
+    "academic_guides": [
+      "APA 7th Edition",
+      "Chicago Manual of Style",
+      "MLA 9th Edition"
+    ]
+  },
+  
+  "next_menu": {
+    "id": "postalar",
+    "name": "Postalar Menüsü",
+    "description": "Mail merge, toplu gönderim ve etiket oluşturma"
+  }
+}
